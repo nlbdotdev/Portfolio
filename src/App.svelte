@@ -1,187 +1,133 @@
-<!-- The base app page. Loads splash page then uses routing in conjuction with navbar to display content.  -->
 <script>
-	// Pages
-	import Splash from "./components/header/Splash.svelte";
-	import Web from "./pages/Web.svelte";
-	import Games from "./pages/Games.svelte";
-	import GameShowcase from "./components/game/GameShowcase.svelte";
-	import ProjectShowcase from "./components/web/ProjectShowcase.svelte";
-	import Section from "./components/Section.svelte";
-	import Modal from "svelte-simple-modal";
-	import SectionBreak from "./components/SectionBreak.svelte";
-	// Variables
-	import { games, projects, url, theme } from "./stores";
-
-	// Used to load game showcases, will probably need to be update when converted to modal
-	let gameTitle = {};
-	let gameProps = null;
-	let projectTitle = {};
-	let projectProps = null;
-
-	// Adjust iconSize on small screens
-	import Viewport from "svelte-viewport-info";
-	import { iconSize } from "./stores.js";
-
-	function updateIconSize() {
-		if (Viewport.Width < 576) {
-			iconSize.update(() => 48);
-		} else {
-			iconSize.update(() => 64);
-		}
-	}
-	updateIconSize();
-
-	// Reset content on new page
-	import { onMount } from "svelte";
-	onMount(() => {
-		documentLoaded = true;
-	});
-	let firstLoad = true;
-	let documentLoaded = false;
-	function scrollToTop() {
-		const main = document.querySelector("main");
-		const navbar = document.querySelector(".navbar");
-
-		if (documentLoaded && navbar && main && !firstLoad) {
-			// elem.scrollIntoView({ behavior: "smooth" });
-			const yOffset = -navbar.offsetHeight;
-			const y =
-				main.getBoundingClientRect().top + window.pageYOffset + yOffset;
-			window.scrollTo({ top: y, behavior: "smooth" });
-		} else {
-			firstLoad = false;
-		}
-	}
-
-	// Routing
-	import router from "page";
-	let page = "";
-
-	// Routes
-	router("/", () => {
-		page = "home";
-		setTimeout(scrollToTop, 10);
-	});
-	router("/games", () => {
-		page = "games";
-		setTimeout(scrollToTop, 10);
-	});
-	// Game showcase
-	router(
-		"/games/:game",
-		(ctx, next) => {
-			// If game parameter matches object in store list, load props
-			gameTitle = ctx.params.game;
-			gameProps = games.find((gameObj) => {
-				let cleanTitle = gameObj.title
-					.split(" ")
-					.join("")
-					.toLowerCase();
-				return cleanTitle === gameTitle;
-			});
-			// console.log("props", gameProps);
-			next();
-		},
-		() => (page = "gameShowcase")
-	);
-	// Project showcase
-	router(
-		"/projects/:project",
-		(ctx, next) => {
-			// If game parameter matches object in store list, load props
-			projectTitle = ctx.params.project;
-			projectProps = projects.find((projectObj) => {
-				let cleanTitle = projectObj.title
-					.split(" ")
-					.join("")
-					.toLowerCase();
-				return cleanTitle === projectTitle;
-			});
-			console.log("props", projectProps);
-			next();
-		},
-		() => (page = "projectShowcase")
-	);
-	// 404 redirect
-	router("/*", () => {
-		page = "home";
-		scrollToTop();
-	});
-
-	router.start();
+	// Empty script for now
 </script>
 
-<!-- Watch body for viewport changes -->
-<svelte:body on:viewportchanged={updateIconSize} />
+<svelte:head>
+	<title>NLB.DEV - Archive</title>
+</svelte:head>
 
-<div class="wrapper background">
-	<Modal
-		styleWindow={{
-			boxShadow: "0 2px 5px 0 rgba(0, 0, 0, 0.15)",
-			width: "1200px",
-			background: theme.bgColors.primary,
-			color: "white",
-		}}
-		styleCloseButton={{
-			cursor: "pointer",
-			margin: "10px",
-		}}
-	>
-		<!-- Header -->
-		<Splash />
-
-		<!-- Routed body -->
-		<main>
-			{#if page === "home"}
-				<Web />
-			{:else if page === "games"}
-				<Games {games} />
-			{:else if page === "gameShowcase"}
-				<!-- Redirect to game page is props are missing -->
-				{#if gameProps == null}
-					{window.location.replace(`${url}/games`)}
-				{:else}
-					<Section
-						top={false}
-						bottom={true}
-						bg={theme.bgColors.primary}
-					>
-						<GameShowcase {...gameProps} fullPage={true} />
-					</Section>
-					<SectionBreak />
-				{/if}
-			{:else if page === "projectShowcase"}
-				<!-- Redirect to game page is props are missing -->
-				{#if projectProps == null}
-					{window.location.replace(`${url}/`)}
-				{:else}
-					<Section
-						top={false}
-						bottom={true}
-						bg={theme.bgColors.primary}
-					>
-						<ProjectShowcase {...projectProps} fullPage={true} />
-					</Section>
-					<SectionBreak />
-				{/if}
-			{/if}
-		</main>
-	</Modal>
-</div>
+<main>
+	<div class="content">
+		<h1>Archive/</h1>
+		<ul>
+			<li>
+				<a
+					href="https://web.archive.org/web/20190531181500/https://www.nathanbennett.io/"
+					target="archive"
+				>
+					nathanbennett.io
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://web.archive.org/web/20191025023446/http://reflextionsdev.com/"
+					target="archive"
+				>
+					reflextionsdev.com
+				</a>
+			</li>
+			<li>
+				<a
+					href="https://web.archive.org/web/20190531181440/https://www.nurobit.com/"
+					target="archive"
+				>
+					nurobit.com
+				</a>
+			</li>
+		</ul>
+	</div>
+</main>
 
 <style>
-	.wrapper {
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		margin: auto;
-		width: auto;
-		height: inherit;
-		/* Duplicate splash bg as page background */
-		background-image: url("/assets/backgrounds/purplebgblur.jpg");
+	@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap");
+
+	:global(body) {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-image: url('/assets/backgrounds/nasa.jpg');
 		background-size: cover;
-		background-attachment: fixed;
 		background-position: center;
-		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: 100vh;
+	}
+
+	:global(body::before) {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.4);
+		z-index: -1;
+	}
+
+	:global(*) {
+		box-sizing: border-box;
+	}
+
+	main {
+		font-family: "JetBrains Mono", monospace;
+		color: #f0f0f0;
+		padding: 3rem;
+		margin: 0;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.content {
+		max-width: 400px;
+	}
+
+	.content h1 {
+		font-size: 2rem;
+		font-weight: 300;
+		margin-bottom: 2rem;
+		color: #ffffff;
+		letter-spacing: 2px;
+	}
+
+	.content ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.content li {
+		margin-bottom: 0.5rem;
+		position: relative;
+		padding-left: 1.5rem;
+	}
+
+	.content li::before {
+		content: '-';
+		position: absolute;
+		left: 0;
+		color: #f0f0f0;
+	}
+
+	.content a {
+		color: #f0f0f0;
+		text-decoration: none;
+		font-size: 1rem;
+		font-weight: 400;
+		transition: opacity 0.2s ease;
+	}
+
+	.content a:hover {
+		opacity: 0.7;
+	}
+
+	@media (max-width: 768px) {
+		main {
+			padding: 2rem;
+		}
+
+		.content h1 {
+			font-size: 1.5rem;
+		}
 	}
 </style>
