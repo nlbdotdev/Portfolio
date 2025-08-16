@@ -86,8 +86,9 @@
 		font-size: 2rem;
 		font-weight: 300;
 		margin-bottom: 2rem;
-		color: #ffffff;
+		color: #64b5f6;
 		letter-spacing: 2px;
+		margin-left: -1rem;
 	}
 
 	.content ul {
@@ -100,6 +101,28 @@
 		margin-bottom: 0.5rem;
 		position: relative;
 		padding-left: 1.5rem;
+		opacity: 0;
+		transform: translateX(-20px);
+		animation: slideIn 0.6s ease forwards;
+	}
+
+	.content li:nth-child(1) {
+		animation-delay: 0.2s;
+	}
+
+	.content li:nth-child(2) {
+		animation-delay: 0.4s;
+	}
+
+	.content li:nth-child(3) {
+		animation-delay: 0.6s;
+	}
+
+	@keyframes slideIn {
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
 	}
 
 	.content li::before {
