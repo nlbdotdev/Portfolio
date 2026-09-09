@@ -1719,17 +1719,14 @@ html {
   }
   .year-guide-label {
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    left: -16px;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    white-space: nowrap;
     font: 12px var(--font-mono);
-    letter-spacing: 3px;
-    background: var(--paper);
-    padding: 10px 3px;
+    letter-spacing: 2px;
+    background: transparent;
+    padding: 0;
     color: var(--muted);
-    z-index: 1;
   }
   .year-guide-segment i {
     position: absolute;

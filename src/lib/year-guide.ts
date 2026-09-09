@@ -1,4 +1,4 @@
-/** Place each vertical year label halfway through the rows belonging to that year. */
+/** Place each vertical year label halfway between the first and last entry markers of that year. */
 export function yearGuide(layer: HTMLElement) {
   const timeline = layer.parentElement!;
   let frame = 0;
@@ -28,7 +28,8 @@ export function yearGuide(layer: HTMLElement) {
       if (bottom <= rect.top) continue;
       const top = rect.top - origin;
       const end = bottom - origin;
-      const branch = Math.min(entry.getBoundingClientRect().top - origin + 28, end);
+      const marker = entry.querySelector<HTMLElement>('.connection')!.getBoundingClientRect();
+      const branch = Math.min(marker.top + marker.height / 2 - origin, end);
       const year = row.dataset.guideYear!;
       const previous = groups.at(-1);
       if (previous?.year === year) {
@@ -46,6 +47,7 @@ export function yearGuide(layer: HTMLElement) {
         const label = document.createElement('span');
         label.className = 'year-guide-label';
         label.textContent = group.year;
+        label.style.top = `${(group.branches[0] + group.branches.at(-1)!) / 2 - group.top}px`;
         segment.append(label);
       }
       for (const y of group.branches) {
