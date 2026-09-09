@@ -193,5 +193,23 @@
     "source": "https://tm4k.ala.org/making-moolah",
     "captureDate": "2026-09-09",
     "method": "Public in-game screenshot."
+  },
+  {
+    "item": "company-reflextions",
+    "path": "assets/red-tie-runner.webp",
+    "source": "https://nlbdotdev.itch.io/red-tie-runner",
+    "originalAsset": "content/items/game-red-tie-runner/assets/cover.png"
+  },
+  {
+    "item": "company-reflextions",
+    "path": "assets/dont-fall.webp",
+    "source": "https://nlbdotdev.itch.io/dont-fall",
+    "originalAsset": "content/items/game-don-t-fall/assets/cover.png"
+  },
+  {
+    "item": "company-reflextions",
+    "path": "assets/protoshift.webp",
+    "source": "https://nlbdotdev.itch.io/protoshift",
+    "originalAsset": "content/items/game-protoshift/assets/cover.png"
   }
 ]

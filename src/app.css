@@ -1465,3 +1465,10 @@ html {
   height: auto;
   object-fit: contain;
 }
+
+#company-reflextions .screenshot-grid img {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #101010;
+}
