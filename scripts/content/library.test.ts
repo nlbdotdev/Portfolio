@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { readCatalog } from './library';
 import { catalogSchema, entrySchema } from '../../content/schema.ts';
-import { sortTimeline, matchesSearch, trackOf } from '../../src/lib/timeline';
+import { sortTimeline, matchesSearch, trackOf, yearOf, isArchive } from '../../src/lib/timeline';
 import { renderMarkdown } from '../../src/lib/markdown';
 const entries = await readCatalog();
 const example = entries.find((entry) => entry.id === 'game-project-adder')!;
@@ -43,7 +43,8 @@ test('calendar precision and ranges remain honest', () => {
 test('timeline is chronological, stable and keeps unknown dates last', () => {
   const sorted = sortTimeline(entries);
   assert.equal(sorted[0].id, 'company-syntropy');
-  assert.equal(sorted.at(-1)!.date.value, null);
+  const undated = { ...example, date: { value: null, precision: null } };
+  assert.equal(sortTimeline([...entries, undated]).at(-1), undated);
   assert.deepEqual(sortTimeline(sorted), sorted);
   assert.equal(trackOf(example), 'project');
   assert(matchesSearch(example, 'ADDER'));
@@ -58,4 +59,17 @@ test('Markdown renders prose but never active HTML or unsafe links', () => {
   assert(!html.includes('<script>'));
   assert(!html.includes('href="javascript:'));
   assert.match(html, /loading="lazy"/);
+});
+
+test('timeline groups and orders completed work by its end date', () => {
+  const codeTrust = entries.find((entry) => entry.id === 'company-codetrust')!;
+  const pilot = entries.find((entry) => entry.id === 'company-pilot')!;
+  assert.equal(yearOf(codeTrust), '2024');
+  assert.equal(yearOf(pilot), '2025');
+  assert.deepEqual(
+    sortTimeline([codeTrust, pilot]).map((entry) => entry.id),
+    [pilot.id, codeTrust.id],
+  );
+  const spanning = { ...codeTrust, date: { ...codeTrust.date, value: '2018-01', end: '2021-01' } };
+  assert.equal(isArchive(spanning), false);
 });

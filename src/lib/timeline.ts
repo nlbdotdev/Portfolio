@@ -28,16 +28,20 @@ export function trackOf(entry: Entry): Track {
       ? 'education'
       : 'project';
 }
+export function timelineDate(entry: Entry): string | null {
+  return entry.date.end ?? entry.date.value;
+}
 export function sortTimeline(entries: Entry[]): Entry[] {
   return [...entries].sort(
-    (a, b) => (b.date.value ?? '').localeCompare(a.date.value ?? '') || a.order - b.order,
+    (a, b) => (timelineDate(b) ?? '').localeCompare(timelineDate(a) ?? '') || a.order - b.order,
   );
 }
 export function yearOf(entry: Entry): string {
-  return entry.date.value?.slice(0, 4) ?? 'Undated';
+  return timelineDate(entry)?.slice(0, 4) ?? 'Undated';
 }
 export function isArchive(entry: Entry): boolean {
-  return entry.collection === 'archive' || !entry.date.value || entry.date.value < '2020';
+  const date = timelineDate(entry);
+  return entry.collection === 'archive' || !date || date < '2020';
 }
 export function matchesSearch(entry: Entry, query: string): boolean {
   return `${entry.title} ${entry.role} ${entry.summary} ${entry.tags.join(' ')}`
