@@ -1,4 +1,5 @@
 <script lang="ts">
+  import GameplayAnimation from './GameplayAnimation.svelte';
   import type { Entry } from '../../../content/schema.ts';
   import { assetUrl, descriptions } from '$lib/content';
   import { railOf } from '$lib/timeline';
@@ -87,26 +88,30 @@
             <strong>Built with:</strong>
             {entry.technologies.map((tech) => tech.label).join(', ')}
           </p>{/if}
-        {#if gallery.length}<div class="screenshot-grid">
-            {#each gallery as image}<a
-                href={assetUrl(entry, image.src)}
-                target="_blank"
-                rel="noreferrer"
-                ><img
+        {#if gallery.length || entry.media.animation}<div class="screenshot-grid">
+            {#if entry.media.animation}
+              <GameplayAnimation
+                src={assetUrl(entry, entry.media.animation)}
+                poster={cover ? assetUrl(entry, cover) : undefined}
+                title={entry.title}
+              />
+            {/if}
+            {#each gallery as image}
+              {#if image.src.endsWith('.gif')}
+                <GameplayAnimation
                   src={assetUrl(entry, image.src)}
-                  alt={image.alt}
-                  loading="lazy"
-                  decoding="async"
-                /></a
-              >{/each}
+                  poster={cover ? assetUrl(entry, cover) : undefined}
+                  title={image.alt}
+                />
+              {:else}<a href={assetUrl(entry, image.src)} target="_blank" rel="noreferrer"
+                  ><img
+                    src={assetUrl(entry, image.src)}
+                    alt={image.alt}
+                    loading="lazy"
+                    decoding="async"
+                  /></a
+                >{/if}{/each}
           </div>{/if}
-        {#if entry.media.animation}<details class="animation">
-            <summary>Play gameplay animation</summary><img
-              src={assetUrl(entry, entry.media.animation)}
-              alt={`${entry.title} gameplay animation`}
-              loading="lazy"
-            />
-          </details>{/if}
         {#if entry.media.videos.length}<div class="entry-links">
             {#each entry.media.videos as video}<a href={video.src}>{video.label} ↗</a>{/each}
           </div>{/if}

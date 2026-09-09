@@ -19,7 +19,8 @@
     "assets:optimize": "node --import tsx scripts/assets/optimize.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "item:new": "node --import tsx scripts/content/new-item.ts"
+    "item:new": "node --import tsx scripts/content/new-item.ts",
+    "assets:modernize": "node --import tsx scripts/assets/modernize-animations.ts"
   },
   "devDependencies": {
     "@sveltejs/adapter-vercel": "^6.3.4",

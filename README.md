@@ -31,7 +31,7 @@ npm run format:check    # Check formatting without edits
 npm run audit           # Dependency security audit
 ```
 
-No database or API is required. SvelteKit imports the item files and asset URLs at build time. The homepage is prerendered; search, animated track filtering, archive disclosure, and media expansion run locally in the browser. Large animations are behind an explicit disclosure instead of autoplaying in the timeline.
+No database or API is required. SvelteKit imports the item files and asset URLs at build time. The homepage is prerendered; search, animated track filtering, archive disclosure, and media expansion run locally in the browser. Gameplay animations sit alongside screenshots in Notes & media and autoplay only while visible. Offscreen animations and hidden tabs stop rendering; reduced-motion visitors get a still image with a Play control.
 
 ## Self-contained items
 
@@ -77,3 +77,5 @@ The TypeScript command runs OptiPNG, Gifsicle and jpegtran. It accepts only smal
 ## Appearance and company imagery
 
 The header theme selector supports System (default), Light, and Dark. Explicit choices persist locally; System tracks OS appearance changes. Company logos and studio artwork are stored within their owning items; source URLs are recorded in `content/image-sources.json`. Logo artwork retains its original colors on a suitable light or dark surface. The hero uses Dead Traveler’s official studio background. Oswald is self-hosted with its SIL Open Font License in `static/fonts/`.
+
+`npm run assets:modernize` uses `gif2webp` (Homebrew `webp`) and Python/Pillow to generate lossless animated WebP variants. A variant is selected only when smaller and every decoded frame, duration, loop count, ICC profile and EXIF match. Original GIFs remain in their item folders; `content/animation-optimization.json` records verification and hashes.

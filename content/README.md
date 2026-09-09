@@ -29,7 +29,7 @@ Use lowercase filenames with the original format retained:
 - `assets/screenshots/01.png`, `02.png`, etc.
 - `assets/extras/01.png` for retained historical media outside the public gallery
 
-Do not change a file's format just to unify an extension. References are relative to the owning item. A Markdown image looks like `![Helpful description](assets/screenshots/01.png)`. The shared loader resolves it to the Vite-built URL. `media.images` is the gallery; `media.screenshots` identifies desktop/mobile views. Videos and playable previews remain external links, without third-party iframes or tracking loaded automatically.
+Do not change a file's format just to unify an extension. References are relative to the owning item. A Markdown image looks like `![Helpful description](assets/screenshots/01.png)`. The shared loader resolves it to the Vite-built URL. `media.animation` autoplays alongside the pictures when visible; `media.images` is the still-image gallery; `media.screenshots` identifies desktop/mobile views. Videos and playable previews remain external links, without third-party iframes or tracking loaded automatically.
 
 `technologies`, `dependencies`, and `legacyPresentation` preserve old project context. They are not dependencies of this app. Unreferenced extras remain intentional until reviewed; the audit does not delete them.
 

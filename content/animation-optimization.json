@@ -1,0 +1,167 @@
+{
+  "verification": "Exact decoded RGBA frames, dimensions, timing, loop count, ICC and EXIF. Original GIFs retained.",
+  "files": [
+    {
+      "id": "game-bouncy-balloons",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-brix-builder",
+      "original": "assets/animation.gif",
+      "variant": "assets/animation.webp",
+      "before": 1199428,
+      "after": 2140584,
+      "beforeHash": "2340b330b4d4f86afa443f4fadcf8da9b7c6f9f3f6683ba80d08740a26eb88f8",
+      "afterHash": "8e85ee81386b304ed998e7fa3a45455f4d7fe713ab66c640cc794c62153167f9",
+      "verified": true,
+      "accepted": false
+    },
+    {
+      "id": "game-chemistry-hotspot-quiz",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-don-t-fall",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-fantaknee-football",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-gridlock-dash",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-jet-attack",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-kitty-cat-poker-slots",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-mino-s-pond",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-monster-s-mayhem",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-mta-country",
+      "original": "assets/animation.gif",
+      "variant": "assets/animation.webp",
+      "before": 11449887,
+      "after": 19892762,
+      "beforeHash": "123be50fdcbb6ee64da5a57b6c5e87ace68bbb05302482a22e0049b7ceaf564f",
+      "afterHash": "f40040901459fa870dfb4b84466e7c18c6a2358f01e3e49dab408c339fde7187",
+      "verified": true,
+      "accepted": false
+    },
+    {
+      "id": "game-project-adder",
+      "original": "assets/animation.gif",
+      "variant": "assets/animation.webp",
+      "before": 14086195,
+      "after": 18844356,
+      "beforeHash": "b5046626ee244eaec5db666d40115198c15a8337ec5df80feabc701215c78a49",
+      "afterHash": "95140b49770dd1e6dbee64df55ecd6cdf62d5afcd1c636362e7a31f09c7fcec2",
+      "verified": true,
+      "accepted": false
+    },
+    {
+      "id": "game-protoshift",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-red-tie-runner",
+      "original": "assets/animation.gif",
+      "variant": "assets/animation.webp",
+      "before": 4852857,
+      "after": 10007886,
+      "beforeHash": "362c36cdad55686419eba7e9b3b29b4b15915ee4a3553559cc41b5d59f116f4d",
+      "afterHash": "3f7088f9b3cd41c3460073ee191e5407b9858e65760209b92c4a0193ee9f82c4",
+      "verified": true,
+      "accepted": false
+    },
+    {
+      "id": "game-roadway-repair",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-rocket-runner",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-rocket-strike",
+      "original": "assets/animation.gif",
+      "variant": "assets/animation.webp",
+      "before": 2230259,
+      "after": 4995016,
+      "beforeHash": "ad4fc2069fd6ca85c7d6ce49612dd16108045db4bbdeb49d88269154d0a86b97",
+      "afterHash": "7d57caa34674886020b2db25a975fbb5e6092ba893124e21c122e5223923fc7e",
+      "verified": true,
+      "accepted": false
+    },
+    {
+      "id": "game-sam",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-soul-grinder",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-the-last-straw",
+      "original": "assets/animation.gif",
+      "variant": "assets/animation.webp",
+      "before": 6472465,
+      "after": 10991522,
+      "beforeHash": "c7e6590233877dc4c4688e506a13ed4e8371b3eb25b8904f14c60b8f9e323cff",
+      "afterHash": "11d3cc600b232738059d084e254b27542d19afe16eb25e4a2f345b06d368af72",
+      "verified": true,
+      "accepted": false
+    },
+    {
+      "id": "game-the-voter-suppression-trail",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    },
+    {
+      "id": "game-tower-defense-prototype",
+      "original": "assets/animation.gif",
+      "accepted": false,
+      "reason": "GIF contains frame delays that gif2webp would normalize."
+    }
+  ]
+}
