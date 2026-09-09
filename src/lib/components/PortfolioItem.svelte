@@ -5,12 +5,14 @@
   import { railOf } from '$lib/timeline';
   let {
     entry,
+    splitProjects = false,
     expanded = $bindable(false),
   }: {
     entry: Entry;
+    splitProjects?: boolean;
     expanded?: boolean;
   } = $props();
-  const rail = $derived(railOf(entry));
+  const rail = $derived(railOf(entry, splitProjects));
   const color = $derived(rail.color);
   const label = $derived(
     entry.kind === 'game'

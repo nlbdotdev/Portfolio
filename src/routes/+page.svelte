@@ -238,9 +238,10 @@
       <div class="timeline" id="collection-items">
         <div class="rails" aria-hidden="true">
           {#each rails as rail}<i
-              class:quiet={(active && active !== 'featured' && active !== rail.track) ||
+              class:quiet={(rail.id === 'website' && active !== 'project') ||
+                (active && active !== 'featured' && active !== rail.track) ||
                 (active === 'project' && projectFilter !== 'all' && rail.id !== projectFilter)}
-              style={`--track:${rail.color};--station:${rail.station}`}
+              style={`--track:${rail.color};--station:${rail.id === 'website' && active !== 'project' ? 2 : rail.station}`}
             ></i>{/each}
         </div>
         {#each visible as entry, i (entry.id)}
@@ -252,7 +253,11 @@
                 <span>{yearOf(entry)}</span>{#if !entry.date.value}<small>Dates to be added</small
                   >{/if}
               </div>{/if}
-            <PortfolioItem {entry} bind:expanded={expandedEntries[entry.id]} />
+            <PortfolioItem
+              {entry}
+              splitProjects={active === 'project'}
+              bind:expanded={expandedEntries[entry.id]}
+            />
           </div>
         {:else}<p class="empty-state">
             {#if query.trim()}No entries match “{query}” in this track.
@@ -275,7 +280,11 @@
                         <span>{yearOf(entry)}</span>
                       </div>
                     {/if}
-                    <PortfolioItem {entry} bind:expanded={expandedEntries[entry.id]} />
+                    <PortfolioItem
+                      {entry}
+                      splitProjects={active === 'project'}
+                      bind:expanded={expandedEntries[entry.id]}
+                    />
                   </div>
                 {/each}
               </div>

@@ -310,7 +310,9 @@ h1 {
   width: 2px;
   background: var(--track);
   opacity: 0.65;
-  transition: opacity 180ms ease-out;
+  transition:
+    opacity 180ms ease-out,
+    left 360ms ease;
 }
 .rails i.quiet {
   opacity: 0;
@@ -335,6 +337,10 @@ h1 {
   scroll-margin-top: 30px;
 }
 .connection {
+  transition:
+    left 360ms ease,
+    width 360ms ease,
+    background-color 360ms ease;
   position: absolute;
   left: calc(-85px + var(--station) * 20px);
   width: calc(65px - var(--station) * 20px);

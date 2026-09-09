@@ -17,7 +17,8 @@ export const rails = [
   { id: 'game', track: 'project', station: 2, color: 'var(--project)' },
   { id: 'website', track: 'project', station: 2.65, color: 'var(--website)' },
 ] as const;
-export function railOf(entry: Entry) {
+export function railOf(entry: Entry, splitProjects = false) {
+  if (!splitProjects && entry.kind === 'project') return rails[2];
   return rails.find((rail) => rail.id === (entry.kind === 'project' ? 'website' : entry.kind))!;
 }
 export function trackOf(entry: Entry): Track {
