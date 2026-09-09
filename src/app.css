@@ -1280,3 +1280,13 @@ footer p span {
     height: 80px;
   }
 }
+
+.feature-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+.feature-meta time {
+  white-space: nowrap;
+}

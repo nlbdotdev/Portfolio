@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { tick } from 'svelte';
+  import { tick, onMount } from 'svelte';
   import { archivePreview } from '$lib/archive-preview';
   import { collectionTransition } from '$lib/collection-transition';
   import Wordmark from '$lib/components/Wordmark.svelte';
@@ -7,6 +7,7 @@
   import PortfolioItem from '$lib/components/PortfolioItem.svelte';
   import { entries, profile, assetUrl } from '$lib/content';
   import {
+    lastActive,
     tracks,
     rails,
     projectFilters,
@@ -47,6 +48,10 @@
       ]),
     );
   }
+  let today = $state(new Date());
+  onMount(() => {
+    today = new Date();
+  });
   const heroFeatured = ['game-zombiehood', 'company-syntropy', 'company-psiquantum'].map((id) =>
     entries.find((entry) => entry.id === id)!,
   );
@@ -151,6 +156,7 @@
     <section class="selected" aria-label="Selected work">
       <div class="feature-grid">
         {#each heroFeatured as entry}
+          {@const activity = lastActive(entry, today)}
           <button class="feature" onclick={() => follow(entry.id)}>
             <img
               class="feature-art"
@@ -163,7 +169,13 @@
             />
             <div class="feature-caption">
               <h3>{entry.title}</h3>
-              <p>{entry.kind === 'game' ? 'Game' : 'Career'}</p>
+              <p class="feature-meta">
+                <span>{entry.kind === 'game' ? 'Game' : 'Career'}</span>
+                {#if activity}<time
+                    datetime={activity.value}
+                    title={`Last active: ${activity.value}`}>{activity.label}</time
+                  >{/if}
+              </p>
               <p>{entry.role}</p>
             </div>
           </button>

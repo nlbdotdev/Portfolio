@@ -44,3 +44,24 @@ export function matchesSearch(entry: Entry, query: string): boolean {
     .toLowerCase()
     .includes(query.trim().toLowerCase());
 }
+
+export function lastActive(
+  entry: Entry,
+  now = new Date(),
+): { value: string; label: string } | null {
+  const value = entry.date.ongoing
+    ? `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`
+    : (entry.date.end ?? entry.date.value);
+  if (!value) return null;
+  const year = value.slice(0, 4);
+  const month = value.slice(5, 7);
+  return {
+    value,
+    label:
+      year === String(now.getFullYear()) && month
+        ? new Intl.DateTimeFormat('en-US', { month: 'short', timeZone: 'UTC' }).format(
+            new Date(`${year}-${month}-01T00:00:00Z`),
+          )
+        : year,
+  };
+}
