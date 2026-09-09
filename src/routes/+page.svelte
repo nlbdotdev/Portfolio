@@ -19,6 +19,7 @@
   let active = $state<Track | 'featured' | null>('featured');
   let projectFilter = $state<ProjectFilter>('all');
   let query = $state('');
+  let showGuides = $state(false);
   let showArchive = $state(false);
   let archiveRevealAfter = 0;
   async function changeTrack(track: Track | 'featured' | null) {
@@ -233,7 +234,13 @@
         ? `; ${active === 'featured' ? 'Featured' : tracks.find((track) => track.id === active)?.label} filter active${active === 'project' ? `; ${projectFilters.find((filter) => filter.id === projectFilter)?.label}` : ''}`
         : ''}
     </p>
-    <div class="timeline" id="collection-items">
+    <div class="timeline" id="collection-items" class:show-guides={showGuides}>
+      <button
+        class="timeline-guide-toggle"
+        aria-pressed={showGuides}
+        onclick={() => (showGuides = !showGuides)}
+        >Year &amp; entry guides <span aria-hidden="true" class:enabled={showGuides}></span></button
+      >
       <div class="rails" aria-hidden="true">
         {#each rails as rail}<i
             class:quiet={(rail.id === 'website' && active !== 'project') ||
@@ -243,9 +250,14 @@
           ></i>{/each}
       </div>
       {#each visible as entry, i (entry.id)}
-        <div class="timeline-row" transition:collectionTransition>
+        <div
+          class="timeline-row"
+          data-entry-number={String(i + 1).padStart(2, '0')}
+          transition:collectionTransition
+        >
           {#if i === 0 || yearOf(entry) !== yearOf(visible[i - 1])}<div
               class="year"
+              data-guide-year={yearOf(entry)}
               transition:collectionTransition
             >
               <span>{yearOf(entry)}</span>{#if !entry.date.value}<small>Dates to be added</small
@@ -270,9 +282,17 @@
           <div class="archive-frame" class:preview={!showArchive} use:archivePreview={showArchive}>
             <div class="archive-rows" inert={!showArchive} aria-hidden={!showArchive}>
               {#each historyVisible as entry, i (entry.id)}
-                <div class="timeline-row" transition:collectionTransition>
+                <div
+                  class="timeline-row"
+                  data-entry-number={String(visible.length + i + 1).padStart(2, '0')}
+                  transition:collectionTransition
+                >
                   {#if i === 0 || yearOf(entry) !== yearOf(historyVisible[i - 1])}
-                    <div class="year" transition:collectionTransition>
+                    <div
+                      class="year"
+                      data-guide-year={yearOf(entry)}
+                      transition:collectionTransition
+                    >
                       <span>{yearOf(entry)}</span>
                     </div>
                   {/if}

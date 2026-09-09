@@ -1570,3 +1570,121 @@ html {
 .empty-state .search-everything:hover {
   color: var(--rust);
 }
+
+.timeline-guide-toggle {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .timeline-guide-toggle {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 20px;
+    align-items: center;
+    gap: 8px;
+    font: 11px var(--font-mono);
+    color: var(--muted);
+  }
+  .timeline-guide-toggle > span {
+    width: 26px;
+    height: 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    position: relative;
+  }
+  .timeline-guide-toggle > span::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    background: var(--muted);
+    transition:
+      transform 200ms ease,
+      background 200ms ease;
+  }
+  .timeline-guide-toggle > span.enabled::after {
+    transform: translateX(12px);
+    background: var(--rust);
+  }
+  .timeline::before,
+  .timeline::after {
+    content: '';
+    position: absolute;
+    top: 26px;
+    bottom: 40px;
+    width: 1px;
+    background: var(--border);
+    opacity: 0;
+    transition: opacity 240ms ease;
+    pointer-events: none;
+  }
+  .timeline::before {
+    left: -30px;
+  }
+  .timeline::after {
+    right: -28px;
+  }
+  .timeline.show-guides::before,
+  .timeline.show-guides::after {
+    opacity: 0.6;
+  }
+  .timeline-row {
+    position: relative;
+    margin-left: -199px;
+    padding-left: 199px;
+    margin-right: -80px;
+    padding-right: 80px;
+  }
+  .archive-frame {
+    margin-left: -199px;
+    padding-left: 199px;
+    margin-right: -80px;
+    padding-right: 80px;
+  }
+  .year {
+    position: relative;
+  }
+  .year::before {
+    content: attr(data-guide-year);
+    position: absolute;
+    left: -196px;
+    top: 23px;
+    width: 40px;
+    text-align: right;
+    color: var(--muted);
+    font: 11px var(--font-mono);
+    opacity: 0;
+    transition: opacity 240ms ease;
+  }
+  .timeline-row::after {
+    content: attr(data-entry-number);
+    position: absolute;
+    right: 16px;
+    top: 27px;
+    width: 30px;
+    color: var(--muted);
+    font: 11px var(--font-mono);
+    opacity: 0;
+    transition: opacity 240ms ease;
+  }
+  .timeline-row:has(> .year)::after {
+    top: 77px;
+  }
+  .show-guides .year::before,
+  .show-guides .timeline-row::after {
+    opacity: 0.7;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline-guide-toggle > span::after,
+  .timeline::before,
+  .timeline::after,
+  .year::before,
+  .timeline-row::after {
+    transition: none;
+  }
+}
