@@ -1184,3 +1184,99 @@ footer p span {
     margin-left: 0;
   }
 }
+
+/* Keep the opening composition and its scroll cue within a desktop viewport. */
+@media (min-width: 601px) {
+  .intro {
+    grid-template-columns: 0.9fr 1.1fr;
+    padding: clamp(12px, 2.5svh, 24px) 0 16px;
+    align-items: center;
+  }
+  .intro h1 {
+    font-size: clamp(32px, 7svh, 66px);
+  }
+  .studio-feature {
+    padding-top: 0;
+  }
+  .now {
+    margin-bottom: 10px;
+  }
+  .studio-art > img:not(.brand-overlay) {
+    display: block;
+    height: clamp(130px, calc(48svh - 140px), 300px);
+    max-height: none;
+    aspect-ratio: auto;
+  }
+  .feature-art {
+    height: clamp(64px, 17svh, 150px);
+  }
+  .feature-caption {
+    padding: 9px 12px;
+  }
+  .feature-caption h3 {
+    font-size: 19px;
+  }
+  .feature-caption p {
+    margin-top: 4px;
+  }
+  .collection-divider {
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .intro {
+    padding: 16px 0 12px;
+    gap: 12px;
+  }
+  .intro h1 {
+    font-size: clamp(28px, 4.8svh, 40px);
+  }
+  .now {
+    margin-bottom: 8px;
+  }
+  .studio-art > img:not(.brand-overlay) {
+    display: block;
+    height: clamp(80px, 15svh, 130px);
+    aspect-ratio: auto;
+  }
+  .feature-grid {
+    gap: 8px;
+  }
+  .feature {
+    grid-template-columns: 80px 1fr;
+  }
+  .feature-art {
+    height: 64px;
+  }
+  .feature-caption {
+    padding: 6px 10px;
+  }
+  .feature-caption h3 {
+    font-size: 16px;
+  }
+  .feature-caption p {
+    margin-top: 2px;
+  }
+  .collection-divider {
+    margin-top: 14px;
+  }
+}
+@media (max-width: 600px) and (max-height: 740px) {
+  .site-header {
+    padding: 12px 0;
+  }
+  .intro {
+    padding-top: 12px;
+    gap: 8px;
+  }
+  .intro h1 {
+    font-size: 28px;
+  }
+  .now {
+    margin-left: 0;
+  }
+  .studio-art > img:not(.brand-overlay) {
+    height: 80px;
+  }
+}
