@@ -1,0 +1,47 @@
+{
+  "id": "project-jeopardy",
+  "kind": "project",
+  "slug": "jeopardy",
+  "legacyPath": null,
+  "title": "Jeopardy",
+  "summary": "An interactive Jeopardy board built with jQuery.",
+  "date": {
+    "label": null,
+    "value": null,
+    "precision": null
+  },
+  "featured": false,
+  "collection": "archive",
+  "tags": [],
+  "links": [
+    {
+      "label": "Project",
+      "link": "https://github.com/nlbdotdev/jeopardy"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "link": "https://github.com/nlbdotdev/jeopardy"
+  },
+  "body": "An interactive Jeopardy board built with jQuery.\n",
+  "order": 27,
+  "role": "Software project",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

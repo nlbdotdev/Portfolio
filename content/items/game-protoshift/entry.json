@@ -1,0 +1,82 @@
+{
+  "id": "game-protoshift",
+  "kind": "game",
+  "slug": "protoshift",
+  "legacyPath": "/games/protoshift",
+  "title": "Protoshift",
+  "summary": "Protoshift is an addicting, fast paced, twitch based, arcade game filled with challenge, inspired by Super Hexagon. Put your mouse hand to the test while attempting to complete impossible levels and compete on global leader-boards.",
+  "date": {
+    "label": "Jan 15, 2016",
+    "value": "2016-01-15",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["web", "sale"],
+  "links": [
+    {
+      "label": "Itch.io",
+      "link": "https://reflextions.itch.io/protoshift"
+    },
+    {
+      "label": "Scirra Arcade",
+      "link": "https://www.construct.net/en/free-online-games/protoshift-41700/play"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "protoshift screenshot"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "protoshift screenshot"
+      },
+      {
+        "src": "assets/screenshots/03.jpg",
+        "alt": "protoshift screenshot"
+      },
+      {
+        "src": "assets/screenshots/04.jpg",
+        "alt": "protoshift screenshot"
+      },
+      {
+        "src": "assets/screenshots/05.jpg",
+        "alt": "protoshift screenshot"
+      }
+    ],
+    "videos": [
+      {
+        "label": "Trailer",
+        "src": "https://www.youtube.com/embed/noXmLOkoHoo"
+      },
+      {
+        "label": "Soundtrack",
+        "src": "https://www.youtube.com/embed/sgIUKdjbfOs"
+      }
+    ],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://itch.io/embed-upload/6238921?color=000000",
+    "desktop": true,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "big"
+  },
+  "body": "Protoshift is an addicting, fast paced, twitch based, arcade game filled with challenge, inspired by Super Hexagon. Put your mouse hand to the test while attempting to complete impossible levels and compete on global leader-boards.\n\nProtoshift was originally released on Steam on Jan 15, 2016. A few years after release I sold the Steam version to a publisher, who's account was taken down some time later.\n\nMore info can be found at these links:\n\n- [Soundtrack](https://www.youtube.com/playlist?list=PLR_qFtySjuJVgakQnDBLytVb8XhpEprRY)\n\n- [Steam Community](https://steamcommunity.com/groups/Protoshift)\n\n- [Steam Archive](https://web.archive.org/web/*/https://store.steampowered.com/app/398070)\n\n- [Steamdb](https://steamdb.info/app/398070/)\n",
+  "order": 5,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

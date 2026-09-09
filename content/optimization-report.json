@@ -1,0 +1,1472 @@
+{
+  "filesChecked": 206,
+  "filesReduced": 183,
+  "bytesSaved": 19075726,
+  "verification": "Decoded RGBA pixels, frame durations, loop count, ICC profile and EXIF match; originals kept on any difference.",
+  "files": [
+    {
+      "path": "content/items/game-bouncy-balloons/assets/cover.png",
+      "before": 559174,
+      "after": 482386,
+      "beforeHash": "2dfcd26b6bd91dfd31f2c8b967307fcd066ce6a6b1a4e7ab6ba2e6904c500f5d",
+      "afterHash": "4cbf091cb647eebd543c6b3e25228b6a8e07df311c414341282c61d20bfc24e9",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-bouncy-balloons/assets/icon.png",
+      "before": 98664,
+      "after": 85120,
+      "beforeHash": "68b88aea331cddcc04e3ab695383bb1bb35ef7f056990a1fda44d1beb53bf970",
+      "afterHash": "17be9a3363d5b7ea12af8eaa24ef42bc347482c7c833040bed348d87553d9729",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-bouncy-balloons/assets/screenshots/01.png",
+      "before": 180002,
+      "after": 134817,
+      "beforeHash": "1d7d1c0d04e56b0a90d3b9a28b15c61d1f117a8c62a0d20633a2176d6752118b",
+      "afterHash": "eeff204005f9bce542a77d5179ee1bf45476093df86b99f5b77713698a4dfc39",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-bouncy-balloons/assets/screenshots/02.png",
+      "before": 141858,
+      "after": 130932,
+      "beforeHash": "0ed9e70bab6b72dc4ebfffc71dd70d313c120d07afbf1037a627776e065470e8",
+      "afterHash": "899bef835c74234a7c58cc6235a1b1285695e40616016ca8def3f67241395951",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-bouncy-balloons/assets/screenshots/03.png",
+      "before": 104390,
+      "after": 96011,
+      "beforeHash": "1119e2ba593c59c427963dc34908bcc2746ef8ce63c7052d8fe1332de2ffbfa9",
+      "afterHash": "535f338aacda46eec5c4140b4e2efa018615c5943318d5297f1677472054cbc9",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-brix-builder/assets/cover.png",
+      "before": 481979,
+      "after": 377907,
+      "beforeHash": "f78578abce1664136b9b4e5962025f8cfd07094c739b2b8cd316a0b1f1b7cad2",
+      "afterHash": "b39bd137fa825196bfc2cd77ff4c44458979c9dc8ccec1be0af5a4636d839e40",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-brix-builder/assets/icon.png",
+      "before": 296714,
+      "after": 174262,
+      "beforeHash": "5c729ae0ad6f5aea8bdf348f6fa6303fafd177b9c7bd7a2aa376669a9219f262",
+      "afterHash": "f3bcc51065cb27310a7f4b2b52455e080bacd96e06baba8793361ab77e62ae36",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-brix-builder/assets/screenshots/01.png",
+      "before": 574465,
+      "after": 434368,
+      "beforeHash": "37f49eb1df8f05966417683b69b235b1931e46ec0269992b2f9f4feb80581220",
+      "afterHash": "3fc064a8d60588441a222ecb8f7addd39c108e5680ea49fcdc680eb7870b6f9b",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-brix-builder/assets/screenshots/02.png",
+      "before": 140278,
+      "after": 88354,
+      "beforeHash": "485f84da830abc14ac6f92f7fe58fc0370a99517a9a13cfa7aee2fc69c00c6a4",
+      "afterHash": "0e2bc4c588f6c86c1cdf02fc795e40e615b150de1d5741dfbb50849060704dc9",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-brix-builder/assets/screenshots/03.png",
+      "before": 139690,
+      "after": 88732,
+      "beforeHash": "96abbc0e71f0f130e2f25a376af9db36ed5ea44eb331e79ab824ef330069c6ad",
+      "afterHash": "35fe89cef7904b5223f5e6d0154dbb4fa861dc15531be7862534b7e94e9da937",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-chemistry-hotspot-quiz/assets/animation.gif",
+      "before": 860779,
+      "after": 601633,
+      "beforeHash": "d364ffdad9e26175caf0410cc4ca1ef4efee373f293b9a83c049794797d3a8ac",
+      "afterHash": "48e1be52475ac526366ef1030b3f23b782827945f2e3ee6aff214486613af9d4",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-chemistry-hotspot-quiz/assets/cover.png",
+      "before": 124622,
+      "after": 104268,
+      "beforeHash": "af6c995063b6a4ada835c677c41ea6146ad47f36d282d44274c2192b5ef40888",
+      "afterHash": "1c239d1e373d1e624ffd2c4e5306325591317b1904e7692a66d5804c14d937ba",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-chemistry-hotspot-quiz/assets/screenshots/01.png",
+      "before": 45948,
+      "after": 39077,
+      "beforeHash": "24429c73e739cbb52caea3b36581061eb536318d0109b4b16386f2b8c8b37466",
+      "afterHash": "30525cc6eada2028fcf7724d0b9461c975d161b2c393fba50e28a7b2b80f1651",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-chemistry-hotspot-quiz/assets/screenshots/02.png",
+      "before": 64106,
+      "after": 55466,
+      "beforeHash": "2dac1c3049126977dbd6f89d9b3898ea3c3afab1da64028596b290a409529aa6",
+      "afterHash": "c6f948b051cbc6a2b99586ff987aa57c4b179efa9fae1807e969448aefe9ffb9",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-chemistry-hotspot-quiz/assets/screenshots/03.png",
+      "before": 57591,
+      "after": 50230,
+      "beforeHash": "f49df9e2cc12b113b58773eb8f1051c26df83be5df950f13b64142fc4c80d618",
+      "afterHash": "ad9d288ec40c717b5a747565f097234a603df2c52c73e4b109ee24145a4bfc4d",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-chemistry-hotspot-quiz/assets/screenshots/04.png",
+      "before": 23691,
+      "after": 18210,
+      "beforeHash": "566eb37a9c500c6423c254a1a807b3f8d120bc5553622802183041999a1d6486",
+      "afterHash": "44a7e1fca5b8ee205cf3d58a8a14832f172f349e263105c0c13886bdcbdf17cd",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-don-t-fall/assets/cover.png",
+      "before": 57920,
+      "after": 52255,
+      "beforeHash": "179e162702563861f17a043c269a986a07fda339c5b6eac2552ed5e41025b152",
+      "afterHash": "66948d557d788af762b55d598095e4a1263fbc5b07b0f0872a13b1201cbf47e6",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-don-t-fall/assets/screenshots/01.png",
+      "before": 15472,
+      "after": 13534,
+      "beforeHash": "b3a6d52406a3ccafd0f784b2dd20f18bb1323fa6a720580f88065a3fa6a9ecfe",
+      "afterHash": "863b7757d32c010bfb823470b84e808ea955d824402a43061dabfcd3afc4e288",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-don-t-fall/assets/screenshots/02.png",
+      "before": 16329,
+      "after": 14196,
+      "beforeHash": "96c6854de02e5dc7995ed4f4f964c0e81d0ac7efc28844ec49049e262058f064",
+      "afterHash": "6b160fc816220c47de419389f34295b06a9cbb2a27d8d2d87659004fcec58b73",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-don-t-fall/assets/screenshots/03.png",
+      "before": 15055,
+      "after": 13312,
+      "beforeHash": "27c45b1c36ca808eff425e7c6e03c9e081e09daf9768d4f163e417e77c647476",
+      "afterHash": "24dc32912ad2a441d086b821bb0f52e1497d6de2eb30c22a180ccbecb82f8a00",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-fantaknee-football/assets/cover.png",
+      "before": 46235,
+      "after": 27071,
+      "beforeHash": "c8b8e9e7e6b091eff41eb92b16493b1c651dd9b0cb5aa14de35be1149bf5ed34",
+      "afterHash": "fbea3bec351ed7b7ce7836fa710d3541b2db1fe30e81cc39fc369672d93f746f",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-fantaknee-football/assets/screenshots/01.png",
+      "before": 143287,
+      "after": 127415,
+      "beforeHash": "be37f8c11f810b9a13581a598964813c535ad14b047c3b7716f0f922e54dab78",
+      "afterHash": "1eb16aa459bc164ebe6a4a2f44ef6954dc5ca9d906921d87a4b9be28e4db1e69",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-fantaknee-football/assets/screenshots/02.png",
+      "before": 154165,
+      "after": 136719,
+      "beforeHash": "78001dc32c3bdbcf9c386b94a6dd3dc365cdab981a5bc489b1b78b1e353933b1",
+      "afterHash": "7ab75d34988088f6e8b379385c8a714127bb80b4935436d71b56ca24d6b26f87",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-fantaknee-football/assets/screenshots/03.png",
+      "before": 109528,
+      "after": 93168,
+      "beforeHash": "8210bb4dc1c31f50d93678c5c06f23ce9b3bc0b57e382387271613b366c20d21",
+      "afterHash": "969009dcee411ac516a5b18fd83a1fe228e98f9aed8f0c98964c84499e793511",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-fantaknee-football/assets/screenshots/04.png",
+      "before": 169127,
+      "after": 154836,
+      "beforeHash": "b67d3a421c4c2d405d1c61aaa428e5dbbbf3203eea174b17d2508174ae19415c",
+      "afterHash": "26d601510e5421ea3671d5a0790a6c9819b317e954deee9fc667c27a2d94a633",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-gridlock-dash/assets/cover.png",
+      "before": 155432,
+      "after": 131545,
+      "beforeHash": "d90ebc649de458795f6ae7149bb0b5e80b6613e30de3add1448bea568e96ebfe",
+      "afterHash": "2df5d716559ac8dee9d1b90e25959e6b97d9800aa3779e6cf242b4f5c2b87831",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-gridlock-dash/assets/screenshots/01.png",
+      "before": 471165,
+      "after": 363530,
+      "beforeHash": "5869a53cf22766ad83959d9ae24d1095a0f4156c60501d157c3f7622d8f4dbba",
+      "afterHash": "c38bdeab51bb489b485aa0b99b3ec7c9c484cd62f17f70a0c8f764146c9d440b",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-gridlock-dash/assets/screenshots/02.png",
+      "before": 495288,
+      "after": 386433,
+      "beforeHash": "698675a624f268061fcf5ebf8975ef7593116dc6fbde7f0402186254c9c1e6aa",
+      "afterHash": "8ffe939ac4962c4edc4fa653747894e46f2f89d6d73c3a0e997adb3bdb4e7168",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-gridlock-dash/assets/screenshots/03.png",
+      "before": 455189,
+      "after": 340761,
+      "beforeHash": "d2b2621afdcab1dda615201a44f5a7c816a09404b9ceac1b68a9c869f16a9939",
+      "afterHash": "22a2e870e868676b0e39953162d07d6408d7f30d65f714b39de390dadcf415d1",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-gridlock-dash/assets/screenshots/04.png",
+      "before": 607611,
+      "after": 475305,
+      "beforeHash": "19cae4e1aadcbab5a7383bf5d3f2a9918feb7a21a4f0cdb39555e720ade6c28d",
+      "afterHash": "c93a92ec30354625e70a6d65ed0aec876cd5f827a87fe928dc8b490c1e9a9c95",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-gridlock-dash/assets/screenshots/05.png",
+      "before": 560377,
+      "after": 415392,
+      "beforeHash": "fc75bf88bdd3e7d315cfdea2a45647381f414e7ee6cef36c78912e96661aace6",
+      "afterHash": "682321eb2106f7eea06c80f5071316f3dc972776e4079a3bbdc0348b90448e0f",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-jet-attack/assets/cover.png",
+      "before": 152341,
+      "after": 133005,
+      "beforeHash": "00eb6e2c1b2412db9b36e44a9de03690d05e62ce7d5ecf157f1f8dea79f8b2b4",
+      "afterHash": "75126682cbd6b46ea9554bdbfe9cc24f7d1e3c628b181c98486f314ff9c3f64c",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-jet-attack/assets/extras/01.png",
+      "before": 184247,
+      "after": 161579,
+      "beforeHash": "7e1b10d7eaa635511b1add58f86c5e0648e983d3344a79e7d5fe607c94ceb6c8",
+      "afterHash": "d72c942fb0148b2d85a49d69542e441f20258f2d6b231a07e9e58fd0143ca872",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-jet-attack/assets/screenshots/01.png",
+      "before": 35571,
+      "after": 30399,
+      "beforeHash": "2f804967a2a81302aca3372dc0d4ab472e55fdba6166e215e7d12e18c167f8c2",
+      "afterHash": "b38f0b7b8c2d17b85f5e634bead6d97cf2e45007062401c358da2e7a5f108836",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-jet-attack/assets/screenshots/02.png",
+      "before": 53953,
+      "after": 51162,
+      "beforeHash": "7243373c98193dd864e44c9750656236f524b58205ce439f8ff856be54699ac6",
+      "afterHash": "ef2f9e3b88aa362ab27a78f510374f7ee39fee19f428f120279f7590c0fe0d8d",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-jet-attack/assets/screenshots/03.png",
+      "before": 59573,
+      "after": 52954,
+      "beforeHash": "8ee93ca03d674e9e3511ca697c97378c440bd82829ce1a75e8159de76a87d0fb",
+      "afterHash": "1838d234b216c78e468095514a749f892a3b7ed094e53eec584c2347a8812d72",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-jet-attack/assets/screenshots/04.png",
+      "before": 8828,
+      "after": 7889,
+      "beforeHash": "dd1aa5ef4924a2712b2c3c6e1f51cc530bd8d4bb2d88d78982afe0c8bcb80831",
+      "afterHash": "dec315554914813d0f55e2961396cd1aa3f3aac9a01d30e123165dd4dddbe5ba",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-kitty-cat-poker-slots/assets/cover.png",
+      "before": 498426,
+      "after": 425291,
+      "beforeHash": "97d4eaa84412872e0cfbc941ebcf1cab37809e3eb5f5bd04948fe518219b1705",
+      "afterHash": "5b876d06bc9b4d386d832e3047db8e03360ac16d152540c61b72ec6f7320ea65",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-kitty-cat-poker-slots/assets/screenshots/01.png",
+      "before": 267951,
+      "after": 236742,
+      "beforeHash": "787db63293ee89896f4d858f98fcc452e3c85a51b7d41b88a74415b84ce26b08",
+      "afterHash": "30f0192aeb1c8e3e35bc73aa1aec3be83cd2a5a6a6f71dca6418cb031e4ad3e6",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-kitty-cat-poker-slots/assets/screenshots/02.png",
+      "before": 318211,
+      "after": 285877,
+      "beforeHash": "e8ab65f589fd358cf524eaf614d343ce4ff9ec96eac65ac87f1a82b7657d5b0c",
+      "afterHash": "1f73d9a8bd1e26874bb05ec398f40dea54b8cff09b90e4772abe6a5fc62522ea",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-kitty-cat-poker-slots/assets/screenshots/03.png",
+      "before": 291921,
+      "after": 258835,
+      "beforeHash": "8005c8e208a054eae9fcc177a18c6cb06321eeae7ab7accf2f38114cf969ab03",
+      "afterHash": "5a3f52a5d997e00698c670ee986edb5159d4f8d42bc4c01fc708a3f20c6dbb24",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-kitty-cat-poker-slots/assets/screenshots/04.png",
+      "before": 370100,
+      "after": 329663,
+      "beforeHash": "096e8f36c99e4295fad6647bf50bda021013d486477e732e3901242b63958581",
+      "afterHash": "0bdd63ac795443606b4035424fa83b68af0c699e971219614073c9fe8017107a",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-kitty-cat-poker-slots/assets/screenshots/05.png",
+      "before": 206789,
+      "after": 184023,
+      "beforeHash": "d5c4e8b2688c169d4fdf66daa8f38270f50fd03ab4c8139e5c67657b03ae581a",
+      "afterHash": "5a9c181de116bcad286e10134cf2b960457cb79ee636871cf1ea987d78e40037",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-kitty-cat-poker-slots/assets/screenshots/06.png",
+      "before": 279305,
+      "after": 242424,
+      "beforeHash": "b836245903c0e0cee9defcf0df130efcc5029a3886bc60143b2e7be7ee0bf453",
+      "afterHash": "25b6e6efa06153613555a4d387b735da70516ce6c9fd2f65c8f81d196b0e3119",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-mino-s-pond/assets/cover.png",
+      "before": 86868,
+      "after": 60788,
+      "beforeHash": "06ecf1b10b09508967c7568265f68697991b3d8c0f12f26972f4b77b19aa153d",
+      "afterHash": "896611e49c7ac9760ee5442b940d1c8328648da5abed6eb068fc5466ca20ea44",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-mino-s-pond/assets/screenshots/01.png",
+      "before": 102965,
+      "after": 25646,
+      "beforeHash": "5b2372214579389e5c92ec2fc34a52987b36f3c89191dddee46c57a4c80f5e51",
+      "afterHash": "38a3a0be8bc8757f28ca6f1f0de95062d126356ca9f44dbe51a65d3f9c27d1f4",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-mino-s-pond/assets/screenshots/02.png",
+      "before": 282667,
+      "after": 48866,
+      "beforeHash": "01b7bd8f1ccb60fe43d3f489e09335219f703051b4c6a7d2066fcbf496bc4cd3",
+      "afterHash": "8b5924a1a530731335af154df2b900a83dcfac6a4f5535ea2f9ca7705a5369c7",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-mino-s-pond/assets/screenshots/03.png",
+      "before": 71025,
+      "after": 6369,
+      "beforeHash": "07163c4e17d99233061903a7050e6ef6bccbfbb3d1fb16e7d13c9351b5a47181",
+      "afterHash": "66c7153472b628d57d90df3716b0b4c13fe8ee9190a328b36adda650b0164254",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-mino-s-pond/assets/screenshots/04.png",
+      "before": 42486,
+      "after": 6980,
+      "beforeHash": "e863ec7047fcb6ffc7923354bcf93199eab78d8d3521faf9621a7d049d50a989",
+      "afterHash": "6ed9ce5de788d5c733f53e08a73578be364cd4fc3db1def16acba82e8c9e5236",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-monster-s-mayhem/assets/cover.png",
+      "before": 190959,
+      "after": 162002,
+      "beforeHash": "8bc25f9da5a776d144fad1e87b1860446877cd15e7610b796b0a9d120d535a8f",
+      "afterHash": "a2b661b9da5bc3af88cfe17a96b617292364c47974777a894034b119b8a8fa6e",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-monster-s-mayhem/assets/screenshots/01.png",
+      "before": 209787,
+      "after": 179464,
+      "beforeHash": "932a0c062699e0eace319a3988a5df5215a311dedb53b101c6bdd187966e3431",
+      "afterHash": "ba17c5faf60356c403d75c0dec5fb28e7d126014e5e818d93bae99b97b0b434a",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-monster-s-mayhem/assets/screenshots/02.png",
+      "before": 220315,
+      "after": 187146,
+      "beforeHash": "29371e9da0d3acc907bc3098c2bb76206030fcaa900016708494fa8e5f2ce228",
+      "afterHash": "c535711c88abe2fd0235a73c1e94d58d3ed322388d2f070d10a8a409a82e4abf",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-monster-s-mayhem/assets/screenshots/03.png",
+      "before": 217977,
+      "after": 185657,
+      "beforeHash": "a7e61f2ef61bc09c54a5cbde2afa824a1e94cc4ff2021a4d0035880a430dd656",
+      "afterHash": "259ddb547dfea21ed91e1731638196cbacb8af9366b46cc77e96dd06d6f1acfc",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-monster-s-mayhem/assets/screenshots/04.png",
+      "before": 220672,
+      "after": 185090,
+      "beforeHash": "98067acc9a4f6a151ecb867b257ec9049f6f9c4764a74729cc3e53a9ff99d20d",
+      "afterHash": "de49e96eade596aeb6355b0742c96816cc40831621e0d6ea3f1bd9f1b60d0a17",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-mta-country/assets/cover.png",
+      "before": 71035,
+      "after": 46263,
+      "beforeHash": "d0cf17d1ebd8669f78d262242cec2c4519d5a14f61533e89068018ed89d439cf",
+      "afterHash": "a23b41ce9766e46ef1b48ea62c673963789df75ecf594c485d3fb5773c5c4a4c",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-mta-country/assets/screenshots/01.png",
+      "before": 26768,
+      "after": 16309,
+      "beforeHash": "8f3db22ff0e2dfbd7a74e08b59029982e57a42832743c522210fb6344f3a05a0",
+      "afterHash": "a085a8629a6fd1c20593e11230423d646a6f98346f5fcb013ca485021088d2dd",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-mta-country/assets/screenshots/02.png",
+      "before": 86322,
+      "after": 48292,
+      "beforeHash": "439839195b3082aa5102468527fcc48fced791208df1457744f8d6ed980f8a26",
+      "afterHash": "c8a72d1bcd1fa216cda389a591a8db6ef2e337938327620d8fd15b6a79e588f1",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-mta-country/assets/screenshots/03.png",
+      "before": 39464,
+      "after": 26469,
+      "beforeHash": "df67df756b2bbb6c0425a307ba12b60318544fa09dae30b89d468a05e330c51f",
+      "afterHash": "9c640ebec92b92b77151cfb88e8b54e35d77676a5beb65d08aec2ac2b0f0c9eb",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-mta-country/assets/screenshots/04.png",
+      "before": 30354,
+      "after": 17665,
+      "beforeHash": "a9be2d9d2eec0e320279311cf8c034b5fa7551aeec50f91d04721a14c2ff690c",
+      "afterHash": "df2027e8850e75fe2de3a78f0557bd9bf0849b32cc28c1e2ea5c51b04f00ebc6",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/cover.png",
+      "before": 229641,
+      "after": 167682,
+      "beforeHash": "db10315ccf4c37462f6344987e54f500742a7223f3e74ef224bb32f50d930b2c",
+      "afterHash": "ff83ff8069b74a3b0ca2fd2f0d93be548c3d00c30a99a46fa9322f405b39ad67",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/extras/01.png",
+      "before": 72165,
+      "after": 54938,
+      "beforeHash": "9ea79484c5c532638d8c19c878ab63166d83d3cb4c4a34d124ea805ab0e23ce2",
+      "afterHash": "257ea925c8acddc75906057936f9048c37b465ebc3b641f13f5e085d1f38123b",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/extras/02.png",
+      "before": 680756,
+      "after": 551051,
+      "beforeHash": "a26ce7aae6dada11c5951c773bca943e0b149674cb5b9f1128e039d874d47b76",
+      "afterHash": "6aa174219dbb844ba5e4d661e08111fe089387b99521e281f0604187bd0a0361",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/extras/03.png",
+      "before": 63256,
+      "after": 30131,
+      "beforeHash": "09e3605953345e43066719b550270138500e6eb587bc6e25e83e2e0a8834f60d",
+      "afterHash": "d33dc332b2c103de36f8a9d9569719de734dbea5dd274d44a0a750d486089bc0",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/extras/04.png",
+      "before": 129046,
+      "after": 74899,
+      "beforeHash": "447a5c9e7182f61e2d126bdaaa6a731de9997d167012d970a2aa80073aa9c021",
+      "afterHash": "bd0da848617496132b72b5d2a4f882fa7260092961765332fb65b213a901703d",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/extras/05.png",
+      "before": 30854,
+      "after": 19353,
+      "beforeHash": "19676abbdb21c0f5dfb2467a7f6fbae5b7461f83e4be4d9b4bb86672afd9a725",
+      "afterHash": "577e90a589a9aff376a3e950300cb9f36a64ba7596a2762445035ba3d353104c",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/screenshots/01.jpg",
+      "before": 296550,
+      "after": 280106,
+      "beforeHash": "34b6406c2f8e6a7627cf683fe519c5867c788912098b6ef221bf9af33d27a707",
+      "afterHash": "ba48ad3a79284bb393f18b9df60c0fb81319c7ea7d20bb8d1abca824f7eaca6c",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/screenshots/02.jpg",
+      "before": 374937,
+      "after": 351826,
+      "beforeHash": "9809b735fab5714d2c4f0313562f1f9c726016ab546c5e27d5c9327e12f1d90f",
+      "afterHash": "6cba11539819b7fb37686e79e4cfced87780e79011c5c2f38c9eaedfee33180a",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/screenshots/03.jpg",
+      "before": 292616,
+      "after": 275478,
+      "beforeHash": "8bfc72ff32ff98487da1c315660f1b8ac55a65deca30a403b2ddaf73bd8c4b48",
+      "afterHash": "832bd9594fcd634d1620df0bbb157a96aeebb5574ebd4282a637a4379a79c227",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/screenshots/04.jpg",
+      "before": 268289,
+      "after": 257760,
+      "beforeHash": "3fc299a2c4c98df681f5fe99d0e72d5e08ea20903532bfbf8ad6b11cffe75d6b",
+      "afterHash": "bb31f96b368cb8c521ab336caff341105afad83bf49af38aa8cab7534874f21d",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/screenshots/05.jpg",
+      "before": 230677,
+      "after": 215968,
+      "beforeHash": "38dc37e7a547e9888da988d4a73bcea094600959e90227b6b5c5b9ac9416c79c",
+      "afterHash": "ec9dfa004a779529af41dac53c1e8ca6e126857a9f677462828e498e6689ca01",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/screenshots/06.jpg",
+      "before": 322206,
+      "after": 303218,
+      "beforeHash": "9940be933201e022c248eeafd436a03d304a40da8d0cb09de89864a70a5016a1",
+      "afterHash": "b7982a7c9be9e721cc4f61288de941049307f606b7590111300676968a43ff52",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-project-adder/assets/screenshots/07.jpg",
+      "before": 309980,
+      "after": 295215,
+      "beforeHash": "ec795580e32fca0600edba4e1c1495a642f8717b315311ebc9aaa1af0c7acaed",
+      "afterHash": "67b918320587f84ac88e7f41a4cbe54bd69998bdd2a182c7142ddef7f1bf2141",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/cover.png",
+      "before": 802814,
+      "after": 629423,
+      "beforeHash": "2ac410c1ad679e650f3e164f5d64d0c02c597b9a815c381f382d70116b36430a",
+      "afterHash": "e3f7f298c3bc0182adf56af12b1815654dd0c0b5a89f7870bc5fec6a0c1f3bc3",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/01.jpg",
+      "before": 100304,
+      "after": 84292,
+      "beforeHash": "d08f7dd4235f34ccb211f806f852db3e522ce762c00fc31fe488b42f3c900a4a",
+      "afterHash": "693ea2ecd785fc91b7de7a752efd95c36c9d90fce79de56dee5ce0008de2b0a5",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/02.png",
+      "before": 16371,
+      "after": 15504,
+      "beforeHash": "eac99c9c090b916e01c9af23c9dc71a107c0685dd6b2aa9fc21feb41fdfd61d8",
+      "afterHash": "af7bc85bb1755bf4d3475b4146ac60f7c8cae0843bcf66fa434b25126908a025",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/03.png",
+      "before": 32721,
+      "after": 29417,
+      "beforeHash": "a158f577b34bf2db37b1f926386aa219222067ebab4f17fcab31d36b3686e218",
+      "afterHash": "1ee4de2933293888d2f7019f49bcfb32d93d3664b25a1e30ce9b873b7407cf12",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/04.png",
+      "before": 12945,
+      "after": 10396,
+      "beforeHash": "570ce2dd0a62844979d86590ea484d15df895d825b2330ebb34ddc1c0e40e9fc",
+      "afterHash": "f75e6a7081a8c64d91a57efe29e47ac340023155af2fb4e021ed04a0f6595306",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/05.png",
+      "before": 1680178,
+      "after": 1527919,
+      "beforeHash": "d163f735f45d89f6731720a693d2790ee4661548f78f2295b6f7a4662bae7e48",
+      "afterHash": "97ff7ac9351e23037fa75a6806e9370e6a4ae6af9d841d30733f63f4101e6c14",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/06.png",
+      "before": 943518,
+      "after": 676434,
+      "beforeHash": "2699adab37394264e231d8fcfdb0c2f214ac6cb10c4a94a9f18c319f4fe3e746",
+      "afterHash": "0cebad0c2ffb83e1ebfce56d42018e84f5152244be04fb80812256f480279f61",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/07.png",
+      "before": 2024137,
+      "after": 1525578,
+      "beforeHash": "132ae3040f8b26755c48aca7c9d190f3b7cb3fc75636aa7fd13c758192531002",
+      "afterHash": "37ab69122b3069c96a685030f4cd2aee8f034e468b1001a485d37ba37aa9d47c",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/08.png",
+      "before": 2030190,
+      "after": 1508474,
+      "beforeHash": "0db8d9195bcced37fe122e8fce42b5d859d317aba70a536b5d601c41f19119a0",
+      "afterHash": "6d33f56b9f487c588cd900260352401020441c84a11ecaec6a1f802ff5fca0b5",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/09.png",
+      "before": 1888126,
+      "after": 1518259,
+      "beforeHash": "f17e24fdd5628eb64cfdc20395aa60dec0f9c708d7bdc79162264041d7e0dba2",
+      "afterHash": "ba8b268dd54f7a248450cbdd74c13fbc4215d1aac3d3c3440d813b2d29b50a7f",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/10.png",
+      "before": 23432,
+      "after": 6452,
+      "beforeHash": "3d7eb0b1add1bc845aef337968c5f036736999562347837b027b0cd85619437f",
+      "afterHash": "1c0769d3d7619f8d06f1a3e5881a9b04ee6e7ca228685e7cce584a0a94b2fe7c",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/11.png",
+      "before": 1978513,
+      "after": 1516793,
+      "beforeHash": "9ce8c193e5e9f4700129bd8fdfe5956b97c147a9a9e58f1cfd12cd3449376c5f",
+      "afterHash": "296fdbb37a7b5368e2d65d63a825bad697ba196028946e58b03ed510d608b9f0",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/extras/12.png",
+      "before": 1983686,
+      "after": 1495316,
+      "beforeHash": "e7bd0c1540814e60e74019b4e137beaa8e2495ec1ce7b8410738f4570a429bff",
+      "afterHash": "c590b995bab521068158acc55f9f7f94fc3db97c76feecf4bab644b26c939062",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/screenshots/02.png",
+      "before": 5665702,
+      "after": 2855938,
+      "beforeHash": "540dc0f333d83cdfb09a3835d8c2d84a6b2640322e8279a3864e695eb6b1d8c1",
+      "afterHash": "a4a1355cdb7c840473117264cd64697ee826b6d80a1cfaef7b4d4b447f3d1c4e",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/screenshots/03.jpg",
+      "before": 266554,
+      "after": 244169,
+      "beforeHash": "06902888d5b557982272c684da147e74d137ab5e8ac6082b373d4321830250d8",
+      "afterHash": "90972602e776c5bfa80ef00799f647c2ebe997950f2e02b021a7a3ef127df5bf",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/screenshots/04.jpg",
+      "before": 221798,
+      "after": 198244,
+      "beforeHash": "6e8e1396e0d074ad284dde8724a6a92c7064660efa92c82bce464ed0e1fe2d58",
+      "afterHash": "6fbd2081c4953b44b511bd90ed89933a333df3fe7c0e3ce71e19a8b88ab9819f",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-protoshift/assets/screenshots/05.jpg",
+      "before": 291746,
+      "after": 275051,
+      "beforeHash": "74ef9a6f17921e5f00f6fc50fb085341011edef28b7843a99dd4ee66e323283b",
+      "afterHash": "73d41897dd39c524b9919ecc6b5f651134ab1114cad68e5c8ab4cd47849d2747",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-red-tie-runner/assets/cover.png",
+      "before": 247358,
+      "after": 222872,
+      "beforeHash": "44cd3c683e7d432339bfcd5703e257203edc2f21b162edb382d296a92ecc42db",
+      "afterHash": "5916c1b36b81ad675189a6112287d495f8cd91c7ada4017437fe50b7cf0dcf6d",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-red-tie-runner/assets/screenshots/01.png",
+      "before": 288551,
+      "after": 180487,
+      "beforeHash": "bbb076dbe4c96bbb2225b431866615ae39b2679a087c5f66cc5f289e11d2fa3c",
+      "afterHash": "107efefa8ca5857ce6f8c62df4cec9bc5e31b3280ebef6a54227b994c432f822",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-red-tie-runner/assets/screenshots/02.png",
+      "before": 141574,
+      "after": 107219,
+      "beforeHash": "4790f8b7b17f335aafbeaa006b469c2a4d25b41008a7e533fc96eb851ec6286d",
+      "afterHash": "9c847d7c893a8a169202867f00528fbd5997847efca1348be8a3e1626d898f03",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-red-tie-runner/assets/screenshots/03.png",
+      "before": 343181,
+      "after": 254790,
+      "beforeHash": "43f7c7c8bb6c2468a9b18c59f2c08bc845e7d4edfa1862aedf190dfde15a0373",
+      "afterHash": "370041c227cde3314b9d21323697662de92dda66b971e537a88ff5086de68ba5",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-red-tie-runner/assets/screenshots/04.png",
+      "before": 320695,
+      "after": 247029,
+      "beforeHash": "95eb38f5ad59562a003806b8092d939b6740c2ebc978700526dbdb1f26b65a6c",
+      "afterHash": "858e316d363b98c5c93ba9287ac6712003da4df427d282242f4d3fdc47901c72",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-red-tie-runner/assets/screenshots/05.png",
+      "before": 446387,
+      "after": 311130,
+      "beforeHash": "e70ee5162ecf2fc2e5d74828f3ba60ed5e4190e56d47a569fc7b724cd1b739a9",
+      "afterHash": "5865bd658e3dba185ddccefea1766183fac88faba19c6ab366eaa0e02b031f83",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-red-tie-runner/assets/screenshots/06.png",
+      "before": 311274,
+      "after": 242110,
+      "beforeHash": "45946a87a474a4320cb633c61a8525742ff0c6daaff4853ac6c1f9982ee6d8b1",
+      "afterHash": "7a2eb1f003cf08befba3e13439bd90ec8c43cbec0af287273a9fc30122a1776d",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-red-tie-runner/assets/screenshots/07.png",
+      "before": 451474,
+      "after": 352114,
+      "beforeHash": "a21ce12cecfb599fee95dc4a8ef310fbe360c074376860780f49eed540cd2a46",
+      "afterHash": "6fb4af6c1f2fc7d4e8751e3c75cd621bca7ba6699e9ee5f38d0a119f0de8eab9",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-roadway-repair/assets/cover.png",
+      "before": 690041,
+      "after": 574914,
+      "beforeHash": "95776e15bbaa0613438779f80c5614fff385a780e1a9195aa04c88c38e1830be",
+      "afterHash": "8928d90a7cbdabd55f5ae8c5e1910e2568f589626738d7a7343954b0370257c6",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-roadway-repair/assets/icon.png",
+      "before": 100294,
+      "after": 100123,
+      "beforeHash": "32b0c8657817cb3473f8099be314f3e0423cafb6ee3256c587bbaa2ce1798fc8",
+      "afterHash": "60e08712100a714e099a19826577e8b04f7e3470c43b2d78d7600619a958f2fd",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-roadway-repair/assets/screenshots/01.png",
+      "before": 224968,
+      "after": 185359,
+      "beforeHash": "b103498aa8fc91bcccfd4149e91cfec8c2edfd5833f2f5381a84c4e6bca9bb6a",
+      "afterHash": "5160049f307a45fab4d3ee866277fa2f7865b0ee083f9b52a8722de1f8826faa",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-roadway-repair/assets/screenshots/02.png",
+      "before": 207952,
+      "after": 190316,
+      "beforeHash": "15c0ce21c1c959921719062bf191b9025c5829dccaf75693dbea519c5163b988",
+      "afterHash": "e2ffe7773a128edeedfd931e7d67e6b9b5e4bd9b75da0565aecf459efb7f9293",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-roadway-repair/assets/screenshots/03.png",
+      "before": 291415,
+      "after": 266687,
+      "beforeHash": "bc987998e0c3eb9b475fa0868bba87ae3a0ee5ae3f5fa41630e2ab3c6f2cf016",
+      "afterHash": "7ab90b0be1c49251f0f73135277bb4ba71084e4e7fc51fdd9bd5b8bae3919795",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-runner/assets/cover.png",
+      "before": 47131,
+      "after": 37827,
+      "beforeHash": "30384ad0ff0a9676bed56b5fc3f6a3588b9ff7d5f559e25a6a67514b2b50bd51",
+      "afterHash": "f320f9c408c4152f1973a8167c1e964a64d3c8c1ef621cd4d0f49bd057197a8f",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-runner/assets/icon.png",
+      "before": 24290,
+      "after": 19430,
+      "beforeHash": "aeac1827d0693e94376007be231be0840f1fe7dfdedf1deacd8881f4cebde193",
+      "afterHash": "ac810141f186a9ae9b7ae5baa6edb4475e33ce08d99b9055f944647ac7adf9b4",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-runner/assets/screenshots/01.png",
+      "before": 13308,
+      "after": 5470,
+      "beforeHash": "2a0c203465e90fc0159469d1e71c39dbac1729c92d9d9cd08955838a69d6af15",
+      "afterHash": "e9e07e69c856381d7c3f3759901a55902044ea78c876b9324169b0a2e013256a",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-runner/assets/screenshots/02.png",
+      "before": 51799,
+      "after": 36999,
+      "beforeHash": "fcef67106ac3c8cfe1d3c3604165b9499e09e1a7f20b3582ca6b79c0bb12ba59",
+      "afterHash": "d1f10178cd58446fc18f2b7fd879d0a591d10c88ae0cf629981a9f46ff4adf87",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-runner/assets/screenshots/03.png",
+      "before": 68683,
+      "after": 61953,
+      "beforeHash": "53ff05710bc7eac968c6ed12413cc16704566c8127c5956bd1c93f1d97836876",
+      "afterHash": "adee1f683907942f39dc0fa219abdc5e4d5f288b5c1c11e11fca415b460c5213",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-strike/assets/cover.png",
+      "before": 289580,
+      "after": 240584,
+      "beforeHash": "dbe08a3298acfb8f8424e690c1af14761284718b67a147f2c324a408e7b0b423",
+      "afterHash": "bcb3afe30b607706c2a9d987d624ca461dec0f18b37f7b6dc753327623f723cb",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-strike/assets/extras/01.png",
+      "before": 315654,
+      "after": 235780,
+      "beforeHash": "87157742c95f52c48198f6b1377b1fb799bd55df96ccae2f20c6a959edda7427",
+      "afterHash": "76a06f73b0fa1d1cb9ad969fbf8f576527fbbeb6e97a0f39a2693577a41d1ab2",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-strike/assets/extras/02.png",
+      "before": 493151,
+      "after": 372653,
+      "beforeHash": "fa7770cf24151ff8deb9caaa858bf4d192e3d6d4041997c93b436da018d447e6",
+      "afterHash": "328add35ed41bff5337e07262f4c6da3caf45d40b02504d711c376f6876977a8",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-strike/assets/screenshots/01.png",
+      "before": 496658,
+      "after": 375343,
+      "beforeHash": "3d33c6f83aa736232f327c0f6e1ff48ae6d2cee283d4696b62fbe7b302c5ff3f",
+      "afterHash": "ff5cf3866566d30000fb17f6dcc2b606eea0a4ca6feb28c421944e1621b06d56",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-strike/assets/screenshots/02.png",
+      "before": 505626,
+      "after": 376263,
+      "beforeHash": "b32baf9d6e34e02ad3eb6c32dd048efa89a0839cbfe391d95d01102f5f1ac9d2",
+      "afterHash": "b22619850e9f9800a77c3d1bdfe7bdbf4cdc207c01e97fa7a9a50853a4c2e8b2",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-strike/assets/screenshots/03.png",
+      "before": 497657,
+      "after": 375904,
+      "beforeHash": "2021cdce4a62ae81a5770ba8b65d373fd62ded4e031212a7b02ae7dfc36c7959",
+      "afterHash": "47ef822b5c0bc26290193360cd8f001235307fa4ee540714a8c615c0c5a4ca62",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-rocket-strike/assets/screenshots/04.png",
+      "before": 631818,
+      "after": 493475,
+      "beforeHash": "c6fa2153503468cfb8cbe613514567776d60073879d0b5a89ea7760ae8a7ac26",
+      "afterHash": "36870fcd5615004caf4e0184263f444d25c091be957755a1860c9a9566e83177",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-sam/assets/cover.png",
+      "before": 13646,
+      "after": 9215,
+      "beforeHash": "6a06193bfeba01141de5b8a94e753f32f845576b010afb25a9e0cf415d0914a8",
+      "afterHash": "11c7a6092b02d42ce23ec3e666977862479739731f8b15462af8529a6a7e5063",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-sam/assets/screenshots/01.png",
+      "before": 171075,
+      "after": 27294,
+      "beforeHash": "f437f9d654a71946d0607aea7977570955a10c3af272b893b0c8e89c0623ad5d",
+      "afterHash": "b8916632ad6a4389ad5b3ccd8ae4ab4bce7145db2224510c9bb8cd0265dbdec3",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-sam/assets/screenshots/02.png",
+      "before": 87128,
+      "after": 34507,
+      "beforeHash": "fa256c288a1414021e4be172d979f9ac5aab626c689994f85b8e6ab6601289c6",
+      "afterHash": "177f08b9d08172a36dd21b146d86ccbb822c5d8c062d729b12b53ba503a2db63",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-sam/assets/screenshots/03.png",
+      "before": 207345,
+      "after": 63204,
+      "beforeHash": "479bbf565bf0c6ac8f8f224fa032078307ddfa669e71a1003868de65630cc579",
+      "afterHash": "def28016f6d09d196476a3e21704068cb533d59ee41fad3e5673e373182bdd67",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-sam/assets/screenshots/04.png",
+      "before": 74561,
+      "after": 28981,
+      "beforeHash": "814ed875a8be09bf297b01e7a15429e48e70cc2ce6d7d971a0ad53ccf37975e8",
+      "afterHash": "f652efb4fe5338403211094cb67f583b7c0a8d63be3cd384d043a99938078746",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-soul-grinder/assets/cover.png",
+      "before": 49054,
+      "after": 41954,
+      "beforeHash": "b0ed844f416a632073ccea4291fe42671b26f984f9bf74c3a8234a7037ddf6b8",
+      "afterHash": "5e8924ce4389a21c8246e43e3bf391f958edfa81b8a0f3f992701fde4aa76e82",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-soul-grinder/assets/extras/01.png",
+      "before": 47264,
+      "after": 34330,
+      "beforeHash": "9776b5086c3186714a4ee5a9ce55849578dd865fce78e6a6c8c851b1ef2366df",
+      "afterHash": "fc70cd6e62ea68baea7aeacd2a137240c79c02d1e75ec6b4aca1e03aa7fa7207",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-soul-grinder/assets/extras/02.png",
+      "before": 390760,
+      "after": 241769,
+      "beforeHash": "8a1ce3d4a49507cbcf85687c20de13eb5ffbfddf4a214f57177037175b2c6e24",
+      "afterHash": "0b23898ff846eaa0acddb46ad3cf8222545f4547a2a5729673c4a50758165d99",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-soul-grinder/assets/screenshots/01.png",
+      "before": 32092,
+      "after": 21835,
+      "beforeHash": "f95461b2f78f442ab9ae621e73931dd2c9f7d176ac2769886ee5c85ffe40ecb3",
+      "afterHash": "4bd470c27e6c66d7d546be62f5d70d6b309d40abc7840408c16adebf3a383fee",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-soul-grinder/assets/screenshots/02.png",
+      "before": 52403,
+      "after": 36520,
+      "beforeHash": "df5635edb7d0c828b2cd2946b1e38dda29e92726f918f56bf35fe143dd262774",
+      "afterHash": "692ba0dee4c9a8df4ef7cfe6490b13886a0676b4696d1bf5997801911521c3e0",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-soul-grinder/assets/screenshots/03.png",
+      "before": 13821,
+      "after": 10668,
+      "beforeHash": "c49e9ace72048aac3ddb2a959d5f9532f43bfb55db91597f6d8d46ef27998c71",
+      "afterHash": "1ea811759317c69fd4acab7c518a5f8df310e45489871ff540e1ec8550f8885b",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-soul-grinder/assets/screenshots/04.png",
+      "before": 83046,
+      "after": 56912,
+      "beforeHash": "f1a2cacd64abda8b5dcfd3b4e7e6a83217baf9e9c06cc3093f635c0d91dd3122",
+      "afterHash": "f131c5956b921b8324106141e3a6bff61c173c0c77e888b23433489090d23794",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-soul-grinder/assets/screenshots/05.png",
+      "before": 375704,
+      "after": 199919,
+      "beforeHash": "63803db96c24c4f9cd0d2f75c4498d1e934445b71de04d2220bf50b7300de33c",
+      "afterHash": "7cd18ba41948d73da1770d2de88249150267ca5e1d91bf6a53f22f38545b8414",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-soul-grinder/assets/screenshots/06.png",
+      "before": 456036,
+      "after": 252690,
+      "beforeHash": "11aeff08804de2f90d5954f68cb10ba29c861d483c5127f79959fc65cea17b02",
+      "afterHash": "e24b6c81055fd64650621e386eaeab017f53f5702148ab1bd45507764f814914",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/cover.png",
+      "before": 1815037,
+      "after": 1554514,
+      "beforeHash": "e42ef0ef010c3c1a007065b4653945cea4a435e9cfb45e082c88a8a1a2c449e2",
+      "afterHash": "823e25a577af308d126e526a4452a53daf16bdc6fab0e72c290c6d62635a3216",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/extras/01.png",
+      "before": 60195,
+      "after": 59351,
+      "beforeHash": "6e201c7af01cd4274f4fabd9de18734857b79f271da010b9fbd97c08c361d761",
+      "afterHash": "d06cc8a186ce2479181ab6adfb6e745317c922255e1033575d456481fc361937",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/extras/02.png",
+      "before": 63431,
+      "after": 60368,
+      "beforeHash": "980fa67ed3bfb292e404fcb333ce5b89c982c6a08df7beb545712fa097faece4",
+      "afterHash": "65cf23caa59318f69ec35e0369bf39e2da7b1b6fd091db7c2ea064a6a21f18be",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/extras/03.png",
+      "before": 64676,
+      "after": 61544,
+      "beforeHash": "e1c41e07100f658bab45c5a60d67b9de078706d153920d2698a65f30de38bc97",
+      "afterHash": "c82bfae44fd90db933d9dbdb89753a1a2d204771b3f1cb80df73a0d160a37357",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/extras/04.png",
+      "before": 58842,
+      "after": 58290,
+      "beforeHash": "66cd78f5ce3935932cbaca13d2c600e69598a2518e596802fd58d359e903105b",
+      "afterHash": "6615ec10b31e4e02ad55b43e8427063178c497cda7a81c606d0da32ca42d0752",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/extras/05.png",
+      "before": 290858,
+      "after": 207499,
+      "beforeHash": "31b2ca09a1091daffc2d27c4d6766cbe23fa011080aad79800e6744a21854528",
+      "afterHash": "35f6eec0bafa844ce763fd4197df56871bf92ffef651540630573fc7be52004b",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/extras/06.png",
+      "before": 4440257,
+      "after": 2722301,
+      "beforeHash": "60aa9fa9d5c622d930c1385b3d033003cea17aa6adbe011b485c8167edb448a2",
+      "afterHash": "1c707cf712947e17c96a898f01ddeb8e08ff5ee0d604261c0797c658c5e73946",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/extras/07.png",
+      "before": 425768,
+      "after": 319110,
+      "beforeHash": "1a56a5ca66b7e12568752ed76374528b7507ef8f7ee1c8e78f929db32876579b",
+      "afterHash": "fad89f868e9f958100527a9e57f11a051a13635b5c5a7aa6d4c786f4288fb4c3",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/extras/08.png",
+      "before": 487369,
+      "after": 314772,
+      "beforeHash": "469f9832dc5770bc76d20bcfe86f83fdbf63702a63cbdd643771d37a85c00627",
+      "afterHash": "e729c5b041565f18a04a54af8d0e95768181b3f62dcb3c7eb4febbe175c3d3dd",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/screenshots/01.png",
+      "before": 666083,
+      "after": 552962,
+      "beforeHash": "c256ef2dd7fe201a1274718a5910b32bce4a6452b5b3ad355563c8441df5c133",
+      "afterHash": "47776b373ed32c86681e912feb131ed3f765e4b588afb6b52e6a9d03994232b3",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/screenshots/02.png",
+      "before": 741476,
+      "after": 507877,
+      "beforeHash": "5150bf441c4f0a1a3dc3c358cc04b3a1953b6d44795f7b636a61758e8fae1176",
+      "afterHash": "7abb90be2e78c0e39cbc7dc172c03f089813acd057ca659c19b14cd7337bf70b",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/screenshots/03.png",
+      "before": 795801,
+      "after": 582368,
+      "beforeHash": "8804ae83234ebfe97e9df555e0aacd9d7ef05dc8b76874f9881104525b08cbc3",
+      "afterHash": "44f9cb431dc791ffba6c7a474e42526d9107c80a15db7daf832c9ce4b5f18bac",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/screenshots/04.png",
+      "before": 667215,
+      "after": 449378,
+      "beforeHash": "2f388693899076aa97d51779556cfed11bb1a29e12995771c9e45e5e8aac946e",
+      "afterHash": "15e5bbce180d2d659da007dd71b017b4e908444a9d4aed848db742eeb09a2968",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-last-straw/assets/screenshots/05.png",
+      "before": 4506833,
+      "after": 2739063,
+      "beforeHash": "1041347ff9b2377b57ef14de1a6d58e00e2b232bd0f627af61dac798c4d5f0c8",
+      "afterHash": "4450bf72ed447d845862188ad6519b0c78968c79ef6a547411a9252def4aeec7",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-voter-suppression-trail/assets/cover.png",
+      "before": 132928,
+      "after": 36971,
+      "beforeHash": "3c9137a8b4ead1ee3a61a306460b608b6661e79bd09f707fcbecc712e9485be4",
+      "afterHash": "76046761ab3bd78d85af2394f7bf1e0320589505d7da7a94d4e8b534cbe1a959",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-voter-suppression-trail/assets/screenshots/01.png",
+      "before": 22347,
+      "after": 9695,
+      "beforeHash": "1b4e23e51c5ebcf44d8192bff4821fae38cb9c095b27a275ddc99582fac35069",
+      "afterHash": "abea12cf736d5267374d2d3ee95589647dad96c20faa720f8593be31fc1b6a89",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-voter-suppression-trail/assets/screenshots/02.png",
+      "before": 81029,
+      "after": 71769,
+      "beforeHash": "a5511be871e74ce9f6bcc2b3e8a2f21e158b959e7dc6780794e5caf1b485a3e4",
+      "afterHash": "e4c2d91224cc78bb1081f493518a09d49a9d806a364300005d821698e2a25020",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-voter-suppression-trail/assets/screenshots/03.png",
+      "before": 32495,
+      "after": 27720,
+      "beforeHash": "9165d721dc86e64b23866246b8d8fa0c65b5111b92be7a4854c82202c0677e97",
+      "afterHash": "255807b2c960d460537ac44f259c182c5c64e6e15f1d074626bf9e4667aa565b",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-voter-suppression-trail/assets/screenshots/04.png",
+      "before": 30091,
+      "after": 24861,
+      "beforeHash": "611b55adca2ad4f588dad69dff3cdb764de6ce30f015263d4c6bdc25b3137959",
+      "afterHash": "8a2d99db0b1210130f82aeba2023ae7df0f34a0cf74f6fde18a9308a398ada10",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-the-voter-suppression-trail/assets/screenshots/05.png",
+      "before": 61152,
+      "after": 52517,
+      "beforeHash": "36b5793b9ef0d0dc41b94b94f7c12e1737ee828a13e84bcb0d35118cb3e7ec79",
+      "afterHash": "8b22141ee6529ea4db7288863432c2bc8fae9fe2896c3dadf7d21e487a7ab80f",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-tower-defense-prototype/assets/cover.png",
+      "before": 185461,
+      "after": 148082,
+      "beforeHash": "5f3ee6bac4b3eb211cfb9c5fe24542cd4c4ab4fa77100226b38e78836db2d6f5",
+      "afterHash": "68efc304ad59ebc41c5c97c09c5605eb7530c8ea3e0e5a1758313dfdc2042a2e",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-tower-defense-prototype/assets/screenshots/01.png",
+      "before": 903707,
+      "after": 624413,
+      "beforeHash": "e0ea4e497fd4ee0b2825fc083d3e0eda0eba7c1496269b72f9d8f105ce01f52c",
+      "afterHash": "c97699ddfc4b10c7994c1723e7e17c39555f50c1bb2cf31257677113d1f011bf",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-tower-defense-prototype/assets/screenshots/02.png",
+      "before": 703684,
+      "after": 495577,
+      "beforeHash": "f65d1a293ae0278a835ae49581c2b0113930b9a107f0aec080249e5e0da7e352",
+      "afterHash": "25164875ad8644616c49f0ce905600f2f221a63453ce4f2f675354fc80293464",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-tower-defense-prototype/assets/screenshots/03.png",
+      "before": 754035,
+      "after": 520884,
+      "beforeHash": "53d89e7f91ed57a9f151c98fa3251b0211e0e0949bba2e5be97b2a89cddb7388",
+      "afterHash": "4b07bc40bb8e07fcee7c505cfed62dc8a0a58fad1d19aac05ffbfc732a6a8974",
+      "verified": true
+    },
+    {
+      "path": "content/items/game-zombiehood/assets/cover.jpg",
+      "before": 44298,
+      "after": 42902,
+      "beforeHash": "42cafb69244b84a369a0270d3b7f2031181bb18bbd8d28cb63457dfc26a9f09e",
+      "afterHash": "99a79f33162c5caac4e1478719bb026669474f96d1483ffa6710fd17dc06aef9",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-construct-snippets/assets/extras/01.png",
+      "before": 27490,
+      "after": 17289,
+      "beforeHash": "c04b92d7660d51d4667cbe0e86e781dc53f054e8e42b2e64c0908dfabafdf475",
+      "afterHash": "4e8d487e8a1c836c176770b31d604de2751a02d549d88c88104f821325578f06",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-construct-snippets/assets/extras/02.png",
+      "before": 51832,
+      "after": 35378,
+      "beforeHash": "b6745c20446821e396252983ee4be0e2ab59aa3168ab1d8cfd259a952959e321",
+      "afterHash": "fb0a509adefdadf0095e9160536335072a7fa69175828fe862515e5754f8530e",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-construct-snippets/assets/screenshots/01.png",
+      "before": 85528,
+      "after": 72918,
+      "beforeHash": "0ca2fd20dfbb1dfdab49be03d2df8946a053f7cfd5fbd09f7b1c79d7a683a57b",
+      "afterHash": "f6d8dd0fb0e76e322675360e55d9ec938ff0aeadd2b2a6e18cab44a81cb2e9b9",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-construct-snippets/assets/screenshots/02.png",
+      "before": 27535,
+      "after": 22017,
+      "beforeHash": "4bbb6ec89b6ddbe68ee8f0ae991fac608c65ccf1d718096b9c1a6b9aa91a12e6",
+      "afterHash": "72ed3bb8feea94bae5c981daddc57b5bbe24704f909bb2899b7eba57b03d5aca",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-hacker-news-api/assets/cover.png",
+      "before": 122206,
+      "after": 76030,
+      "beforeHash": "c4d6c3df7bccac56e987480e5480dba17bfd9640db44a3afc5a46dd46b012bbe",
+      "afterHash": "e3ee8a35bcfff55569cf5de86b51959d8471f1408b5a929e97f230cfffcec2ab",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-jeopardy/assets/cover.png",
+      "before": 30215,
+      "after": 24505,
+      "beforeHash": "1346f0a637221750cf4d67faed46fc9ee185d5f17f0b14326529713b70c93f69",
+      "afterHash": "06cfdf5536e0802ffa995f9e64c330e3e0ddad2110081a0d9004aa65f5429a6d",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-map-builder/assets/cover.png",
+      "before": 855758,
+      "after": 789844,
+      "beforeHash": "73f43093453c5b141a23cafb57f32d6b07020e278ac7bef8441b8d310f40fbcd",
+      "afterHash": "1d3c1893e8a767a3906f52ebef9e1766fcbc98fff5c212e6a49b08eebe85b744",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-pexels-search/assets/cover.png",
+      "before": 1255551,
+      "after": 997778,
+      "beforeHash": "82167995d4e06f903ea74572de2ee98df7bd5452d0a665542c87e2550323107c",
+      "afterHash": "58684fec7c01d689990b8b76c82260ed9df6d4078c1ff84441d55425dd64b877",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/01.png",
+      "before": 320790,
+      "after": 269964,
+      "beforeHash": "4ff15c42c32dd4c91825b6e7a76e5714d919bcb5d6fc8b7ffcd15f5392c3bc5d",
+      "afterHash": "86bf82805d2086cd003c78d758a975283fadb83d1cb5d14158d46a1cc0cbbacf",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/02.png",
+      "before": 267092,
+      "after": 221336,
+      "beforeHash": "ab97f20f032a5783f5c36a882270e78965da8bc065f56181fa9b50610bee9ccc",
+      "afterHash": "2c0a853a83a39775c5024c258381c462f7895d3a474e89245d88f954c7a2ccad",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/03.png",
+      "before": 208177,
+      "after": 175900,
+      "beforeHash": "a8d1ddab4283196666adffb9c3dfa0524bbf5cc72148c83f09c3d56b1f7f4351",
+      "afterHash": "ae48e10f0033f63bb53a3f7a79254ea3d75290f421ceed89320f5dc15db04f0a",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/04.png",
+      "before": 309138,
+      "after": 264591,
+      "beforeHash": "165bbac4f2cc7540805a6da520721828d28dc6ee4cd38eaa3c046745fa048d20",
+      "afterHash": "8b0de05ddf7952b8b826abe0366488e1630eeef3bc18499bdbe539dfefed40b5",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/05.png",
+      "before": 208659,
+      "after": 158549,
+      "beforeHash": "1d9ce5175e6f7a0e316ba41758b02a9f78121eb73c6002b5f0172efcdd6c42f3",
+      "afterHash": "f1be3f6e487b601b6636384a274c5d2d68282ec36eb996cde5dda2a65bb90415",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/06.png",
+      "before": 235826,
+      "after": 189628,
+      "beforeHash": "57b01132b74df7d9421ebcc14170b0678607b344df21820cdf3642256ae9e2bc",
+      "afterHash": "fe4dd09acf8fcc5bee2577cc24f5a66ce676c31a66947e20eb7c0e8e45f15c5c",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/07.png",
+      "before": 416879,
+      "after": 356053,
+      "beforeHash": "3059010848774761c47c1c577734860e7708290e288e4202320d75614cc3810e",
+      "afterHash": "202c5afa2e9c9183874925694e00a9e3b3fd4e3888982c82ba08f68d54920f89",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/08.png",
+      "before": 528371,
+      "after": 441891,
+      "beforeHash": "d9b708e9e6de2cb7a64bed8c3d495b1f01629faef0e026afd907025500f147aa",
+      "afterHash": "1eaf0f5e4fe72d0467c179c15be53a9819e14210f02a0e08990857adcfc0e37c",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/09.png",
+      "before": 513910,
+      "after": 443406,
+      "beforeHash": "ae69c629e5b2bd2a1773926515cfb1fe2b89ead99a0e068df45ef0e11fb35d20",
+      "afterHash": "5dcce8f8046d4059d8bc7fcf7344f9971d9e05b551b25ae8f26f4268cce61a60",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/10.png",
+      "before": 634502,
+      "after": 545130,
+      "beforeHash": "ab9b76a20e613cc5c1102e924fd9829654b5cd6e4b7b59f6732ee0b2c2acde3d",
+      "afterHash": "ea81a0c8a00ad20a04859f94cdb2f64e81b80ce4d9a6a94d6bf009e05f554d13",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/extras/11.png",
+      "before": 378217,
+      "after": 320968,
+      "beforeHash": "bded8e63ea303060b446f467ec226d7f6d9e5c1c636a35bdf17978369680416b",
+      "afterHash": "ad1c921ce7de5e639a866e409fe1c2ee711d06ec33554b69c11943a5266f20c3",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/screenshots/01.png",
+      "before": 419755,
+      "after": 352662,
+      "beforeHash": "64cd6e9fdff649a524f4d3abe0c95485ebc28bb73f76e0d562c61ceb6bdedaab",
+      "afterHash": "840c19a11a043cc2bcb72882d771d78b8c082b50801308a735af63ee785d6339",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/screenshots/02.png",
+      "before": 337490,
+      "after": 289234,
+      "beforeHash": "67a0a623d829eb35575d2aa813a4bca6faf4a7e9e228ab5d9fb92c5b9732e337",
+      "afterHash": "4aa15cb1303857473b3461761f360c41773d85627cf8f23e496a34d25c7af444",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/screenshots/03.png",
+      "before": 342740,
+      "after": 293101,
+      "beforeHash": "d6942ab38adfad1f361d5a569d5258cbaf6b6932e7bde5e24aa2eaa78dd818ff",
+      "afterHash": "c316fdfcd037779623de1caad1c81f1a3a891abc1ad3cbcd0bd5ff81e9145ce9",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/screenshots/04.png",
+      "before": 235454,
+      "after": 212126,
+      "beforeHash": "a5d63adac67bba5c63310b385289b6d6957574995caddacc29ad01e5f2745faa",
+      "afterHash": "f6413d4b23d7ec2e1858d1a4f5fde2cd762dd823be7c3d7a88e7a56265ce648a",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/screenshots/05.png",
+      "before": 275371,
+      "after": 235920,
+      "beforeHash": "66de387b75b0b07213b268808cc25d5c99eb9b3dba4e295a5027e1df51ba0305",
+      "afterHash": "c7c64795d939fdd38b0b70c4ccee0ce43ba8149964f6fdbe646d1f08f2f2b366",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/screenshots/06.png",
+      "before": 216720,
+      "after": 191469,
+      "beforeHash": "b92906b59afb6e200d46aa816eeebfb8ed87bf4797721c2d40eb9924645ed9c7",
+      "afterHash": "119fb188331f9d320eacf78dbbc0f7b2537aeae37f4be5a65e0efe347c976abc",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/screenshots/07.png",
+      "before": 828189,
+      "after": 710398,
+      "beforeHash": "8fb8e5a64203623eb5b8edea0b20628297f6b761b3c9175183c1cbdcdf961bfc",
+      "afterHash": "3955fa71cf66d44a9dcca866f119a280b5408385cbd0c092387bbfd8cfaa4039",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-portfolio/assets/screenshots/08.png",
+      "before": 38725,
+      "after": 27392,
+      "beforeHash": "4c384525387933d46ba312a16de11bd2717490ae05846e6140dca1780f661dcf",
+      "afterHash": "84a87d9cad329885e174a043b50c671a80a551c5e47212d7100008a41e47d92b",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-post-comment-backend/assets/cover.png",
+      "before": 83739,
+      "after": 50443,
+      "beforeHash": "99240fb609f9721fc9e67d81663b17b4654141e20e1d482e39794b9ad975016d",
+      "afterHash": "ea63aecb9f3ac04fe632c144d849e358ca46779b2d797356b851db58fdbf60e6",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-react-ticket-tracker/assets/screenshots/01.png",
+      "before": 146997,
+      "after": 97347,
+      "beforeHash": "ba9820683f4b468a8d381e1f8d5d9327fd483d2479d755e3d09f029e1deead5c",
+      "afterHash": "301c414d48be5ca8dab39a56e83c7e15f737d01479da72ac624c828f3e598d57",
+      "verified": true
+    },
+    {
+      "path": "content/items/project-soundcloud-mockup/assets/cover.png",
+      "before": 600379,
+      "after": 413688,
+      "beforeHash": "12495281d3cc135dbc4c181d48263c37538cc70208adf0be288e2f9591b94c84",
+      "afterHash": "0b657d09a59962d9e682643ab678324b14ddb5e2d22657e902733f30ca26a66c",
+      "verified": true
+    }
+  ]
+}

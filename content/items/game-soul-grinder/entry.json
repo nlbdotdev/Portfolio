@@ -1,0 +1,81 @@
+{
+  "id": "game-soul-grinder",
+  "kind": "game",
+  "slug": "soul-grinder",
+  "legacyPath": "/games/soulgrinder",
+  "title": "Soul Grinder",
+  "summary": "Soul Grinder is a horde survival action rogue-like. Survive an onslaught of enemies with necromancy and dark magic at your disposal! Try to survive as long as you can and collect gems to upgrade your power.",
+  "date": {
+    "label": "Feb 23, 2022",
+    "value": "2022-02-23",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["mobile", "web", "jam", "sale"],
+  "links": [
+    {
+      "label": "Itch.io",
+      "link": "https://reflextions.itch.io/soul-grinder"
+    },
+    {
+      "label": "Crazy Games",
+      "link": "https://www.crazygames.com/game/soul-grinder"
+    },
+    {
+      "label": "Scirra Arcade",
+      "link": "https://www.construct.net/en/free-online-games/soul-grinder-36000/play"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "soulgrinder screenshot"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "soulgrinder screenshot"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "soulgrinder screenshot"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "soulgrinder screenshot"
+      },
+      {
+        "src": "assets/screenshots/05.png",
+        "alt": "soulgrinder screenshot"
+      },
+      {
+        "src": "assets/screenshots/06.png",
+        "alt": "soulgrinder screenshot"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://itch.io/embed-upload/6242510?color=1C0C42",
+    "desktop": true,
+    "mobile": true
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "big"
+  },
+  "body": "Soul Grinder is a horde survival action rogue-like. Survive an onslaught of enemies with necromancy and dark magic at your disposal! Try to survive as long as you can and collect gems to upgrade your power.\n\nI built Soul Grinder over the course of two weeks as personal challenge and break from my main project. I wanted to try building a game like vampire survivors with a twist of necromancy. Ultimately the game felt less original than I wanted. There's a lot more features I would like to have added but I decided to move forward with different projects. Still, I'm happy with how the game turned out and how much I was able to accomplish in such a short time span.\n",
+  "order": 2,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

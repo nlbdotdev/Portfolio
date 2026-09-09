@@ -1,27 +1,40 @@
-# Content editing
+# Item model
 
-This directory is the source of truth; it does not import Svelte components.
+Each item owns one `entry.json`, including its Markdown `body`, and its media under `assets/`. There are no separate descriptions in the active model. Use `npm run item:new` for the complete template.
 
-1. Add or edit a record in `entries.json` and its Markdown description.
-2. Use an immutable `id` and explicit `slug`. Preserve `legacyPath` even if the title changes. New entries without an old URL use null.
-3. Keep short metadata in JSON and long prose in Markdown. Markdown links/images must use HTTP(S) URLs or `/assets/...` paths.
-4. Store images under `static/assets/`. Reference their public `/assets/...` URLs, with meaningful alternative text. Keep original source media until explicitly approved for removal.
-5. Run `npm run content:check` and `npm test` before committing.
+## Stable identity
 
-## Fields
+- `id` is `<kind>-<slug>` and matches the folder name.
+- `kind`: game, project, company, or education. Games and software projects share the Project timeline rail.
+- `title` and `role` are presentation text; changing them does not change the slug.
+- `legacyPath` preserves any historical showcase URL. New items use null.
+- `draft: true` keeps unfinished entries out of the public app.
+- `featured: true` selects the top cards. Current featured entries are PsiQuantum, Pilot Flying J, and FableVision.
 
-- `kind`: game or project. `collection`: games, projects, or archive (the old “other projects” grouping).
-- `featured`: explicit existing featured status; tags describe the work, not display placement.
-- `date`: original label, normalized `value` (`YYYY`, `YYYY-MM`, or `YYYY-MM-DD`), and matching precision. Unknown values and precision are null. Never convert an unknown month/day to January 1.
-- `media`: cover, animation, icon, gallery images, video links, and desktop/mobile screenshots. Unused optional single assets are null; collections are empty arrays/objects.
-- `preview`: playable URL and device support flags. A disabled historical URL may remain for reference. Do not infer playability just because a URL exists.
-- `technologies` and `dependencies`: descriptive historical project information, not this repository's current npm dependencies.
-- `legacyPresentation`: retained old layout hints, not a requirement for the V2 design.
+## Content and dates
 
-Original ordering is preserved. Missing project dates and summaries remain missing rather than being synthesized. The catalog may be imported directly by other tools; the app adds description text without modifying the stored records.
+`summary` is a short plain-text introduction. `body` is Markdown, with headings, paragraphs, links, and inline local images. Raw HTML is displayed as text. Keep only factual content with known provenance; don't turn TBD or Pending into invented detail.
 
-## Review and preservation
+`date.value` supports `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`; `precision` must agree. Keep the original display text in `date.label`. `end` may be another partial date; `ongoing` marks a current chapter. Unknown values and precision are null. `provenance` records the source and whether dates need confirmation.
 
-`review.json` records the malformed Project Adder preview value, its TBD release date, and the two Pending descriptions. Existing claims about availability, hosting, and release status are historical and need editorial verification.
+Timeline ordering uses the start/release value, then a stable `order` tie-breaker. Unknown dates sort last. Entries before 2020, explicitly archived entries, and undated entries are folded initially. Track buttons highlight rather than split the shared timeline; searching includes the folded archive.
 
-`npm run content:audit` generates an ignored inventory at `.reports/assets.json`, listing duplicate hashes, large assets, and files unreferenced by the catalog/profile/descriptions. No conversions, downloads, or deletions occur. Unreferenced historical design assets remain preserved.
+## Media naming
+
+Use lowercase filenames with the original format retained:
+
+- `assets/cover.png` (or jpg, webp, etc.)
+- `assets/animation.gif`
+- `assets/icon.png`
+- `assets/screenshots/01.png`, `02.png`, etc.
+- `assets/extras/01.png` for retained historical media outside the public gallery
+
+Do not change a file's format just to unify an extension. References are relative to the owning item. A Markdown image looks like `![Helpful description](assets/screenshots/01.png)`. The shared loader resolves it to the Vite-built URL. `media.images` is the gallery; `media.screenshots` identifies desktop/mobile views. Videos and playable previews remain external links, without third-party iframes or tracking loaded automatically.
+
+`technologies`, `dependencies`, and `legacyPresentation` preserve old project context. They are not dependencies of this app. Unreferenced extras remain intentional until reviewed; the audit does not delete them.
+
+## Verification
+
+Run `npm run content:check`, `npm test`, and `npm run check`. The migration ID fixture protects original entries while allowing additions. The asset audit writes its generated inventory to `.reports/assets.json`. Lossless optimization validates decoded output before replacing an image.
+
+The previous aggregate files are temporarily retained while destructive-cleanup approval is pending. Edit only `items/*/entry.json`; the new app does not read the aggregate or separate descriptions.

@@ -1,0 +1,42 @@
+{
+  "id": "company-codetrust",
+  "kind": "company",
+  "slug": "codetrust",
+  "legacyPath": null,
+  "title": "CODE/+/TRUST",
+  "role": "Software Developer",
+  "summary": "Delivered cross-platform features with React, React Native, and Node. Worked with clients on product discovery, API design, and improvements to delivery.",
+  "body": "Delivered cross-platform features with React, React Native, and Node. Worked with clients on product discovery, API design, and improvements to delivery.\n",
+  "date": {
+    "label": "Nov 2022 — Feb 2024",
+    "value": "2022-11",
+    "precision": "month",
+    "end": "2024-02",
+    "ongoing": false
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": ["React", "React Native", "Node.js"],
+  "links": [],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 35,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  }
+}

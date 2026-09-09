@@ -1,0 +1,42 @@
+{
+  "id": "company-contract-games",
+  "kind": "company",
+  "slug": "contract-games",
+  "legacyPath": null,
+  "title": "Independent game development",
+  "role": "Contract Game Developer",
+  "summary": "Built and sold original IP, designed a suite of mobile web games, and helped launch a title for The New York Times.",
+  "body": "Built and sold original IP, designed a suite of mobile web games, and helped launch a title for The New York Times.\n",
+  "date": {
+    "label": "Sep 2015 — Jul 2017",
+    "value": "2015-09",
+    "precision": "month",
+    "end": "2017-07",
+    "ongoing": false
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": ["Game design", "Web games"],
+  "links": [],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 38,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  }
+}

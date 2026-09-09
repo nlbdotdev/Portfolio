@@ -1,0 +1,42 @@
+{
+  "id": "education-digital-film",
+  "kind": "education",
+  "slug": "digital-film",
+  "legacyPath": null,
+  "title": "Digital Film Academy",
+  "role": "Web Development Immersive with AWS",
+  "summary": "A 900-hour web development immersive focused on the MERN stack and AWS.",
+  "body": "A 900-hour web development immersive focused on the MERN stack and AWS.\n",
+  "date": {
+    "label": "Aug 2021 — Aug 2022",
+    "value": "2021-08",
+    "precision": "month",
+    "end": "2022-08",
+    "ongoing": false
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": ["React", "Node.js", "AWS"],
+  "links": [],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 40,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "game-brix-builder",
+  "kind": "game",
+  "slug": "brix-builder",
+  "legacyPath": "/games/brixbuilder",
+  "title": "Brix Builder",
+  "summary": "Brix Builder is an arcade inspired stacking game. It is part of a mobile web game suite I did in 2016. It features 3 difficulties with 7 levels of increasing difficulty.",
+  "date": {
+    "label": "2016",
+    "value": "2016",
+    "precision": "year"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["mobile", "web", "sale"],
+  "links": [
+    {
+      "label": "Itch.io",
+      "link": "https://reflextions.itch.io/brix-builder"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": "assets/icon.png",
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "Brix Builder menu screen"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "Brix Builder screenshot (1)"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "Brix Builder screenshot (2)"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://itch.io/embed-upload/6248551?color=333333",
+    "desktop": true,
+    "mobile": true
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "phone",
+    "size": "tall"
+  },
+  "body": "Brix Builder is an arcade inspired stacking game. It is part of a mobile web game suite I did in 2016. It features 3 difficulties with 7 levels of increasing difficulty.\n",
+  "order": 13,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

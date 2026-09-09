@@ -1,16 +1,16 @@
-# NLB.DEV — V2 foundation
+# NLB.DEV — Work & life
 
-Nathan Bennett's portfolio, now on **Svelte 5, SvelteKit, TypeScript, and Tailwind CSS 4**. This stage focuses on portable content and validation. The frontend is intentionally a plain, searchable content library.
+Nathan Bennett's portfolio: selected work and one chronological timeline with Company, Education, and Project rails. Built with Svelte 5, SvelteKit, TypeScript, and Tailwind CSS 4.
 
 - [Current website](https://nlb.dev/)
 - [Historical V0](https://v0.nlb.dev/)
 - [Preserved V1](https://v1.nlb.dev/)
 
-V1's Svelte 3 source remains in Git at `99c5560` and on the `v1` branch. This migration does not update those deployments. Submit changes through PRs into `dev`; release to `main` separately.
+V1's Svelte 3 source remains at `99c5560` and on the `v1` branch. V2 includes 31 original portfolio items plus 14 chapters from the user-selected prototype (career, education, and Zombiehood). Dates and historical claims still need editorial confirmation.
 
-## Run locally
+## Develop and verify
 
-Use Node.js 22.12+ and npm. Vercel's runtime is explicitly Node 22; Node 26 also works for local tooling. Use the committed npm lockfile, not a second package manager.
+Use Node.js 22.12+ and npm with the committed lockfile. Vercel's runtime is explicitly Node 22.
 
 ```sh
 npm ci
@@ -20,34 +20,56 @@ npm run dev
 Open the printed URL, normally `http://localhost:5173`.
 
 ```sh
-npm run check           # Svelte + TypeScript diagnostics
-npm test                # Content schema regression tests
-npm run content:check   # Schema, descriptions, local references
-npm run content:audit   # Above plus .reports/assets.json inventory
-npm run build           # Content validation and production build
-npm run preview         # Serve the production build locally
+npm run check           # TypeScript and Svelte, including content scripts
+npm test                # Content preservation, schema, timeline and Markdown safety
+npm run content:check   # Item structure, local references and Markdown links
+npm run content:audit   # Asset sizes, duplicate hashes and unreferenced files
+npm run build           # Validate and prerender the production app
+npm run preview         # Serve that production build
+npm run format          # Consistent formatting across source and content
+npm run format:check    # Check formatting without edits
 npm run audit           # Dependency security audit
 ```
 
-The root page is prerendered. Catalog JSON and Markdown are imported directly at build time; there is no database, API, or fetch route. The Vercel adapter supports adding server features later. Existing showcase paths are preserved as content metadata, but the old showcase routes and contact form are intentionally absent from this foundation.
+No database or API is required. SvelteKit imports the item files and asset URLs at build time. The homepage is prerendered; search, track highlighting, archive disclosure, and media expansion run locally in the browser. Large animations are behind an explicit disclosure instead of autoplaying in the timeline.
 
-## Content and assets
+## Self-contained items
 
-- `content/entries.json`: 22 games, 3 main projects, 6 archive projects.
-- `content/descriptions/*.md`: 31 standalone descriptions, including historical portfolio links and gallery images.
-- `content/profile.json`: biography, skills, contact links, resume, and historical contact endpoint.
-- `content/schema.js`: shared Zod schemas, usable independently of Svelte.
-- `content/review.json`: unresolved source-content questions; do not guess these values.
-- `content/provenance.json`: source commit and migration provenance.
-- `static/assets/`: all 222 original asset files, preserved byte-for-byte with unchanged public `/assets/...` URLs.
-- `src/lib/content.ts`: imports and validates local content for the app.
+```text
+content/items/game-project-adder/
+  entry.json             # Metadata + Markdown body in one record
+  assets/
+    cover.png
+    animation.gif
+    screenshots/01.jpg
+    screenshots/02.jpg
+    extras/01.png        # Preserved historical media, not in the public gallery
+```
 
-See [content editing rules](content/README.md). The audit reports unreferenced files and duplicate hashes; it never deletes assets. Unreferenced does not mean disposable—some files belong to the historical frontend.
+The common schema is `content/schema.ts`. `src/lib/content.ts` validates and imports the records. `PortfolioItem.svelte` is the reusable presentation component; Company and Education use the same item model without requiring media. Vite imports generate fingerprinted asset URLs, so moving an item folder and its record does not require hand-maintaining public URLs.
 
-The old UI, Page.js, modal packages, and Rollup configuration were removed from the active tree. Recover them from V1 when needed rather than maintaining two content sources. Markdown displays as escaped plain text for now; no raw HTML rendering is enabled.
+```sh
+npm run item:new -- --kind project --slug my-project --title "My project"
+```
 
-## Current limitations
+This creates a draft with a screenshots folder. Edit its JSON, add media, and set `draft` to false when ready. Drafts validate but do not appear in the app. See [content editing rules](content/README.md).
 
-Dates preserve year/month/day precision, and unknown dates stay null. Historical descriptions and links have not been fact-checked against current external services. Editorial review remains necessary before a redesigned public release. The inspiration timeline and employment history have not been imported in this pass.
+`content/profile.json` contains biography, skills, contact links, and the resume reference. `content/asset-migrations.json` maps historical asset URLs to item folders. Existing deep-link paths remain metadata until a future routing pass. The old contact form is not part of this MVP.
 
-The framework's transitive `cookie` package is scoped to patched `0.7.2` through an npm override. The validated install reports zero audit vulnerabilities. Reassess this override when upgrading SvelteKit.
+## Lossless asset optimization
+
+```sh
+brew install optipng gifsicle jpeg-turbo
+# Python 3 with Pillow is required for independent decoded-image verification.
+npm run assets:optimize
+```
+
+The TypeScript command runs OptiPNG, Gifsicle and jpegtran. It accepts only smaller outputs with identical decoded RGBA pixels, frame durations, loop count, ICC profile, and EXIF. It never uses JPEG re-encoding or lossy GIF options. Failures keep the original. Detailed results are written to `.reports/lossless-optimization.json`.
+
+## Preservation and remaining review
+
+- The catalog's Markdown renders through an explicit renderer: raw HTML is escaped, unsafe link schemes are rejected, and images resolve only to local item assets.
+- Unknown dates remain unknown; year-only and month-only dates keep their precision. Imported reference dates carry provenance and `datesNeedReview`.
+- Older entries are initially folded under “Earlier chapters.” Search includes them, and expanding the archive keeps them in the same timeline.
+- The scoped `cookie` override patches SvelteKit's transitive dependency; revisit it on framework upgrades.
+- During the pending cleanup approval, the old aggregate catalog, description files, and original static asset copies remain alongside the new item folders. They are not consumed by the new app. PDN removal and branch consolidation are also awaiting approval.

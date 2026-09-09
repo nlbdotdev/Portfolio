@@ -1,0 +1,65 @@
+{
+  "id": "game-fantaknee-football",
+  "kind": "game",
+  "slug": "fantaknee-football",
+  "legacyPath": "/games/fantakneefootball",
+  "title": "Fantaknee Football",
+  "summary": "Fantaknee Football is a satirical game about the news cycle. I was hired to develop it for a team commissioned by Super Deluxe.",
+  "date": {
+    "label": "2017",
+    "value": "2017",
+    "precision": "year"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["mobile", "web", "freelance"],
+  "links": [
+    {
+      "label": "Game",
+      "link": "https://ilovechrisbaker.com/fantaknee-football-by-super-deluxe/"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "Fantaknee Football menu screen"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "Fantaknee Football screenshot (1)"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "Fantaknee Football screenshot (2)"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "Fantaknee Football screenshot (3)"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://ilovechrisbaker.com/stuff/Fantaknee-Football/index.html",
+    "desktop": false,
+    "mobile": true
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "small"
+  },
+  "body": "Fantaknee Football is a satirical game about the news cycle. I was hired to develop it for a team commissioned by Super Deluxe.\n",
+  "order": 18,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

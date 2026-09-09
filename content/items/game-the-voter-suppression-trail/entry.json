@@ -1,0 +1,73 @@
+{
+  "id": "game-the-voter-suppression-trail",
+  "kind": "game",
+  "slug": "the-voter-suppression-trail",
+  "legacyPath": "/games/thevotersuppressiontrail",
+  "title": "The Voter Suppression Trail",
+  "summary": "I was hired by Everyday Arcade to code \"The Voter Suppression Trail\", which was published in The New York Times as \"the first-ever video game for Op-Docs\" in a series about the 2016 election.",
+  "date": {
+    "label": "Nov 3, 2016",
+    "value": "2016-11-03",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["mobile", "web", "freelance"],
+  "links": [
+    {
+      "label": "NY Times",
+      "link": "https://www.nytimes.com/interactive/2016/11/01/opinion/voting-suppression-videogame.html"
+    },
+    {
+      "label": "Everyday Arcade",
+      "link": "https://everydayarcade.com/games/the-voter-suppression-trail"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "Voter Suppression Trail menu screen"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "Voter Suppression Trail screenshot (1)"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "Voter Suppression Trail screenshot (2)"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "Voter Suppression Trail screenshot (4)"
+      },
+      {
+        "src": "assets/screenshots/05.png",
+        "alt": "Voter Suppression Trail screenshot (5)"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://www.nytimes.com/interactive/2016/11/01/opinion/voting-suppression-videogame.html",
+    "desktop": false,
+    "mobile": true
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "big"
+  },
+  "body": "I was hired by Everyday Arcade to code \"The Voter Suppression Trail\", which was published in The New York Times as \"the first-ever video game for Op-Docs\" in a series about the 2016 election.\n",
+  "order": 15,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

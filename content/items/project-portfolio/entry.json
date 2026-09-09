@@ -1,0 +1,82 @@
+{
+  "id": "project-portfolio",
+  "kind": "project",
+  "slug": "portfolio",
+  "legacyPath": "/projects/portfolio",
+  "title": "Portfolio",
+  "summary": "After going through various websites over the years, I wanted a single location to put all my content. This site was built with Svelte and served as a personal capstone project in front-end development.",
+  "date": {
+    "label": null,
+    "value": null,
+    "precision": null
+  },
+  "featured": false,
+  "collection": "projects",
+  "tags": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://nlb.dev"
+    },
+    {
+      "label": "Github Repo",
+      "link": "https://github.com/nlbdotdev/Portfolio"
+    }
+  ],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {
+      "desktop": "assets/screenshots/01.png",
+      "mobile": "assets/screenshots/02.png"
+    }
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [
+    {
+      "label": "Svelte",
+      "link": "https://svelte.dev/"
+    },
+    {
+      "label": "Page.js",
+      "link": "https://www.npmjs.com/package/page"
+    }
+  ],
+  "dependencies": [
+    {
+      "label": "Svelte Simple Modal",
+      "link": "https://www.npmjs.com/package/svelte-simple-modal"
+    },
+    {
+      "label": "Svelte Media Query",
+      "link": "https://www.npmjs.com/package/svelte-media-query"
+    },
+    {
+      "label": "Svelte Lightbox",
+      "link": "https://www.npmjs.com/package/svelte-lightbox"
+    },
+    {
+      "label": "Svelte Viewport Info",
+      "link": "https://www.npmjs.com/package/svelte-viewport-info"
+    }
+  ],
+  "legacyPresentation": {
+    "stack": ["Svelte", "Page.js"],
+    "youAreHere": true,
+    "link": "https://nlb.dev"
+  },
+  "body": "### About\n\nI decided to work in Svelte because almost all my course work at the time was in React. I wanted to challenge myself to get comfortable with a new (though fairly similar) framework, and I liked the design philosophy behind Svelte.\n\n### Deployment\n\nThis project is deployed as a static site via namecheap hosting. I've setup a deployment branch on github which is a subtree with the origin at public/. To update this site I simply have to push to the subtree, then connect to my namecheap file server via ssh and pull.\n\n### Process\n\n![Portfolio design study](assets/screenshots/03.png)\n\n![Portfolio design study](assets/screenshots/04.png)\n\n![Portfolio design study](assets/screenshots/05.png)\n\nI started out by mocking up some designs in Figma, attempting to figure out how to display my games portfolio. The most challenging part was coming up with a good solution to preview both mobile and desktop games. I tried a few layouts for both the game page and the portfolio page.\n\nOnce I had a few designs to choose from, I got to work implementing the game pages. Feeling inspired by some examples on codepen, I built a phone and laptop frame out of pure CSS. I also implemented basic routing with page.js.\n\nThe theme felt OK, but it felt a bit bare, and I wanted something more creative for a personal site. I started by switching to a dark theme, and then adding more color.\n\nThese layouts also ended up being too wide to have a large enough game preview windows, so I adjusted them to the current layout.\n\nWith a functional games section, I moved on to the web page, starting with the responsive header and splash image. I then fleshed out the skills section. At this point I revisited the game page, which needed more work to fit the theme. I updated the portfolio and showcase template to match the theme, and converted the game pages to modals. Here I also did a big responsiveness pass to make sure the site looked good across devices.\n\nBuilding the data structure and component composition for the games portfolio made implementing the web projects fairly straight forward. I also implemented a contact page using formspree.\n\n![Portfolio design study](assets/screenshots/06.png)\n\n![Portfolio design study](assets/screenshots/07.png)\n\n![Portfolio design study](assets/screenshots/08.png)\n\n### A deeper dive\n\n#### Device Components\n\nInitially the Phone.svelte and Laptop.svelte component had no shared code. I drew them up quick and dirty, and they needed some work to fit more robust use cases. I started by switching the device content to a component which each device could use. I setup DeviceContent.svelte so that it could display either a static image, a gif, or an embedded preview of the game depending on props and if the user is on an appropriate device.\n\n#### Project Composition\n\nFor each category of project (web projects, other web projects, game projects), I built an array of objects in stores.js with all relevant data. This would make it easy to pull in and filter all games based on tag, or other defined parameters.\n\n#### Responsive Navbar\n\nThe navbar took a bit of trial and error to find what worked. Initially I tried automatically collapsing it once you had scrolled past a certain point, but it didn’t look right. I also experimented with some scroll-jacking but thankfully decided against it. Ultimately, I realized it would probably look best to adjust the angle in real time. Making that work was easier than I thought, I just had to define a start and end position, and adjust the skew angle according to the scroll position relative to that area.\n\n#### Angled Sections\n\nWhen refactoring to the dark theme, I came up with the idea of the angled navbar which I really liked. But I also had to bring the rest of the website in line. I tried a lot of solutions for drawing angled backgrounds in CSS: borders, angled boxes, clip-path, transform, etc. I found a more elegant solution with the psuedo elements ::before and ::after, using clip-path to display shadows appropriately. Finally, I built the Section.svelte component with top and bottom props to conditionally render the angled borders.\n\n### Old Portfolios\n\nAs mentioned in the description, I’ve built a few portfolio sites with Wordpress before. Here are the archived pages:\n\n- [nathanbennett.io](https://web.archive.org/web/20190531181500/https://www.nathanbennett.io/)\n\n- [reflextionsdev.com](https://web.archive.org/web/20191025023446/http://reflextionsdev.com/)\n\n- [nurobit.com](https://web.archive.org/web/20190531181440/https://www.nurobit.com/)\n",
+  "order": 23,
+  "role": "Software project",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

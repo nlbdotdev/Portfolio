@@ -1,0 +1,445 @@
+{
+  "paths": {
+    "/assets/games/adder/cover.png": ["content/items/game-project-adder/assets/cover.png"],
+    "/assets/games/adder/adder.gif": ["content/items/game-project-adder/assets/animation.gif"],
+    "/assets/games/adder/1.jpg": ["content/items/game-project-adder/assets/screenshots/01.jpg"],
+    "/assets/games/adder/2.jpg": ["content/items/game-project-adder/assets/screenshots/02.jpg"],
+    "/assets/games/adder/3.jpg": ["content/items/game-project-adder/assets/screenshots/03.jpg"],
+    "/assets/games/adder/4.jpg": ["content/items/game-project-adder/assets/screenshots/04.jpg"],
+    "/assets/games/adder/5.jpg": ["content/items/game-project-adder/assets/screenshots/05.jpg"],
+    "/assets/games/adder/6.jpg": ["content/items/game-project-adder/assets/screenshots/06.jpg"],
+    "/assets/games/adder/7.jpg": ["content/items/game-project-adder/assets/screenshots/07.jpg"],
+    "/assets/games/adder/adderCover2.png": [
+      "content/items/game-project-adder/assets/extras/01.png"
+    ],
+    "/assets/games/adder/addercover3.png": [
+      "content/items/game-project-adder/assets/extras/02.png"
+    ],
+    "/assets/games/adder/coverOld.png": ["content/items/game-project-adder/assets/extras/03.png"],
+    "/assets/games/adder/d.png": ["content/items/game-project-adder/assets/extras/04.png"],
+    "/assets/games/adder/x.png": ["content/items/game-project-adder/assets/extras/05.png"],
+    "/assets/games/laststraw/cover.png": ["content/items/game-the-last-straw/assets/cover.png"],
+    "/assets/games/laststraw/straw.gif": ["content/items/game-the-last-straw/assets/animation.gif"],
+    "/assets/games/laststraw/1.png": [
+      "content/items/game-the-last-straw/assets/screenshots/01.png"
+    ],
+    "/assets/games/laststraw/a.png": [
+      "content/items/game-the-last-straw/assets/screenshots/02.png"
+    ],
+    "/assets/games/laststraw/c.png": [
+      "content/items/game-the-last-straw/assets/screenshots/03.png"
+    ],
+    "/assets/games/laststraw/d.png": [
+      "content/items/game-the-last-straw/assets/screenshots/04.png"
+    ],
+    "/assets/games/laststraw/6.png": [
+      "content/items/game-the-last-straw/assets/screenshots/05.png"
+    ],
+    "/assets/games/laststraw/2.png": ["content/items/game-the-last-straw/assets/extras/01.png"],
+    "/assets/games/laststraw/3.png": ["content/items/game-the-last-straw/assets/extras/02.png"],
+    "/assets/games/laststraw/4.png": ["content/items/game-the-last-straw/assets/extras/03.png"],
+    "/assets/games/laststraw/5.png": ["content/items/game-the-last-straw/assets/extras/04.png"],
+    "/assets/games/laststraw/GameOver.png": [
+      "content/items/game-the-last-straw/assets/extras/05.png"
+    ],
+    "/assets/games/laststraw/TLS_-_Day_Alt.png": [
+      "content/items/game-the-last-straw/assets/extras/06.png"
+    ],
+    "/assets/games/laststraw/Title_Text.png": [
+      "content/items/game-the-last-straw/assets/extras/07.png"
+    ],
+    "/assets/games/laststraw/b.png": ["content/items/game-the-last-straw/assets/extras/08.png"],
+    "/assets/games/soulgrinder/cover.png": ["content/items/game-soul-grinder/assets/cover.png"],
+    "/assets/games/soulgrinder/soulgrinder.gif": [
+      "content/items/game-soul-grinder/assets/animation.gif"
+    ],
+    "/assets/games/soulgrinder/1.png": [
+      "content/items/game-soul-grinder/assets/screenshots/01.png"
+    ],
+    "/assets/games/soulgrinder/3.png": [
+      "content/items/game-soul-grinder/assets/screenshots/02.png"
+    ],
+    "/assets/games/soulgrinder/5.png": [
+      "content/items/game-soul-grinder/assets/screenshots/03.png"
+    ],
+    "/assets/games/soulgrinder/4.png": [
+      "content/items/game-soul-grinder/assets/screenshots/04.png"
+    ],
+    "/assets/games/soulgrinder/6.png": [
+      "content/items/game-soul-grinder/assets/screenshots/05.png"
+    ],
+    "/assets/games/soulgrinder/7.png": [
+      "content/items/game-soul-grinder/assets/screenshots/06.png"
+    ],
+    "/assets/games/soulgrinder/2.png": ["content/items/game-soul-grinder/assets/extras/01.png"],
+    "/assets/games/soulgrinder/8.png": ["content/items/game-soul-grinder/assets/extras/02.png"],
+    "/assets/games/kcps/kcpsCover.png": [
+      "content/items/game-kitty-cat-poker-slots/assets/cover.png"
+    ],
+    "/assets/games/kcps/kcps.gif": [
+      "content/items/game-kitty-cat-poker-slots/assets/animation.gif"
+    ],
+    "/assets/games/kcps/kcps1.png": [
+      "content/items/game-kitty-cat-poker-slots/assets/screenshots/01.png"
+    ],
+    "/assets/games/kcps/kcps2.png": [
+      "content/items/game-kitty-cat-poker-slots/assets/screenshots/02.png"
+    ],
+    "/assets/games/kcps/kcps3.png": [
+      "content/items/game-kitty-cat-poker-slots/assets/screenshots/03.png"
+    ],
+    "/assets/games/kcps/kcps4.png": [
+      "content/items/game-kitty-cat-poker-slots/assets/screenshots/04.png"
+    ],
+    "/assets/games/kcps/kcps5.png": [
+      "content/items/game-kitty-cat-poker-slots/assets/screenshots/05.png"
+    ],
+    "/assets/games/kcps/kcps6.png": [
+      "content/items/game-kitty-cat-poker-slots/assets/screenshots/06.png"
+    ],
+    "/assets/games/roadwayrepair/roadwayCover.png": [
+      "content/items/game-roadway-repair/assets/cover.png"
+    ],
+    "/assets/games/roadwayrepair/roadway.gif": [
+      "content/items/game-roadway-repair/assets/animation.gif"
+    ],
+    "/assets/games/roadwayrepair/RoadwayRepairIcon.png": [
+      "content/items/game-roadway-repair/assets/icon.png"
+    ],
+    "/assets/games/roadwayrepair/rrmenu.png": [
+      "content/items/game-roadway-repair/assets/screenshots/01.png"
+    ],
+    "/assets/games/roadwayrepair/roadway1.png": [
+      "content/items/game-roadway-repair/assets/screenshots/02.png"
+    ],
+    "/assets/games/roadwayrepair/roadway2.png": [
+      "content/items/game-roadway-repair/assets/screenshots/03.png"
+    ],
+    "/assets/games/protoshift/protoshiftCover.png": [
+      "content/items/game-protoshift/assets/cover.png"
+    ],
+    "/assets/games/protoshift/protoshift.gif": [
+      "content/items/game-protoshift/assets/animation.gif"
+    ],
+    "/assets/games/protoshift/card1BG.png": [
+      "content/items/game-protoshift/assets/screenshots/01.png"
+    ],
+    "/assets/games/protoshift/card2BG.png": [
+      "content/items/game-protoshift/assets/screenshots/02.png"
+    ],
+    "/assets/games/protoshift/card3BG.jpg": [
+      "content/items/game-protoshift/assets/screenshots/03.jpg"
+    ],
+    "/assets/games/protoshift/card4BG.jpg": [
+      "content/items/game-protoshift/assets/screenshots/04.jpg"
+    ],
+    "/assets/games/protoshift/card6BG.jpg": [
+      "content/items/game-protoshift/assets/screenshots/05.jpg"
+    ],
+    "/assets/games/protoshift/card5BG.jpg": ["content/items/game-protoshift/assets/extras/01.jpg"],
+    "/assets/games/protoshift/cover.png": ["content/items/game-protoshift/assets/extras/02.png"],
+    "/assets/games/protoshift/iconColor.png": [
+      "content/items/game-protoshift/assets/extras/03.png"
+    ],
+    "/assets/games/protoshift/itchBanner2.png": [
+      "content/items/game-protoshift/assets/extras/04.png"
+    ],
+    "/assets/games/protoshift/ss1.png": ["content/items/game-protoshift/assets/extras/05.png"],
+    "/assets/games/protoshift/ss2.png": ["content/items/game-protoshift/assets/extras/06.png"],
+    "/assets/games/protoshift/ss3.png": ["content/items/game-protoshift/assets/extras/07.png"],
+    "/assets/games/protoshift/ss4.png": ["content/items/game-protoshift/assets/extras/08.png"],
+    "/assets/games/protoshift/ss5.png": ["content/items/game-protoshift/assets/extras/09.png"],
+    "/assets/games/protoshift/ss6.png": ["content/items/game-protoshift/assets/extras/10.png"],
+    "/assets/games/protoshift/ss7.png": ["content/items/game-protoshift/assets/extras/11.png"],
+    "/assets/games/protoshift/ss8.png": ["content/items/game-protoshift/assets/extras/12.png"],
+    "/assets/games/dontfall/dfCover.png": ["content/items/game-don-t-fall/assets/cover.png"],
+    "/assets/games/dontfall/df.gif": ["content/items/game-don-t-fall/assets/animation.gif"],
+    "/assets/games/dontfall/df1.png": ["content/items/game-don-t-fall/assets/screenshots/01.png"],
+    "/assets/games/dontfall/df2.png": ["content/items/game-don-t-fall/assets/screenshots/02.png"],
+    "/assets/games/dontfall/df3.png": ["content/items/game-don-t-fall/assets/screenshots/03.png"],
+    "/assets/games/bouncyballoons/bouncyballoonsportrait.png": [
+      "content/items/game-bouncy-balloons/assets/cover.png"
+    ],
+    "/assets/games/bouncyballoons/balloons.gif": [
+      "content/items/game-bouncy-balloons/assets/animation.gif"
+    ],
+    "/assets/games/bouncyballoons/BalloonIcon.png": [
+      "content/items/game-bouncy-balloons/assets/icon.png"
+    ],
+    "/assets/games/bouncyballoons/bouncyballoons1.png": [
+      "content/items/game-bouncy-balloons/assets/screenshots/01.png"
+    ],
+    "/assets/games/bouncyballoons/bouncyballoons2.png": [
+      "content/items/game-bouncy-balloons/assets/screenshots/02.png"
+    ],
+    "/assets/games/bouncyballoons/bouncyballoons3.png": [
+      "content/items/game-bouncy-balloons/assets/screenshots/03.png"
+    ],
+    "/assets/games/rtr/rtrCover.png": ["content/items/game-red-tie-runner/assets/cover.png"],
+    "/assets/games/rtr/rtr.gif": ["content/items/game-red-tie-runner/assets/animation.gif"],
+    "/assets/games/rtr/ss1.png": ["content/items/game-red-tie-runner/assets/screenshots/01.png"],
+    "/assets/games/rtr/ss2.png": ["content/items/game-red-tie-runner/assets/screenshots/02.png"],
+    "/assets/games/rtr/ss3.png": ["content/items/game-red-tie-runner/assets/screenshots/03.png"],
+    "/assets/games/rtr/ss4.png": ["content/items/game-red-tie-runner/assets/screenshots/04.png"],
+    "/assets/games/rtr/ss5.png": ["content/items/game-red-tie-runner/assets/screenshots/05.png"],
+    "/assets/games/rtr/ss6.png": ["content/items/game-red-tie-runner/assets/screenshots/06.png"],
+    "/assets/games/rtr/ss7.png": ["content/items/game-red-tie-runner/assets/screenshots/07.png"],
+    "/assets/games/jetattack/jaCover3.png": ["content/items/game-jet-attack/assets/cover.png"],
+    "/assets/games/jetattack/ja.gif": ["content/items/game-jet-attack/assets/animation.gif"],
+    "/assets/games/jetattack/ss1.png": ["content/items/game-jet-attack/assets/screenshots/01.png"],
+    "/assets/games/jetattack/ss2.png": ["content/items/game-jet-attack/assets/screenshots/02.png"],
+    "/assets/games/jetattack/ss3.png": ["content/items/game-jet-attack/assets/screenshots/03.png"],
+    "/assets/games/jetattack/ss4.png": ["content/items/game-jet-attack/assets/screenshots/04.png"],
+    "/assets/games/jetattack/jaCover.png": ["content/items/game-jet-attack/assets/extras/01.png"],
+    "/assets/games/gridlock/gdCover.png": ["content/items/game-gridlock-dash/assets/cover.png"],
+    "/assets/games/gridlock/gridlock.gif": [
+      "content/items/game-gridlock-dash/assets/animation.gif"
+    ],
+    "/assets/games/gridlock/ss5.png": [
+      "content/items/game-gridlock-dash/assets/screenshots/01.png"
+    ],
+    "/assets/games/gridlock/ss1.png": [
+      "content/items/game-gridlock-dash/assets/screenshots/02.png"
+    ],
+    "/assets/games/gridlock/ss2.png": [
+      "content/items/game-gridlock-dash/assets/screenshots/03.png"
+    ],
+    "/assets/games/gridlock/ss4.png": [
+      "content/items/game-gridlock-dash/assets/screenshots/04.png"
+    ],
+    "/assets/games/gridlock/ss3.png": [
+      "content/items/game-gridlock-dash/assets/screenshots/05.png"
+    ],
+    "/assets/games/sam/samCover.png": ["content/items/game-sam/assets/cover.png"],
+    "/assets/games/sam/sam.gif": ["content/items/game-sam/assets/animation.gif"],
+    "/assets/games/sam/1.png": ["content/items/game-sam/assets/screenshots/01.png"],
+    "/assets/games/sam/2.png": ["content/items/game-sam/assets/screenshots/02.png"],
+    "/assets/games/sam/3.png": ["content/items/game-sam/assets/screenshots/03.png"],
+    "/assets/games/sam/4.png": ["content/items/game-sam/assets/screenshots/04.png"],
+    "/assets/games/minos/minosCover.png": ["content/items/game-mino-s-pond/assets/cover.png"],
+    "/assets/games/minos/minos.gif": ["content/items/game-mino-s-pond/assets/animation.gif"],
+    "/assets/games/minos/SS1.png": ["content/items/game-mino-s-pond/assets/screenshots/01.png"],
+    "/assets/games/minos/SS3.png": ["content/items/game-mino-s-pond/assets/screenshots/02.png"],
+    "/assets/games/minos/SS4.png": ["content/items/game-mino-s-pond/assets/screenshots/03.png"],
+    "/assets/games/minos/SS2.png": ["content/items/game-mino-s-pond/assets/screenshots/04.png"],
+    "/assets/games/minos/SS5.gif": ["content/items/game-mino-s-pond/assets/screenshots/05.gif"],
+    "/assets/games/brixbuilder/brixCover.png": ["content/items/game-brix-builder/assets/cover.png"],
+    "/assets/games/brixbuilder/brix.gif": ["content/items/game-brix-builder/assets/animation.gif"],
+    "/assets/games/brixbuilder/Icon.png": ["content/items/game-brix-builder/assets/icon.png"],
+    "/assets/games/brixbuilder/brixbuilder1.png": [
+      "content/items/game-brix-builder/assets/screenshots/01.png"
+    ],
+    "/assets/games/brixbuilder/brixbuilder2.png": [
+      "content/items/game-brix-builder/assets/screenshots/02.png"
+    ],
+    "/assets/games/brixbuilder/brixbuilder3.png": [
+      "content/items/game-brix-builder/assets/screenshots/03.png"
+    ],
+    "/assets/games/rocketrunner/rocketCover.png": [
+      "content/items/game-rocket-runner/assets/cover.png"
+    ],
+    "/assets/games/rocketrunner/rocket.gif": [
+      "content/items/game-rocket-runner/assets/animation.gif"
+    ],
+    "/assets/games/rocketrunner/Icon.png": ["content/items/game-rocket-runner/assets/icon.png"],
+    "/assets/games/rocketrunner/rocketrunner1.png": [
+      "content/items/game-rocket-runner/assets/screenshots/01.png"
+    ],
+    "/assets/games/rocketrunner/rocketrunner2.png": [
+      "content/items/game-rocket-runner/assets/screenshots/02.png"
+    ],
+    "/assets/games/rocketrunner/rocketrunner3.png": [
+      "content/items/game-rocket-runner/assets/screenshots/03.png"
+    ],
+    "/assets/games/voter/voterCover.png": [
+      "content/items/game-the-voter-suppression-trail/assets/cover.png"
+    ],
+    "/assets/games/voter/voter.gif": [
+      "content/items/game-the-voter-suppression-trail/assets/animation.gif"
+    ],
+    "/assets/games/voter/voter1.png": [
+      "content/items/game-the-voter-suppression-trail/assets/screenshots/01.png"
+    ],
+    "/assets/games/voter/voter2.png": [
+      "content/items/game-the-voter-suppression-trail/assets/screenshots/02.png"
+    ],
+    "/assets/games/voter/voter3.png": [
+      "content/items/game-the-voter-suppression-trail/assets/screenshots/03.png"
+    ],
+    "/assets/games/voter/voter4.png": [
+      "content/items/game-the-voter-suppression-trail/assets/screenshots/04.png"
+    ],
+    "/assets/games/voter/voter5.png": [
+      "content/items/game-the-voter-suppression-trail/assets/screenshots/05.png"
+    ],
+    "/assets/games/mta/MTACover.png": ["content/items/game-mta-country/assets/cover.png"],
+    "/assets/games/mta/MTA.gif": ["content/items/game-mta-country/assets/animation.gif"],
+    "/assets/games/mta/MTA.png": ["content/items/game-mta-country/assets/screenshots/01.png"],
+    "/assets/games/mta/MTA2.png": ["content/items/game-mta-country/assets/screenshots/02.png"],
+    "/assets/games/mta/MTA3.png": ["content/items/game-mta-country/assets/screenshots/03.png"],
+    "/assets/games/mta/MTA4.png": ["content/items/game-mta-country/assets/screenshots/04.png"],
+    "/assets/games/rocketstrike/rocketstrikeCover.png": [
+      "content/items/game-rocket-strike/assets/cover.png"
+    ],
+    "/assets/games/rocketstrike/rocketstrike.gif": [
+      "content/items/game-rocket-strike/assets/animation.gif"
+    ],
+    "/assets/games/rocketstrike/ss1.png": [
+      "content/items/game-rocket-strike/assets/screenshots/01.png"
+    ],
+    "/assets/games/rocketstrike/ss3.png": [
+      "content/items/game-rocket-strike/assets/screenshots/02.png"
+    ],
+    "/assets/games/rocketstrike/ss4.png": [
+      "content/items/game-rocket-strike/assets/screenshots/03.png"
+    ],
+    "/assets/games/rocketstrike/ss5.png": [
+      "content/items/game-rocket-strike/assets/screenshots/04.png"
+    ],
+    "/assets/games/rocketstrike/rocketCover.png": [
+      "content/items/game-rocket-strike/assets/extras/01.png"
+    ],
+    "/assets/games/rocketstrike/ss2.png": ["content/items/game-rocket-strike/assets/extras/02.png"],
+    "/assets/games/fantaknee/fantakneeCover.png": [
+      "content/items/game-fantaknee-football/assets/cover.png"
+    ],
+    "/assets/games/fantaknee/fantaknee.gif": [
+      "content/items/game-fantaknee-football/assets/animation.gif"
+    ],
+    "/assets/games/fantaknee/fantaknee1.png": [
+      "content/items/game-fantaknee-football/assets/screenshots/01.png"
+    ],
+    "/assets/games/fantaknee/fantaknee2.png": [
+      "content/items/game-fantaknee-football/assets/screenshots/02.png"
+    ],
+    "/assets/games/fantaknee/fantaknee3.png": [
+      "content/items/game-fantaknee-football/assets/screenshots/03.png"
+    ],
+    "/assets/games/fantaknee/fantaknee4.png": [
+      "content/items/game-fantaknee-football/assets/screenshots/04.png"
+    ],
+    "/assets/games/tower/towerCover.png": [
+      "content/items/game-tower-defense-prototype/assets/cover.png"
+    ],
+    "/assets/games/tower/tower.gif": [
+      "content/items/game-tower-defense-prototype/assets/animation.gif"
+    ],
+    "/assets/games/tower/tower1.png": [
+      "content/items/game-tower-defense-prototype/assets/screenshots/01.png"
+    ],
+    "/assets/games/tower/tower2.png": [
+      "content/items/game-tower-defense-prototype/assets/screenshots/02.png"
+    ],
+    "/assets/games/tower/tower3.png": [
+      "content/items/game-tower-defense-prototype/assets/screenshots/03.png"
+    ],
+    "/assets/games/chem/chemCover.png": [
+      "content/items/game-chemistry-hotspot-quiz/assets/cover.png"
+    ],
+    "/assets/games/chem/chem.gif": [
+      "content/items/game-chemistry-hotspot-quiz/assets/animation.gif"
+    ],
+    "/assets/games/chem/chem1.png": [
+      "content/items/game-chemistry-hotspot-quiz/assets/screenshots/01.png"
+    ],
+    "/assets/games/chem/chem2.png": [
+      "content/items/game-chemistry-hotspot-quiz/assets/screenshots/02.png"
+    ],
+    "/assets/games/chem/chem3.png": [
+      "content/items/game-chemistry-hotspot-quiz/assets/screenshots/03.png"
+    ],
+    "/assets/games/chem/chem4.png": [
+      "content/items/game-chemistry-hotspot-quiz/assets/screenshots/04.png"
+    ],
+    "/assets/games/nom/nomCover.png": ["content/items/game-monster-s-mayhem/assets/cover.png"],
+    "/assets/games/nom/nom.gif": ["content/items/game-monster-s-mayhem/assets/animation.gif"],
+    "/assets/games/nom/nom1.png": ["content/items/game-monster-s-mayhem/assets/screenshots/01.png"],
+    "/assets/games/nom/nom2.png": ["content/items/game-monster-s-mayhem/assets/screenshots/02.png"],
+    "/assets/games/nom/nom3.png": ["content/items/game-monster-s-mayhem/assets/screenshots/03.png"],
+    "/assets/games/nom/nom4.png": ["content/items/game-monster-s-mayhem/assets/screenshots/04.png"],
+    "/assets/projects/snippets/snippets.png": [
+      "content/items/project-construct-snippets/assets/screenshots/01.png"
+    ],
+    "/assets/projects/snippets/snippetsM.png": [
+      "content/items/project-construct-snippets/assets/screenshots/02.png"
+    ],
+    "/assets/projects/snippets/snippetsMOld.png": [
+      "content/items/project-construct-snippets/assets/extras/01.png"
+    ],
+    "/assets/projects/snippets/snippetsOld.png": [
+      "content/items/project-construct-snippets/assets/extras/02.png"
+    ],
+    "/assets/projects/portfolio/desktop3.png": [
+      "content/items/project-portfolio/assets/screenshots/01.png"
+    ],
+    "/assets/projects/portfolio/mobile4.png": [
+      "content/items/project-portfolio/assets/screenshots/02.png"
+    ],
+    "/assets/projects/portfolio/mockup1.png": [
+      "content/items/project-portfolio/assets/screenshots/03.png"
+    ],
+    "/assets/projects/portfolio/mockup3.png": [
+      "content/items/project-portfolio/assets/screenshots/04.png"
+    ],
+    "/assets/projects/portfolio/mockup4.png": [
+      "content/items/project-portfolio/assets/screenshots/05.png"
+    ],
+    "/assets/projects/portfolio/phone.png": [
+      "content/items/project-portfolio/assets/screenshots/06.png"
+    ],
+    "/assets/projects/portfolio/grid.png": [
+      "content/items/project-portfolio/assets/screenshots/07.png"
+    ],
+    "/assets/projects/portfolio/devices.png": [
+      "content/items/project-portfolio/assets/screenshots/08.png"
+    ],
+    "/assets/projects/portfolio/desktop.png": [
+      "content/items/project-portfolio/assets/extras/01.png"
+    ],
+    "/assets/projects/portfolio/desktop2.png": [
+      "content/items/project-portfolio/assets/extras/02.png"
+    ],
+    "/assets/projects/portfolio/laptop.png": [
+      "content/items/project-portfolio/assets/extras/03.png"
+    ],
+    "/assets/projects/portfolio/mobile1.png": [
+      "content/items/project-portfolio/assets/extras/04.png"
+    ],
+    "/assets/projects/portfolio/mobile2.png": [
+      "content/items/project-portfolio/assets/extras/05.png"
+    ],
+    "/assets/projects/portfolio/mobile3.png": [
+      "content/items/project-portfolio/assets/extras/06.png"
+    ],
+    "/assets/projects/portfolio/mockup2.png": [
+      "content/items/project-portfolio/assets/extras/07.png"
+    ],
+    "/assets/projects/portfolio/mockup5.png": [
+      "content/items/project-portfolio/assets/extras/08.png"
+    ],
+    "/assets/projects/portfolio/mockup6.png": [
+      "content/items/project-portfolio/assets/extras/09.png"
+    ],
+    "/assets/projects/portfolio/mockup7.png": [
+      "content/items/project-portfolio/assets/extras/10.png"
+    ],
+    "/assets/projects/portfolio/mockup8.png": [
+      "content/items/project-portfolio/assets/extras/11.png"
+    ],
+    "/assets/projects/rtt/rtt.png": [
+      "content/items/project-react-ticket-tracker/assets/screenshots/01.png"
+    ],
+    "/assets/projects/other/pexels.png": ["content/items/project-pexels-search/assets/cover.png"],
+    "/assets/projects/other/postcomment.png": [
+      "content/items/project-post-comment-backend/assets/cover.png"
+    ],
+    "/assets/projects/other/jeopardy.png": ["content/items/project-jeopardy/assets/cover.png"],
+    "/assets/projects/other/mapbuilder.png": ["content/items/project-map-builder/assets/cover.png"],
+    "/assets/projects/other/hackernews.png": [
+      "content/items/project-hacker-news-api/assets/cover.png"
+    ],
+    "/assets/projects/other/soundcloud.png": [
+      "content/items/project-soundcloud-mockup/assets/cover.png"
+    ]
+  }
+}
