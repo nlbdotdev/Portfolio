@@ -14,7 +14,7 @@
     "end": "2025-04",
     "ongoing": false
   },
-  "featured": false,
+  "featured": true,
   "collection": "timeline",
   "tags": ["Svelte 5", "Finance", "ERP"],
   "links": [

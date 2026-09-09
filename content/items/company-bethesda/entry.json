@@ -14,7 +14,7 @@
     "end": "2019-02",
     "ongoing": false
   },
-  "featured": false,
+  "featured": true,
   "collection": "timeline",
   "tags": ["QA", "AAA games"],
   "links": [

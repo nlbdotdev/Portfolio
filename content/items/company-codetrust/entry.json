@@ -14,7 +14,7 @@
     "end": "2024-02",
     "ongoing": false
   },
-  "featured": false,
+  "featured": true,
   "collection": "timeline",
   "tags": ["React", "React Native", "Node.js"],
   "links": [

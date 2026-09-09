@@ -14,7 +14,7 @@
     "end": "2022-09",
     "ongoing": false
   },
-  "featured": false,
+  "featured": true,
   "collection": "timeline",
   "tags": ["Browser games", "Product", "Licensing"],
   "links": [],

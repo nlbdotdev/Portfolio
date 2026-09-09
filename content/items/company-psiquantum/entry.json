@@ -14,7 +14,7 @@
     "end": "2026-05",
     "ongoing": false
   },
-  "featured": false,
+  "featured": true,
   "collection": "timeline",
   "tags": ["Full-stack development", "Quantum computing"],
   "links": [
