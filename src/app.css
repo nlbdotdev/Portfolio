@@ -1111,16 +1111,19 @@ footer p span {
 }
 
 .gameplay-media {
-  grid-column: 1 / -1;
+  display: block;
+  width: 100%;
+  align-self: start;
+  padding: 0;
   margin: 0;
   border: 1px solid var(--border);
   border-radius: 4px;
   overflow: hidden;
 }
 .gameplay-frame {
+  display: block;
   position: relative;
   aspect-ratio: 16 / 10;
-  max-height: 480px;
   background: #111;
 }
 .screenshot-grid .gameplay-frame img {
@@ -1139,24 +1142,6 @@ footer p span {
 .gameplay-frames.ready {
   opacity: 1;
 }
-.gameplay-media figcaption {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 9px 14px;
-  color: var(--muted);
-  font: 12px var(--font-mono);
-}
-.gameplay-media button {
-  color: var(--ink);
-  padding: 4px 9px;
-  border: 1px solid var(--border);
-  border-radius: 3px;
-}
-.gameplay-media button:hover {
-  background: var(--surface);
-}
-
 /* Header and hero accents follow the selected or system color scheme. */
 .site-header,
 .intro {

@@ -39,8 +39,15 @@
   }
 </script>
 
-<figure class="gameplay-media" bind:this={container} aria-label={`${title} gameplay`}>
-  <div class="gameplay-frame">
+<button
+  class="gameplay-media"
+  bind:this={container}
+  onclick={toggle}
+  aria-label={`${failed ? 'Retry' : paused ? 'Play' : 'Pause'} ${title} gameplay`}
+  aria-pressed={paused}
+  title={failed ? 'Click to retry' : paused ? 'Click to play' : 'Click to pause'}
+>
+  <span class="gameplay-frame">
     {#if poster}<img
         class="gameplay-poster"
         src={poster}
@@ -62,14 +69,5 @@
         }}
       />
     {/if}
-  </div>
-  <figcaption>
-    <span>{failed ? 'Animation could not load' : 'Gameplay'}</span>
-    <button
-      onclick={toggle}
-      aria-label={`${paused || failed ? 'Play' : 'Pause'} ${title} gameplay`}
-    >
-      {failed ? 'Retry' : paused ? 'Play' : 'Pause'}
-    </button>
-  </figcaption>
-</figure>
+  </span>
+</button>
