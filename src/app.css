@@ -310,10 +310,11 @@ h1 {
   width: 2px;
   background: var(--track);
   opacity: 0.65;
-  transition: opacity 480ms ease;
+  transition: opacity 180ms ease-out;
 }
 .rails i.quiet {
   opacity: 0;
+  transition-delay: 520ms;
 }
 .year {
   display: flex;
@@ -1056,4 +1057,8 @@ footer p span {
     margin-left: -56px;
     padding-left: 56px;
   }
+}
+
+#collection-divider {
+  scroll-margin-top: 24px;
 }

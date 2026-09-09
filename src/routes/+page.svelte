@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { tick } from 'svelte';
   import { archivePreview } from '$lib/archive-preview';
   import { collectionTransition } from '$lib/collection-transition';
   import ThemeSelect from '$lib/components/ThemeSelect.svelte';
@@ -8,6 +9,18 @@
   let active = $state<Track | null>(null);
   let query = $state('');
   let showArchive = $state(false);
+  let archiveRevealAfter = 0;
+  async function changeTrack(track: Track | null) {
+    active = track;
+    showArchive = false;
+    // Don't mistake the view-reset scroll for a request to reveal history.
+    archiveRevealAfter = performance.now() + 800;
+    await tick();
+    document.getElementById('collection-divider')?.scrollIntoView({
+      block: 'start',
+      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+    });
+  }
   let expandedEntries = $state<Record<string, boolean>>(
     Object.fromEntries(entries.map((entry) => [entry.id, false])),
   );
@@ -44,7 +57,13 @@
       const down = y > previousY;
       previousY = y;
       const rect = node.getBoundingClientRect();
-      if (down && rect.top < window.innerHeight * 0.8 && rect.bottom > 0) showArchive = true;
+      if (
+        performance.now() >= archiveRevealAfter &&
+        down &&
+        rect.top < window.innerHeight * 0.8 &&
+        rect.bottom > 0
+      )
+        showArchive = true;
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     return { destroy: () => window.removeEventListener('scroll', onScroll) };
@@ -127,7 +146,7 @@
           </button>
         {/each}
       </div>
-      <div class="collection-divider">
+      <div class="collection-divider" id="collection-divider">
         <a href="#timeline">Scroll to explore <span aria-hidden="true">↓</span></a>
       </div>
     </section>
@@ -147,12 +166,12 @@
           <button
             class:chosen={active === null}
             aria-pressed={active === null}
-            onclick={() => (active = null)}>Everything</button
+            onclick={() => changeTrack(null)}>Everything</button
           >{#each tracks as track}<button
               class:chosen={active === track.id}
               aria-pressed={active === track.id}
               style={`--track:${track.color}`}
-              onclick={() => (active = active === track.id ? null : track.id)}
+              onclick={() => changeTrack(active === track.id ? null : track.id)}
               ><i aria-hidden="true"></i>{track.label}</button
             >{/each}
         </div>
