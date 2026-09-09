@@ -6,11 +6,11 @@
   import PortfolioItem from '$lib/components/PortfolioItem.svelte';
   import { entries, profile, assetUrl } from '$lib/content';
   import { tracks, trackOf, yearOf, isArchive, matchesSearch, type Track } from '$lib/timeline';
-  let active = $state<Track | null>(null);
+  let active = $state<Track | 'featured' | null>(null);
   let query = $state('');
   let showArchive = $state(false);
   let archiveRevealAfter = 0;
-  async function changeTrack(track: Track | null) {
+  async function changeTrack(track: Track | 'featured' | null) {
     active = track;
     showArchive = false;
     // Don't mistake the view-reset scroll for a request to reveal history.
@@ -34,17 +34,21 @@
       ]),
     );
   }
-  const featured = ['game-zombiehood', 'company-psiquantum', 'company-pilot'].map((id) =>
+  const heroFeatured = ['game-zombiehood', 'company-psiquantum', 'company-pilot'].map((id) =>
     entries.find((entry) => entry.id === id)!,
   );
   const studio = entries.find((entry) => entry.id === 'company-dead-traveler')!;
   const matching = $derived(
     entries.filter(
-      (entry) => (!active || trackOf(entry) === active) && matchesSearch(entry, query),
+      (entry) =>
+        (!active || (active === 'featured' ? entry.featured : trackOf(entry) === active)) &&
+        matchesSearch(entry, query),
     ),
   );
-  const visible = $derived(matching.filter((entry) => query.trim() || !isArchive(entry)));
-  const history = $derived(query.trim() ? [] : matching.filter(isArchive));
+  const visible = $derived(
+    matching.filter((entry) => active === 'featured' || query.trim() || !isArchive(entry)),
+  );
+  const history = $derived(active === 'featured' || query.trim() ? [] : matching.filter(isArchive));
   const historyVisible = $derived(showArchive ? history : history.slice(0, 3));
   function closeArchive() {
     showArchive = false;
@@ -127,7 +131,7 @@
     </section>
     <section class="selected" aria-label="Selected work">
       <div class="feature-grid">
-        {#each featured as entry}
+        {#each heroFeatured as entry}
           <button class="feature" onclick={() => follow(entry.id)}>
             <img
               class="feature-art"
@@ -162,7 +166,12 @@
         </button>
       </div>
       <div class="timeline-controls">
-        <div class="filters" aria-label="Filter timeline by track">
+        <div class="filters" aria-label="Filter collection">
+          <button
+            class:chosen={active === 'featured'}
+            aria-pressed={active === 'featured'}
+            onclick={() => changeTrack('featured')}>Featured</button
+          >
           <button
             class:chosen={active === null}
             aria-pressed={active === null}
@@ -185,13 +194,13 @@
       </div>
       <p class="sr-only" aria-live="polite">
         {visible.length + (showArchive ? history.length : 0)} entries shown{active
-          ? `; ${tracks.find((track) => track.id === active)?.label} filter active`
+          ? `; ${active === 'featured' ? 'Featured' : tracks.find((track) => track.id === active)?.label} filter active`
           : ''}
       </p>
       <div class="timeline" id="collection-items">
         <div class="rails" aria-hidden="true">
           {#each tracks as track}<i
-              class:quiet={active && active !== track.id}
+              class:quiet={active && active !== 'featured' && active !== track.id}
               style={`--track:${track.color}`}
             ></i>{/each}
         </div>

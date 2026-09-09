@@ -10,7 +10,7 @@
     "value": "2016-01-15",
     "precision": "day"
   },
-  "featured": false,
+  "featured": true,
   "collection": "games",
   "tags": ["web", "sale"],
   "links": [

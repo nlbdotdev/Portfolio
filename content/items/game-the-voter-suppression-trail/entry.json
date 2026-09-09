@@ -10,7 +10,7 @@
     "value": "2016-11-03",
     "precision": "day"
   },
-  "featured": false,
+  "featured": true,
   "collection": "games",
   "tags": ["mobile", "web", "freelance"],
   "links": [

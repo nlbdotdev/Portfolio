@@ -10,7 +10,7 @@
     "value": "2014",
     "precision": "year"
   },
-  "featured": false,
+  "featured": true,
   "collection": "games",
   "tags": ["web", "mobile", "sale"],
   "links": [
