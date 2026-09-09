@@ -1,6 +1,6 @@
 <script lang="ts">
   import profile from '../../../content/profile.json';
-  let iconMode = $state(0);
+  let iconMode = $state(2);
   const groups = [
     { id: 'frontend', label: 'Frontend', icon: 'code' },
     { id: 'backend', label: 'Backend', icon: 'server' },
@@ -9,6 +9,27 @@
     { id: 'design', label: 'Design & automation', icon: 'tool' },
     { id: 'qa', label: 'Testing & quality', icon: 'tool' },
   ];
+  const uniqueIcons = new Set<string>();
+  const iconRepresentatives = new Set<string>();
+  for (const group of groups) {
+    for (const skill of profile.skills.filter((skill) => skill.category === group.id)) {
+      if (!uniqueIcons.has(skill.icon)) {
+        uniqueIcons.add(skill.icon);
+        iconRepresentatives.add(skill.label);
+      }
+    }
+  }
+  const displayedSkills = $derived(
+    iconMode === 2
+      ? profile.skills.filter((skill) => iconRepresentatives.has(skill.label))
+      : profile.skills,
+  );
+  function iconLabel(icon: string) {
+    return profile.skills
+      .filter((skill) => skill.icon === icon)
+      .map((skill) => skill.label)
+      .join(' · ');
+  }
 </script>
 
 <svelte:head
@@ -55,11 +76,11 @@
         <section class="skill-group">
           <h3>{group.label}</h3>
           <ul>
-            {#each profile.skills.filter((skill) => skill.category === group.id) as skill}<li>
+            {#each displayedSkills.filter((skill) => skill.category === group.id) as skill}<li>
                 {#if skill.url}
                   <a
                     class="skill-button"
-                    title={iconMode === 2 ? skill.label : undefined}
+                    title={iconMode === 2 ? iconLabel(skill.icon) : undefined}
                     href={skill.url}
                     target="_blank"
                     rel="noreferrer"
