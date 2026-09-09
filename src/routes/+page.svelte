@@ -47,7 +47,7 @@
       ]),
     );
   }
-  const heroFeatured = ['game-zombiehood', 'company-syntropy', 'company-pilot'].map((id) =>
+  const heroFeatured = ['game-zombiehood', 'company-syntropy', 'company-psiquantum'].map((id) =>
     entries.find((entry) => entry.id === id)!,
   );
   const studio = entries.find((entry) => entry.id === 'company-dead-traveler')!;
@@ -118,7 +118,6 @@
     <section class="intro" id="about">
       <div class="intro-copy">
         <h1>Games, software,<br />and things<br />in between.</h1>
-        <p class="lede">I’m Nathan.<br />Currently working full time<br />on Dead Traveler.</p>
       </div>
       <div class="studio-feature">
         <aside class="now">
