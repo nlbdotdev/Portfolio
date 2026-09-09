@@ -84,7 +84,8 @@
   "order": 0,
   "role": "Independent game",
   "provenance": {
-    "source": "V1 portfolio (99c5560); Steam release date verified 2026-09-09. Linked GitHub repository nlbdotdev/Adder returns 404; development start/end remain unverified.",
+    "source": "V1 portfolio (99c5560); Steam release date verified 2026-09-09. Linked GitHub repository nlbdotdev/Adder returns 404; development start/end remain unverified.; hidden at Nathan's request because it was absorbed into Zombiehood",
     "datesNeedReview": false
-  }
+  },
+  "draft": true
 }

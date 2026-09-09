@@ -39,9 +39,11 @@ export function sortTimeline(entries: Entry[]): Entry[] {
 export function yearOf(entry: Entry): string {
   return timelineDate(entry)?.slice(0, 4) ?? 'Undated';
 }
+export const ARCHIVE_BEFORE_YEAR = 2020;
+
 export function isArchive(entry: Entry): boolean {
   const date = timelineDate(entry);
-  return entry.collection === 'archive' || !date || date < '2020';
+  return entry.collection === 'archive' || !date || date < String(ARCHIVE_BEFORE_YEAR);
 }
 export function matchesSearch(entry: Entry, query: string): boolean {
   return `${entry.title} ${entry.role} ${entry.summary} ${entry.tags.join(' ')}`
@@ -67,4 +69,13 @@ export function lastActive(
           )
         : year,
   };
+}
+
+/** Preserve chronological order across the archive boundary, including promoted older entries. */
+export function splitTimeline(entries: Entry[], includeHighlights = false) {
+  let boundary = 0;
+  entries.forEach((entry, index) => {
+    if (!isArchive(entry) || (includeHighlights && entry.showInEverything)) boundary = index + 1;
+  });
+  return { visible: entries.slice(0, boundary), history: entries.slice(boundary) };
 }

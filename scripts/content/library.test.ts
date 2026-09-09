@@ -3,7 +3,14 @@ import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { readCatalog } from './library';
 import { catalogSchema, entrySchema } from '../../content/schema.ts';
-import { sortTimeline, matchesSearch, trackOf, yearOf, isArchive } from '../../src/lib/timeline';
+import {
+  sortTimeline,
+  matchesSearch,
+  trackOf,
+  yearOf,
+  isArchive,
+  splitTimeline,
+} from '../../src/lib/timeline';
 import { renderMarkdown } from '../../src/lib/markdown';
 const entries = await readCatalog();
 const example = entries.find((entry) => entry.id === 'game-project-adder')!;
@@ -75,4 +82,17 @@ test('timeline groups and orders completed work by its end date', () => {
   );
   const spanning = { ...codeTrust, date: { ...codeTrust.date, value: '2018-01', end: '2021-01' } };
   assert.equal(isArchive(spanning), false);
+});
+
+test('archive remains a chronological tail when Everything promotes older entries', () => {
+  const sorted = sortTimeline(entries.filter((entry) => !entry.draft));
+  const { visible, history } = splitTimeline(sorted, true);
+  assert.deepEqual([...visible, ...history], sorted);
+  assert(visible.some((entry) => entry.id === 'project-pexels-search'));
+  assert(visible.some((entry) => entry.id === 'education-jmu'));
+  for (const track of ['company', 'education', 'project'] as const) {
+    const subset = sorted.filter((entry) => trackOf(entry) === track);
+    const sections = splitTimeline(subset);
+    assert.deepEqual([...sections.visible, ...sections.history], subset);
+  }
 });

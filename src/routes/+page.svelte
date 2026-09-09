@@ -12,7 +12,7 @@
     projectFilters,
     trackOf,
     yearOf,
-    isArchive,
+    splitTimeline,
     matchesSearch,
     type Track,
     type ProjectFilter,
@@ -63,16 +63,11 @@
         matchesSearch(entry, query),
     ),
   );
-  const visible = $derived(
-    matching.filter(
-      (entry) => query.trim() || !isArchive(entry) || (!active && entry.showInEverything),
-    ),
+  const timelineSections = $derived(
+    query.trim() ? { visible: matching, history: [] } : splitTimeline(matching, active === null),
   );
-  const history = $derived(
-    query.trim()
-      ? []
-      : matching.filter((entry) => isArchive(entry) && !(!active && entry.showInEverything)),
-  );
+  const visible = $derived(timelineSections.visible);
+  const history = $derived(timelineSections.history);
   const historyVisible = $derived(showArchive ? history : history.slice(0, 2));
   function closeArchive() {
     showArchive = false;
