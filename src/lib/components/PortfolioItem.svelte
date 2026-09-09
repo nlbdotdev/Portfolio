@@ -37,7 +37,12 @@
           alt={`${entry.title} ${cover === entry.media.icon ? 'logo' : 'cover'}`}
           loading="lazy"
           decoding="async"
-        /></a
+        />{#if entry.id === 'company-dead-traveler' && entry.media.icon}<img
+            class="brand-overlay"
+            src={assetUrl(entry, entry.media.icon)}
+            alt="Dead Traveler"
+            loading="lazy"
+          />{/if}</a
       >{/if}
     <div class="entry-main">
       <div class="entry-meta">

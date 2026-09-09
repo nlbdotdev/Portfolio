@@ -64,7 +64,12 @@
             alt="Blue cosmic clouds from Dead Traveler’s studio artwork"
             fetchpriority="high"
           />
-          <span>Dead Traveler <span aria-hidden="true">↗</span></span>
+          <img
+            class="brand-overlay"
+            src={assetUrl(studio, studio.media.icon!)}
+            alt="Dead Traveler"
+          />
+          <span class="studio-arrow" aria-hidden="true">↗</span>
         </button>
       </div>
     </section>

@@ -46,5 +46,11 @@
     "path": "assets/cover.png",
     "source": "https://www.kongregate.com/games/Reflextions",
     "note": "Existing Jet Attack cover from this portfolio, used as a project splash for Reflextions; not a company logo."
+  },
+  {
+    "item": "company-dead-traveler",
+    "path": "assets/logo.png",
+    "source": "User-provided Dead Traveler logo (2026-09-09)",
+    "note": "Original file preserved; displayed over the official clouds with CSS screen blending."
   }
 ]

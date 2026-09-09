@@ -889,3 +889,31 @@ footer p span {
     max-height: 330px;
   }
 }
+
+/* Screen blending drops the supplied logo's dark background without changing its pixels. */
+.entry-cover {
+  position: relative;
+  isolation: isolate;
+}
+.studio-art {
+  isolation: isolate;
+}
+.studio-art img.brand-overlay,
+.entry-cover img.brand-overlay {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 88%;
+  height: 88%;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  filter: contrast(1.35);
+  pointer-events: none;
+}
+.studio-art > .studio-arrow {
+  justify-content: flex-end;
+  background: none;
+  padding: 12px 18px;
+}
