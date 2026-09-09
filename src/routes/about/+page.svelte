@@ -1,5 +1,6 @@
 <script lang="ts">
   import profile from '../../../content/profile.json';
+  let showIcons = $state(true);
   const groups = [
     { id: 'frontend', label: 'Frontend', icon: 'code' },
     { id: 'backend', label: 'Backend', icon: 'server' },
@@ -24,8 +25,15 @@
     tools that help people create.
   </p>
   <section class="skills-section" aria-labelledby="skills-heading">
-    <h2 id="skills-heading">Tools I work with</h2>
-    <div class="skills-grid">
+    <div class="skills-heading-row">
+      <h2 id="skills-heading">Tools I work with</h2>
+      <button
+        class="skill-icon-toggle"
+        aria-pressed={showIcons}
+        onclick={() => (showIcons = !showIcons)}>Icons {showIcons ? 'on' : 'off'}</button
+      >
+    </div>
+    <div class="skills-grid" class:hide-skill-icons={!showIcons}>
       {#each groups as group}
         <section class="skill-group">
           <h3>{group.label}</h3>

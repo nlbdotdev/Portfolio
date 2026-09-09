@@ -6,7 +6,7 @@
   "title": "Bethesda Softworks",
   "role": "QA Tester",
   "summary": "Supported AAA launches through QA across hardware, platforms, and teams. Worked on franchises including Skyrim, Fallout, Dishonored, and Wolfenstein.",
-  "body": "Supported AAA launches through QA across hardware, platforms, and teams. Worked on franchises including Skyrim, Fallout, Dishonored, and Wolfenstein.\n",
+  "body": "### Games I worked on\n\nAs a QA tester at Bethesda Softworks, I supported game quality across hardware, platforms, and teams. My primary projects included Creation Club content for Skyrim and Fallout 4, alongside Fallout 76, Dishonored, Death of the Outsider, and Wolfenstein II: The New Colossus.\n\n- [Skyrim Creation Club](https://bethesda.net/en-US/news/fallout-4-and-skyrim-special-edition-creation-club)\n- [Fallout 4 Creation Club](https://bethesda.net/en-US/news/fallout-4-and-skyrim-special-edition-creation-club)\n- [Fallout 76](https://store.steampowered.com/app/1151340/)\n- [Dishonored](https://store.steampowered.com/app/205100/)\n- [Dishonored: Death of the Outsider](https://store.steampowered.com/app/614570/)\n- [Wolfenstein II: The New Colossus](https://store.steampowered.com/app/612880/)\n\nOfficial game artwork below; my Skyrim and Fallout 4 work focused on Creation Club.\n",
   "date": {
     "label": "Jun 2017 — Feb 2019",
     "value": "2017-06",
@@ -27,7 +27,32 @@
     "cover": null,
     "animation": null,
     "icon": "assets/logo.svg",
-    "images": [],
+    "images": [
+      {
+        "src": "assets/skyrim.webp",
+        "alt": "The Elder Scrolls V: Skyrim Special Edition — official game artwork"
+      },
+      {
+        "src": "assets/fallout-four.webp",
+        "alt": "Fallout 4 — official game artwork"
+      },
+      {
+        "src": "assets/fallout-seventy-six.webp",
+        "alt": "Fallout 76 — official game artwork"
+      },
+      {
+        "src": "assets/dishonored.webp",
+        "alt": "Dishonored — official game artwork"
+      },
+      {
+        "src": "assets/death-of-the-outsider.webp",
+        "alt": "Dishonored®: Death of the Outsider™ — official game artwork"
+      },
+      {
+        "src": "assets/wolfenstein.webp",
+        "alt": "Wolfenstein II: The New Colossus — official game artwork"
+      }
+    ],
     "videos": [],
     "screenshots": {}
   },

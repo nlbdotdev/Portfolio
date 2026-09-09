@@ -1393,3 +1393,75 @@ html {
     gap: 12px;
   }
 }
+
+.skills-heading-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+.skill-icon-toggle {
+  font: 11px var(--font-mono);
+  color: var(--muted);
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.skill-icon-toggle[aria-pressed='true'] {
+  color: var(--rust);
+}
+.skill-button img {
+  order: 1;
+  margin-left: 3px;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  filter: grayscale(1);
+}
+.hide-skill-icons .skill-button img {
+  display: none;
+}
+:root[data-theme='dark'] .skill-button img {
+  filter: grayscale(1) invert(1);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .skill-button img {
+    filter: grayscale(1) invert(1);
+  }
+}
+@media (max-width: 600px) {
+  .studio-feature {
+    gap: 0;
+  }
+  .studio-feature .studio-art {
+    border-radius: 4px 4px 0 0;
+  }
+  .studio-feature .now {
+    width: 100%;
+    margin: 0;
+    border: 1px solid var(--border);
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+  }
+  .studio-feature .now a {
+    margin: 0;
+  }
+  .studio-feature .now p {
+    width: 100%;
+    margin: 0;
+  }
+  .intro-copy h1 {
+    font-size: clamp(38px, 9vw, 50px);
+  }
+}
+#company-bethesda .screenshot-grid img {
+  aspect-ratio: 460 / 215;
+  height: auto;
+  object-fit: contain;
+}

@@ -143,5 +143,55 @@
     "source": "https://www.psiquantum.com/news-import/inside-construct",
     "captureDate": "2026-09-09",
     "method": "Screenshot of the public website at 1280 × 900."
+  },
+  {
+    "item": "company-bethesda",
+    "path": "assets/skyrim.webp",
+    "source": "https://store.steampowered.com/app/489830/",
+    "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1786648247"
+  },
+  {
+    "item": "company-bethesda",
+    "path": "assets/fallout-four.webp",
+    "source": "https://store.steampowered.com/app/377160/",
+    "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/header.jpg?t=1786648137"
+  },
+  {
+    "item": "company-bethesda",
+    "path": "assets/fallout-seventy-six.webp",
+    "source": "https://store.steampowered.com/app/1151340/",
+    "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1151340/0bd68f952d2abb58a5710964b97f56584ef49f4d/header.jpg?t=1788886866"
+  },
+  {
+    "item": "company-bethesda",
+    "path": "assets/dishonored.webp",
+    "source": "https://store.steampowered.com/app/205100/",
+    "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/205100/header.jpg?t=1783183937"
+  },
+  {
+    "item": "company-bethesda",
+    "path": "assets/death-of-the-outsider.webp",
+    "source": "https://store.steampowered.com/app/614570/",
+    "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/614570/header.jpg?t=1750785506"
+  },
+  {
+    "item": "company-bethesda",
+    "path": "assets/wolfenstein.webp",
+    "source": "https://store.steampowered.com/app/612880/",
+    "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/612880/header.jpg?t=1750784115"
+  },
+  {
+    "item": "company-fablevision",
+    "path": "assets/currency-action.webp",
+    "source": "https://tm4k.ala.org/currency-catcher",
+    "captureDate": "2026-09-09",
+    "method": "Public in-game screenshot."
+  },
+  {
+    "item": "company-fablevision",
+    "path": "assets/moolah-action.webp",
+    "source": "https://tm4k.ala.org/making-moolah",
+    "captureDate": "2026-09-09",
+    "method": "Public in-game screenshot."
   }
 ]
