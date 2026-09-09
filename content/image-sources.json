@@ -52,5 +52,29 @@
     "path": "assets/logo.png",
     "source": "User-provided Dead Traveler logo (2026-09-09)",
     "note": "Original file preserved; displayed over the official clouds with CSS screen blending."
+  },
+  {
+    "item": "education-digital-film",
+    "path": "assets/logo.png",
+    "source": "https://www.coursereport.com/schools/code-immersives",
+    "assetUrl": "https://coursereport-production.imgix.net/uploads/school/logo/503/original/306986147_499217235552256_8876254402595077863_n.png"
+  },
+  {
+    "item": "education-praxis",
+    "path": "assets/logo.svg",
+    "source": "https://joinpraxis.com/",
+    "assetUrl": "https://joinpraxis.com/wp-content/uploads/2025/07/LOGO.svg"
+  },
+  {
+    "item": "education-jmu",
+    "path": "assets/logo.png",
+    "source": "https://www.jmu.edu/identity/our-style/logo.shtml",
+    "assetUrl": "https://www.jmu.edu/identity/_files/jmu-logo-rgb-vert-purple.png"
+  },
+  {
+    "item": "education-high-school",
+    "path": "assets/logo.png",
+    "source": "https://stories.opengov.com/staffordcountypublicschools/published/ZMuvGvQZiq",
+    "assetUrl": "https://stories.opengov.com/staffordcountypublicschools/uploads/56915a889cc8-CFHS_Eagles.png"
   }
 ]

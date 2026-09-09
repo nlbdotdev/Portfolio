@@ -8,7 +8,7 @@
   "summary": "The early years.",
   "body": "The early years.\n",
   "date": {
-    "label": "2010 — 2014",
+    "label": "2010 \u2014 2014",
     "value": "2010",
     "precision": "year",
     "end": "2014",
@@ -17,11 +17,16 @@
   "featured": false,
   "collection": "timeline",
   "tags": [],
-  "links": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://cfhs.staffordschools.net/"
+    }
+  ],
   "media": {
     "cover": null,
     "animation": null,
-    "icon": null,
+    "icon": "assets/logo.png",
     "images": [],
     "videos": [],
     "screenshots": {}

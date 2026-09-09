@@ -8,7 +8,7 @@
   "summary": "Studied computer science and mathematics before taking a different path.",
   "body": "Studied computer science and mathematics before taking a different path.\n",
   "date": {
-    "label": "2014 — 2016",
+    "label": "2014 \u2014 2016",
     "value": "2014",
     "precision": "year",
     "end": "2016",
@@ -17,11 +17,16 @@
   "featured": false,
   "collection": "timeline",
   "tags": [],
-  "links": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://www.jmu.edu/"
+    }
+  ],
   "media": {
     "cover": null,
     "animation": null,
-    "icon": null,
+    "icon": "assets/logo.png",
     "images": [],
     "videos": [],
     "screenshots": {}

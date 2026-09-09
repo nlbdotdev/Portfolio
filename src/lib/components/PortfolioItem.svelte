@@ -34,7 +34,7 @@
     {#if cover}<a
         class="entry-cover"
         class:company-logo={cover === entry.media.icon}
-        class:white-logo={entry.id === 'company-fablevision'}
+        class:white-logo={['company-fablevision', 'education-praxis'].includes(entry.id)}
         href={assetUrl(entry, cover)}
         target="_blank"
         rel="noreferrer"

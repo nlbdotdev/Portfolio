@@ -17,11 +17,16 @@
   "featured": false,
   "collection": "timeline",
   "tags": [],
-  "links": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://joinpraxis.com/"
+    }
+  ],
   "media": {
     "cover": null,
     "animation": null,
-    "icon": null,
+    "icon": "assets/logo.svg",
     "images": [],
     "videos": [],
     "screenshots": {}
