@@ -314,7 +314,7 @@ h1 {
 }
 .rails i.quiet {
   opacity: 0;
-  transition-delay: 520ms;
+  transition-delay: 240ms;
 }
 .year {
   display: flex;
