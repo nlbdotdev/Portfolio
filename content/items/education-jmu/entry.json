@@ -1,0 +1,42 @@
+{
+  "id": "education-jmu",
+  "kind": "education",
+  "slug": "jmu",
+  "legacyPath": null,
+  "title": "James Madison University",
+  "role": "Computer Science studies",
+  "summary": "Studied computer science and mathematics before taking a different path.",
+  "body": "Studied computer science and mathematics before taking a different path.\n",
+  "date": {
+    "label": "2014 — 2016",
+    "value": "2014",
+    "precision": "year",
+    "end": "2016",
+    "ongoing": false
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": [],
+  "links": [],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 42,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  }
+}

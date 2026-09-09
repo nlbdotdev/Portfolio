@@ -1,0 +1,69 @@
+{
+  "id": "game-sam",
+  "kind": "game",
+  "slug": "sam",
+  "legacyPath": "/games/sam",
+  "title": "Sam",
+  "summary": "Developed during Ludum Dare 37, Sam tells the story of pixel guy named Sam. It is story based 2D platformer where your decisions matter.",
+  "date": {
+    "label": "Dec 15, 2016",
+    "value": "2016-12-15",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["web", "jam"],
+  "links": [
+    {
+      "label": "Itch.io",
+      "link": "https://reflextions.itch.io/sam"
+    },
+    {
+      "label": "Scirra Arcade",
+      "link": "https://www.construct.net/en/free-online-games/sam-1499/play"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "Sam screenshot"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "Sam screenshot"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "Sam screenshot"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "Sam screenshot"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://itch.io/embed-upload/347253?color=000000",
+    "desktop": true,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "small"
+  },
+  "body": "Developed during Ludum Dare 37, Sam tells the story of pixel guy named Sam. It is story based 2D platformer where your decisions matter.\n\nSam was an absolutely massive undertaking for the allotted 72 hours of the Jam. I didn't sleep much. It was the first game I made where I did all the art. Despite some mechanical shortcomings, I'm still proud of the game's atmosphere.\n\nSam scored second in the 'mood' category and was #32 overall. Unfortunately, the original Ludum Dare site was taken down, but the original entry is still available on Web Archive.\n",
+  "order": 11,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

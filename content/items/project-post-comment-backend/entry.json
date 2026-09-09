@@ -1,0 +1,47 @@
+{
+  "id": "project-post-comment-backend",
+  "kind": "project",
+  "slug": "post-comment-backend",
+  "legacyPath": null,
+  "title": "Post Comment Backend",
+  "summary": "A full CRUD backend written in JS using Node, Express, and Mongoose.",
+  "date": {
+    "label": null,
+    "value": null,
+    "precision": null
+  },
+  "featured": false,
+  "collection": "archive",
+  "tags": [],
+  "links": [
+    {
+      "label": "Project",
+      "link": "https://github.com/nlbdotdev/post-comment-backend"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "link": "https://github.com/nlbdotdev/post-comment-backend"
+  },
+  "body": "A full CRUD backend written in JS using Node, Express, and Mongoose.\n",
+  "order": 26,
+  "role": "Software project",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "project-soundcloud-mockup",
+  "kind": "project",
+  "slug": "soundcloud-mockup",
+  "legacyPath": null,
+  "title": "SoundCloud Mockup",
+  "summary": "A static mockup of the SoundCloud home page using HTML and CSS.",
+  "date": {
+    "label": null,
+    "value": null,
+    "precision": null
+  },
+  "featured": false,
+  "collection": "archive",
+  "tags": [],
+  "links": [
+    {
+      "label": "Project",
+      "link": "https://github.com/nlbdotdev/soundcloud-mockup"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "link": "https://github.com/nlbdotdev/soundcloud-mockup"
+  },
+  "body": "A static mockup of the SoundCloud home page using HTML and CSS.\n",
+  "order": 30,
+  "role": "Software project",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

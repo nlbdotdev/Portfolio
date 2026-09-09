@@ -1,0 +1,42 @@
+{
+  "id": "company-reflextions",
+  "kind": "company",
+  "slug": "reflextions",
+  "legacyPath": null,
+  "title": "Reflextions LLC",
+  "role": "Web Game Developer & Product Owner",
+  "summary": "Built a portfolio of more than 20 browser games. Led development, product, and licensing across original and client IP, working with distributed freelance teams.",
+  "body": "Built a portfolio of more than 20 browser games. Led development, product, and licensing across original and client IP, working with distributed freelance teams.\n",
+  "date": {
+    "label": "Feb 2019 — Sep 2022",
+    "value": "2019-02",
+    "precision": "month",
+    "end": "2022-09",
+    "ongoing": false
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": ["Browser games", "Product", "Licensing"],
+  "links": [],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 36,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  }
+}

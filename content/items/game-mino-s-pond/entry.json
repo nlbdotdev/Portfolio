@@ -1,0 +1,77 @@
+{
+  "id": "game-mino-s-pond",
+  "kind": "game",
+  "slug": "mino-s-pond",
+  "legacyPath": "/games/mino'spond",
+  "title": "Mino's Pond",
+  "summary": "Minos' Pond was a joint entry with a friend who did the art and sfx. It was my insane attempt to create a city builder resource management type game mixed with an Earthbound style overworld in 72 hours.",
+  "date": {
+    "label": "April 24th, 2017",
+    "value": "2017-04-24",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["web", "jam"],
+  "links": [
+    {
+      "label": "Itch.io",
+      "link": "https://reflextions.itch.io/minospond"
+    },
+    {
+      "label": "Scirra Arcade",
+      "link": "https://www.construct.net/en/free-online-games/minos-pond-1795/play?via=pp"
+    },
+    {
+      "label": "Ludum Dare",
+      "link": "https://ldjam.com/events/ludum-dare/38/minos-pond/"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "minos screenshot"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "minos screenshot"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "minos screenshot"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "minos screenshot"
+      },
+      {
+        "src": "assets/screenshots/05.gif",
+        "alt": "minos screenshot"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://itch.io/embed-upload/464651?color=0f5c9a",
+    "desktop": true,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "small"
+  },
+  "body": "Minos' Pond was a joint entry with a friend who did the art and sfx. It was my insane attempt to create a city builder resource management type game mixed with an Earthbound style overworld in 72 hours.\n\nThis one didn't score too hot, probably because a high barrier to entry and generally unpleasant user experience. Still, the mechanics are pretty deep for the time span of development, and there is a charm to the Minos.\n",
+  "order": 12,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "game-chemistry-hotspot-quiz",
+  "kind": "game",
+  "slug": "chemistry-hotspot-quiz",
+  "legacyPath": "/games/chemistryhotspotquiz",
+  "title": "Chemistry Hotspot Quiz",
+  "summary": "Chemistry Hotspots was commissioned by a postgraduate student who was exploring video games as an education tool. It quizzes the player on various molecular compounds.",
+  "date": {
+    "label": "June 2017",
+    "value": "2017-06",
+    "precision": "month"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["freelance"],
+  "links": [],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "Chemistry Hotspot Quiz menu screen"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "Chemistry Hotspot Quiz screenshot (1)"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "Chemistry Hotspot Quiz screenshot (2)"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "Chemistry Hotspot Quiz screenshot (3)"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "small"
+  },
+  "body": "Chemistry Hotspots was commissioned by a postgraduate student who was exploring video games as an education tool. It quizzes the player on various molecular compounds.\n",
+  "order": 20,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

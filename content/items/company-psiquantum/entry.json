@@ -1,0 +1,42 @@
+{
+  "id": "company-psiquantum",
+  "kind": "company",
+  "slug": "psiquantum",
+  "legacyPath": null,
+  "title": "PsiQuantum",
+  "role": "Senior Full Stack Engineer",
+  "summary": "Part of the software team powering the quest to build a fault-tolerant quantum computer. Worked on Construct, the platform for designing and optimizing quantum algorithms.",
+  "body": "Part of the software team powering the quest to build a fault-tolerant quantum computer. Worked on Construct, the platform for designing and optimizing quantum algorithms.\n",
+  "date": {
+    "label": "Apr 2025 — May 2026",
+    "value": "2025-04",
+    "precision": "month",
+    "end": "2026-05",
+    "ongoing": false
+  },
+  "featured": true,
+  "collection": "timeline",
+  "tags": ["Full-stack development", "Quantum computing"],
+  "links": [],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 32,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "game-rocket-strike",
+  "kind": "game",
+  "slug": "rocket-strike",
+  "legacyPath": "/games/rocketstrike!",
+  "title": "Rocket Strike!",
+  "summary": "Rocket Strike is a survival action platformer. Outlast your opponent in a rocket survival! For 1-4 players, but multiplayer is strongly recommended!",
+  "date": {
+    "label": "2014",
+    "value": "2014",
+    "precision": "year"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["web", "mobile", "sale"],
+  "links": [
+    {
+      "label": "Scirra Arcade",
+      "link": "https://www.construct.net/en/free-online-games/rocket-strike-3791/play"
+    },
+    {
+      "label": "Itch.io",
+      "link": "https://reflextions.itch.io/rocketstrike"
+    },
+    {
+      "label": "Y8",
+      "link": "https://www.y8.com/games/rocket_strike"
+    },
+    {
+      "label": "Chrome Web Store",
+      "link": "https://chrome.google.com/webstore/detail/rocket-strike/ldfmjnlghddcjpboloecgkflfednighd?"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "Rocket Strike! screenshot"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "Rocket Strike! screenshot"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "Rocket Strike! screenshot"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "Rocket Strike! screenshot"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://itch.io/embed-upload/1796897?color=333333",
+    "desktop": true,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "small"
+  },
+  "body": "Rocket Strike is a survival action platformer. Outlast your opponent in a rocket survival! For 1-4 players, but multiplayer is strongly recommended!\n\nRocket Strike was released as a single player game on Google Play and as local multiplayer game for web browsers. I built a more streamlined version with updated assets, integrated achievments and leaderboards for Y8.com.\n",
+  "order": 17,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "game-monster-s-mayhem",
+  "kind": "game",
+  "slug": "monster-s-mayhem",
+  "legacyPath": "/games/monster'smayhem",
+  "title": "Monster's Mayhem",
+  "summary": "Monster's Mayhem was commissioned by a client who wanted to rebuild their entire flash game in HTML5.",
+  "date": {
+    "label": "Dec 2016",
+    "value": "2016-12",
+    "precision": "month"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["freelance"],
+  "links": [],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "Monster's Mayhem menu screen"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "Monster's Mayhem screenshot (1)"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "Monster's Mayhem screenshot (2)"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "Monster's Mayhem screenshot (3)"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "small"
+  },
+  "body": "Monster's Mayhem was commissioned by a client who wanted to rebuild their entire flash game in HTML5.\n",
+  "order": 21,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

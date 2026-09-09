@@ -1,0 +1,131 @@
+{
+  "name": "Nathan Bennett",
+  "headline": "Fullstack Web & Game Development",
+  "bio": [
+    "I'm an experienced developer with a passion for building innovative solutions and solving complex challenges. My journey began as a teenager, creating and selling web games, and has evolved into a career that includes professional QA testing on AAA franchises.",
+    "As a fullstack web developer, I specialize in seamlessly integrating a wide range of technologies to deliver comprehensive websites and applications. Whether it's enterprise-level systems or bespoke solutions, I'm dedicated to enhancing user experiences through creative collaboration and technical expertise."
+  ],
+  "gameIntroduction": [
+    "As a solo developer, I've worn many hats. I've taken games through their full lifecycle: handling all aspects of designing, developing, testing, and publishing. But I'm no stranger to getting in the weeds. I follow the idea of a π shaped skillset, wherein I specialize in design and development.",
+    "I've published projects on Steam, Google Play, and the App Store. My HTML5 games have reached millions of players and I've participated in a few game jams. I've worked as a freelancer on many projects, including apps, educational games, and games published as op-eds.",
+    "Scroll down to see my finished projects to date."
+  ],
+  "skills": [
+    {
+      "label": "Javascript",
+      "category": "frontend"
+    },
+    {
+      "label": "Typescript",
+      "category": "frontend"
+    },
+    {
+      "label": "HTML5",
+      "category": "frontend"
+    },
+    {
+      "label": "CSS3",
+      "category": "frontend"
+    },
+    {
+      "label": "React",
+      "category": "frontend"
+    },
+    {
+      "label": "React Native",
+      "category": "frontend"
+    },
+    {
+      "label": "Redux",
+      "category": "frontend"
+    },
+    {
+      "label": "Svelte",
+      "category": "frontend"
+    },
+    {
+      "label": "Node.JS",
+      "category": "backend"
+    },
+    {
+      "label": "Express",
+      "category": "backend"
+    },
+    {
+      "label": "MongoDB",
+      "category": "backend"
+    },
+    {
+      "label": "Amazon AWS",
+      "category": "backend"
+    },
+    {
+      "label": "PostgreSQL",
+      "category": "backend"
+    },
+    {
+      "label": "MySQL",
+      "category": "backend"
+    },
+    {
+      "label": "SQLite",
+      "category": "backend"
+    },
+    {
+      "label": "Firebase",
+      "category": "backend"
+    },
+    {
+      "label": "Supabase",
+      "category": "backend"
+    },
+    {
+      "label": "Git",
+      "category": "other"
+    },
+    {
+      "label": "JQuery",
+      "category": "other"
+    },
+    {
+      "label": "JSON APIs",
+      "category": "other"
+    },
+    {
+      "label": "iPhone",
+      "category": "other"
+    },
+    {
+      "label": "Android",
+      "category": "other"
+    },
+    {
+      "label": "Figma",
+      "category": "other"
+    },
+    {
+      "label": "Notion",
+      "category": "other"
+    },
+    {
+      "label": "Construct 3",
+      "category": "other"
+    }
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/nlbdotdev"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/nathanlbennett/"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:nlb.nathan@gmail.com"
+    }
+  ],
+  "resume": "/assets/resume/resume.pdf",
+  "legacyContactEndpoint": "https://formspree.io/f/mzbondka"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "company-bethesda",
+  "kind": "company",
+  "slug": "bethesda",
+  "legacyPath": null,
+  "title": "Bethesda Softworks",
+  "role": "QA Tester",
+  "summary": "Supported AAA launches through QA across hardware, platforms, and teams. Worked on franchises including Skyrim, Fallout, Dishonored, and Wolfenstein.",
+  "body": "Supported AAA launches through QA across hardware, platforms, and teams. Worked on franchises including Skyrim, Fallout, Dishonored, and Wolfenstein.\n",
+  "date": {
+    "label": "Jun 2017 — Feb 2019",
+    "value": "2017-06",
+    "precision": "month",
+    "end": "2019-02",
+    "ongoing": false
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": ["QA", "AAA games"],
+  "links": [],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 37,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  }
+}

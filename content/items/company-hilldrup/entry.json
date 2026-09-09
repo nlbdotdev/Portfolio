@@ -1,0 +1,42 @@
+{
+  "id": "company-hilldrup",
+  "kind": "company",
+  "slug": "hilldrup",
+  "legacyPath": null,
+  "title": "Hilldrup",
+  "role": "Operations Specialist · Seasonal",
+  "summary": "Moved houses.",
+  "body": "Moved houses.\n",
+  "date": {
+    "label": "Jun — Aug 2015",
+    "value": "2015-06",
+    "precision": "month",
+    "end": "2015-08",
+    "ongoing": false
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": [],
+  "links": [],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 39,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  }
+}
