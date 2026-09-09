@@ -1688,3 +1688,58 @@ html {
     transition: none;
   }
 }
+
+.year-guide-layer {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .timeline::before,
+  .show-guides .year::before {
+    display: none;
+  }
+  .year-guide-layer {
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 240ms ease;
+  }
+  .show-guides .year-guide-layer {
+    opacity: 0.75;
+  }
+  .year-guide-segment {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-left: 1px solid var(--border);
+  }
+  .year-guide-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font: 12px var(--font-mono);
+    letter-spacing: 3px;
+    background: var(--paper);
+    padding: 10px 3px;
+    color: var(--muted);
+    z-index: 1;
+  }
+  .year-guide-segment i {
+    position: absolute;
+    left: 0;
+    width: 28px;
+    border-top: 1px solid var(--border);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .year-guide-layer {
+    transition: none;
+  }
+}

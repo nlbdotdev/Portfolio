@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { yearGuide } from '$lib/year-guide';
   import { tick, onMount } from 'svelte';
   import { archivePreview } from '$lib/archive-preview';
   import { collectionTransition } from '$lib/collection-transition';
@@ -241,6 +242,7 @@
         onclick={() => (showGuides = !showGuides)}
         >Year &amp; entry guides <span aria-hidden="true" class:enabled={showGuides}></span></button
       >
+      <div class="year-guide-layer" aria-hidden="true" use:yearGuide></div>
       <div class="rails" aria-hidden="true">
         {#each rails as rail}<i
             class:quiet={(rail.id === 'website' && active !== 'project') ||
@@ -252,6 +254,7 @@
       {#each visible as entry, i (entry.id)}
         <div
           class="timeline-row"
+          data-guide-year={yearOf(entry)}
           data-entry-number={String(i + 1).padStart(2, '0')}
           transition:collectionTransition
         >
@@ -284,6 +287,7 @@
               {#each historyVisible as entry, i (entry.id)}
                 <div
                   class="timeline-row"
+                  data-guide-year={yearOf(entry)}
                   data-entry-number={String(visible.length + i + 1).padStart(2, '0')}
                   transition:collectionTransition
                 >

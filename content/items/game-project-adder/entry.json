@@ -6,9 +6,9 @@
   "title": "Project Adder",
   "summary": "Project Adder is an open-sourced 2D zombie shooting sandbox game, blending run & gun mechanics with rogue-lite elements. I spent a lot of time building the game and am proud of the interconnected mechanics and systems, but after much deliberation and failure to get enough funding, I decided to move on from the project. It is free on Steam, and open sourced GNU GPL.",
   "date": {
-    "label": "TBD",
-    "value": null,
-    "precision": null
+    "label": "Oct 5, 2023 \u00b7 Steam release",
+    "value": "2023-10-05",
+    "precision": "day"
   },
   "featured": false,
   "collection": "games",
@@ -80,11 +80,11 @@
     "platform": "laptop",
     "size": "huge"
   },
-  "body": "Project Adder is an open-sourced 2D zombie shooting sandbox game, blending run & gun mechanics with rogue-lite elements. I spent a lot of time building the game and am proud of the interconnected mechanics and systems, but after much deliberation and failure to get enough funding, I decided to move on from the project. It is free on Steam, and open sourced GNU GPL.\n",
+  "body": "Project Adder is an open-sourced 2D zombie shooting sandbox game, blending run & gun mechanics with rogue-lite elements. I spent a lot of time building the game and am proud of the interconnected mechanics and systems, but after much deliberation and failure to get enough funding, I decided to move on from the project. It is free on Steam, and open sourced GNU GPL.\n\n### Release\n\nReleased on [Steam on October 5, 2023](https://store.steampowered.com/app/2598410/Project_Adder/).\n",
   "order": 0,
   "role": "Independent game",
   "provenance": {
-    "source": "V1 portfolio (99c5560)",
-    "datesNeedReview": true
+    "source": "V1 portfolio (99c5560); Steam release date verified 2026-09-09. Linked GitHub repository nlbdotdev/Adder returns 404; development start/end remain unverified.",
+    "datesNeedReview": false
   }
 }
