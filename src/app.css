@@ -378,7 +378,7 @@ h1 {
 .entry-cover img {
   width: 100%;
   aspect-ratio: 16/10;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 .entry-meta {
@@ -1157,9 +1157,4 @@ footer p span {
 }
 .now {
   transition: border-color 300ms ease;
-}
-
-.feature-art {
-  object-fit: contain;
-  background: var(--surface);
 }
