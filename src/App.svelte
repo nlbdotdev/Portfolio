@@ -10,7 +10,7 @@
 	import Modal from "svelte-simple-modal";
 	import SectionBreak from "./components/SectionBreak.svelte";
 	// Variables
-	import { games, projects, url, theme } from "./stores";
+	import { games, projects, theme } from "./stores";
 
 	// Used to load game showcases, will probably need to be update when converted to modal
 	let gameTitle = {};
@@ -139,7 +139,7 @@
 			{:else if page === "gameShowcase"}
 				<!-- Redirect to game page is props are missing -->
 				{#if gameProps == null}
-					{window.location.replace(`${url}/games`)}
+					{window.location.replace("/games")}
 				{:else}
 					<Section
 						top={false}
@@ -153,7 +153,7 @@
 			{:else if page === "projectShowcase"}
 				<!-- Redirect to game page is props are missing -->
 				{#if projectProps == null}
-					{window.location.replace(`${url}/`)}
+					{window.location.replace("/")}
 				{:else}
 					<Section
 						top={false}
