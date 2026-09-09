@@ -4,11 +4,9 @@
   import { trackOf, tracks } from '$lib/timeline';
   let {
     entry,
-    muted = false,
     expanded = $bindable(false),
   }: {
     entry: Entry;
-    muted?: boolean;
     expanded?: boolean;
   } = $props();
   const track = $derived(trackOf(entry));
@@ -28,7 +26,7 @@
   );
 </script>
 
-<article id={entry.id} class:muted class="entry" style={`--track:${color};--station:${index}`}>
+<article id={entry.id} class="entry" style={`--track:${color};--station:${index}`}>
   <div class="connection" aria-hidden="true"><span></span></div>
   <div class="entry-layout" class:has-cover={cover}>
     {#if cover}<a

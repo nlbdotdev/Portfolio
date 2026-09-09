@@ -1,8 +1,9 @@
 <script lang="ts">
+  import { collectionTransition } from '$lib/collection-transition';
   import ThemeSelect from '$lib/components/ThemeSelect.svelte';
   import PortfolioItem from '$lib/components/PortfolioItem.svelte';
   import { entries, profile, assetUrl } from '$lib/content';
-  import { tracks, yearOf, isArchive, matchesSearch, type Track } from '$lib/timeline';
+  import { tracks, trackOf, yearOf, isArchive, matchesSearch, type Track } from '$lib/timeline';
   let active = $state<Track | null>(null);
   let query = $state('');
   let showArchive = $state(false);
@@ -23,12 +24,15 @@
     entries.find((entry) => entry.id === id)!,
   );
   const studio = entries.find((entry) => entry.id === 'company-dead-traveler')!;
-  const visible = $derived(
+  const matching = $derived(
     entries.filter(
-      (entry) => matchesSearch(entry, query) && (showArchive || query.trim() || !isArchive(entry)),
+      (entry) => (!active || trackOf(entry) === active) && matchesSearch(entry, query),
     ),
   );
-  const hiddenCount = $derived(entries.length - visible.length);
+  const visible = $derived(
+    matching.filter((entry) => showArchive || query.trim() || !isArchive(entry)),
+  );
+  const hiddenCount = $derived(matching.filter(isArchive).length);
   function follow(id: string) {
     showArchive = true;
     active = null;
@@ -123,7 +127,7 @@
         </button>
       </div>
       <div class="timeline-controls">
-        <div class="filters" aria-label="Highlight a timeline track">
+        <div class="filters" aria-label="Filter timeline by track">
           <button
             class:chosen={active === null}
             aria-pressed={active === null}
@@ -145,7 +149,9 @@
         >
       </div>
       <p class="sr-only" aria-live="polite">
-        {visible.length} entries shown{active ? `; ${active} track highlighted` : ''}
+        {visible.length} entries shown{active
+          ? `; ${tracks.find((track) => track.id === active)?.label} filter active`
+          : ''}
       </p>
       <div class="timeline" id="collection-items">
         <div class="rails" aria-hidden="true">
@@ -155,19 +161,22 @@
             ></i>{/each}
         </div>
         {#each visible as entry, i (entry.id)}
-          {#if i === 0 || yearOf(entry) !== yearOf(visible[i - 1])}<div class="year">
-              <span>{yearOf(entry)}</span>{#if !entry.date.value}<small>Dates to be added</small
-                >{/if}
-            </div>{/if}
-          <PortfolioItem
-            {entry}
-            bind:expanded={expandedEntries[entry.id]}
-            muted={active !== null && active !== (entry.kind === 'game' ? 'project' : entry.kind)}
-          />
+          <div class="timeline-row" transition:collectionTransition>
+            {#if i === 0 || yearOf(entry) !== yearOf(visible[i - 1])}<div
+                class="year"
+                transition:collectionTransition
+              >
+                <span>{yearOf(entry)}</span>{#if !entry.date.value}<small>Dates to be added</small
+                  >{/if}
+              </div>{/if}
+            <PortfolioItem {entry} bind:expanded={expandedEntries[entry.id]} />
+          </div>
         {:else}<p class="empty-state">
-            No entries match “{query}”. <button onclick={() => (query = '')}>Clear search</button>
+            {#if query.trim()}No entries match “{query}” in this track.
+              <button onclick={() => (query = '')}>Clear search</button>{:else}No recent entries in
+              this track. Explore the earlier chapters below.{/if}
           </p>{/each}
-        {#if !query.trim()}<div class="archive-control">
+        {#if !query.trim() && hiddenCount > 0}<div class="archive-control">
             <button aria-expanded={showArchive} onclick={() => (showArchive = !showArchive)}
               >{showArchive
                 ? 'Keep it recent ↑'

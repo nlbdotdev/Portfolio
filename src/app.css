@@ -333,13 +333,6 @@ h1 {
   transition: opacity 0.2s;
   scroll-margin-top: 30px;
 }
-.entry.muted {
-  opacity: 0.3;
-}
-.entry.muted:hover,
-.entry.muted:focus-within {
-  opacity: 1;
-}
 .connection {
   position: absolute;
   left: calc(-85px + var(--station) * 20px);
@@ -993,5 +986,23 @@ footer p span {
   }
   .feature-art.feature-logo {
     padding: 12px;
+  }
+}
+
+.timeline-row {
+  /* Include the rail connectors in the animated row's clipping area. */
+  margin-left: -95px;
+  padding-left: 95px;
+}
+@media (max-width: 800px) {
+  .timeline-row {
+    margin-left: -73px;
+    padding-left: 73px;
+  }
+}
+@media (max-width: 480px) {
+  .timeline-row {
+    margin-left: -56px;
+    padding-left: 56px;
   }
 }

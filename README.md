@@ -31,7 +31,7 @@ npm run format:check    # Check formatting without edits
 npm run audit           # Dependency security audit
 ```
 
-No database or API is required. SvelteKit imports the item files and asset URLs at build time. The homepage is prerendered; search, track highlighting, archive disclosure, and media expansion run locally in the browser. Large animations are behind an explicit disclosure instead of autoplaying in the timeline.
+No database or API is required. SvelteKit imports the item files and asset URLs at build time. The homepage is prerendered; search, animated track filtering, archive disclosure, and media expansion run locally in the browser. Large animations are behind an explicit disclosure instead of autoplaying in the timeline.
 
 ## Self-contained items
 
