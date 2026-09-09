@@ -6,6 +6,19 @@
   let active = $state<Track | null>(null);
   let query = $state('');
   let showArchive = $state(false);
+  let expandedEntries = $state<Record<string, boolean>>(
+    Object.fromEntries(entries.map((entry) => [entry.id, false])),
+  );
+  const anyDetailsOpen = $derived(Object.values(expandedEntries).some(Boolean));
+  function toggleAllDetails() {
+    const open = !anyDetailsOpen;
+    expandedEntries = Object.fromEntries(
+      entries.map((entry) => [
+        entry.id,
+        open && (entry.kind === 'game' || entry.kind === 'project'),
+      ]),
+    );
+  }
   const featured = ['project-construct-snippets', 'project-map-builder'].map((id) =>
     entries.find((entry) => entry.id === id)!,
   );
@@ -101,7 +114,10 @@
           <p class="eyebrow">The ongoing collection</p>
           <h2 id="timeline-title">Everything, over time<span>.</span></h2>
         </div>
-        <span class="micro">Work, learning & things made along the way</span>
+        <button class="details-toggle" aria-controls="collection-items" onclick={toggleAllDetails}>
+          {anyDetailsOpen ? 'Collapse all details' : 'Expand all details'}
+          <span aria-hidden="true">{anyDetailsOpen ? '−' : '+'}</span>
+        </button>
       </div>
       <div class="timeline-controls">
         <div class="filters" aria-label="Highlight a timeline track">
@@ -128,20 +144,21 @@
       <p class="sr-only" aria-live="polite">
         {visible.length} entries shown{active ? `; ${active} track highlighted` : ''}
       </p>
-      <div class="timeline">
+      <div class="timeline" id="collection-items">
         <div class="rails" aria-hidden="true">
           {#each tracks as track}<i
               class:quiet={active && active !== track.id}
               style={`--track:${track.color}`}
             ></i>{/each}
         </div>
-        {#each visible as entry, i}
+        {#each visible as entry, i (entry.id)}
           {#if i === 0 || yearOf(entry) !== yearOf(visible[i - 1])}<div class="year">
               <span>{yearOf(entry)}</span>{#if !entry.date.value}<small>Dates to be added</small
                 >{/if}
             </div>{/if}
           <PortfolioItem
             {entry}
+            bind:expanded={expandedEntries[entry.id]}
             muted={active !== null && active !== (entry.kind === 'game' ? 'project' : entry.kind)}
           />
         {:else}<p class="empty-state">

@@ -917,3 +917,25 @@ footer p span {
   background: none;
   padding: 12px 18px;
 }
+
+.details-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  flex-shrink: 0;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--ink);
+}
+.details-toggle:hover {
+  background: var(--surface);
+}
+@media (max-width: 600px) {
+  .timeline-head {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

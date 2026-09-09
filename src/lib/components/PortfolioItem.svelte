@@ -2,8 +2,15 @@
   import type { Entry } from '../../../content/schema.ts';
   import { assetUrl, descriptions } from '$lib/content';
   import { trackOf, tracks } from '$lib/timeline';
-  let { entry, muted = false }: { entry: Entry; muted?: boolean } = $props();
-  let expanded = $state(false);
+  let {
+    entry,
+    muted = false,
+    expanded = $bindable(false),
+  }: {
+    entry: Entry;
+    muted?: boolean;
+    expanded?: boolean;
+  } = $props();
   const track = $derived(trackOf(entry));
   const index = $derived(tracks.findIndex((t) => t.id === track));
   const color = $derived(tracks[index].color);
@@ -63,7 +70,7 @@
     </div>
   </div>
   {#if entry.kind === 'game' || entry.kind === 'project'}
-    <details class="item-details" ontoggle={(event) => (expanded = event.currentTarget.open)}>
+    <details class="item-details" bind:open={expanded}>
       <summary>Notes & media <span aria-hidden="true">+</span></summary>
       {#if expanded}
         <div class="prose">{@html descriptions.get(entry.id) ?? ''}</div>
