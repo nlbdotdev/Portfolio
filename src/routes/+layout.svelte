@@ -1,10 +1,26 @@
 <script lang="ts">
   import '../app.css';
+  import { onNavigate } from '$app/navigation';
   import Wordmark from '$lib/components/Wordmark.svelte';
   import ThemeSelect from '$lib/components/ThemeSelect.svelte';
   import profile from '../../content/profile.json';
   import { page, updated } from '$app/state';
   let { children } = $props();
+  onNavigate((navigation) => {
+    if (
+      !document.startViewTransition ||
+      matchMedia('(prefers-reduced-motion: reduce)').matches ||
+      navigation.from?.url.pathname === navigation.to?.url.pathname
+    )
+      return;
+    return new Promise<void>((resolve) => {
+      const transition = document.startViewTransition(async () => {
+        resolve();
+        await navigation.complete;
+      });
+      transition.finished.catch(() => {});
+    });
+  });
 </script>
 
 <a href="#main-content" class="skip-link">Skip to content</a>

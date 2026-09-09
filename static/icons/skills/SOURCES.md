@@ -1,3 +1,6 @@
-Feather icons (MIT), discovered through https://icons.leularia.com/.
-Source: https://github.com/feathericons/feather/tree/master/icons
-Icons: code.svg, server.svg, tool.svg. Original SVGs retained. See LICENSE.
+Skill icons use Devicon brand SVGs (MIT) and Feather SVGs (MIT), discovered through Aria Icons.
+
+- Devicon: https://github.com/devicons/devicon — see DEVICON-LICENSE.
+- Feather: https://github.com/feathericons/feather — see LICENSE.
+- Exact downloaded asset URLs are recorded in sources.json.
+- Broad skills use illustrative icons, not implied brand logos.

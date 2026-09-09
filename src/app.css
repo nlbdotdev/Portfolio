@@ -1281,3 +1281,72 @@ footer p span {
     gap: 7px;
   }
 }
+
+/* Page content changes softly while the shared header stays still. */
+#main-content {
+  view-transition-name: page-content;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+::view-transition-old(page-content) {
+  animation: page-out 140ms ease-out both;
+}
+::view-transition-new(page-content) {
+  animation: page-in 220ms ease-out both;
+}
+@keyframes page-out {
+  to {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+}
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+.skill-group li {
+  padding: 0;
+  border: 0;
+}
+.skill-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 8px 11px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--paper);
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+a.skill-button:hover,
+a.skill-button:focus-visible {
+  background: var(--surface);
+  border-color: var(--rust);
+  transform: translateY(-2px);
+}
+.skill-button img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.skill-discipline {
+  color: var(--muted);
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(page-content),
+  ::view-transition-new(page-content) {
+    animation: none;
+  }
+  a.skill-button:hover {
+    transform: none;
+  }
+}

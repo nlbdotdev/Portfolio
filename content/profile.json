@@ -12,104 +12,538 @@
   ],
   "skills": [
     {
-      "label": "Javascript",
-      "category": "frontend"
+      "label": "JavaScript",
+      "category": "frontend",
+      "icon": "/icons/skills/javascript.svg",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
-      "label": "Typescript",
-      "category": "frontend"
+      "label": "TypeScript",
+      "category": "frontend",
+      "icon": "/icons/skills/typescript.svg",
+      "url": "https://www.typescriptlang.org/"
     },
     {
-      "label": "HTML5",
-      "category": "frontend"
+      "label": "HTML",
+      "category": "frontend",
+      "icon": "/icons/skills/html5.svg",
+      "url": "https://html.spec.whatwg.org/"
     },
     {
-      "label": "CSS3",
-      "category": "frontend"
+      "label": "CSS",
+      "category": "frontend",
+      "icon": "/icons/skills/css3.svg",
+      "url": "https://www.w3.org/Style/CSS/"
     },
     {
       "label": "React",
-      "category": "frontend"
+      "category": "frontend",
+      "icon": "/icons/skills/react.svg",
+      "url": "https://react.dev/"
     },
     {
       "label": "React Native",
-      "category": "frontend"
+      "category": "frontend",
+      "icon": "/icons/skills/reactnative.svg",
+      "url": "https://reactnative.dev/"
     },
     {
       "label": "Redux",
-      "category": "frontend"
+      "category": "frontend",
+      "icon": "/icons/skills/redux.svg",
+      "url": "https://redux.js.org/"
     },
     {
       "label": "Svelte",
-      "category": "frontend"
+      "category": "frontend",
+      "icon": "/icons/skills/svelte.svg",
+      "url": "https://svelte.dev/"
     },
     {
-      "label": "Node.JS",
-      "category": "backend"
+      "label": "SvelteKit",
+      "category": "frontend",
+      "icon": "/icons/skills/svelte.svg",
+      "url": "https://svelte.dev/docs/kit"
+    },
+    {
+      "label": "jQuery",
+      "category": "frontend",
+      "icon": "/icons/skills/jquery.svg",
+      "url": "https://jquery.com/"
+    },
+    {
+      "label": "Material UI",
+      "category": "frontend",
+      "icon": "/icons/skills/materialui.svg",
+      "url": "https://mui.com/material-ui/"
+    },
+    {
+      "label": "Next.js",
+      "category": "frontend",
+      "icon": "/icons/skills/nextjs.svg",
+      "url": "https://nextjs.org/"
+    },
+    {
+      "label": "Tailwind CSS",
+      "category": "frontend",
+      "icon": "/icons/skills/tailwindcss.svg",
+      "url": "https://tailwindcss.com/"
+    },
+    {
+      "label": "Vue",
+      "category": "frontend",
+      "icon": "/icons/skills/vuejs.svg",
+      "url": "https://vuejs.org/"
+    },
+    {
+      "label": "Node.js",
+      "category": "backend",
+      "icon": "/icons/skills/nodejs.svg",
+      "url": "https://nodejs.org/"
     },
     {
       "label": "Express",
-      "category": "backend"
+      "category": "backend",
+      "icon": "/icons/skills/express.svg",
+      "url": "https://expressjs.com/"
     },
     {
       "label": "MongoDB",
-      "category": "backend"
+      "category": "backend",
+      "icon": "/icons/skills/mongodb.svg",
+      "url": "https://www.mongodb.com/"
     },
     {
-      "label": "Amazon AWS",
-      "category": "backend"
+      "label": "AWS",
+      "category": "backend",
+      "icon": "/icons/skills/amazonwebservices.svg",
+      "url": "https://aws.amazon.com/"
+    },
+    {
+      "label": "AWS API Gateway",
+      "category": "backend",
+      "icon": "/icons/skills/feather-cloud.svg",
+      "url": "https://aws.amazon.com/api-gateway/"
+    },
+    {
+      "label": "AWS EC2",
+      "category": "backend",
+      "icon": "/icons/skills/feather-server.svg",
+      "url": "https://aws.amazon.com/ec2/"
+    },
+    {
+      "label": "AWS Lambda",
+      "category": "backend",
+      "icon": "/icons/skills/feather-zap.svg",
+      "url": "https://aws.amazon.com/lambda/"
+    },
+    {
+      "label": "AWS RDS",
+      "category": "backend",
+      "icon": "/icons/skills/feather-database.svg",
+      "url": "https://aws.amazon.com/rds/"
+    },
+    {
+      "label": "AWS S3",
+      "category": "backend",
+      "icon": "/icons/skills/feather-archive.svg",
+      "url": "https://aws.amazon.com/s3/"
     },
     {
       "label": "PostgreSQL",
-      "category": "backend"
+      "category": "backend",
+      "icon": "/icons/skills/postgresql.svg",
+      "url": "https://www.postgresql.org/"
     },
     {
       "label": "MySQL",
-      "category": "backend"
+      "category": "backend",
+      "icon": "/icons/skills/mysql.svg",
+      "url": "https://www.mysql.com/"
     },
     {
       "label": "SQLite",
-      "category": "backend"
+      "category": "backend",
+      "icon": "/icons/skills/sqlite.svg",
+      "url": "https://sqlite.org/"
     },
     {
       "label": "Firebase",
-      "category": "backend"
+      "category": "backend",
+      "icon": "/icons/skills/firebase.svg",
+      "url": "https://firebase.google.com/"
     },
     {
       "label": "Supabase",
-      "category": "backend"
+      "category": "backend",
+      "icon": "/icons/skills/supabase.svg",
+      "url": "https://supabase.com/"
     },
     {
-      "label": "Git",
-      "category": "other"
+      "label": "Cloudinary",
+      "category": "backend",
+      "icon": "/icons/skills/feather-image.svg",
+      "url": "https://cloudinary.com/"
     },
     {
-      "label": "JQuery",
-      "category": "other"
+      "label": "NGINX",
+      "category": "backend",
+      "icon": "/icons/skills/nginx.svg",
+      "url": "https://nginx.org/"
     },
     {
-      "label": "JSON APIs",
-      "category": "other"
+      "label": "NoSQL",
+      "category": "backend",
+      "icon": "/icons/skills/feather-database.svg",
+      "url": "https://www.mongodb.com/resources/basics/databases/nosql-explained"
     },
     {
-      "label": "iPhone",
-      "category": "other"
+      "label": "PlayFab",
+      "category": "backend",
+      "icon": "/icons/skills/feather-play.svg",
+      "url": "https://playfab.com/"
+    },
+    {
+      "label": "PM2",
+      "category": "backend",
+      "icon": "/icons/skills/pm2.svg",
+      "url": "https://pm2.keymetrics.io/"
+    },
+    {
+      "label": "SQL",
+      "category": "backend",
+      "icon": "/icons/skills/feather-database.svg",
+      "url": "https://www.postgresql.org/docs/current/tutorial-sql.html"
+    },
+    {
+      "label": "Python",
+      "category": "backend",
+      "icon": "/icons/skills/python.svg",
+      "url": "https://www.python.org/"
+    },
+    {
+      "label": "FastAPI",
+      "category": "backend",
+      "icon": "/icons/skills/fastapi.svg",
+      "url": "https://fastapi.tiangolo.com/"
+    },
+    {
+      "label": "Prisma",
+      "category": "backend",
+      "icon": "/icons/skills/prisma.svg",
+      "url": "https://www.prisma.io/"
+    },
+    {
+      "label": "AI Agents",
+      "category": "other",
+      "icon": "/icons/skills/feather-cpu.svg",
+      "url": "https://platform.openai.com/docs/guides/agents"
     },
     {
       "label": "Android",
-      "category": "other"
+      "category": "other",
+      "icon": "/icons/skills/android.svg",
+      "url": "https://developer.android.com/"
     },
     {
-      "label": "Figma",
-      "category": "other"
+      "label": "APIs",
+      "category": "other",
+      "icon": "/icons/skills/openapi.svg",
+      "url": "https://www.openapis.org/"
+    },
+    {
+      "label": "CI/CD",
+      "category": "other",
+      "icon": "/icons/skills/feather-refresh-cw.svg",
+      "url": "https://docs.gitlab.com/ci/"
+    },
+    {
+      "label": "Claude Code",
+      "category": "other",
+      "icon": "/icons/skills/feather-terminal.svg",
+      "url": "https://code.claude.com/docs/en/overview"
+    },
+    {
+      "label": "CLI",
+      "category": "other",
+      "icon": "/icons/skills/feather-terminal.svg",
+      "url": "https://www.gnu.org/software/bash/"
+    },
+    {
+      "label": "Codex",
+      "category": "other",
+      "icon": "/icons/skills/feather-terminal.svg",
+      "url": "https://developers.openai.com/codex/"
+    },
+    {
+      "label": "Cursor",
+      "category": "other",
+      "icon": "/icons/skills/feather-mouse-pointer.svg",
+      "url": "https://cursor.com/"
+    },
+    {
+      "label": "DevOps",
+      "category": "other",
+      "icon": "/icons/skills/feather-settings.svg",
+      "url": "https://aws.amazon.com/devops/what-is-devops/"
+    },
+    {
+      "label": "Git",
+      "category": "other",
+      "icon": "/icons/skills/git.svg",
+      "url": "https://git-scm.com/"
+    },
+    {
+      "label": "GitLab",
+      "category": "other",
+      "icon": "/icons/skills/gitlab.svg",
+      "url": "https://about.gitlab.com/"
+    },
+    {
+      "label": "Harness Engineering",
+      "category": "other",
+      "icon": "/icons/skills/feather-tool.svg",
+      "url": null
+    },
+    {
+      "label": "Integrations",
+      "category": "other",
+      "icon": "/icons/skills/feather-link.svg",
+      "url": null
+    },
+    {
+      "label": "iOS",
+      "category": "other",
+      "icon": "/icons/skills/apple.svg",
+      "url": "https://developer.apple.com/ios/"
+    },
+    {
+      "label": "iPhone",
+      "category": "other",
+      "icon": "/icons/skills/feather-smartphone.svg",
+      "url": "https://www.apple.com/iphone/"
+    },
+    {
+      "label": "JSON",
+      "category": "other",
+      "icon": "/icons/skills/json.svg",
+      "url": "https://www.json.org/json-en.html"
+    },
+    {
+      "label": "JSON APIs",
+      "category": "other",
+      "icon": "/icons/skills/feather-code.svg",
+      "url": "https://jsonapi.org/"
+    },
+    {
+      "label": "Linux",
+      "category": "other",
+      "icon": "/icons/skills/linux.svg",
+      "url": "https://www.kernel.org/"
+    },
+    {
+      "label": "Mobile Applications",
+      "category": "other",
+      "icon": "/icons/skills/feather-smartphone.svg",
+      "url": null
+    },
+    {
+      "label": "Release Management",
+      "category": "other",
+      "icon": "/icons/skills/feather-package.svg",
+      "url": null
+    },
+    {
+      "label": "Swagger",
+      "category": "other",
+      "icon": "/icons/skills/swagger.svg",
+      "url": "https://swagger.io/"
+    },
+    {
+      "label": "Postman",
+      "category": "other",
+      "icon": "/icons/skills/postman.svg",
+      "url": "https://www.postman.com/"
+    },
+    {
+      "label": "Agile",
+      "category": "management",
+      "icon": "/icons/skills/feather-repeat.svg",
+      "url": "https://agilemanifesto.org/"
+    },
+    {
+      "label": "Airtable",
+      "category": "management",
+      "icon": "/icons/skills/feather-grid.svg",
+      "url": "https://airtable.com/"
+    },
+    {
+      "label": "Confluence",
+      "category": "management",
+      "icon": "/icons/skills/confluence.svg",
+      "url": "https://www.atlassian.com/software/confluence"
+    },
+    {
+      "label": "Jira",
+      "category": "management",
+      "icon": "/icons/skills/jira.svg",
+      "url": "https://www.atlassian.com/software/jira"
+    },
+    {
+      "label": "Linear",
+      "category": "management",
+      "icon": "/icons/skills/feather-list.svg",
+      "url": "https://linear.app/"
+    },
+    {
+      "label": "Monday",
+      "category": "management",
+      "icon": "/icons/skills/feather-calendar.svg",
+      "url": "https://monday.com/"
     },
     {
       "label": "Notion",
-      "category": "other"
+      "category": "management",
+      "icon": "/icons/skills/notion.svg",
+      "url": "https://www.notion.com/"
+    },
+    {
+      "label": "Scrum",
+      "category": "management",
+      "icon": "/icons/skills/feather-repeat.svg",
+      "url": "https://scrumguides.org/"
+    },
+    {
+      "label": "Trello",
+      "category": "management",
+      "icon": "/icons/skills/trello.svg",
+      "url": "https://trello.com/"
+    },
+    {
+      "label": "Typeform",
+      "category": "management",
+      "icon": "/icons/skills/feather-edit.svg",
+      "url": "https://www.typeform.com/"
     },
     {
       "label": "Construct 3",
-      "category": "other"
+      "category": "design",
+      "icon": "/icons/skills/feather-play.svg",
+      "url": "https://www.construct.net/"
+    },
+    {
+      "label": "Figma",
+      "category": "design",
+      "icon": "/icons/skills/figma.svg",
+      "url": "https://www.figma.com/"
+    },
+    {
+      "label": "Make",
+      "category": "design",
+      "icon": "/icons/skills/feather-git-merge.svg",
+      "url": "https://www.make.com/"
+    },
+    {
+      "label": "n8n",
+      "category": "design",
+      "icon": "/icons/skills/feather-git-branch.svg",
+      "url": "https://n8n.io/"
+    },
+    {
+      "label": "Storybook",
+      "category": "design",
+      "icon": "/icons/skills/storybook.svg",
+      "url": "https://storybook.js.org/"
+    },
+    {
+      "label": "Webflow",
+      "category": "design",
+      "icon": "/icons/skills/webflow.svg",
+      "url": "https://webflow.com/"
+    },
+    {
+      "label": "Zapier",
+      "category": "design",
+      "icon": "/icons/skills/feather-zap.svg",
+      "url": "https://zapier.com/"
+    },
+    {
+      "label": "Automated Testing",
+      "category": "qa",
+      "icon": "/icons/skills/feather-check-circle.svg",
+      "url": null
+    },
+    {
+      "label": "Browserbase",
+      "category": "qa",
+      "icon": "/icons/skills/feather-globe.svg",
+      "url": "https://www.browserbase.com/"
+    },
+    {
+      "label": "Functional Testing",
+      "category": "qa",
+      "icon": "/icons/skills/feather-check-square.svg",
+      "url": null
+    },
+    {
+      "label": "Hansoft",
+      "category": "qa",
+      "icon": "/icons/skills/feather-clipboard.svg",
+      "url": "https://www.perforce.com/products/hansoft"
+    },
+    {
+      "label": "Integration Testing",
+      "category": "qa",
+      "icon": "/icons/skills/feather-link.svg",
+      "url": null
+    },
+    {
+      "label": "Jest",
+      "category": "qa",
+      "icon": "/icons/skills/jest.svg",
+      "url": "https://jestjs.io/"
+    },
+    {
+      "label": "Lighthouse",
+      "category": "qa",
+      "icon": "/icons/skills/feather-sun.svg",
+      "url": "https://developer.chrome.com/docs/lighthouse/overview/"
+    },
+    {
+      "label": "Playwright",
+      "category": "qa",
+      "icon": "/icons/skills/playwright.svg",
+      "url": "https://playwright.dev/"
+    },
+    {
+      "label": "Sentry",
+      "category": "qa",
+      "icon": "/icons/skills/sentry.svg",
+      "url": "https://sentry.io/"
+    },
+    {
+      "label": "Snapshot Testing",
+      "category": "qa",
+      "icon": "/icons/skills/feather-camera.svg",
+      "url": "https://jestjs.io/docs/snapshot-testing"
+    },
+    {
+      "label": "Test Planning",
+      "category": "qa",
+      "icon": "/icons/skills/feather-clipboard.svg",
+      "url": null
+    },
+    {
+      "label": "Unit Testing",
+      "category": "qa",
+      "icon": "/icons/skills/feather-check-circle.svg",
+      "url": null
+    },
+    {
+      "label": "Vitest",
+      "category": "qa",
+      "icon": "/icons/skills/vitest.svg",
+      "url": "https://vitest.dev/"
     }
   ],
   "links": [

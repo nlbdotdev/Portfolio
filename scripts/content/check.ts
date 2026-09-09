@@ -9,6 +9,14 @@ const profile = profileSchema.parse(
 );
 const refs = new Set<string>();
 const errors: string[] = [];
+for (const skill of profile.skills) {
+  try {
+    if (!(await stat(join(root, 'static', skill.icon))).isFile())
+      errors.push(`Not a skill icon: ${skill.icon}`);
+  } catch {
+    errors.push(`Missing skill icon: ${skill.icon}`);
+  }
+}
 for (const entry of entries) {
   for (const path of collectAssets(entry)) {
     if (!assetPathSchema.safeParse(path).success) {

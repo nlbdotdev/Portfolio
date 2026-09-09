@@ -115,7 +115,14 @@ export const profileSchema = z
     bio: z.array(z.string()),
     gameIntroduction: z.array(z.string()),
     skills: z.array(
-      z.object({ label: z.string(), category: z.enum(['frontend', 'backend', 'other']) }).strict(),
+      z
+        .object({
+          label: z.string(),
+          category: z.enum(['frontend', 'backend', 'other', 'management', 'design', 'qa']),
+          icon: z.string().regex(/^\/icons\/skills\/[a-z0-9-]+\.svg$/),
+          url: z.url({ protocol: /^https?$/ }).nullable(),
+        })
+        .strict(),
     ),
     links: z.array(
       z.object({ label: z.string(), url: z.url({ protocol: /^(https?|mailto)$/ }) }).strict(),

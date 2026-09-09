@@ -3,7 +3,10 @@
   const groups = [
     { id: 'frontend', label: 'Frontend', icon: 'code' },
     { id: 'backend', label: 'Backend', icon: 'server' },
-    { id: 'other', label: 'Tools & making', icon: 'tool' },
+    { id: 'other', label: 'Software & AI', icon: 'tool' },
+    { id: 'management', label: 'Project management', icon: 'tool' },
+    { id: 'design', label: 'Design & automation', icon: 'tool' },
+    { id: 'qa', label: 'Testing & quality', icon: 'tool' },
   ];
 </script>
 
@@ -25,17 +28,30 @@
     <div class="skills-grid">
       {#each groups as group}
         <section class="skill-group">
-          <h3>
-            <img
-              src={`/icons/skills/${group.icon}.svg`}
-              alt=""
-              width="22"
-              height="22"
-            />{group.label}
-          </h3>
+          <h3>{group.label}</h3>
           <ul>
             {#each profile.skills.filter((skill) => skill.category === group.id) as skill}<li>
-                {skill.label}
+                {#if skill.url}
+                  <a class="skill-button" href={skill.url} target="_blank" rel="noreferrer">
+                    <img
+                      src={skill.icon}
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                    />{skill.label}<span class="sr-only"> (opens in new tab)</span>
+                  </a>
+                {:else}
+                  <span class="skill-button skill-discipline"
+                    ><img
+                      src={skill.icon}
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                    />{skill.label}</span
+                  >
+                {/if}
               </li>{/each}
           </ul>
         </section>
