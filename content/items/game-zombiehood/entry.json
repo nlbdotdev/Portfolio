@@ -8,11 +8,11 @@
   "summary": "The first commercial release from Dead Traveler. Built, shipped, and out in the world.",
   "body": "The first commercial release from Dead Traveler. Built, shipped, and out in the world.\n",
   "date": {
-    "label": "Apr 2026",
+    "label": "Apr 2026 — Present",
     "value": "2026-04",
     "precision": "month",
     "end": null,
-    "ongoing": false
+    "ongoing": true
   },
   "featured": true,
   "collection": "timeline",
