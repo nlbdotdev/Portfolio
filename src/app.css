@@ -1559,3 +1559,14 @@ html {
     transition: none;
   }
 }
+
+.empty-state .search-everything {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+  text-underline-offset: 3px;
+}
+.empty-state .search-everything:hover {
+  color: var(--rust);
+}

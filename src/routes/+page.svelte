@@ -259,8 +259,10 @@
         </div>
       {:else}<p class="empty-state">
           {#if query.trim()}No entries match “{query}” in this track.
-            <button onclick={() => (query = '')}>Clear search</button>{:else}No recent entries in
-            this track. Explore the earlier chapters below.{/if}
+            <button onclick={() => (query = '')}>Clear search</button>
+            {#if active !== null}<button class="search-everything" onclick={() => changeTrack(null)}
+                >Search Everything</button
+              >{/if}{:else}No recent entries in this track. Explore the earlier chapters below.{/if}
         </p>{/each}
       {#if history.length}
         <section id="archive" class="archive-section" aria-label="Earlier chapters">
