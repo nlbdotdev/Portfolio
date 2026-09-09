@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Entry } from '../../../content/schema.ts';
   import { assetUrl, descriptions } from '$lib/content';
-  import { trackOf, tracks } from '$lib/timeline';
+  import { railOf } from '$lib/timeline';
   let {
     entry,
     expanded = $bindable(false),
@@ -9,9 +9,17 @@
     entry: Entry;
     expanded?: boolean;
   } = $props();
-  const track = $derived(trackOf(entry));
-  const index = $derived(tracks.findIndex((t) => t.id === track));
-  const color = $derived(tracks[index].color);
+  const rail = $derived(railOf(entry));
+  const color = $derived(rail.color);
+  const label = $derived(
+    entry.kind === 'game'
+      ? 'Game'
+      : entry.kind === 'project'
+        ? 'Website'
+        : entry.kind === 'company'
+          ? 'Career'
+          : 'Education',
+  );
   const cover = $derived(
     entry.media.cover ?? entry.media.icon ?? entry.media.screenshots.desktop ?? null,
   );
@@ -26,7 +34,7 @@
   );
 </script>
 
-<article id={entry.id} class="entry" style={`--track:${color};--station:${index}`}>
+<article id={entry.id} class="entry" style={`--track:${color};--station:${rail.station}`}>
   <div class="connection" aria-hidden="true"><span></span></div>
   <div class="entry-layout" class:has-cover={cover}>
     {#if cover}<a
@@ -54,8 +62,8 @@
       >{/if}
     <div class="entry-main">
       <div class="entry-meta">
-        <span>{tracks[index].label} / {entry.role}</span><time
-          datetime={entry.date.value ?? undefined}>{entry.date.label ?? 'Date to be added'}</time
+        <span>{label} / {entry.role}</span><time datetime={entry.date.value ?? undefined}
+          >{entry.date.label ?? 'Date to be added'}</time
         >
       </div>
       <h3>{entry.title}</h3>

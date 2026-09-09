@@ -5,6 +5,21 @@ export const tracks = [
   { id: 'education', label: 'Education', color: 'var(--education)' },
   { id: 'project', label: 'Project', color: 'var(--project)' },
 ] as const;
+export type ProjectFilter = 'all' | 'game' | 'website';
+export const projectFilters = [
+  { id: 'all', label: 'Everything' },
+  { id: 'game', label: 'Games' },
+  { id: 'website', label: 'Websites' },
+] as const;
+export const rails = [
+  { id: 'company', track: 'company', station: 0, color: 'var(--career)' },
+  { id: 'education', track: 'education', station: 1, color: 'var(--education)' },
+  { id: 'game', track: 'project', station: 2, color: 'var(--project)' },
+  { id: 'website', track: 'project', station: 2.65, color: 'var(--website)' },
+] as const;
+export function railOf(entry: Entry) {
+  return rails.find((rail) => rail.id === (entry.kind === 'project' ? 'website' : entry.kind))!;
+}
 export function trackOf(entry: Entry): Track {
   return entry.kind === 'company'
     ? 'company'

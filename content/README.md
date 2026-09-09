@@ -5,7 +5,7 @@ Each item owns one `entry.json`, including its Markdown `body`, and its media un
 ## Stable identity
 
 - `id` is `<kind>-<slug>` and matches the folder name.
-- `kind`: game, project, company, or education. Games and software projects share the Project timeline rail.
+- `kind`: game, project, company, or education. Games and web/software projects share the Project category, with paired blue Game and purple Website rails. Selecting Project reveals Everything / Games / Websites subfilters; existing `game` and `project` kinds drive the split.
 - `title` and `role` are presentation text; changing them does not change the slug.
 - `legacyPath` preserves any historical showcase URL. New items use null.
 - `draft: true` keeps unfinished entries out of the public app.

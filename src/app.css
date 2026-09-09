@@ -1069,3 +1069,45 @@ footer p span {
 .company-logo.reflextions-logo img {
   padding: 0;
 }
+
+:root {
+  --website: #795ba2;
+}
+:root[data-theme='dark'] {
+  --website: #c1a2e6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --website: #c1a2e6;
+  }
+}
+.rails {
+  --rail-step: 20px;
+  display: block;
+}
+.rails i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--station) * var(--rail-step));
+}
+.project-subfilters {
+  margin-top: -12px;
+}
+.project-subfilters > .filters {
+  padding: 0 0 20px 12px;
+}
+.subfilter-label {
+  align-self: center;
+  margin-right: 8px;
+  font: 11px var(--font-mono);
+  color: var(--muted);
+}
+.project-subfilters button {
+  font-size: 12px;
+}
+@media (max-width: 480px) {
+  .rails {
+    --rail-step: 14px;
+  }
+}

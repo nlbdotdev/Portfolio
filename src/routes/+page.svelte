@@ -5,12 +5,24 @@
   import ThemeSelect from '$lib/components/ThemeSelect.svelte';
   import PortfolioItem from '$lib/components/PortfolioItem.svelte';
   import { entries, profile, assetUrl } from '$lib/content';
-  import { tracks, trackOf, yearOf, isArchive, matchesSearch, type Track } from '$lib/timeline';
+  import {
+    tracks,
+    rails,
+    projectFilters,
+    trackOf,
+    yearOf,
+    isArchive,
+    matchesSearch,
+    type Track,
+    type ProjectFilter,
+  } from '$lib/timeline';
   let active = $state<Track | 'featured' | null>(null);
+  let projectFilter = $state<ProjectFilter>('all');
   let query = $state('');
   let showArchive = $state(false);
   let archiveRevealAfter = 0;
   async function changeTrack(track: Track | 'featured' | null) {
+    if (track !== active) projectFilter = 'all';
     active = track;
     showArchive = false;
     // Don't mistake the view-reset scroll for a request to reveal history.
@@ -42,6 +54,9 @@
     entries.filter(
       (entry) =>
         (!active || (active === 'featured' ? entry.featured : trackOf(entry) === active)) &&
+        (active !== 'project' ||
+          projectFilter === 'all' ||
+          entry.kind === (projectFilter === 'game' ? 'game' : 'project')) &&
         matchesSearch(entry, query),
     ),
   );
@@ -192,16 +207,40 @@
           /></label
         >
       </div>
+      {#if active === 'project'}
+        <div class="project-subfilters" transition:collectionTransition>
+          <div class="filters" aria-label="Filter projects by type">
+            <span class="subfilter-label">Projects</span>
+            {#each projectFilters as filter}
+              <button
+                class:chosen={projectFilter === filter.id}
+                aria-pressed={projectFilter === filter.id}
+                onclick={() => {
+                  projectFilter = filter.id;
+                  changeTrack('project');
+                }}
+              >
+                {#if filter.id !== 'all'}<i
+                    style={`--track:${filter.id === 'game' ? 'var(--project)' : 'var(--website)'}`}
+                    aria-hidden="true"
+                  ></i>{/if}
+                {filter.label}
+              </button>
+            {/each}
+          </div>
+        </div>
+      {/if}
       <p class="sr-only" aria-live="polite">
         {visible.length + (showArchive ? history.length : 0)} entries shown{active
-          ? `; ${active === 'featured' ? 'Featured' : tracks.find((track) => track.id === active)?.label} filter active`
+          ? `; ${active === 'featured' ? 'Featured' : tracks.find((track) => track.id === active)?.label} filter active${active === 'project' ? `; ${projectFilters.find((filter) => filter.id === projectFilter)?.label}` : ''}`
           : ''}
       </p>
       <div class="timeline" id="collection-items">
         <div class="rails" aria-hidden="true">
-          {#each tracks as track}<i
-              class:quiet={active && active !== 'featured' && active !== track.id}
-              style={`--track:${track.color}`}
+          {#each rails as rail}<i
+              class:quiet={(active && active !== 'featured' && active !== rail.track) ||
+                (active === 'project' && projectFilter !== 'all' && rail.id !== projectFilter)}
+              style={`--track:${rail.color};--station:${rail.station}`}
             ></i>{/each}
         </div>
         {#each visible as entry, i (entry.id)}
