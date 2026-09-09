@@ -6,3 +6,7 @@ static/
 content/items/**/assets/
 package-lock.json
 notes.md
+# Legacy source copies retained pending cleanup approval
+content/entries.json
+content/schema.js
+scripts/content/*.mjs
