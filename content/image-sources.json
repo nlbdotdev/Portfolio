@@ -94,5 +94,54 @@
     "path": "assets/cover.png",
     "source": "https://syntropy.sh/",
     "assetUrl": "https://syntropy.sh/media/og.png"
+  },
+  {
+    "item": "company-fablevision",
+    "path": "assets/currency-home.webp",
+    "source": "https://tm4k.ala.org/currency-catcher",
+    "captureDate": "2026-09-09",
+    "method": "Screenshot of the public website at 1280 × 900."
+  },
+  {
+    "item": "company-fablevision",
+    "path": "assets/currency-learn.webp",
+    "source": "https://tm4k.ala.org/currency-catcher",
+    "captureDate": "2026-09-09",
+    "method": "Screenshot of the public website at 1280 × 900."
+  },
+  {
+    "item": "company-fablevision",
+    "path": "assets/moolah-home.webp",
+    "source": "https://tm4k.ala.org/making-moolah",
+    "captureDate": "2026-09-09",
+    "method": "Screenshot of the public website at 1280 × 900."
+  },
+  {
+    "item": "company-fablevision",
+    "path": "assets/moolah-game.webp",
+    "source": "https://tm4k.ala.org/making-moolah",
+    "captureDate": "2026-09-09",
+    "method": "Screenshot of the public website at 1280 × 900."
+  },
+  {
+    "item": "company-psiquantum",
+    "path": "assets/construct-home.webp",
+    "source": "https://construct.psiquantum.com/",
+    "captureDate": "2026-09-09",
+    "method": "Screenshot of the public website at 1280 × 900."
+  },
+  {
+    "item": "company-psiquantum",
+    "path": "assets/construct-circuit.webp",
+    "source": "https://construct.psiquantum.com/",
+    "captureDate": "2026-09-09",
+    "method": "Screenshot of the public website at 1280 × 900."
+  },
+  {
+    "item": "company-psiquantum",
+    "path": "assets/construct-article.webp",
+    "source": "https://www.psiquantum.com/news-import/inside-construct",
+    "captureDate": "2026-09-09",
+    "method": "Screenshot of the public website at 1280 × 900."
   }
 ]

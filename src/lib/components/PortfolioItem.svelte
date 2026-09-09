@@ -1,7 +1,7 @@
 <script lang="ts">
   import GameplayAnimation from './GameplayAnimation.svelte';
   import type { Entry } from '../../../content/schema.ts';
-  import { assetUrl, descriptions } from '$lib/content';
+  import { assetUrl, descriptions, hasDetails } from '$lib/content';
   import { railOf } from '$lib/timeline';
   let {
     entry,
@@ -81,7 +81,7 @@
         </div>{/if}
     </div>
   </div>
-  {#if entry.kind === 'game' || entry.kind === 'project'}
+  {#if hasDetails(entry)}
     <details class="item-details" bind:open={expanded}>
       <summary>Notes & media <span aria-hidden="true">+</span></summary>
       {#if expanded}

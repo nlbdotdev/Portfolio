@@ -26,3 +26,16 @@ export const profile = profileSchema.parse(profileData);
 export const descriptions = new Map(
   entries.map((entry) => [entry.id, renderMarkdown(entry.body, (path) => assetUrl(entry, path))]),
 );
+
+export function hasDetails(entry: Entry): boolean {
+  return (
+    entry.kind === 'game' ||
+    entry.kind === 'project' ||
+    entry.body.trim() !== entry.summary.trim() ||
+    entry.media.images.length > 0 ||
+    Object.keys(entry.media.screenshots).length > 0 ||
+    Boolean(entry.media.animation) ||
+    entry.media.videos.length > 0 ||
+    entry.technologies.length > 0
+  );
+}

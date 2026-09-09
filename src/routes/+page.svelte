@@ -3,7 +3,7 @@
   import { archivePreview } from '$lib/archive-preview';
   import { collectionTransition } from '$lib/collection-transition';
   import PortfolioItem from '$lib/components/PortfolioItem.svelte';
-  import { entries, profile, assetUrl } from '$lib/content';
+  import { entries, profile, assetUrl, hasDetails } from '$lib/content';
   import {
     lastActive,
     tracks,
@@ -40,10 +40,7 @@
   function toggleAllDetails() {
     const open = !anyDetailsOpen;
     expandedEntries = Object.fromEntries(
-      entries.map((entry) => [
-        entry.id,
-        open && (entry.kind === 'game' || entry.kind === 'project'),
-      ]),
+      entries.map((entry) => [entry.id, open && hasDetails(entry)]),
     );
   }
   let today = $state(new Date());

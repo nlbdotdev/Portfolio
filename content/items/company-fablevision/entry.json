@@ -6,7 +6,7 @@
   "title": "FableVision",
   "role": "Software Developer · Contract",
   "summary": "Shipped two educational games focused on financial literacy for students.",
-  "body": "Shipped two educational games focused on financial literacy for students.\n",
+  "body": "### Financial literacy games\n\nBuilt two games for FableVision as part of Thinking Money for Kids:\n\n- [Play Currency Catcher](https://tm4k.ala.org/currency-catcher) — explore coins, bills, and their values.\n- [Play Making Moo-lah](https://tm4k.ala.org/making-moolah) — manage a farm budget and make purchasing decisions.\n\nScreenshots below show each game's opening and introduction screens.\n",
   "date": {
     "label": "Feb — Jun 2024",
     "value": "2024-02",
@@ -27,7 +27,24 @@
     "cover": null,
     "animation": null,
     "icon": "assets/logo.webp",
-    "images": [],
+    "images": [
+      {
+        "src": "assets/currency-home.webp",
+        "alt": "Currency Catcher — title screen"
+      },
+      {
+        "src": "assets/currency-learn.webp",
+        "alt": "Currency Catcher — learning coin and bill values"
+      },
+      {
+        "src": "assets/moolah-home.webp",
+        "alt": "Making Moo-lah — title screen"
+      },
+      {
+        "src": "assets/moolah-game.webp",
+        "alt": "Making Moo-lah — farm budget introduction"
+      }
+    ],
     "videos": [],
     "screenshots": {}
   },
