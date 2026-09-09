@@ -19,7 +19,7 @@
       ]),
     );
   }
-  const featured = ['project-construct-snippets', 'project-map-builder'].map((id) =>
+  const featured = ['game-zombiehood', 'company-psiquantum', 'company-pilot'].map((id) =>
     entries.find((entry) => entry.id === id)!,
   );
   const studio = entries.find((entry) => entry.id === 'company-dead-traveler')!;
@@ -92,20 +92,23 @@
           <button class="feature" onclick={() => follow(entry.id)}>
             <img
               class="feature-art"
-              src={assetUrl(entry, entry.media.cover ?? entry.media.screenshots.desktop!)}
-              alt={`${entry.title} screenshot`}
+              class:feature-logo={entry.kind === 'company'}
+              src={assetUrl(
+                entry,
+                entry.media.cover ?? entry.media.icon ?? entry.media.screenshots.desktop!,
+              )}
+              alt={`${entry.title} ${entry.kind === 'company' ? 'logo' : 'cover'}`}
             />
             <div class="feature-caption">
               <h3>{entry.title}</h3>
-              <p>Software</p>
-              <p>
-                {entry.id === 'project-construct-snippets'
-                  ? 'Reusable building blocks.'
-                  : 'Tools for fast iteration.'}
-              </p>
+              <p>{entry.kind === 'game' ? 'Game' : 'Career'}</p>
+              <p>{entry.role}</p>
             </div>
           </button>
         {/each}
+      </div>
+      <div class="collection-divider">
+        <a href="#timeline">Scroll to explore <span aria-hidden="true">↓</span></a>
       </div>
     </section>
     <section id="timeline" aria-labelledby="timeline-title">

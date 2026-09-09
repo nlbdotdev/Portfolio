@@ -14,7 +14,7 @@
     "end": null,
     "ongoing": false
   },
-  "featured": false,
+  "featured": true,
   "collection": "timeline",
   "tags": ["Steam", "Independent game"],
   "links": [

@@ -9,7 +9,7 @@ Each item owns one `entry.json`, including its Markdown `body`, and its media un
 - `title` and `role` are presentation text; changing them does not change the slug.
 - `legacyPath` preserves any historical showcase URL. New items use null.
 - `draft: true` keeps unfinished entries out of the public app.
-- `featured: true` selects the top cards. Current featured entries are PsiQuantum, Pilot Flying J, and FableVision.
+- `featured: true` selects the top cards. Current featured entries are Zombiehood, PsiQuantum, and Pilot Flying J.
 
 ## Content and dates
 

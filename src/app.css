@@ -939,3 +939,59 @@ footer p span {
     gap: 16px;
   }
 }
+
+.feature-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.feature-art.feature-logo {
+  object-fit: contain;
+  background: #fff;
+  padding: 28px;
+}
+.collection-divider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.collection-divider::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.collection-divider a {
+  font: 11px var(--font-mono);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.collection-divider a:hover {
+  color: var(--rust);
+}
+.collection-divider a span {
+  margin-left: 10px;
+}
+.selected {
+  padding-bottom: 0;
+}
+.timeline-head {
+  border-top: 0;
+}
+@media (max-width: 600px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .feature {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 0;
+    align-items: center;
+  }
+  .feature-art {
+    height: 120px;
+    border-bottom: 0;
+  }
+  .feature-art.feature-logo {
+    padding: 12px;
+  }
+}

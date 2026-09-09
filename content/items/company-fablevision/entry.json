@@ -14,7 +14,7 @@
     "end": "2024-06",
     "ongoing": false
   },
-  "featured": true,
+  "featured": false,
   "collection": "timeline",
   "tags": ["React", "Educational games"],
   "links": [
