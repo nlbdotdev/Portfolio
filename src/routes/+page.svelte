@@ -107,10 +107,14 @@
 <a href="#timeline" class="skip-link">Skip to timeline</a>
 <div class="shell">
   <header class="site-header">
-    <Wordmark />
-    <nav aria-label="Main navigation">
-      <a href="#timeline">Work</a><a href="#about">About</a><a href={profile.resume}>Résumé ↗</a
-      >{#each profile.links as link}<a href={link.url}>{link.label} ↗</a>{/each}
+    <div class="header-brand">
+      <Wordmark />
+      <nav class="section-nav" aria-label="Main navigation">
+        <a href="#timeline">Work</a><span aria-hidden="true">·</span><a href="#about">About</a>
+      </nav>
+    </div>
+    <nav class="contact-nav" aria-label="Contact links">
+      {#each profile.links as link}<a href={link.url}>{link.label} ↗</a>{/each}
     </nav>
     <ThemeSelect />
   </header>
@@ -318,6 +322,6 @@
   </main>
   <footer>
     <p>{profile.name} <span>© {new Date().getFullYear()}</span></p>
-    <a href="mailto:nlb.nathan@gmail.com">Say hello ↗</a><a href="#top">Back to top ↑</a>
+    <a href="mailto:nate@nlb.dev">Say hello ↗</a><a href="#top">Back to top ↑</a>
   </footer>
 </div>
