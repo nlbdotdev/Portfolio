@@ -72,4 +72,4 @@ The TypeScript command runs OptiPNG, Gifsicle and jpegtran. It accepts only smal
 - Unknown dates remain unknown; year-only and month-only dates keep their precision. Imported reference dates carry provenance and `datesNeedReview`.
 - Older entries are initially folded under “Earlier chapters.” Search includes them, and expanding the archive keeps them in the same timeline.
 - The scoped `cookie` override patches SvelteKit's transitive dependency; revisit it on framework upgrades.
-- During the pending cleanup approval, the old aggregate catalog, description files, and original static asset copies remain alongside the new item folders. They are not consumed by the new app. PDN removal and branch consolidation are also awaiting approval.
+- Superseded aggregate content, loose descriptions, duplicate item assets, and Paint.NET source files have been removed. Historical source remains available in Git and on `v1`.

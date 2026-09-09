@@ -13,12 +13,12 @@
   },
   {
     "id": "project-construct-snippets",
-    "field": "description",
+    "field": "body",
     "reason": "Original description contains Pending; requires editorial input."
   },
   {
     "id": "project-react-ticket-tracker",
-    "field": "description",
+    "field": "body",
     "reason": "Original description contains Pending; requires editorial input."
   }
 ]
