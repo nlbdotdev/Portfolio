@@ -18,6 +18,7 @@
   --ink: #252923;
   --border: #d9d8cf;
   --rust: #b54c2d;
+  --header-accent: #b54c2d;
   --muted: #60665d;
   --surface: #eae8df;
   --career: #b54c2d;
@@ -742,6 +743,7 @@ footer p span {
   --muted: #b8bdb1;
   --surface: #292e28;
   --rust: #ef9169;
+  --header-accent: #80b8d9;
   --career: #ef9169;
   --education: #a0bd80;
   --project: #80b8d9;
@@ -755,6 +757,7 @@ footer p span {
     --muted: #b8bdb1;
     --surface: #292e28;
     --rust: #ef9169;
+    --header-accent: #80b8d9;
     --career: #ef9169;
     --education: #a0bd80;
     --project: #80b8d9;
@@ -777,9 +780,6 @@ footer p span {
 .wordmark {
   font-size: 32px;
   font-weight: 650;
-}
-.wordmark span {
-  color: inherit;
 }
 .site-header {
   padding: 20px 0;
@@ -1155,4 +1155,21 @@ footer p span {
 }
 .gameplay-media button:hover {
   background: var(--surface);
+}
+
+/* Header and hero accents follow the selected or system color scheme. */
+.site-header,
+.intro {
+  --rust: var(--header-accent);
+}
+.wordmark span,
+.site-header nav a,
+.intro .eyebrow {
+  transition: color 300ms ease;
+}
+.lede::before {
+  transition: background-color 300ms ease;
+}
+.now {
+  transition: border-color 300ms ease;
 }
