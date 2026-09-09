@@ -7,7 +7,9 @@
   const track = $derived(trackOf(entry));
   const index = $derived(tracks.findIndex((t) => t.id === track));
   const color = $derived(tracks[index].color);
-  const cover = $derived(entry.media.cover ?? entry.media.screenshots.desktop ?? null);
+  const cover = $derived(
+    entry.media.cover ?? entry.media.icon ?? entry.media.screenshots.desktop ?? null,
+  );
   const gallery = $derived(
     [
       ...entry.media.images,
@@ -24,13 +26,15 @@
   <div class="entry-layout" class:has-cover={cover}>
     {#if cover}<a
         class="entry-cover"
+        class:company-logo={cover === entry.media.icon}
+        class:white-logo={entry.id === 'company-fablevision'}
         href={assetUrl(entry, cover)}
         target="_blank"
         rel="noreferrer"
         aria-label={`Open ${entry.title} cover`}
         ><img
           src={assetUrl(entry, cover)}
-          alt={`${entry.title} cover`}
+          alt={`${entry.title} ${cover === entry.media.icon ? 'logo' : 'cover'}`}
           loading="lazy"
           decoding="async"
         /></a

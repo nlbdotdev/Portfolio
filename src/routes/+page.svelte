@@ -1,11 +1,15 @@
 <script lang="ts">
+  import ThemeSelect from '$lib/components/ThemeSelect.svelte';
   import PortfolioItem from '$lib/components/PortfolioItem.svelte';
-  import { entries, profile } from '$lib/content';
+  import { entries, profile, assetUrl } from '$lib/content';
   import { tracks, yearOf, isArchive, matchesSearch, type Track } from '$lib/timeline';
   let active = $state<Track | null>(null);
   let query = $state('');
   let showArchive = $state(false);
-  const featured = entries.filter((entry) => entry.featured);
+  const featured = ['project-construct-snippets', 'project-map-builder'].map((id) =>
+    entries.find((entry) => entry.id === id)!,
+  );
+  const studio = entries.find((entry) => entry.id === 'company-dead-traveler')!;
   const visible = $derived(
     entries.filter(
       (entry) => matchesSearch(entry, query) && (showArchive || query.trim() || !isArchive(entry)),
@@ -33,49 +37,57 @@
   <header class="site-header">
     <a class="wordmark" href="#top">NLB<span>.</span>DEV</a>
     <nav aria-label="Main navigation">
-      <a href="#about">About</a><a href={profile.resume}>Résumé ↗</a>{#each profile.links as link}<a
-          href={link.url}>{link.label} ↗</a
-        >{/each}
+      <a href="#timeline">Work</a><a href="#about">About</a><a href={profile.resume}>Résumé ↗</a
+      >{#each profile.links as link}<a href={link.url}>{link.label} ↗</a>{/each}
     </nav>
+    <ThemeSelect />
   </header>
   <main id="top">
     <section class="intro" id="about">
-      <div>
-        <p class="eyebrow">Nathan Bennett / Developer & maker</p>
-        <h1>Games, software,<br />and things <em>in between.</em></h1>
-        <p class="lede">
-          I build software and make games. This is a collection of the work, experiments, and
-          detours along the way.
-        </p>
+      <div class="intro-copy">
+        <h1>Games, software,<br />and things<br />in between.</h1>
+        <p class="lede">I’m Nathan.<br />Currently working full time<br />on Dead Traveler.</p>
       </div>
-      <aside class="now">
-        <span class="eyebrow"><i aria-hidden="true"></i> Currently</span><a
-          href="https://deadtraveler.com">Building Dead Traveler ↗</a
+      <div class="studio-feature">
+        <aside class="now">
+          <span class="eyebrow">Now</span>
+          <a href="https://deadtraveler.com">Dead Traveler ↗</a>
+          <p>Independent games / In progress</p>
+        </aside>
+        <button
+          class="studio-art"
+          onclick={() => follow(studio.id)}
+          aria-label="Explore Dead Traveler"
         >
-        <p>My independent game studio.<br />My full-time focus.</p>
-      </aside>
-    </section>
-    <section class="selected" aria-labelledby="selected-title">
-      <div class="section-line">
-        <h2 id="selected-title" class="eyebrow">Selected work</h2>
-        <span class="micro">A few chapters worth opening</span>
+          <img
+            src={assetUrl(studio, studio.media.cover!)}
+            alt="Blue cosmic clouds from Dead Traveler’s studio artwork"
+            fetchpriority="high"
+          />
+          <span>Dead Traveler <span aria-hidden="true">↗</span></span>
+        </button>
       </div>
+    </section>
+    <section class="selected" aria-label="Selected work">
       <div class="feature-grid">
-        {#each featured as entry, i}<button
-            class={`feature feature-${i}`}
-            onclick={() => follow(entry.id)}
-            ><div class="feature-art" aria-hidden="true">
-              <span class="art-circle"></span><span class="art-step"></span><span class="art-block"
-              ></span><span class="art-number">0{i + 1} / Company</span>
-            </div>
+        {#each featured as entry}
+          <button class="feature" onclick={() => follow(entry.id)}>
+            <img
+              class="feature-art"
+              src={assetUrl(entry, entry.media.cover ?? entry.media.screenshots.desktop!)}
+              alt={`${entry.title} screenshot`}
+            />
             <div class="feature-caption">
-              <div>
-                <h3>{entry.title}</h3>
-                <p>{entry.role}</p>
-              </div>
-              <span aria-hidden="true">↗</span>
-            </div></button
-          >{/each}
+              <h3>{entry.title}</h3>
+              <p>Software</p>
+              <p>
+                {entry.id === 'project-construct-snippets'
+                  ? 'Reusable building blocks.'
+                  : 'Tools for fast iteration.'}
+              </p>
+            </div>
+          </button>
+        {/each}
       </div>
     </section>
     <section id="timeline" aria-labelledby="timeline-title">

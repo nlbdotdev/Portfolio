@@ -4,11 +4,11 @@
   "slug": "pilot",
   "legacyPath": null,
   "title": "Pilot Flying J",
-  "role": "Senior Full Stack Engineer · Contract",
+  "role": "Senior Full Stack Engineer \u00b7 Contract",
   "summary": "Built a Svelte 5 finance tool, collaborated on ERP strategy, and helped improve development operations and onboarding for a site redesign.",
   "body": "Built a Svelte 5 finance tool, collaborated on ERP strategy, and helped improve development operations and onboarding for a site redesign.\n",
   "date": {
-    "label": "Jun 2024 — Apr 2025",
+    "label": "Jun 2024 \u2014 Apr 2025",
     "value": "2024-06",
     "precision": "month",
     "end": "2025-04",
@@ -17,11 +17,16 @@
   "featured": true,
   "collection": "timeline",
   "tags": ["Svelte 5", "Finance", "ERP"],
-  "links": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://pilotcompany.com"
+    }
+  ],
   "media": {
     "cover": null,
     "animation": null,
-    "icon": null,
+    "icon": "assets/logo.svg",
     "images": [],
     "videos": [],
     "screenshots": {}

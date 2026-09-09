@@ -8,7 +8,7 @@
   "summary": "Part of the software team powering the quest to build a fault-tolerant quantum computer. Worked on Construct, the platform for designing and optimizing quantum algorithms.",
   "body": "Part of the software team powering the quest to build a fault-tolerant quantum computer. Worked on Construct, the platform for designing and optimizing quantum algorithms.\n",
   "date": {
-    "label": "Apr 2025 — May 2026",
+    "label": "Apr 2025 \u2014 May 2026",
     "value": "2025-04",
     "precision": "month",
     "end": "2026-05",
@@ -17,11 +17,16 @@
   "featured": true,
   "collection": "timeline",
   "tags": ["Full-stack development", "Quantum computing"],
-  "links": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://www.psiquantum.com/press-materials"
+    }
+  ],
   "media": {
     "cover": null,
     "animation": null,
-    "icon": null,
+    "icon": "assets/logo.png",
     "images": [],
     "videos": [],
     "screenshots": {}

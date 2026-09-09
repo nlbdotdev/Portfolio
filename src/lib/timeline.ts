@@ -1,9 +1,9 @@
 import type { Entry } from '../../content/schema.ts';
 export type Track = 'company' | 'education' | 'project';
 export const tracks = [
-  { id: 'company', label: 'Company', color: '#b54c2d' },
-  { id: 'education', label: 'Education', color: '#64794b' },
-  { id: 'project', label: 'Project', color: '#366b8a' },
+  { id: 'company', label: 'Career', color: 'var(--career)' },
+  { id: 'education', label: 'Education', color: 'var(--education)' },
+  { id: 'project', label: 'Project', color: 'var(--project)' },
 ] as const;
 export function trackOf(entry: Entry): Track {
   return entry.kind === 'company'

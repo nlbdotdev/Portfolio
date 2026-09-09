@@ -8,7 +8,7 @@
   "summary": "Delivered cross-platform features with React, React Native, and Node. Worked with clients on product discovery, API design, and improvements to delivery.",
   "body": "Delivered cross-platform features with React, React Native, and Node. Worked with clients on product discovery, API design, and improvements to delivery.\n",
   "date": {
-    "label": "Nov 2022 — Feb 2024",
+    "label": "Nov 2022 \u2014 Feb 2024",
     "value": "2022-11",
     "precision": "month",
     "end": "2024-02",
@@ -17,11 +17,16 @@
   "featured": false,
   "collection": "timeline",
   "tags": ["React", "React Native", "Node.js"],
-  "links": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://www.codeandtrust.com"
+    }
+  ],
   "media": {
     "cover": null,
     "animation": null,
-    "icon": null,
+    "icon": "assets/logo.svg",
     "images": [],
     "videos": [],
     "screenshots": {}

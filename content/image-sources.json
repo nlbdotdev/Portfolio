@@ -1,0 +1,50 @@
+[
+  {
+    "item": "company-psiquantum",
+    "path": "assets/logo.png",
+    "source": "https://www.psiquantum.com/press-materials",
+    "assetUrl": "https://www.psiquantum.com/s/PsiQuantum-Black-Digital.png"
+  },
+  {
+    "item": "company-pilot",
+    "path": "assets/logo.svg",
+    "source": "https://pilotcompany.com",
+    "assetUrl": "https://pilotcompany.com/images/brands/pilot/PilotLogo.svg"
+  },
+  {
+    "item": "company-fablevision",
+    "path": "assets/logo.webp",
+    "source": "https://www.fablevisionstudios.com",
+    "assetUrl": "https://images.squarespace-cdn.com/content/v1/66f8497be641a81e552946a3/cdd2002d-d106-4551-beb8-cf5795b25ee2/Fablevision_SpiralLogo_white-2.png"
+  },
+  {
+    "item": "company-hilldrup",
+    "path": "assets/logo.png",
+    "source": "https://www.hilldrup.com/branding/",
+    "assetUrl": "https://www.hilldrup.com/wp-content/uploads/2023/06/HIL-Primary_RGB-150.png"
+  },
+  {
+    "item": "company-codetrust",
+    "path": "assets/logo.svg",
+    "source": "https://www.codeandtrust.com",
+    "assetUrl": "https://www.codeandtrust.com/logo.svg"
+  },
+  {
+    "item": "company-dead-traveler",
+    "path": "assets/cover.png",
+    "source": "https://deadtraveler.com",
+    "assetUrl": "https://deadtraveler.com/bg.png"
+  },
+  {
+    "item": "company-bethesda",
+    "path": "assets/logo.svg",
+    "source": "https://bethesda.net/en-US",
+    "note": "Official inline Bethesda wordmark, extracted as a standalone SVG; original paths unchanged."
+  },
+  {
+    "item": "company-reflextions",
+    "path": "assets/cover.png",
+    "source": "https://www.kongregate.com/games/Reflextions",
+    "note": "Existing Jet Attack cover from this portfolio, used as a project splash for Reflextions; not a company logo."
+  }
+]

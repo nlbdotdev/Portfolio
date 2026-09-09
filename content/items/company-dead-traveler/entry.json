@@ -8,7 +8,7 @@
   "summary": "My independent game studio. Currently my full-time focus: building original games with strong systems, gameplay, and personality.",
   "body": "My independent game studio. Currently my full-time focus: building original games with strong systems, gameplay, and personality.\n",
   "date": {
-    "label": "Jun 2026 — Present",
+    "label": "Jun 2026 \u2014 Present",
     "value": "2026-06",
     "precision": "month",
     "end": null,
@@ -24,7 +24,7 @@
     }
   ],
   "media": {
-    "cover": null,
+    "cover": "assets/cover.png",
     "animation": null,
     "icon": null,
     "images": [],

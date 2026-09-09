@@ -1,6 +1,6 @@
 # NLB.DEV — Work & life
 
-Nathan Bennett's portfolio: selected work and one chronological timeline with Company, Education, and Project rails. Built with Svelte 5, SvelteKit, TypeScript, and Tailwind CSS 4.
+Nathan Bennett's portfolio: selected work and one chronological timeline with Career, Education, and Project rails. Built with Svelte 5, SvelteKit, TypeScript, and Tailwind CSS 4.
 
 - [Current website](https://nlb.dev/)
 - [Historical V0](https://v0.nlb.dev/)
@@ -73,3 +73,7 @@ The TypeScript command runs OptiPNG, Gifsicle and jpegtran. It accepts only smal
 - Older entries are initially folded under “Earlier chapters.” Search includes them, and expanding the archive keeps them in the same timeline.
 - The scoped `cookie` override patches SvelteKit's transitive dependency; revisit it on framework upgrades.
 - Superseded aggregate content, loose descriptions, duplicate item assets, and Paint.NET source files have been removed. Historical source remains available in Git and on `v1`.
+
+## Appearance and company imagery
+
+The header theme selector supports System (default), Light, and Dark. Explicit choices persist locally; System tracks OS appearance changes. Company logos and studio artwork are stored within their owning items; source URLs are recorded in `content/image-sources.json`. Logo artwork retains its original colors on a suitable light or dark surface. The hero uses Dead Traveler’s official studio background. Oswald is self-hosted with its SIL Open Font License in `static/fonts/`.

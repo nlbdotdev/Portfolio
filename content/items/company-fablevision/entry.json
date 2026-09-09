@@ -4,11 +4,11 @@
   "slug": "fablevision",
   "legacyPath": null,
   "title": "FableVision",
-  "role": "Software Developer · Contract",
+  "role": "Software Developer \u00b7 Contract",
   "summary": "Shipped two educational games focused on financial literacy for students.",
   "body": "Shipped two educational games focused on financial literacy for students.\n",
   "date": {
-    "label": "Feb — Jun 2024",
+    "label": "Feb \u2014 Jun 2024",
     "value": "2024-02",
     "precision": "month",
     "end": "2024-06",
@@ -17,11 +17,16 @@
   "featured": true,
   "collection": "timeline",
   "tags": ["React", "Educational games"],
-  "links": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://www.fablevisionstudios.com"
+    }
+  ],
   "media": {
     "cover": null,
     "animation": null,
-    "icon": null,
+    "icon": "assets/logo.webp",
     "images": [],
     "videos": [],
     "screenshots": {}

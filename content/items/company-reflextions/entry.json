@@ -8,7 +8,7 @@
   "summary": "Built a portfolio of more than 20 browser games. Led development, product, and licensing across original and client IP, working with distributed freelance teams.",
   "body": "Built a portfolio of more than 20 browser games. Led development, product, and licensing across original and client IP, working with distributed freelance teams.\n",
   "date": {
-    "label": "Feb 2019 — Sep 2022",
+    "label": "Feb 2019 \u2014 Sep 2022",
     "value": "2019-02",
     "precision": "month",
     "end": "2022-09",
@@ -19,7 +19,7 @@
   "tags": ["Browser games", "Product", "Licensing"],
   "links": [],
   "media": {
-    "cover": null,
+    "cover": "assets/cover.png",
     "animation": null,
     "icon": null,
     "images": [],

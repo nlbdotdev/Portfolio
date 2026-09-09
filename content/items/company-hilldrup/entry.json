@@ -4,11 +4,11 @@
   "slug": "hilldrup",
   "legacyPath": null,
   "title": "Hilldrup",
-  "role": "Operations Specialist · Seasonal",
+  "role": "Operations Specialist \u00b7 Seasonal",
   "summary": "Moved houses.",
   "body": "Moved houses.\n",
   "date": {
-    "label": "Jun — Aug 2015",
+    "label": "Jun \u2014 Aug 2015",
     "value": "2015-06",
     "precision": "month",
     "end": "2015-08",
@@ -17,11 +17,16 @@
   "featured": false,
   "collection": "timeline",
   "tags": [],
-  "links": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://www.hilldrup.com/branding/"
+    }
+  ],
   "media": {
     "cover": null,
     "animation": null,
-    "icon": null,
+    "icon": "assets/logo.png",
     "images": [],
     "videos": [],
     "screenshots": {}
