@@ -53,10 +53,27 @@
 </script>
 
 <a class="wordmark" href="#top" aria-label="NLB.DEV" onmouseenter={shine} onfocus={shine}>
-  NLB<span class="dot-core" aria-hidden="true" bind:this={dot}>.</span>DEV
+  <img class="wordmark-turtle" src="/favicon-turtle.png" alt="" width="36" height="36" />NLB<span
+    class="dot-core"
+    aria-hidden="true"
+    bind:this={dot}>.</span
+  >DEV
 </a>
 
 <style>
+  .wordmark {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .wordmark-turtle {
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: 0.3em;
+    vertical-align: -0.15em;
+    object-fit: contain;
+  }
+
   .dot-core {
     display: inline-block;
     transform-origin: 50% 82%;
