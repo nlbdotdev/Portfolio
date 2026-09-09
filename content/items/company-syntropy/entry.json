@@ -1,0 +1,47 @@
+{
+  "id": "company-syntropy",
+  "kind": "company",
+  "slug": "syntropy",
+  "legacyPath": null,
+  "title": "Syntropy",
+  "role": "Venture Studio",
+  "summary": "An independent venture studio, building deliberately and partnering early. Selected ventures include Dead Traveler and Stage 3.",
+  "body": "An independent venture studio, building deliberately and partnering early. Selected ventures include Dead Traveler and Stage 3.\n",
+  "date": {
+    "label": "Aug 2026 — Present",
+    "value": "2026-08",
+    "precision": "month",
+    "end": null,
+    "ongoing": true
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": ["Venture studio", "Building ventures"],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://syntropy.sh/"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 45,
+  "provenance": {
+    "source": "https://syntropy.sh/; start date supplied by Nathan (August 2026)",
+    "datesNeedReview": false
+  }
+}

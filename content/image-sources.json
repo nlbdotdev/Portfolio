@@ -88,5 +88,11 @@
     "path": "assets/logo.png",
     "source": "User-provided Reflextions logo (2026-09-09)",
     "note": "Original image retained without upscaling or recompression."
+  },
+  {
+    "item": "company-syntropy",
+    "path": "assets/cover.png",
+    "source": "https://syntropy.sh/",
+    "assetUrl": "https://syntropy.sh/media/og.png"
   }
 ]

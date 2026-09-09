@@ -42,7 +42,7 @@ test('calendar precision and ranges remain honest', () => {
 });
 test('timeline is chronological, stable and keeps unknown dates last', () => {
   const sorted = sortTimeline(entries);
-  assert.equal(sorted[0].id, 'company-dead-traveler');
+  assert.equal(sorted[0].id, 'company-syntropy');
   assert.equal(sorted.at(-1)!.date.value, null);
   assert.deepEqual(sortTimeline(sorted), sorted);
   assert.equal(trackOf(example), 'project');
