@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { archivePreview } from '$lib/archive-preview';
   import { collectionTransition } from '$lib/collection-transition';
   import ThemeSelect from '$lib/components/ThemeSelect.svelte';
   import PortfolioItem from '$lib/components/PortfolioItem.svelte';
@@ -29,10 +30,25 @@
       (entry) => (!active || trackOf(entry) === active) && matchesSearch(entry, query),
     ),
   );
-  const visible = $derived(
-    matching.filter((entry) => showArchive || query.trim() || !isArchive(entry)),
-  );
-  const hiddenCount = $derived(matching.filter(isArchive).length);
+  const visible = $derived(matching.filter((entry) => query.trim() || !isArchive(entry)));
+  const history = $derived(query.trim() ? [] : matching.filter(isArchive));
+  const historyVisible = $derived(showArchive ? history : history.slice(0, 3));
+  function closeArchive() {
+    showArchive = false;
+    document.getElementById('archive')?.scrollIntoView({ block: 'start', behavior: 'instant' });
+  }
+  function revealOnScroll(node: HTMLElement) {
+    let previousY = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      const down = y > previousY;
+      previousY = y;
+      const rect = node.getBoundingClientRect();
+      if (down && rect.top < window.innerHeight * 0.8 && rect.bottom > 0) showArchive = true;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return { destroy: () => window.removeEventListener('scroll', onScroll) };
+  }
   function follow(id: string) {
     showArchive = true;
     active = null;
@@ -149,7 +165,7 @@
         >
       </div>
       <p class="sr-only" aria-live="polite">
-        {visible.length} entries shown{active
+        {visible.length + (showArchive ? history.length : 0)} entries shown{active
           ? `; ${tracks.find((track) => track.id === active)?.label} filter active`
           : ''}
       </p>
@@ -176,14 +192,47 @@
               <button onclick={() => (query = '')}>Clear search</button>{:else}No recent entries in
               this track. Explore the earlier chapters below.{/if}
           </p>{/each}
-        {#if !query.trim() && hiddenCount > 0}<div class="archive-control">
-            <button aria-expanded={showArchive} onclick={() => (showArchive = !showArchive)}
-              >{showArchive
-                ? 'Keep it recent ↑'
-                : `Earlier chapters · ${hiddenCount} more entries ↓`}</button
+        {#if history.length}
+          <section id="archive" class="archive-section" aria-label="Earlier chapters">
+            <p class="eyebrow archive-heading">Earlier chapters</p>
+            <div
+              class="archive-frame"
+              class:preview={!showArchive}
+              use:archivePreview={showArchive}
             >
-            <p>Old projects, experiments, and the beginnings.</p>
-          </div>{/if}
+              <div class="archive-rows" inert={!showArchive} aria-hidden={!showArchive}>
+                {#each historyVisible as entry, i (entry.id)}
+                  <div class="timeline-row" transition:collectionTransition>
+                    {#if i === 0 || yearOf(entry) !== yearOf(historyVisible[i - 1])}
+                      <div class="year" transition:collectionTransition>
+                        <span>{yearOf(entry)}</span>
+                      </div>
+                    {/if}
+                    <PortfolioItem {entry} bind:expanded={expandedEntries[entry.id]} />
+                  </div>
+                {/each}
+              </div>
+            </div>
+            {#if !showArchive}
+              <div class="archive-prompt" use:revealOnScroll>
+                <button
+                  onclick={() => (showArchive = true)}
+                  aria-controls="archive"
+                  aria-expanded="false"
+                >
+                  Keep scrolling to explore <span aria-hidden="true">↓</span>
+                </button>
+                <p>{history.length} earlier chapters</p>
+              </div>
+            {:else}
+              <div class="archive-control">
+                <button onclick={closeArchive} aria-controls="archive" aria-expanded="true"
+                  >Close archive ↑</button
+                >
+              </div>
+            {/if}
+          </section>
+        {/if}
         <div class="timeline-end">
           <span aria-hidden="true">↓</span>
           <p>There’s always another thing to make.</p>

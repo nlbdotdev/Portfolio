@@ -1006,3 +1006,54 @@ footer p span {
     padding-left: 56px;
   }
 }
+
+.archive-section {
+  margin-top: 24px;
+  scroll-margin-top: 24px;
+}
+.archive-heading {
+  margin-bottom: 8px;
+}
+.archive-frame {
+  overflow: hidden;
+  margin-left: -95px;
+  padding-left: 95px;
+  transition: height 480ms ease;
+}
+.archive-frame.preview {
+  mask-image: linear-gradient(to bottom, black 20%, rgba(0, 0, 0, 0.65) 55%, transparent 100%);
+}
+.archive-prompt {
+  position: relative;
+  margin-top: -28px;
+  padding: 12px 0 90px;
+  text-align: center;
+}
+.archive-prompt button {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--paper);
+  padding: 12px 20px;
+  font-size: 13px;
+}
+.archive-prompt button span {
+  margin-left: 12px;
+  color: var(--rust);
+}
+.archive-prompt p {
+  margin-top: 8px;
+  color: var(--muted);
+  font: 11px var(--font-mono);
+}
+@media (max-width: 800px) {
+  .archive-frame {
+    margin-left: -73px;
+    padding-left: 73px;
+  }
+}
+@media (max-width: 480px) {
+  .archive-frame {
+    margin-left: -56px;
+    padding-left: 56px;
+  }
+}

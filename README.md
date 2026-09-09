@@ -70,7 +70,7 @@ The TypeScript command runs OptiPNG, Gifsicle and jpegtran. It accepts only smal
 
 - The catalog's Markdown renders through an explicit renderer: raw HTML is escaped, unsafe link schemes are rejected, and images resolve only to local item assets.
 - Unknown dates remain unknown; year-only and month-only dates keep their precision. Imported reference dates carry provenance and `datesNeedReview`.
-- Older entries are initially folded under “Earlier chapters.” Search includes them, and expanding the archive keeps them in the same timeline.
+- “Earlier chapters” previews two and a half older entries with a fading edge. Continuing to scroll past its prompt reveals the full archive; the prompt also supports keyboard activation. Close archive returns to the preview. Search includes all history directly.
 - The scoped `cookie` override patches SvelteKit's transitive dependency; revisit it on framework upgrades.
 - Superseded aggregate content, loose descriptions, duplicate item assets, and Paint.NET source files have been removed. Historical source remains available in Git and on `v1`.
 
