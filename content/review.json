@@ -1,0 +1,24 @@
+[
+  {
+    "id": "game-project-adder",
+    "field": "date",
+    "value": "TBD",
+    "reason": "Unconfirmed release date; preserved original label."
+  },
+  {
+    "id": "game-project-adder",
+    "field": "preview.url",
+    "value": "Oct 5, 2023",
+    "reason": "Invalid URL in original content; excluded from playable preview."
+  },
+  {
+    "id": "project-construct-snippets",
+    "field": "description",
+    "reason": "Original description contains Pending; requires editorial input."
+  },
+  {
+    "id": "project-react-ticket-tracker",
+    "field": "description",
+    "reason": "Original description contains Pending; requires editorial input."
+  }
+]

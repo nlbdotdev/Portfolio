@@ -1,39 +1,39 @@
 {
   "name": "nlb-portfolio",
-  "version": "1.0.0",
-  "type": "module",
+  "version": "2.0.0",
   "private": true,
-  "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --single --host",
-    "audit": "npm audit"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^29.0.3",
-    "@rollup/plugin-node-resolve": "^16.0.3",
-    "@rollup/plugin-terser": "^1.0.0",
-    "rollup": "^4.63.1",
-    "rollup-plugin-css-only": "^4.5.5",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.2.3",
-    "svelte": "3.59.2",
-    "svelte-lightbox": "^0.6.5"
-  },
-  "dependencies": {
-    "page": "^1.11.6",
-    "sirv-cli": "^3.0.1",
-    "svelte-media-query": "^1.1.2",
-    "svelte-simple-modal": "^1.4.1",
-    "svelte-viewport-info": "^1.0.0"
-  },
+  "type": "module",
   "engines": {
     "node": ">=22.12.0"
   },
-  "packageManager": "npm@11.19.0",
+  "scripts": {
+    "dev": "vite dev --host 127.0.0.1",
+    "build": "npm run content:check && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "prepare": "svelte-kit sync",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "content:check": "node scripts/content/check.mjs",
+    "content:audit": "node scripts/content/check.mjs --report",
+    "test": "node --test scripts/content/*.test.mjs",
+    "audit": "npm audit"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-vercel": "^6.3.4",
+    "@sveltejs/kit": "^2.70.3",
+    "@sveltejs/vite-plugin-svelte": "^7.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "svelte": "^5.57.0",
+    "svelte-check": "^4.7.6",
+    "typescript": "^5.9.3",
+    "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
   "overrides": {
-    "page": {
-      "path-to-regexp": "1.9.0"
+    "@sveltejs/kit": {
+      "cookie": "0.7.2"
     }
   }
 }

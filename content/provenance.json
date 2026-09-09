@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "99c5560d669c218515b8b0335b1d78016bf176eb",
+  "catalogSource": "src/stores.js",
+  "counts": {
+    "games": 22,
+    "projects": 3,
+    "archiveProjects": 6
+  },
+  "notes": [
+    "Descriptions extracted from src/components/game/descriptions and src/components/web/descriptions.",
+    "Original deployed frontend remains on v1; old source is recoverable from sourceCommit.",
+    "Assets moved from public/assets to static/assets without changing public URLs or bytes.",
+    "Historical claims and Pending text are preserved, not asserted to be current.",
+    "legacyPresentation preserves layout metadata for reference only."
+  ]
+}

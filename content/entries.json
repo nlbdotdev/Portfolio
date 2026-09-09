@@ -1,0 +1,2047 @@
+[
+  {
+    "id": "game-project-adder",
+    "kind": "game",
+    "slug": "project-adder",
+    "legacyPath": "/games/projectadder",
+    "title": "Project Adder",
+    "summary": null,
+    "description": "descriptions/game-project-adder.md",
+    "date": {
+      "label": "TBD",
+      "value": null,
+      "precision": null
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "web"
+    ],
+    "links": [
+      {
+        "label": "Steam",
+        "link": "https://store.steampowered.com/app/2598410/Project_Adder/"
+      },
+      {
+        "label": "Itch.io",
+        "link": "https://nlbdotdev.itch.io/adder"
+      },
+      {
+        "label": "Git",
+        "link": "https://github.com/nlbdotdev/Adder"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/adder/cover.png",
+      "animation": "/assets/games/adder/adder.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/adder/1.jpg",
+          "alt": "adder screenshot"
+        },
+        {
+          "src": "/assets/games/adder/2.jpg",
+          "alt": "adder screenshot"
+        },
+        {
+          "src": "/assets/games/adder/3.jpg",
+          "alt": "adder screenshot"
+        },
+        {
+          "src": "/assets/games/adder/4.jpg",
+          "alt": "adder screenshot"
+        },
+        {
+          "src": "/assets/games/adder/5.jpg",
+          "alt": "adder screenshot"
+        },
+        {
+          "src": "/assets/games/adder/6.jpg",
+          "alt": "adder screenshot"
+        },
+        {
+          "src": "/assets/games/adder/7.jpg",
+          "alt": "adder screenshot"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Trailer",
+          "src": "https://www.youtube.com/embed/gzIDx3JAV10?si=j5gjUAFdlYwrM4WH"
+        }
+      ],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "huge"
+    }
+  },
+  {
+    "id": "game-the-last-straw",
+    "kind": "game",
+    "slug": "the-last-straw",
+    "legacyPath": "/games/thelaststraw",
+    "title": "The Last Straw",
+    "summary": null,
+    "description": "descriptions/game-the-last-straw.md",
+    "date": {
+      "label": "Jan 09, 2023",
+      "value": "2023-01-09",
+      "precision": "day"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "jam"
+    ],
+    "links": [
+      {
+        "label": "Itch.io",
+        "link": "https://nlbdotdev.itch.io/the-last-straw"
+      },
+      {
+        "label": "Ludum Dare",
+        "link": "https://ldjam.com/events/ludum-dare/52/the-last-straw"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/laststraw/cover.png",
+      "animation": "/assets/games/laststraw/straw.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/laststraw/1.png",
+          "alt": "The Last Straw screenshot"
+        },
+        {
+          "src": "/assets/games/laststraw/a.png",
+          "alt": "The Last Straw screenshot"
+        },
+        {
+          "src": "/assets/games/laststraw/c.png",
+          "alt": "The Last Straw screenshot"
+        },
+        {
+          "src": "/assets/games/laststraw/d.png",
+          "alt": "The Last Straw screenshot"
+        },
+        {
+          "src": "/assets/games/laststraw/6.png",
+          "alt": "The Last Straw screenshot"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Trailer",
+          "src": "https://www.youtube.com/embed/Xq7S-Hs5-jA?si=n1zgnRfQ4i7LPTy-"
+        }
+      ],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://www.youtube.com/watch?v=Xq7S-Hs5-jA",
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-soul-grinder",
+    "kind": "game",
+    "slug": "soul-grinder",
+    "legacyPath": "/games/soulgrinder",
+    "title": "Soul Grinder",
+    "summary": null,
+    "description": "descriptions/game-soul-grinder.md",
+    "date": {
+      "label": "Feb 23, 2022",
+      "value": "2022-02-23",
+      "precision": "day"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "mobile",
+      "web",
+      "jam",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/soul-grinder"
+      },
+      {
+        "label": "Crazy Games",
+        "link": "https://www.crazygames.com/game/soul-grinder"
+      },
+      {
+        "label": "Scirra Arcade",
+        "link": "https://www.construct.net/en/free-online-games/soul-grinder-36000/play"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/soulgrinder/cover.png",
+      "animation": "/assets/games/soulgrinder/soulgrinder.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/soulgrinder/1.png",
+          "alt": "soulgrinder screenshot"
+        },
+        {
+          "src": "/assets/games/soulgrinder/3.png",
+          "alt": "soulgrinder screenshot"
+        },
+        {
+          "src": "/assets/games/soulgrinder/5.png",
+          "alt": "soulgrinder screenshot"
+        },
+        {
+          "src": "/assets/games/soulgrinder/4.png",
+          "alt": "soulgrinder screenshot"
+        },
+        {
+          "src": "/assets/games/soulgrinder/6.png",
+          "alt": "soulgrinder screenshot"
+        },
+        {
+          "src": "/assets/games/soulgrinder/7.png",
+          "alt": "soulgrinder screenshot"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/6242510?color=1C0C42",
+      "desktop": true,
+      "mobile": true
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "big"
+    }
+  },
+  {
+    "id": "game-kitty-cat-poker-slots",
+    "kind": "game",
+    "slug": "kitty-cat-poker-slots",
+    "legacyPath": "/games/kittycatpokerslots",
+    "title": "Kitty Cat Poker Slots",
+    "summary": null,
+    "description": "descriptions/game-kitty-cat-poker-slots.md",
+    "date": {
+      "label": "2019",
+      "value": "2019",
+      "precision": "year"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "mobile",
+      "freelance"
+    ],
+    "links": [
+      {
+        "label": "Google Play",
+        "link": "https://play.google.com/store/apps/details?id=com.Go2No1.KittyCat"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/kcps/kcpsCover.png",
+      "animation": "/assets/games/kcps/kcps.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/kcps/kcps1.png",
+          "alt": "Kitty Cat Poker Slots menu screen"
+        },
+        {
+          "src": "/assets/games/kcps/kcps2.png",
+          "alt": "Kitty Cat Poker Slots screenshot (1)"
+        },
+        {
+          "src": "/assets/games/kcps/kcps3.png",
+          "alt": "Kitty Cat Poker Slots screenshot (2)"
+        },
+        {
+          "src": "/assets/games/kcps/kcps4.png",
+          "alt": "Kitty Cat Poker Slots screenshot (3)"
+        },
+        {
+          "src": "/assets/games/kcps/kcps5.png",
+          "alt": "Kitty Cat Poker Slots screenshot (4)"
+        },
+        {
+          "src": "/assets/games/kcps/kcps6.png",
+          "alt": "Kitty Cat Poker Slots screenshot (5)"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Trailer",
+          "src": "https://www.youtube.com/embed/_na6hF010b0"
+        }
+      ],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://play.google.com/store/apps/details?id=com.Go2No1.KittyCat",
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "big"
+    }
+  },
+  {
+    "id": "game-roadway-repair",
+    "kind": "game",
+    "slug": "roadway-repair",
+    "legacyPath": "/games/roadwayrepair",
+    "title": "Roadway Repair",
+    "summary": null,
+    "description": "descriptions/game-roadway-repair.md",
+    "date": {
+      "label": "2016",
+      "value": "2016",
+      "precision": "year"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "mobile",
+      "web",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/roadway-repair"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/roadwayrepair/roadwayCover.png",
+      "animation": "/assets/games/roadwayrepair/roadway.gif",
+      "icon": "/assets/games/roadwayrepair/RoadwayRepairIcon.png",
+      "images": [
+        {
+          "src": "/assets/games/roadwayrepair/rrmenu.png",
+          "alt": "roadway repair menu screen"
+        },
+        {
+          "src": "/assets/games/roadwayrepair/roadway1.png",
+          "alt": "roadway repair menu, levels, and tutorial screen"
+        },
+        {
+          "src": "/assets/games/roadwayrepair/roadway2.png",
+          "alt": "roadway level screens"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/6246806?color=333333",
+      "desktop": true,
+      "mobile": true
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "phone",
+      "size": "tall"
+    }
+  },
+  {
+    "id": "game-protoshift",
+    "kind": "game",
+    "slug": "protoshift",
+    "legacyPath": "/games/protoshift",
+    "title": "Protoshift",
+    "summary": null,
+    "description": "descriptions/game-protoshift.md",
+    "date": {
+      "label": "Jan 15, 2016",
+      "value": "2016-01-15",
+      "precision": "day"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "web",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/protoshift"
+      },
+      {
+        "label": "Scirra Arcade",
+        "link": "https://www.construct.net/en/free-online-games/protoshift-41700/play"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/protoshift/protoshiftCover.png",
+      "animation": "/assets/games/protoshift/protoshift.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/protoshift/card1BG.png",
+          "alt": "protoshift screenshot"
+        },
+        {
+          "src": "/assets/games/protoshift/card2BG.png",
+          "alt": "protoshift screenshot"
+        },
+        {
+          "src": "/assets/games/protoshift/card3BG.jpg",
+          "alt": "protoshift screenshot"
+        },
+        {
+          "src": "/assets/games/protoshift/card4BG.jpg",
+          "alt": "protoshift screenshot"
+        },
+        {
+          "src": "/assets/games/protoshift/card6BG.jpg",
+          "alt": "protoshift screenshot"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Trailer",
+          "src": "https://www.youtube.com/embed/noXmLOkoHoo"
+        },
+        {
+          "label": "Soundtrack",
+          "src": "https://www.youtube.com/embed/sgIUKdjbfOs"
+        }
+      ],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/6238921?color=000000",
+      "desktop": true,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "big"
+    }
+  },
+  {
+    "id": "game-don-t-fall",
+    "kind": "game",
+    "slug": "don-t-fall",
+    "legacyPath": "/games/don'tfall!",
+    "title": "Don't Fall!",
+    "summary": null,
+    "description": "descriptions/game-don-t-fall.md",
+    "date": {
+      "label": "2013",
+      "value": "2013",
+      "precision": "year"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "web",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Scirra Arcade",
+        "link": "https://www.construct.net/en/free-online-games/dont-fall-94/play"
+      },
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/dont-fall"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/dontfall/dfCover.png",
+      "animation": "/assets/games/dontfall/df.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/dontfall/df1.png",
+          "alt": "Don't Fall! screenshot"
+        },
+        {
+          "src": "/assets/games/dontfall/df2.png",
+          "alt": "Don't Fall! screenshot"
+        },
+        {
+          "src": "/assets/games/dontfall/df3.png",
+          "alt": "Don't Fall! screenshot"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/6243387?color=333333",
+      "desktop": true,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-bouncy-balloons",
+    "kind": "game",
+    "slug": "bouncy-balloons",
+    "legacyPath": "/games/bouncyballoons",
+    "title": "Bouncy Balloons",
+    "summary": null,
+    "description": "descriptions/game-bouncy-balloons.md",
+    "date": {
+      "label": "2016",
+      "value": "2016",
+      "precision": "year"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "mobile",
+      "web",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/bouncy-balloons"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/bouncyballoons/bouncyballoonsportrait.png",
+      "animation": "/assets/games/bouncyballoons/balloons.gif",
+      "icon": "/assets/games/bouncyballoons/BalloonIcon.png",
+      "images": [
+        {
+          "src": "/assets/games/bouncyballoons/bouncyballoons1.png",
+          "alt": "bouncy balloons menu screen"
+        },
+        {
+          "src": "/assets/games/bouncyballoons/bouncyballoons2.png",
+          "alt": "bouncy ballons screenshot (1)"
+        },
+        {
+          "src": "/assets/games/bouncyballoons/bouncyballoons3.png",
+          "alt": "bouncy ballons screenshot (2)"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/6248445?color=333333",
+      "desktop": true,
+      "mobile": true
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "phone",
+      "size": "tall"
+    }
+  },
+  {
+    "id": "game-red-tie-runner",
+    "kind": "game",
+    "slug": "red-tie-runner",
+    "legacyPath": "/games/redtierunner",
+    "title": "Red Tie Runner",
+    "summary": null,
+    "description": "descriptions/game-red-tie-runner.md",
+    "date": {
+      "label": "2013",
+      "value": "2013",
+      "precision": "year"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "mobile",
+      "web",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Steam",
+        "link": "https://store.steampowered.com/app/391150/"
+      },
+      {
+        "label": "Scirra Arcade",
+        "link": "https://www.construct.net/en/free-online-games/red-tie-runner-1463/play"
+      },
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/red-tie-runner"
+      },
+      {
+        "label": "Y8",
+        "link": "https://www.y8.com/games/red_tie_runner"
+      },
+      {
+        "label": "Git",
+        "link": "https://github.com/nlbdotdev/RTR"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/rtr/rtrCover.png",
+      "animation": "/assets/games/rtr/rtr.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/rtr/ss1.png",
+          "alt": "Red Tie Runner menu screen"
+        },
+        {
+          "src": "/assets/games/rtr/ss2.png",
+          "alt": "Red Tie Runner screenshot (1)"
+        },
+        {
+          "src": "/assets/games/rtr/ss3.png",
+          "alt": "Red Tie Runner screenshot (2)"
+        },
+        {
+          "src": "/assets/games/rtr/ss4.png",
+          "alt": "Red Tie Runner screenshot (4)"
+        },
+        {
+          "src": "/assets/games/rtr/ss5.png",
+          "alt": "Red Tie Runner screenshot (5)"
+        },
+        {
+          "src": "/assets/games/rtr/ss6.png",
+          "alt": "Red Tie Runner screenshot (6)"
+        },
+        {
+          "src": "/assets/games/rtr/ss7.png",
+          "alt": "Red Tie Runner screenshot (7)"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Trailer",
+          "src": "https://www.youtube.com/embed/AlBAiyg96eY"
+        }
+      ],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/6243042?color=5c7272",
+      "desktop": true,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "big"
+    }
+  },
+  {
+    "id": "game-jet-attack",
+    "kind": "game",
+    "slug": "jet-attack",
+    "legacyPath": "/games/jetattack!",
+    "title": "Jet Attack!",
+    "summary": null,
+    "description": "descriptions/game-jet-attack.md",
+    "date": {
+      "label": "2013",
+      "value": "2013",
+      "precision": "year"
+    },
+    "featured": false,
+    "collection": "games",
+    "tags": [
+      "web",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Scirra Arcade",
+        "link": "https://www.construct.net/en/free-online-games/jet-attack-1477/play"
+      },
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/jet-attack"
+      },
+      {
+        "label": "Y8",
+        "link": "https://www.y8.com/games/jet_attack"
+      },
+      {
+        "label": "Chrome Web Store",
+        "link": "https://chrome.google.com/webstore/detail/jet-attack/ajkmfllnckceklaikmcmppnlhekmafob?"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/jetattack/jaCover3.png",
+      "animation": "/assets/games/jetattack/ja.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/jetattack/ss1.png",
+          "alt": "Jet Attack! screenshot"
+        },
+        {
+          "src": "/assets/games/jetattack/ss2.png",
+          "alt": "Jet Attack! screenshot"
+        },
+        {
+          "src": "/assets/games/jetattack/ss3.png",
+          "alt": "Jet Attack! screenshot"
+        },
+        {
+          "src": "/assets/games/jetattack/ss4.png",
+          "alt": "Jet Attack! screenshot"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/6243474?color=333333",
+      "desktop": true,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-gridlock-dash",
+    "kind": "game",
+    "slug": "gridlock-dash",
+    "legacyPath": "/games/gridlockdash",
+    "title": "Gridlock Dash",
+    "summary": null,
+    "description": "descriptions/game-gridlock-dash.md",
+    "date": {
+      "label": "2014",
+      "value": "2014",
+      "precision": "year"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "web",
+      "mobile",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/gridlock-dash"
+      },
+      {
+        "label": "Chrome Web Store",
+        "link": "https://chrome.google.com/webstore/detail/gridlock-dash/npanhggcndhhgnpefpeiihmihnecijbd?"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/gridlock/gdCover.png",
+      "animation": "/assets/games/gridlock/gridlock.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/gridlock/ss5.png",
+          "alt": "gridlock screenshot"
+        },
+        {
+          "src": "/assets/games/gridlock/ss1.png",
+          "alt": "gridlock screenshot"
+        },
+        {
+          "src": "/assets/games/gridlock/ss2.png",
+          "alt": "gridlock screenshot"
+        },
+        {
+          "src": "/assets/games/gridlock/ss4.png",
+          "alt": "gridlock screenshot"
+        },
+        {
+          "src": "/assets/games/gridlock/ss3.png",
+          "alt": "gridlock screenshot"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/1796902?color=333333",
+      "desktop": true,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-sam",
+    "kind": "game",
+    "slug": "sam",
+    "legacyPath": "/games/sam",
+    "title": "Sam",
+    "summary": null,
+    "description": "descriptions/game-sam.md",
+    "date": {
+      "label": "Dec 15, 2016",
+      "value": "2016-12-15",
+      "precision": "day"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "web",
+      "jam"
+    ],
+    "links": [
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/sam"
+      },
+      {
+        "label": "Scirra Arcade",
+        "link": "https://www.construct.net/en/free-online-games/sam-1499/play"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/sam/samCover.png",
+      "animation": "/assets/games/sam/sam.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/sam/1.png",
+          "alt": "Sam screenshot"
+        },
+        {
+          "src": "/assets/games/sam/2.png",
+          "alt": "Sam screenshot"
+        },
+        {
+          "src": "/assets/games/sam/3.png",
+          "alt": "Sam screenshot"
+        },
+        {
+          "src": "/assets/games/sam/4.png",
+          "alt": "Sam screenshot"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/347253?color=000000",
+      "desktop": true,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-mino-s-pond",
+    "kind": "game",
+    "slug": "mino-s-pond",
+    "legacyPath": "/games/mino'spond",
+    "title": "Mino's Pond",
+    "summary": null,
+    "description": "descriptions/game-mino-s-pond.md",
+    "date": {
+      "label": "April 24th, 2017",
+      "value": "2017-04-24",
+      "precision": "day"
+    },
+    "featured": false,
+    "collection": "games",
+    "tags": [
+      "web",
+      "jam"
+    ],
+    "links": [
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/minospond"
+      },
+      {
+        "label": "Scirra Arcade",
+        "link": "https://www.construct.net/en/free-online-games/minos-pond-1795/play?via=pp"
+      },
+      {
+        "label": "Ludum Dare",
+        "link": "https://ldjam.com/events/ludum-dare/38/minos-pond/"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/minos/minosCover.png",
+      "animation": "/assets/games/minos/minos.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/minos/SS1.png",
+          "alt": "minos screenshot"
+        },
+        {
+          "src": "/assets/games/minos/SS3.png",
+          "alt": "minos screenshot"
+        },
+        {
+          "src": "/assets/games/minos/SS4.png",
+          "alt": "minos screenshot"
+        },
+        {
+          "src": "/assets/games/minos/SS2.png",
+          "alt": "minos screenshot"
+        },
+        {
+          "src": "/assets/games/minos/SS5.gif",
+          "alt": "minos screenshot"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/464651?color=0f5c9a",
+      "desktop": true,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-brix-builder",
+    "kind": "game",
+    "slug": "brix-builder",
+    "legacyPath": "/games/brixbuilder",
+    "title": "Brix Builder",
+    "summary": null,
+    "description": "descriptions/game-brix-builder.md",
+    "date": {
+      "label": "2016",
+      "value": "2016",
+      "precision": "year"
+    },
+    "featured": false,
+    "collection": "games",
+    "tags": [
+      "mobile",
+      "web",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/brix-builder"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/brixbuilder/brixCover.png",
+      "animation": "/assets/games/brixbuilder/brix.gif",
+      "icon": "/assets/games/brixbuilder/Icon.png",
+      "images": [
+        {
+          "src": "/assets/games/brixbuilder/brixbuilder1.png",
+          "alt": "Brix Builder menu screen"
+        },
+        {
+          "src": "/assets/games/brixbuilder/brixbuilder2.png",
+          "alt": "Brix Builder screenshot (1)"
+        },
+        {
+          "src": "/assets/games/brixbuilder/brixbuilder3.png",
+          "alt": "Brix Builder screenshot (2)"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/6248551?color=333333",
+      "desktop": true,
+      "mobile": true
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "phone",
+      "size": "tall"
+    }
+  },
+  {
+    "id": "game-rocket-runner",
+    "kind": "game",
+    "slug": "rocket-runner",
+    "legacyPath": "/games/rocketrunner",
+    "title": "Rocket Runner",
+    "summary": null,
+    "description": "descriptions/game-rocket-runner.md",
+    "date": {
+      "label": "2016",
+      "value": "2016",
+      "precision": "year"
+    },
+    "featured": false,
+    "collection": "games",
+    "tags": [
+      "mobile",
+      "web",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/rocket-runner"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/rocketrunner/rocketCover.png",
+      "animation": "/assets/games/rocketrunner/rocket.gif",
+      "icon": "/assets/games/rocketrunner/Icon.png",
+      "images": [
+        {
+          "src": "/assets/games/rocketrunner/rocketrunner1.png",
+          "alt": "Rocket Runner menu screen"
+        },
+        {
+          "src": "/assets/games/rocketrunner/rocketrunner2.png",
+          "alt": "Rocket Runner screenshot (1)"
+        },
+        {
+          "src": "/assets/games/rocketrunner/rocketrunner3.png",
+          "alt": "Rocket Runner screenshot (2)"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/6248631?color=333333",
+      "desktop": true,
+      "mobile": true
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "phone",
+      "size": "tall"
+    }
+  },
+  {
+    "id": "game-the-voter-suppression-trail",
+    "kind": "game",
+    "slug": "the-voter-suppression-trail",
+    "legacyPath": "/games/thevotersuppressiontrail",
+    "title": "The Voter Suppression Trail",
+    "summary": null,
+    "description": "descriptions/game-the-voter-suppression-trail.md",
+    "date": {
+      "label": "Nov 3, 2016",
+      "value": "2016-11-03",
+      "precision": "day"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "mobile",
+      "web",
+      "freelance"
+    ],
+    "links": [
+      {
+        "label": "NY Times",
+        "link": "https://www.nytimes.com/interactive/2016/11/01/opinion/voting-suppression-videogame.html"
+      },
+      {
+        "label": "Everyday Arcade",
+        "link": "https://everydayarcade.com/games/the-voter-suppression-trail"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/voter/voterCover.png",
+      "animation": "/assets/games/voter/voter.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/voter/voter1.png",
+          "alt": "Voter Suppression Trail menu screen"
+        },
+        {
+          "src": "/assets/games/voter/voter2.png",
+          "alt": "Voter Suppression Trail screenshot (1)"
+        },
+        {
+          "src": "/assets/games/voter/voter3.png",
+          "alt": "Voter Suppression Trail screenshot (2)"
+        },
+        {
+          "src": "/assets/games/voter/voter4.png",
+          "alt": "Voter Suppression Trail screenshot (4)"
+        },
+        {
+          "src": "/assets/games/voter/voter5.png",
+          "alt": "Voter Suppression Trail screenshot (5)"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://www.nytimes.com/interactive/2016/11/01/opinion/voting-suppression-videogame.html",
+      "desktop": false,
+      "mobile": true
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "big"
+    }
+  },
+  {
+    "id": "game-mta-country",
+    "kind": "game",
+    "slug": "mta-country",
+    "legacyPath": "/games/mtacountry",
+    "title": "MTA Country",
+    "summary": null,
+    "description": "descriptions/game-mta-country.md",
+    "date": {
+      "label": "May 22, 2018",
+      "value": "2018-05-22",
+      "precision": "day"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "mobile",
+      "web",
+      "freelance"
+    ],
+    "links": [
+      {
+        "label": "Everyday Arcade",
+        "link": "https://everydayarcade.com/games/mta-country"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/mta/MTACover.png",
+      "animation": "/assets/games/mta/MTA.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/mta/MTA.png",
+          "alt": "MTA Country menu screen"
+        },
+        {
+          "src": "/assets/games/mta/MTA2.png",
+          "alt": "MTA Country screenshot (1)"
+        },
+        {
+          "src": "/assets/games/mta/MTA3.png",
+          "alt": "MTA Country screenshot (2)"
+        },
+        {
+          "src": "/assets/games/mta/MTA4.png",
+          "alt": "MTA Country screenshot (3)"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://everydayarcade.com/games/mta-country",
+      "desktop": false,
+      "mobile": true
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-rocket-strike",
+    "kind": "game",
+    "slug": "rocket-strike",
+    "legacyPath": "/games/rocketstrike!",
+    "title": "Rocket Strike!",
+    "summary": null,
+    "description": "descriptions/game-rocket-strike.md",
+    "date": {
+      "label": "2014",
+      "value": "2014",
+      "precision": "year"
+    },
+    "featured": true,
+    "collection": "games",
+    "tags": [
+      "web",
+      "mobile",
+      "sale"
+    ],
+    "links": [
+      {
+        "label": "Scirra Arcade",
+        "link": "https://www.construct.net/en/free-online-games/rocket-strike-3791/play"
+      },
+      {
+        "label": "Itch.io",
+        "link": "https://reflextions.itch.io/rocketstrike"
+      },
+      {
+        "label": "Y8",
+        "link": "https://www.y8.com/games/rocket_strike"
+      },
+      {
+        "label": "Chrome Web Store",
+        "link": "https://chrome.google.com/webstore/detail/rocket-strike/ldfmjnlghddcjpboloecgkflfednighd?"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/rocketstrike/rocketstrikeCover.png",
+      "animation": "/assets/games/rocketstrike/rocketstrike.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/rocketstrike/ss1.png",
+          "alt": "Rocket Strike! screenshot"
+        },
+        {
+          "src": "/assets/games/rocketstrike/ss3.png",
+          "alt": "Rocket Strike! screenshot"
+        },
+        {
+          "src": "/assets/games/rocketstrike/ss4.png",
+          "alt": "Rocket Strike! screenshot"
+        },
+        {
+          "src": "/assets/games/rocketstrike/ss5.png",
+          "alt": "Rocket Strike! screenshot"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://itch.io/embed-upload/1796897?color=333333",
+      "desktop": true,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-fantaknee-football",
+    "kind": "game",
+    "slug": "fantaknee-football",
+    "legacyPath": "/games/fantakneefootball",
+    "title": "Fantaknee Football",
+    "summary": null,
+    "description": "descriptions/game-fantaknee-football.md",
+    "date": {
+      "label": "2017",
+      "value": "2017",
+      "precision": "year"
+    },
+    "featured": false,
+    "collection": "games",
+    "tags": [
+      "mobile",
+      "web",
+      "freelance"
+    ],
+    "links": [
+      {
+        "label": "Game",
+        "link": "https://ilovechrisbaker.com/fantaknee-football-by-super-deluxe/"
+      }
+    ],
+    "media": {
+      "cover": "/assets/games/fantaknee/fantakneeCover.png",
+      "animation": "/assets/games/fantaknee/fantaknee.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/fantaknee/fantaknee1.png",
+          "alt": "Fantaknee Football menu screen"
+        },
+        {
+          "src": "/assets/games/fantaknee/fantaknee2.png",
+          "alt": "Fantaknee Football screenshot (1)"
+        },
+        {
+          "src": "/assets/games/fantaknee/fantaknee3.png",
+          "alt": "Fantaknee Football screenshot (2)"
+        },
+        {
+          "src": "/assets/games/fantaknee/fantaknee4.png",
+          "alt": "Fantaknee Football screenshot (3)"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": "https://ilovechrisbaker.com/stuff/Fantaknee-Football/index.html",
+      "desktop": false,
+      "mobile": true
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-tower-defense-prototype",
+    "kind": "game",
+    "slug": "tower-defense-prototype",
+    "legacyPath": "/games/towerdefenseprototype",
+    "title": "Tower Defense Prototype",
+    "summary": null,
+    "description": "descriptions/game-tower-defense-prototype.md",
+    "date": {
+      "label": "Aug 2019",
+      "value": "2019-08",
+      "precision": "month"
+    },
+    "featured": false,
+    "collection": "games",
+    "tags": [
+      "freelance"
+    ],
+    "links": [],
+    "media": {
+      "cover": "/assets/games/tower/towerCover.png",
+      "animation": "/assets/games/tower/tower.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/tower/tower1.png",
+          "alt": "Tower Defense prototype menu screen"
+        },
+        {
+          "src": "/assets/games/tower/tower2.png",
+          "alt": "Tower Defense prototype screenshot (1)"
+        },
+        {
+          "src": "/assets/games/tower/tower3.png",
+          "alt": "Tower Defense prototype screenshot (2)"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-chemistry-hotspot-quiz",
+    "kind": "game",
+    "slug": "chemistry-hotspot-quiz",
+    "legacyPath": "/games/chemistryhotspotquiz",
+    "title": "Chemistry Hotspot Quiz",
+    "summary": null,
+    "description": "descriptions/game-chemistry-hotspot-quiz.md",
+    "date": {
+      "label": "June 2017",
+      "value": "2017-06",
+      "precision": "month"
+    },
+    "featured": false,
+    "collection": "games",
+    "tags": [
+      "freelance"
+    ],
+    "links": [],
+    "media": {
+      "cover": "/assets/games/chem/chemCover.png",
+      "animation": "/assets/games/chem/chem.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/chem/chem1.png",
+          "alt": "Chemistry Hotspot Quiz menu screen"
+        },
+        {
+          "src": "/assets/games/chem/chem2.png",
+          "alt": "Chemistry Hotspot Quiz screenshot (1)"
+        },
+        {
+          "src": "/assets/games/chem/chem3.png",
+          "alt": "Chemistry Hotspot Quiz screenshot (2)"
+        },
+        {
+          "src": "/assets/games/chem/chem4.png",
+          "alt": "Chemistry Hotspot Quiz screenshot (3)"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "game-monster-s-mayhem",
+    "kind": "game",
+    "slug": "monster-s-mayhem",
+    "legacyPath": "/games/monster'smayhem",
+    "title": "Monster's Mayhem",
+    "summary": null,
+    "description": "descriptions/game-monster-s-mayhem.md",
+    "date": {
+      "label": "Dec 2016",
+      "value": "2016-12",
+      "precision": "month"
+    },
+    "featured": false,
+    "collection": "games",
+    "tags": [
+      "freelance"
+    ],
+    "links": [],
+    "media": {
+      "cover": "/assets/games/nom/nomCover.png",
+      "animation": "/assets/games/nom/nom.gif",
+      "icon": null,
+      "images": [
+        {
+          "src": "/assets/games/nom/nom1.png",
+          "alt": "Monster's Mayhem menu screen"
+        },
+        {
+          "src": "/assets/games/nom/nom2.png",
+          "alt": "Monster's Mayhem screenshot (1)"
+        },
+        {
+          "src": "/assets/games/nom/nom3.png",
+          "alt": "Monster's Mayhem screenshot (2)"
+        },
+        {
+          "src": "/assets/games/nom/nom4.png",
+          "alt": "Monster's Mayhem screenshot (3)"
+        }
+      ],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "platform": "laptop",
+      "size": "small"
+    }
+  },
+  {
+    "id": "project-construct-snippets",
+    "kind": "project",
+    "slug": "construct-snippets",
+    "legacyPath": "/projects/constructsnippets",
+    "title": "Construct Snippets",
+    "summary": "Construct Snippets (WIP) is an open source library of useful functions and other code snippets for the HTML5 game engine Construct 3. Built with comprehensive user validation and session security with HttpOnly cookies. Supports creation and viewing of snippets. ",
+    "description": "descriptions/project-construct-snippets.md",
+    "date": {
+      "label": null,
+      "value": null,
+      "precision": null
+    },
+    "featured": false,
+    "collection": "projects",
+    "tags": [],
+    "links": [
+      {
+        "label": "Website",
+        "link": "https://constructsnippets.com/"
+      },
+      {
+        "label": "Frontend Repo",
+        "link": "https://github.com/nlbdotdev/construct-snippets-frontend"
+      },
+      {
+        "label": "Backend Repo",
+        "link": "https://github.com/nlbdotdev/construct-snippets-backend"
+      }
+    ],
+    "media": {
+      "cover": null,
+      "animation": null,
+      "icon": null,
+      "images": [],
+      "videos": [],
+      "screenshots": {
+        "desktop": "/assets/projects/snippets/snippets.png",
+        "mobile": "/assets/projects/snippets/snippetsM.png"
+      }
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [
+      {
+        "label": "React",
+        "link": "https://reactjs.org/"
+      },
+      {
+        "label": "Mantine",
+        "link": "https://mantine.dev/"
+      },
+      {
+        "label": "Express",
+        "link": "https://expressjs.com/"
+      },
+      {
+        "label": "MongoDB",
+        "link": "https://www.mongodb.com/"
+      },
+      {
+        "label": "AWS EC2",
+        "link": "https://aws.amazon.com/ec2/"
+      }
+    ],
+    "dependencies": [
+      {
+        "label": "Axios",
+        "link": "https://axios-http.com/docs/intro"
+      },
+      {
+        "label": "Tabler Icons",
+        "link": "https://tabler-icons-react.vercel.app/"
+      },
+      {
+        "label": "React Router",
+        "link": "https://v5.reactrouter.com/web/guides/quick-start"
+      },
+      {
+        "label": "bcryptjs",
+        "link": "https://www.npmjs.com/package/bcryptjs"
+      },
+      {
+        "label": "jsonwebtoken",
+        "link": "https://www.npmjs.com/package/jsonwebtoken"
+      },
+      {
+        "label": "validator",
+        "link": "https://www.npmjs.com/package/validator"
+      },
+      {
+        "label": "date-fns",
+        "link": "https://date-fns.org/"
+      }
+    ],
+    "legacyPresentation": {
+      "stack": [
+        "React",
+        "Mantine",
+        "Express",
+        "MongoDB",
+        "EC2"
+      ],
+      "link": "https://constructsnippets.com/"
+    }
+  },
+  {
+    "id": "project-portfolio",
+    "kind": "project",
+    "slug": "portfolio",
+    "legacyPath": "/projects/portfolio",
+    "title": "Portfolio",
+    "summary": "After going through various websites over the years, I wanted a single location to put all my content. This site was built with Svelte and served as a personal capstone project in front-end development.",
+    "description": "descriptions/project-portfolio.md",
+    "date": {
+      "label": null,
+      "value": null,
+      "precision": null
+    },
+    "featured": false,
+    "collection": "projects",
+    "tags": [],
+    "links": [
+      {
+        "label": "Website",
+        "link": "https://nlb.dev"
+      },
+      {
+        "label": "Github Repo",
+        "link": "https://github.com/nlbdotdev/Portfolio"
+      }
+    ],
+    "media": {
+      "cover": null,
+      "animation": null,
+      "icon": null,
+      "images": [],
+      "videos": [],
+      "screenshots": {
+        "desktop": "/assets/projects/portfolio/desktop3.png",
+        "mobile": "/assets/projects/portfolio/mobile4.png"
+      }
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [
+      {
+        "label": "Svelte",
+        "link": "https://svelte.dev/"
+      },
+      {
+        "label": "Page.js",
+        "link": "https://www.npmjs.com/package/page"
+      }
+    ],
+    "dependencies": [
+      {
+        "label": "Svelte Simple Modal",
+        "link": "https://www.npmjs.com/package/svelte-simple-modal"
+      },
+      {
+        "label": "Svelte Media Query",
+        "link": "https://www.npmjs.com/package/svelte-media-query"
+      },
+      {
+        "label": "Svelte Lightbox",
+        "link": "https://www.npmjs.com/package/svelte-lightbox"
+      },
+      {
+        "label": "Svelte Viewport Info",
+        "link": "https://www.npmjs.com/package/svelte-viewport-info"
+      }
+    ],
+    "legacyPresentation": {
+      "stack": [
+        "Svelte",
+        "Page.js"
+      ],
+      "youAreHere": true,
+      "link": "https://nlb.dev"
+    }
+  },
+  {
+    "id": "project-react-ticket-tracker",
+    "kind": "project",
+    "slug": "react-ticket-tracker",
+    "legacyPath": "/projects/reacttickettracker",
+    "title": "React Ticket Tracker",
+    "summary": "React Ticket Tracker is a fullstack task tracker built with React and state management via Redux. Can be used for bugs, tickets, and project management. Supports posting and updating tasks, timestamps, tasks IDs, descriptions, severity, and status.",
+    "description": "descriptions/project-react-ticket-tracker.md",
+    "date": {
+      "label": null,
+      "value": null,
+      "precision": null
+    },
+    "featured": false,
+    "collection": "projects",
+    "tags": [],
+    "links": [
+      {
+        "label": "Website",
+        "link": "https://react-ticket-frontend.vercel.app/"
+      },
+      {
+        "label": "Frontend Repo",
+        "link": "https://github.com/nlbdotdev/react-ticket-frontend"
+      },
+      {
+        "label": "Backend Repo",
+        "link": "https://github.com/nlbdotdev/react-ticket-backend"
+      }
+    ],
+    "media": {
+      "cover": null,
+      "animation": null,
+      "icon": null,
+      "images": [],
+      "videos": [],
+      "screenshots": {
+        "desktop": "/assets/projects/rtt/rtt.png",
+        "mobile": "/assets/projects/rtt/rtt.png"
+      }
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [
+      {
+        "label": "React",
+        "link": "https://reactjs.org/"
+      },
+      {
+        "label": "Express",
+        "link": "https://expressjs.com/"
+      },
+      {
+        "label": "MongoDB",
+        "link": "https://www.mongodb.com/"
+      },
+      {
+        "label": "AWS EC2",
+        "link": "https://aws.amazon.com/ec2/"
+      }
+    ],
+    "dependencies": [
+      {
+        "label": "Redux",
+        "link": "https://react-redux.js.org/"
+      },
+      {
+        "label": "React Router",
+        "link": "https://v5.reactrouter.com/web/guides/quick-start"
+      },
+      {
+        "label": "React Select",
+        "link": "https://react-select.com/home"
+      },
+      {
+        "label": "bcryptjs",
+        "link": "https://www.npmjs.com/package/bcryptjs"
+      },
+      {
+        "label": "jsonwebtoken",
+        "link": "https://www.npmjs.com/package/jsonwebtoken"
+      },
+      {
+        "label": "validator",
+        "link": "https://www.npmjs.com/package/validator"
+      }
+    ],
+    "legacyPresentation": {
+      "splash": "laptop",
+      "stack": [
+        "React",
+        "Redux",
+        "Express",
+        "MongoDB",
+        "EC2"
+      ],
+      "link": "https://react-ticket-frontend.vercel.app/"
+    }
+  },
+  {
+    "id": "project-pexels-search",
+    "kind": "project",
+    "slug": "pexels-search",
+    "legacyPath": null,
+    "title": "Pexels Search",
+    "summary": "A React web page that interfaces with the Pexels API. Supports curated photos, search, pagination, and session storage.",
+    "description": "descriptions/project-pexels-search.md",
+    "date": {
+      "label": null,
+      "value": null,
+      "precision": null
+    },
+    "featured": false,
+    "collection": "archive",
+    "tags": [],
+    "links": [
+      {
+        "label": "Project",
+        "link": "https://github.com/nlbdotdev/pexels-search"
+      }
+    ],
+    "media": {
+      "cover": "/assets/projects/other/pexels.png",
+      "animation": null,
+      "icon": null,
+      "images": [],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "link": "https://github.com/nlbdotdev/pexels-search"
+    }
+  },
+  {
+    "id": "project-post-comment-backend",
+    "kind": "project",
+    "slug": "post-comment-backend",
+    "legacyPath": null,
+    "title": "Post Comment Backend",
+    "summary": "A full CRUD backend written in JS using Node, Express, and Mongoose.",
+    "description": "descriptions/project-post-comment-backend.md",
+    "date": {
+      "label": null,
+      "value": null,
+      "precision": null
+    },
+    "featured": false,
+    "collection": "archive",
+    "tags": [],
+    "links": [
+      {
+        "label": "Project",
+        "link": "https://github.com/nlbdotdev/post-comment-backend"
+      }
+    ],
+    "media": {
+      "cover": "/assets/projects/other/postcomment.png",
+      "animation": null,
+      "icon": null,
+      "images": [],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "link": "https://github.com/nlbdotdev/post-comment-backend"
+    }
+  },
+  {
+    "id": "project-jeopardy",
+    "kind": "project",
+    "slug": "jeopardy",
+    "legacyPath": null,
+    "title": "Jeopardy",
+    "summary": "An interactive Jeopardy board built with jQuery.",
+    "description": "descriptions/project-jeopardy.md",
+    "date": {
+      "label": null,
+      "value": null,
+      "precision": null
+    },
+    "featured": false,
+    "collection": "archive",
+    "tags": [],
+    "links": [
+      {
+        "label": "Project",
+        "link": "https://github.com/nlbdotdev/jeopardy"
+      }
+    ],
+    "media": {
+      "cover": "/assets/projects/other/jeopardy.png",
+      "animation": null,
+      "icon": null,
+      "images": [],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "link": "https://github.com/nlbdotdev/jeopardy"
+    }
+  },
+  {
+    "id": "project-map-builder",
+    "kind": "project",
+    "slug": "map-builder",
+    "legacyPath": null,
+    "title": "Map Builder",
+    "summary": "Create a fantasy style map with jQeury drag and drop.",
+    "description": "descriptions/project-map-builder.md",
+    "date": {
+      "label": null,
+      "value": null,
+      "precision": null
+    },
+    "featured": false,
+    "collection": "archive",
+    "tags": [],
+    "links": [
+      {
+        "label": "Project",
+        "link": "https://github.com/nlbdotdev/Map-Builder"
+      }
+    ],
+    "media": {
+      "cover": "/assets/projects/other/mapbuilder.png",
+      "animation": null,
+      "icon": null,
+      "images": [],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "link": "https://github.com/nlbdotdev/Map-Builder"
+    }
+  },
+  {
+    "id": "project-hacker-news-api",
+    "kind": "project",
+    "slug": "hacker-news-api",
+    "legacyPath": null,
+    "title": "Hacker News API",
+    "summary": "Loads and displays the top 100 stories from the Hacker News API w/ jQuery.",
+    "description": "descriptions/project-hacker-news-api.md",
+    "date": {
+      "label": null,
+      "value": null,
+      "precision": null
+    },
+    "featured": false,
+    "collection": "archive",
+    "tags": [],
+    "links": [
+      {
+        "label": "Project",
+        "link": "https://github.com/nlbdotdev/hackernews-api"
+      }
+    ],
+    "media": {
+      "cover": "/assets/projects/other/hackernews.png",
+      "animation": null,
+      "icon": null,
+      "images": [],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "link": "https://github.com/nlbdotdev/hackernews-api"
+    }
+  },
+  {
+    "id": "project-soundcloud-mockup",
+    "kind": "project",
+    "slug": "soundcloud-mockup",
+    "legacyPath": null,
+    "title": "SoundCloud Mockup",
+    "summary": "A static mockup of the SoundCloud home page using HTML and CSS.",
+    "description": "descriptions/project-soundcloud-mockup.md",
+    "date": {
+      "label": null,
+      "value": null,
+      "precision": null
+    },
+    "featured": false,
+    "collection": "archive",
+    "tags": [],
+    "links": [
+      {
+        "label": "Project",
+        "link": "https://github.com/nlbdotdev/soundcloud-mockup"
+      }
+    ],
+    "media": {
+      "cover": "/assets/projects/other/soundcloud.png",
+      "animation": null,
+      "icon": null,
+      "images": [],
+      "videos": [],
+      "screenshots": {}
+    },
+    "preview": {
+      "url": null,
+      "desktop": false,
+      "mobile": false
+    },
+    "technologies": [],
+    "dependencies": [],
+    "legacyPresentation": {
+      "link": "https://github.com/nlbdotdev/soundcloud-mockup"
+    }
+  }
+]

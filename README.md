@@ -1,67 +1,53 @@
-# NLB.DEV
+# NLB.DEV — V2 foundation
 
-Nathan Bennett's web and game development portfolio. Includes project showcases, a filterable game archive, image galleries, resume, and contact form.
+Nathan Bennett's portfolio, now on **Svelte 5, SvelteKit, TypeScript, and Tailwind CSS 4**. This stage focuses on portable content and validation. The frontend is intentionally a plain, searchable content library.
 
-## Versions
+- [Current website](https://nlb.dev/)
+- [Historical V0](https://v0.nlb.dev/)
+- [Preserved V1](https://v1.nlb.dev/)
 
-- [Current portfolio](https://nlb.dev/)
-- [Version 0](https://v0.nlb.dev/)
-- [Version 1](https://v1.nlb.dev/)
+V1's Svelte 3 source remains in Git at `99c5560` and on the `v1` branch. This migration does not update those deployments. Submit changes through PRs into `dev`; release to `main` separately.
 
-The version links are historical deployment addresses; availability depends on their hosting and DNS. Git also retains `origin/v0` and `origin/v1` for recovery.
+## Run locally
 
-## Local development
-
-Use Node.js 22.12+ and npm (the lockfile is `package-lock.json`). Do not mix npm and pnpm lockfiles.
+Use Node.js 22.12+ and npm. Vercel's runtime is explicitly Node 22; Node 26 also works for local tooling. Use the committed npm lockfile, not a second package manager.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open the URL printed by the local server, normally `http://localhost:8080`. The dev command watches source files, rebuilds with Rollup, and enables live reload.
-
-For a production build and local preview:
+Open the printed URL, normally `http://localhost:5173`.
 
 ```sh
-npm run build
-npm start -- --port 5173
+npm run check           # Svelte + TypeScript diagnostics
+npm test                # Content schema regression tests
+npm run content:check   # Schema, descriptions, local references
+npm run content:audit   # Above plus .reports/assets.json inventory
+npm run build           # Content validation and production build
+npm run preview         # Serve the production build locally
+npm run audit           # Dependency security audit
 ```
 
-Open `http://localhost:5173`. Deploy the contents of `public/` after building, with a fallback to `index.html` for client-side routes such as `/games` and `/projects/portfolio`. The preview server already provides this fallback.
+The root page is prerendered. Catalog JSON and Markdown are imported directly at build time; there is no database, API, or fetch route. The Vercel adapter supports adding server features later. Existing showcase paths are preserved as content metadata, but the old showcase routes and contact form are intentionally absent from this foundation.
 
-## Project layout
+## Content and assets
 
-- `src/App.svelte`: application shell and Page.js routes.
-- `src/stores.js`: project/game content and theme settings.
-- `src/components/` and `src/pages/`: Svelte UI and page components.
-- `public/assets/`: images, game media, and resume.
-- `public/global.css`: shared styles.
-- `public/build/`: generated production bundles (ignored by Git).
-- `rollup.config.mjs`: development and production build configuration.
+- `content/entries.json`: 22 games, 3 main projects, 6 archive projects.
+- `content/descriptions/*.md`: 31 standalone descriptions, including historical portfolio links and gallery images.
+- `content/profile.json`: biography, skills, contact links, resume, and historical contact endpoint.
+- `content/schema.js`: shared Zod schemas, usable independently of Svelte.
+- `content/review.json`: unresolved source-content questions; do not guess these values.
+- `content/provenance.json`: source commit and migration provenance.
+- `static/assets/`: all 222 original asset files, preserved byte-for-byte with unchanged public `/assets/...` URLs.
+- `src/lib/content.ts`: imports and validates local content for the app.
 
-## Svelte 3 baseline
+See [content editing rules](content/README.md). The audit reports unreferenced files and duplicate hashes; it never deletes assets. Unreferenced does not mean disposable—some files belong to the historical frontend.
 
-This branch intentionally remains on **Svelte 3**, pinned to `3.59.2`. The original pre-migration state is commit `66c7a63`, tagged `svelte3-baseline-20260909`; commit `cb0b062` records the restoration checkpoint. The incomplete Svelte 5 work is preserved locally on `backup/dev-svelte5-20260909`.
+The old UI, Page.js, modal packages, and Rollup configuration were removed from the active tree. Recover them from V1 when needed rather than maintaining two content sources. Markdown displays as escaped plain text for now; no raw HTML rendering is enabled.
 
-The remote `dev` branch still contains that migration until an explicit remote-history update is made. Do not merge or pull `origin/dev` into this restored branch inadvertently.
+## Current limitations
 
-## Dependency checks
+Dates preserve year/month/day precision, and unknown dates stay null. Historical descriptions and links have not been fact-checked against current external services. Editorial review remains necessary before a redesigned public release. The inspiration timeline and employment history have not been imported in this pass.
 
-```sh
-npm ci
-npm run build
-npm run audit
-```
-
-Build tooling uses Rollup 4 and the maintained `@rollup/plugin-terser`. A scoped npm override updates Page.js's `path-to-regexp` dependency to `1.9.0` to address its vulnerable historical dependency.
-
-The September 2026 cleanup reduced the audit from 12 high findings to **3 moderate findings**: Svelte and two packages that depend on it (`svelte-lightbox` and `svelte-simple-modal`). Fully resolving these requires leaving Svelte 3. This site renders in the browser, but that does not dismiss all remaining advisories. Avoid `npm audit fix --force`, which can cross the intended framework boundary.
-
-The build still reports legacy accessibility, unused-property, and unused-CSS warnings. There is no automated test suite; before releasing, check home/games navigation, filtering, project/game dialogs, direct showcase URLs, and mobile layout. Contact submission and third-party embedded games require their external services.
-
-## Recovering historical versions
-
-Prefer the saved Git branches when they contain the desired version. They can be checked out into separate worktrees and built without altering this branch.
-
-Web Archive can also recover captured HTML, CSS, JavaScript, and images for local hosting, but cannot recreate missing assets or backend services. Its availability API returned no snapshots for `v0.nlb.dev` or `v1.nlb.dev` during this cleanup; older captures of `nlb.dev` may still be useful. A restored archive needs its asset URLs and internal links rewritten and checked locally.
+The framework's transitive `cookie` package is scoped to patched `0.7.2` through an npm override. The validated install reports zero audit vulnerabilities. Reassess this override when upgrading SvelteKit.
