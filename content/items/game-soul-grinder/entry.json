@@ -10,7 +10,7 @@
     "value": "2022-02-23",
     "precision": "day"
   },
-  "featured": true,
+  "featured": false,
   "collection": "games",
   "tags": ["mobile", "web", "jam", "sale"],
   "links": [

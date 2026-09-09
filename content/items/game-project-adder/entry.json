@@ -10,7 +10,7 @@
     "value": null,
     "precision": null
   },
-  "featured": true,
+  "featured": false,
   "collection": "games",
   "tags": ["web"],
   "links": [

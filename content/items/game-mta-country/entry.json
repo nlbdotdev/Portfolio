@@ -10,7 +10,7 @@
     "value": "2018-05-22",
     "precision": "day"
   },
-  "featured": true,
+  "featured": false,
   "collection": "games",
   "tags": ["mobile", "web", "freelance"],
   "links": [

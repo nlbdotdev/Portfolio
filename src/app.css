@@ -1062,3 +1062,10 @@ footer p span {
 #collection-divider {
   scroll-margin-top: 24px;
 }
+
+.company-logo.reflextions-logo {
+  background: #000;
+}
+.company-logo.reflextions-logo img {
+  padding: 0;
+}

@@ -9,7 +9,7 @@ Each item owns one `entry.json`, including its Markdown `body`, and its media un
 - `title` and `role` are presentation text; changing them does not change the slug.
 - `legacyPath` preserves any historical showcase URL. New items use null.
 - `draft: true` keeps unfinished entries out of the public app.
-- `featured: true` includes an item in the Featured collection filter, regardless of its date. The original featured-game flags are preserved. The three hero cards are selected separately: Zombiehood, PsiQuantum, and Pilot Flying J.
+- `featured: true` includes an item in the Featured collection filter, regardless of its date. Currently featured: Dead Traveler, PsiQuantum, and Zombiehood. The three hero cards are selected separately: Zombiehood, PsiQuantum, and Pilot Flying J.
 
 ## Content and dates
 

@@ -10,7 +10,7 @@
     "value": "2019",
     "precision": "year"
   },
-  "featured": true,
+  "featured": false,
   "collection": "games",
   "tags": ["mobile", "freelance"],
   "links": [

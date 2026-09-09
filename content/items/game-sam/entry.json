@@ -10,7 +10,7 @@
     "value": "2016-12-15",
     "precision": "day"
   },
-  "featured": true,
+  "featured": false,
   "collection": "games",
   "tags": ["web", "jam"],
   "links": [

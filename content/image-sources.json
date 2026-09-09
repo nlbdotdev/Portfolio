@@ -76,5 +76,17 @@
     "path": "assets/logo.png",
     "source": "https://stories.opengov.com/staffordcountypublicschools/published/ZMuvGvQZiq",
     "assetUrl": "https://stories.opengov.com/staffordcountypublicschools/uploads/56915a889cc8-CFHS_Eagles.png"
+  },
+  {
+    "item": "company-contract-games",
+    "path": "assets/logo.png",
+    "source": "User-provided Reflextions logo (2026-09-09)",
+    "note": "Original image retained without upscaling or recompression."
+  },
+  {
+    "item": "company-reflextions",
+    "path": "assets/logo.png",
+    "source": "User-provided Reflextions logo (2026-09-09)",
+    "note": "Original image retained without upscaling or recompression."
   }
 ]

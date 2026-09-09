@@ -10,7 +10,7 @@
     "value": "2023-01-09",
     "precision": "day"
   },
-  "featured": true,
+  "featured": false,
   "collection": "games",
   "tags": ["jam"],
   "links": [
