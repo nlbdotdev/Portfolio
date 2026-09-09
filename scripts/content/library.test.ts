@@ -43,7 +43,10 @@ test('calendar precision and ranges remain honest', () => {
 test('timeline is chronological, stable and keeps unknown dates last', () => {
   const sorted = sortTimeline(entries);
   assert.equal(sorted[0].id, 'company-syntropy');
-  const undated = { ...example, date: { value: null, precision: null } };
+  const undated = entrySchema.parse({
+    ...example,
+    date: { label: null, value: null, precision: null },
+  });
   assert.equal(sortTimeline([...entries, undated]).at(-1), undated);
   assert.deepEqual(sortTimeline(sorted), sorted);
   assert.equal(trackOf(example), 'project');
