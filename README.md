@@ -70,7 +70,7 @@ The TypeScript command runs OptiPNG, Gifsicle and jpegtran. It accepts only smal
 
 - The catalog's Markdown renders through an explicit renderer: raw HTML is escaped, unsafe link schemes are rejected, and images resolve only to local item assets.
 - Unknown dates remain unknown; year-only and month-only dates keep their precision. Imported reference dates carry provenance and `datesNeedReview`.
-- “Earlier chapters” previews two and a half older entries with a fading edge. Continuing to scroll past its prompt reveals the full archive; the prompt also supports keyboard activation. Close archive returns to the preview. Search includes all history directly.
+- “Earlier chapters” previews one and a half older entries with a fading edge. Continuing to scroll past its prompt reveals the full archive; the prompt also supports keyboard activation. Close archive returns to the preview. Search includes all history directly.
 - The scoped `cookie` override patches SvelteKit's transitive dependency; revisit it on framework upgrades.
 - Superseded aggregate content, loose descriptions, duplicate item assets, and Paint.NET source files have been removed. Historical source remains available in Git and on `v1`.
 
@@ -79,3 +79,7 @@ The TypeScript command runs OptiPNG, Gifsicle and jpegtran. It accepts only smal
 The header theme selector supports System (default), Light, and Dark. Explicit choices persist locally; System tracks OS appearance changes. Company logos and studio artwork are stored within their owning items; source URLs are recorded in `content/image-sources.json`. Logo artwork retains its original colors on a suitable light or dark surface. The hero uses Dead Traveler’s official studio background. Oswald is self-hosted with its SIL Open Font License in `static/fonts/`.
 
 `npm run assets:modernize` uses `gif2webp` (Homebrew `webp`) and Python/Pillow to generate lossless animated WebP variants. A variant is selected only when smaller and every decoded frame, duration, loop count, ICC profile and EXIF match. Original GIFs remain in their item folders; `content/animation-optimization.json` records verification and hashes.
+
+## Pages
+
+Work (`/`) contains the featured cards and timeline. About (`/about`) contains a short introduction and the skills catalog. Blog (`/blog`) is a placeholder for future posts. Shared navigation highlights the current page. The About category icons are local Feather SVGs (MIT), discovered via Aria Icons; attribution lives in `static/icons/skills/`.

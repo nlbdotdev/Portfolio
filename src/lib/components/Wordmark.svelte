@@ -50,7 +50,7 @@
   });
 </script>
 
-<a class="wordmark" href="#top" aria-label="NLB.DEV" onmouseenter={shine} onfocus={shine}>
+<a class="wordmark" href="/" aria-label="NLB.DEV" onmouseenter={shine} onfocus={shine}>
   NLB<span class="wordmark-dot" aria-hidden="true"
     ><span class="dot-core" bind:this={dot}>.</span><svg
       bind:this={rays}

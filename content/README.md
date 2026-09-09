@@ -17,7 +17,7 @@ Each item owns one `entry.json`, including its Markdown `body`, and its media un
 
 `date.value` supports `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`; `precision` must agree. Keep the original display text in `date.label`. `end` may be another partial date; `ongoing` marks a current chapter. Unknown values and precision are null. `provenance` records the source and whether dates need confirmation.
 
-Timeline ordering uses the start/release value, then a stable `order` tie-breaker. Unknown dates sort last. Entries before 2020, explicitly archived entries, and undated entries form the archive. Its first two and a half entries appear as a fading preview; scrolling past the prompt reveals the rest. Track buttons filter the shared timeline with a fade-and-collapse transition; searching includes the entire archive.
+Timeline ordering uses the start/release value, then a stable `order` tie-breaker. Unknown dates sort last. Entries before 2020, explicitly archived entries, and undated entries form the archive. Its first one and a half entries appear as a fading preview; scrolling past the prompt reveals the rest. Track buttons filter the shared timeline with a fade-and-collapse transition; searching includes the entire archive.
 
 ## Media naming
 

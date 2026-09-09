@@ -1,10 +1,40 @@
 <script lang="ts">
   import '../app.css';
-  import { updated } from '$app/state';
+  import Wordmark from '$lib/components/Wordmark.svelte';
+  import ThemeSelect from '$lib/components/ThemeSelect.svelte';
+  import profile from '../../content/profile.json';
+  import { page, updated } from '$app/state';
   let { children } = $props();
 </script>
 
-{@render children()}
+<a href="#main-content" class="skip-link">Skip to content</a>
+<div class="shell">
+  <header class="site-header">
+    <div class="header-brand">
+      <Wordmark />
+      <nav class="section-nav" aria-label="Main navigation">
+        {#each [{ href: '/', label: 'Work' }, { href: '/about', label: 'About' }, { href: '/blog', label: 'Blog' }] as link, i}
+          {#if i}<span aria-hidden="true">·</span>{/if}
+          <a
+            href={link.href}
+            aria-current={page.url.pathname.replace(/\/$/, '') === link.href.replace(/\/$/, '')
+              ? 'page'
+              : undefined}>{link.label}</a
+          >
+        {/each}
+      </nav>
+    </div>
+    <nav class="contact-nav" aria-label="Contact links">
+      {#each profile.links as link}<a href={link.url}>{link.label} ↗</a>{/each}
+    </nav>
+    <ThemeSelect />
+  </header>
+  <div id="main-content" tabindex="-1">{@render children()}</div>
+  <footer>
+    <p>{profile.name} <span>© {new Date().getFullYear()}</span></p>
+    <a href="mailto:nate@nlb.dev">Say hello ↗</a><a href="#main-content">Back to top ↑</a>
+  </footer>
+</div>
 
 {#if updated.current}
   <div class="update-notice" role="status">

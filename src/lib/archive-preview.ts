@@ -1,4 +1,4 @@
-/** Keep the first two and a half historical rows visible until the archive opens. */
+/** Keep the first one and a half historical rows visible until the archive opens. */
 export function archivePreview(node: HTMLElement, expanded: boolean) {
   const inner = node.firstElementChild as HTMLElement;
   let frame = 0;
@@ -9,9 +9,9 @@ export function archivePreview(node: HTMLElement, expanded: boolean) {
       const height = expanded
         ? inner.getBoundingClientRect().height
         : rows
-            .slice(0, 3)
+            .slice(0, 2)
             .reduce(
-              (total, row, i) => total + row.getBoundingClientRect().height * (i === 2 ? 0.5 : 1),
+              (total, row, i) => total + row.getBoundingClientRect().height * (i === 1 ? 0.5 : 1),
               0,
             );
       node.style.height = `${height}px`;
