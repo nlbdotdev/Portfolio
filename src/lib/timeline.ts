@@ -49,9 +49,8 @@ export function lastActive(
   entry: Entry,
   now = new Date(),
 ): { value: string; label: string } | null {
-  const value = entry.date.ongoing
-    ? `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`
-    : (entry.date.end ?? entry.date.value);
+  if (entry.date.ongoing) return null;
+  const value = entry.date.end ?? entry.date.value;
   if (!value) return null;
   const year = value.slice(0, 4);
   const month = value.slice(5, 7);

@@ -18,7 +18,7 @@
     type Track,
     type ProjectFilter,
   } from '$lib/timeline';
-  let active = $state<Track | 'featured' | null>(null);
+  let active = $state<Track | 'featured' | null>('featured');
   let projectFilter = $state<ProjectFilter>('all');
   let query = $state('');
   let showArchive = $state(false);
@@ -68,15 +68,11 @@
   );
   const visible = $derived(
     matching.filter(
-      (entry) =>
-        active === 'featured' ||
-        query.trim() ||
-        !isArchive(entry) ||
-        (!active && entry.showInEverything),
+      (entry) => query.trim() || !isArchive(entry) || (!active && entry.showInEverything),
     ),
   );
   const history = $derived(
-    active === 'featured' || query.trim()
+    query.trim()
       ? []
       : matching.filter((entry) => isArchive(entry) && !(!active && entry.showInEverything)),
   );
