@@ -310,10 +310,10 @@ h1 {
   width: 2px;
   background: var(--track);
   opacity: 0.65;
-  transition: opacity 0.2s;
+  transition: opacity 480ms ease;
 }
 .rails i.quiet {
-  opacity: 0.15;
+  opacity: 0;
 }
 .year {
   display: flex;
