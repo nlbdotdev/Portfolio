@@ -6,7 +6,7 @@
   "title": "Code Immersives / Digital Film Academy",
   "role": "Web Development Immersive with AWS",
   "summary": "A 900-hour web development immersive focused on the MERN stack and AWS.",
-  "body": "A 900-hour web development immersive focused on the MERN stack and AWS.\n",
+  "body": "### Full-stack development\n\nCompleted a 900-hour immersive focused on the MERN stack and AWS. Selected work from my web development portfolio brings together interactive frontends, APIs, databases, and deployment.\n\n- [Construct Snippets — frontend](https://github.com/nlbdotdev/construct-snippets-frontend) / [backend](https://github.com/nlbdotdev/construct-snippets-backend): a full-stack snippet library with authentication and session management.\n- [React Ticket Tracker — frontend](https://github.com/nlbdotdev/react-ticket-frontend) / [backend](https://github.com/nlbdotdev/react-ticket-backend): task and issue tracking with React, Redux, and a Node backend.\n- [Portfolio](https://nlb.dev) / [source](https://github.com/nlbdotdev/Portfolio): my personal Svelte portfolio, originally a frontend capstone and since evolved into this site.\n- [Code Immersives coursework](https://github.com/nlbdotdev/CodeImmersives): exercises and projects from the program.\n\nImages show the original project interfaces, including the earlier portfolio design.\n",
   "date": {
     "label": "Aug 2021 — Aug 2022",
     "value": "2021-08",
@@ -27,7 +27,20 @@
     "cover": null,
     "animation": null,
     "icon": "assets/logo.png",
-    "images": [],
+    "images": [
+      {
+        "src": "assets/construct-snippets.webp",
+        "alt": "Construct Snippets — original desktop interface"
+      },
+      {
+        "src": "assets/ticket-tracker.webp",
+        "alt": "React Ticket Tracker — original desktop interface"
+      },
+      {
+        "src": "assets/portfolio.webp",
+        "alt": "Portfolio — original desktop interface"
+      }
+    ],
     "videos": [],
     "screenshots": {}
   },

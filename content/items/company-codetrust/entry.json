@@ -6,7 +6,7 @@
   "title": "CODE/+/TRUST",
   "role": "Software Developer",
   "summary": "Delivered cross-platform features with React, React Native, and Node. Worked with clients on product discovery, API design, and improvements to delivery.",
-  "body": "Delivered cross-platform features with React, React Native, and Node. Worked with clients on product discovery, API design, and improvements to delivery.\n",
+  "body": "### Client product development\n\nDelivered cross-platform features with React, React Native, and Node, working with clients on product discovery, API design, and delivery. Much of this work involved internal tools or projects that did not launch publicly.\n\n### Stareworthy\n\n[Stareworthy](https://www.stareworthy.com/) is a public-facing client project I worked on at Code + Trust. It offers personalized photo books for families.\n\nThe screenshot below shows the current public website.\n",
   "date": {
     "label": "Nov 2022 — Feb 2024",
     "value": "2022-11",
@@ -27,7 +27,12 @@
     "cover": null,
     "animation": null,
     "icon": "assets/logo.svg",
-    "images": [],
+    "images": [
+      {
+        "src": "assets/stareworthy.webp",
+        "alt": "Stareworthy — current public website"
+      }
+    ],
     "videos": [],
     "screenshots": {}
   },

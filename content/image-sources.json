@@ -164,12 +164,6 @@
   },
   {
     "item": "company-bethesda",
-    "path": "assets/dishonored.webp",
-    "source": "https://store.steampowered.com/app/205100/",
-    "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/205100/header.jpg?t=1783183937"
-  },
-  {
-    "item": "company-bethesda",
     "path": "assets/death-of-the-outsider.webp",
     "source": "https://store.steampowered.com/app/614570/",
     "assetUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/614570/header.jpg?t=1750785506"
@@ -211,5 +205,40 @@
     "path": "assets/protoshift.webp",
     "source": "https://nlbdotdev.itch.io/protoshift",
     "originalAsset": "content/items/game-protoshift/assets/cover.png"
+  },
+  {
+    "item": "education-digital-film",
+    "path": "assets/construct-snippets.webp",
+    "source": "content/items/project-construct-snippets/assets/screenshots/01.png"
+  },
+  {
+    "item": "education-digital-film",
+    "path": "assets/ticket-tracker.webp",
+    "source": "content/items/project-react-ticket-tracker/assets/screenshots/01.png"
+  },
+  {
+    "item": "education-digital-film",
+    "path": "assets/portfolio.webp",
+    "source": "content/items/project-portfolio/assets/screenshots/01.png"
+  },
+  {
+    "item": "company-dead-traveler",
+    "path": "assets/zombiehood-gameplay-1.webp",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3003120/37ba8d8b21473a84bed0adae24acaa496676e5ad/ss_37ba8d8b21473a84bed0adae24acaa496676e5ad.1920x1080.jpg?t=1787671990"
+  },
+  {
+    "item": "company-dead-traveler",
+    "path": "assets/zombiehood-gameplay-2.webp",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3003120/054481a9aee02c422c359c39fa2377f0153637ae/ss_054481a9aee02c422c359c39fa2377f0153637ae.1920x1080.jpg?t=1787671990"
+  },
+  {
+    "item": "company-dead-traveler",
+    "path": "assets/zombiehood-gameplay-3.webp",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3003120/1567d5cf6d16a0e07a2e8c7b8a38be5f72991fa5/ss_1567d5cf6d16a0e07a2e8c7b8a38be5f72991fa5.1920x1080.jpg?t=1787671990"
+  },
+  {
+    "item": "company-codetrust",
+    "path": "assets/stareworthy.webp",
+    "source": "https://www.stareworthy.com/"
   }
 ]

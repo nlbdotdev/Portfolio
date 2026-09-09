@@ -1,6 +1,6 @@
 <script lang="ts">
   import profile from '../../../content/profile.json';
-  let showIcons = $state(true);
+  let iconMode = $state(0);
   const groups = [
     { id: 'frontend', label: 'Frontend', icon: 'code' },
     { id: 'backend', label: 'Backend', icon: 'server' },
@@ -27,37 +27,52 @@
   <section class="skills-section" aria-labelledby="skills-heading">
     <div class="skills-heading-row">
       <h2 id="skills-heading">Tools I work with</h2>
-      <button
-        class="skill-icon-toggle"
-        aria-pressed={showIcons}
-        onclick={() => (showIcons = !showIcons)}>Icons {showIcons ? 'on' : 'off'}</button
-      >
+      <div class="skill-display-control">
+        <span id="icon-mode-label">Icons</span>
+        <div
+          class="skill-mode-switch"
+          role="group"
+          aria-labelledby="icon-mode-label"
+          style={`--selected:${iconMode}`}
+        >
+          <span class="skill-mode-thumb" aria-hidden="true"></span>
+          {#each ['Off', 'On', 'Only'] as label, i}
+            <button
+              aria-pressed={iconMode === i}
+              aria-label={['Text only', 'Text and icons', 'Icons only'][i]}
+              onclick={() => (iconMode = i)}>{label}</button
+            >
+          {/each}
+        </div>
+      </div>
     </div>
-    <div class="skills-grid" class:hide-skill-icons={!showIcons}>
+    <div
+      class="skills-grid"
+      class:hide-skill-icons={iconMode === 0}
+      class:icons-only={iconMode === 2}
+    >
       {#each groups as group}
         <section class="skill-group">
           <h3>{group.label}</h3>
           <ul>
             {#each profile.skills.filter((skill) => skill.category === group.id) as skill}<li>
                 {#if skill.url}
-                  <a class="skill-button" href={skill.url} target="_blank" rel="noreferrer">
-                    <img
-                      src={skill.icon}
-                      alt=""
-                      width="16"
-                      height="16"
-                      loading="lazy"
-                    />{skill.label}<span class="sr-only"> (opens in new tab)</span>
+                  <a
+                    class="skill-button"
+                    title={iconMode === 2 ? skill.label : undefined}
+                    href={skill.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={skill.icon} alt="" width="16" height="16" loading="lazy" /><span
+                      class="skill-label">{skill.label}</span
+                    ><span class="sr-only"> (opens in new tab)</span>
                   </a>
                 {:else}
                   <span class="skill-button skill-discipline"
-                    ><img
-                      src={skill.icon}
-                      alt=""
-                      width="16"
-                      height="16"
-                      loading="lazy"
-                    />{skill.label}</span
+                    ><img src={skill.icon} alt="" width="16" height="16" loading="lazy" /><span
+                      class="skill-label">{skill.label}</span
+                    ></span
                   >
                 {/if}
               </li>{/each}
