@@ -2,6 +2,7 @@
   import { tick } from 'svelte';
   import { archivePreview } from '$lib/archive-preview';
   import { collectionTransition } from '$lib/collection-transition';
+  import Wordmark from '$lib/components/Wordmark.svelte';
   import ThemeSelect from '$lib/components/ThemeSelect.svelte';
   import PortfolioItem from '$lib/components/PortfolioItem.svelte';
   import { entries, profile, assetUrl } from '$lib/content';
@@ -106,7 +107,7 @@
 <a href="#timeline" class="skip-link">Skip to timeline</a>
 <div class="shell">
   <header class="site-header">
-    <a class="wordmark" href="#top">NLB<span>.</span>DEV</a>
+    <Wordmark />
     <nav aria-label="Main navigation">
       <a href="#timeline">Work</a><a href="#about">About</a><a href={profile.resume}>Résumé ↗</a
       >{#each profile.links as link}<a href={link.url}>{link.label} ↗</a>{/each}
