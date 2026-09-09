@@ -122,31 +122,31 @@
     {
       "label": "AWS API Gateway",
       "category": "backend",
-      "icon": "/icons/skills/feather-cloud.svg",
+      "icon": "/icons/skills/brand-aws.svg",
       "url": "https://aws.amazon.com/api-gateway/"
     },
     {
       "label": "AWS EC2",
       "category": "backend",
-      "icon": "/icons/skills/feather-server.svg",
+      "icon": "/icons/skills/brand-aws.svg",
       "url": "https://aws.amazon.com/ec2/"
     },
     {
       "label": "AWS Lambda",
       "category": "backend",
-      "icon": "/icons/skills/feather-zap.svg",
+      "icon": "/icons/skills/brand-aws.svg",
       "url": "https://aws.amazon.com/lambda/"
     },
     {
       "label": "AWS RDS",
       "category": "backend",
-      "icon": "/icons/skills/feather-database.svg",
+      "icon": "/icons/skills/brand-aws.svg",
       "url": "https://aws.amazon.com/rds/"
     },
     {
       "label": "AWS S3",
       "category": "backend",
-      "icon": "/icons/skills/feather-archive.svg",
+      "icon": "/icons/skills/brand-aws.svg",
       "url": "https://aws.amazon.com/s3/"
     },
     {
@@ -182,7 +182,7 @@
     {
       "label": "Cloudinary",
       "category": "backend",
-      "icon": "/icons/skills/feather-image.svg",
+      "icon": "/icons/skills/brand-cloudinary.svg",
       "url": "https://cloudinary.com/"
     },
     {
@@ -195,7 +195,7 @@
       "label": "NoSQL",
       "category": "backend",
       "icon": "/icons/skills/feather-database.svg",
-      "url": "https://www.mongodb.com/resources/basics/databases/nosql-explained"
+      "url": "https://en.wikipedia.org/wiki/NoSQL"
     },
     {
       "label": "PlayFab",
@@ -213,7 +213,7 @@
       "label": "SQL",
       "category": "backend",
       "icon": "/icons/skills/feather-database.svg",
-      "url": "https://www.postgresql.org/docs/current/tutorial-sql.html"
+      "url": "https://en.wikipedia.org/wiki/SQL"
     },
     {
       "label": "Python",
@@ -237,7 +237,7 @@
       "label": "AI Agents",
       "category": "other",
       "icon": "/icons/skills/feather-cpu.svg",
-      "url": "https://platform.openai.com/docs/guides/agents"
+      "url": "https://en.wikipedia.org/wiki/Intelligent_agent"
     },
     {
       "label": "Android",
@@ -255,37 +255,37 @@
       "label": "CI/CD",
       "category": "other",
       "icon": "/icons/skills/feather-refresh-cw.svg",
-      "url": "https://docs.gitlab.com/ci/"
+      "url": "https://en.wikipedia.org/wiki/CI/CD"
     },
     {
       "label": "Claude Code",
       "category": "other",
-      "icon": "/icons/skills/feather-terminal.svg",
+      "icon": "/icons/skills/brand-claude.svg",
       "url": "https://code.claude.com/docs/en/overview"
     },
     {
       "label": "CLI",
       "category": "other",
       "icon": "/icons/skills/feather-terminal.svg",
-      "url": "https://www.gnu.org/software/bash/"
+      "url": "https://en.wikipedia.org/wiki/Command-line_interface"
     },
     {
       "label": "Codex",
       "category": "other",
-      "icon": "/icons/skills/feather-terminal.svg",
+      "icon": "/icons/skills/brand-openai.svg",
       "url": "https://developers.openai.com/codex/"
     },
     {
       "label": "Cursor",
       "category": "other",
-      "icon": "/icons/skills/feather-mouse-pointer.svg",
+      "icon": "/icons/skills/brand-cursor.svg",
       "url": "https://cursor.com/"
     },
     {
       "label": "DevOps",
       "category": "other",
       "icon": "/icons/skills/feather-settings.svg",
-      "url": "https://aws.amazon.com/devops/what-is-devops/"
+      "url": "https://en.wikipedia.org/wiki/DevOps"
     },
     {
       "label": "Git",
@@ -303,13 +303,13 @@
       "label": "Harness Engineering",
       "category": "other",
       "icon": "/icons/skills/feather-tool.svg",
-      "url": null
+      "url": "https://en.wikipedia.org/wiki/Test_harness"
     },
     {
       "label": "Integrations",
       "category": "other",
       "icon": "/icons/skills/feather-link.svg",
-      "url": null
+      "url": "https://en.wikipedia.org/wiki/System_integration"
     },
     {
       "label": "iOS",
@@ -320,7 +320,7 @@
     {
       "label": "iPhone",
       "category": "other",
-      "icon": "/icons/skills/feather-smartphone.svg",
+      "icon": "/icons/skills/apple.svg",
       "url": "https://www.apple.com/iphone/"
     },
     {
@@ -345,13 +345,13 @@
       "label": "Mobile Applications",
       "category": "other",
       "icon": "/icons/skills/feather-smartphone.svg",
-      "url": null
+      "url": "https://en.wikipedia.org/wiki/Mobile_app_development"
     },
     {
       "label": "Release Management",
       "category": "other",
       "icon": "/icons/skills/feather-package.svg",
-      "url": null
+      "url": "https://en.wikipedia.org/wiki/Release_management"
     },
     {
       "label": "Swagger",
@@ -369,12 +369,12 @@
       "label": "Agile",
       "category": "management",
       "icon": "/icons/skills/feather-repeat.svg",
-      "url": "https://agilemanifesto.org/"
+      "url": "https://en.wikipedia.org/wiki/Agile_software_development"
     },
     {
       "label": "Airtable",
       "category": "management",
-      "icon": "/icons/skills/feather-grid.svg",
+      "icon": "/icons/skills/brand-airtable.svg",
       "url": "https://airtable.com/"
     },
     {
@@ -392,13 +392,13 @@
     {
       "label": "Linear",
       "category": "management",
-      "icon": "/icons/skills/feather-list.svg",
+      "icon": "/icons/skills/brand-linear.svg",
       "url": "https://linear.app/"
     },
     {
       "label": "Monday",
       "category": "management",
-      "icon": "/icons/skills/feather-calendar.svg",
+      "icon": "/icons/skills/brand-monday.svg",
       "url": "https://monday.com/"
     },
     {
@@ -411,7 +411,7 @@
       "label": "Scrum",
       "category": "management",
       "icon": "/icons/skills/feather-repeat.svg",
-      "url": "https://scrumguides.org/"
+      "url": "https://en.wikipedia.org/wiki/Scrum_(software_development)"
     },
     {
       "label": "Trello",
@@ -422,13 +422,13 @@
     {
       "label": "Typeform",
       "category": "management",
-      "icon": "/icons/skills/feather-edit.svg",
+      "icon": "/icons/skills/brand-typeform.svg",
       "url": "https://www.typeform.com/"
     },
     {
       "label": "Construct 3",
       "category": "design",
-      "icon": "/icons/skills/feather-play.svg",
+      "icon": "/icons/skills/brand-construct3.svg",
       "url": "https://www.construct.net/"
     },
     {
@@ -440,13 +440,13 @@
     {
       "label": "Make",
       "category": "design",
-      "icon": "/icons/skills/feather-git-merge.svg",
+      "icon": "/icons/skills/brand-make.svg",
       "url": "https://www.make.com/"
     },
     {
       "label": "n8n",
       "category": "design",
-      "icon": "/icons/skills/feather-git-branch.svg",
+      "icon": "/icons/skills/brand-n8n.svg",
       "url": "https://n8n.io/"
     },
     {
@@ -464,38 +464,38 @@
     {
       "label": "Zapier",
       "category": "design",
-      "icon": "/icons/skills/feather-zap.svg",
+      "icon": "/icons/skills/brand-zapier.svg",
       "url": "https://zapier.com/"
     },
     {
       "label": "Automated Testing",
       "category": "qa",
       "icon": "/icons/skills/feather-check-circle.svg",
-      "url": null
+      "url": "https://en.wikipedia.org/wiki/Test_automation"
     },
     {
       "label": "Browserbase",
       "category": "qa",
-      "icon": "/icons/skills/feather-globe.svg",
+      "icon": "/icons/skills/brand-browserbase.svg",
       "url": "https://www.browserbase.com/"
     },
     {
       "label": "Functional Testing",
       "category": "qa",
       "icon": "/icons/skills/feather-check-square.svg",
-      "url": null
+      "url": "https://en.wikipedia.org/wiki/Functional_testing"
     },
     {
       "label": "Hansoft",
       "category": "qa",
-      "icon": "/icons/skills/feather-clipboard.svg",
+      "icon": "/icons/skills/brand-perforce.svg",
       "url": "https://www.perforce.com/products/hansoft"
     },
     {
       "label": "Integration Testing",
       "category": "qa",
       "icon": "/icons/skills/feather-link.svg",
-      "url": null
+      "url": "https://en.wikipedia.org/wiki/Integration_testing"
     },
     {
       "label": "Jest",
@@ -506,7 +506,7 @@
     {
       "label": "Lighthouse",
       "category": "qa",
-      "icon": "/icons/skills/feather-sun.svg",
+      "icon": "/icons/skills/brand-lighthouse.svg",
       "url": "https://developer.chrome.com/docs/lighthouse/overview/"
     },
     {
@@ -525,19 +525,19 @@
       "label": "Snapshot Testing",
       "category": "qa",
       "icon": "/icons/skills/feather-camera.svg",
-      "url": "https://jestjs.io/docs/snapshot-testing"
+      "url": "https://en.wikipedia.org/wiki/Software_testing#Output_comparison_testing"
     },
     {
       "label": "Test Planning",
       "category": "qa",
       "icon": "/icons/skills/feather-clipboard.svg",
-      "url": null
+      "url": "https://en.wikipedia.org/wiki/Test_plan"
     },
     {
       "label": "Unit Testing",
       "category": "qa",
       "icon": "/icons/skills/feather-check-circle.svg",
-      "url": null
+      "url": "https://en.wikipedia.org/wiki/Unit_testing"
     },
     {
       "label": "Vitest",

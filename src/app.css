@@ -1229,11 +1229,11 @@ footer p span {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 30px;
+  gap: 22px;
 }
 .skill-group {
   border-top: 1px solid var(--border);
-  padding-top: 20px;
+  padding-top: 14px;
 }
 .skill-group h3 {
   display: flex;
@@ -1253,7 +1253,7 @@ footer p span {
   gap: 8px;
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 .skill-group li {
   border: 1px solid var(--border);
@@ -1315,9 +1315,11 @@ footer p span {
 .skill-button {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  min-height: 42px;
-  padding: 8px 11px;
+  gap: 6px;
+  min-height: 32px;
+  padding: 4px 7px;
+  font-size: 11px;
+  line-height: 1.25;
   border: 1px solid var(--border);
   border-radius: 5px;
   background: var(--paper);
@@ -1333,8 +1335,9 @@ a.skill-button:focus-visible {
   transform: translateY(-2px);
 }
 .skill-button img {
-  width: 22px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -1348,5 +1351,45 @@ a.skill-button:focus-visible {
   }
   a.skill-button:hover {
     transform: none;
+  }
+}
+
+/* Keep the shared header in place on short and long routes. */
+html {
+  scrollbar-gutter: stable;
+}
+@media (max-width: 700px) {
+  .site-header .contact-nav {
+    justify-content: flex-end;
+    gap: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .studio-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .studio-feature .studio-art {
+    order: 0;
+  }
+  .studio-feature .now {
+    order: 1;
+    margin: 0 0 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  .header-brand {
+    grid-column: 1 / -1;
+  }
+  .site-header .contact-nav {
+    order: 0;
+    width: auto;
+    gap: 12px;
   }
 }

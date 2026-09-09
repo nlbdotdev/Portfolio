@@ -36,8 +36,8 @@
                     <img
                       src={skill.icon}
                       alt=""
-                      width="22"
-                      height="22"
+                      width="16"
+                      height="16"
                       loading="lazy"
                     />{skill.label}<span class="sr-only"> (opens in new tab)</span>
                   </a>
@@ -46,8 +46,8 @@
                     ><img
                       src={skill.icon}
                       alt=""
-                      width="22"
-                      height="22"
+                      width="16"
+                      height="16"
                       loading="lazy"
                     />{skill.label}</span
                   >
