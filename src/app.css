@@ -296,7 +296,7 @@ h1 {
 }
 .timeline {
   position: relative;
-  padding-left: 95px;
+  padding-left: 119px;
 }
 .rails {
   position: absolute;
@@ -343,8 +343,8 @@ h1 {
     width 360ms ease,
     background-color 360ms ease;
   position: absolute;
-  left: calc(-85px + var(--station) * 20px);
-  width: calc(65px - var(--station) * 20px);
+  left: calc(-109px + var(--station) * 20px);
+  width: calc(89px - var(--station) * 20px);
   height: 2px;
   top: 58px;
   background: var(--track);
@@ -378,7 +378,7 @@ h1 {
 .entry-cover img {
   width: 100%;
   aspect-ratio: 16/10;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 .entry-meta {
@@ -597,11 +597,11 @@ footer p span {
     height: 150px;
   }
   .timeline {
-    padding-left: 73px;
+    padding-left: 97px;
   }
   .connection {
-    left: calc(-63px + var(--station) * 20px);
-    width: calc(48px - var(--station) * 20px);
+    left: calc(-87px + var(--station) * 20px);
+    width: calc(72px - var(--station) * 20px);
   }
   .timeline-head h2 {
     font-size: 31px;
@@ -685,15 +685,15 @@ footer p span {
     font-size: 12px;
   }
   .timeline {
-    padding-left: 56px;
+    padding-left: 80px;
   }
   .rails {
     left: 4px;
     gap: 12px;
   }
   .connection {
-    left: calc(-52px + var(--station) * 14px);
-    width: calc(42px - var(--station) * 14px);
+    left: calc(-76px + var(--station) * 14px);
+    width: calc(66px - var(--station) * 14px);
   }
   .entry {
     padding: 22px 0 25px;
@@ -990,19 +990,19 @@ footer p span {
 
 .timeline-row {
   /* Include the rail connectors in the animated row's clipping area. */
-  margin-left: -95px;
-  padding-left: 95px;
+  margin-left: -119px;
+  padding-left: 119px;
 }
 @media (max-width: 800px) {
   .timeline-row {
-    margin-left: -73px;
-    padding-left: 73px;
+    margin-left: -97px;
+    padding-left: 97px;
   }
 }
 @media (max-width: 480px) {
   .timeline-row {
-    margin-left: -56px;
-    padding-left: 56px;
+    margin-left: -80px;
+    padding-left: 80px;
   }
 }
 
@@ -1015,8 +1015,8 @@ footer p span {
 }
 .archive-frame {
   overflow: hidden;
-  margin-left: -95px;
-  padding-left: 95px;
+  margin-left: -119px;
+  padding-left: 119px;
   transition: height 480ms ease;
 }
 .archive-frame.preview {
@@ -1046,14 +1046,14 @@ footer p span {
 }
 @media (max-width: 800px) {
   .archive-frame {
-    margin-left: -73px;
-    padding-left: 73px;
+    margin-left: -97px;
+    padding-left: 97px;
   }
 }
 @media (max-width: 480px) {
   .archive-frame {
-    margin-left: -56px;
-    padding-left: 56px;
+    margin-left: -80px;
+    padding-left: 80px;
   }
 }
 
@@ -1157,4 +1157,9 @@ footer p span {
 }
 .now {
   transition: border-color 300ms ease;
+}
+
+.feature-art {
+  object-fit: contain;
+  background: var(--surface);
 }

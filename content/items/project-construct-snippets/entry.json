@@ -6,9 +6,9 @@
   "title": "Construct Snippets",
   "summary": "Construct Snippets (WIP) is an open source library of useful functions and other code snippets for the HTML5 game engine Construct 3. Built with comprehensive user validation and session security with HttpOnly cookies. Supports creation and viewing of snippets. ",
   "date": {
-    "label": null,
-    "value": null,
-    "precision": null
+    "value": "2022-06-22",
+    "label": "Jun 2022 · First commit",
+    "precision": "day"
   },
   "featured": false,
   "collection": "projects",
@@ -103,7 +103,7 @@
   "order": 22,
   "role": "Software project",
   "provenance": {
-    "source": "V1 portfolio (99c5560)",
-    "datesNeedReview": true
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/construct-snippets-backend/commit/8d2a07629cbdf186d1eb4cccbcd3227d02fa79b8",
+    "datesNeedReview": false
   }
 }

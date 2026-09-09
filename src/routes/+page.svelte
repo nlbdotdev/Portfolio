@@ -46,7 +46,7 @@
       ]),
     );
   }
-  const heroFeatured = ['game-zombiehood', 'company-psiquantum', 'company-pilot'].map((id) =>
+  const heroFeatured = ['game-zombiehood', 'company-syntropy', 'company-pilot'].map((id) =>
     entries.find((entry) => entry.id === id)!,
   );
   const studio = entries.find((entry) => entry.id === 'company-dead-traveler')!;
@@ -150,7 +150,7 @@
           <button class="feature" onclick={() => follow(entry.id)}>
             <img
               class="feature-art"
-              class:feature-logo={entry.kind === 'company'}
+              class:feature-logo={entry.kind === 'company' && !entry.media.cover}
               src={assetUrl(
                 entry,
                 entry.media.cover ?? entry.media.icon ?? entry.media.screenshots.desktop!,

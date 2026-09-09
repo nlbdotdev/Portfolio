@@ -6,9 +6,9 @@
   "title": "SoundCloud Mockup",
   "summary": "A static mockup of the SoundCloud home page using HTML and CSS.",
   "date": {
-    "label": null,
-    "value": null,
-    "precision": null
+    "value": "2019-11-05",
+    "label": "Nov 2019 · First commit",
+    "precision": "day"
   },
   "featured": false,
   "collection": "archive",
@@ -41,7 +41,7 @@
   "order": 30,
   "role": "Software project",
   "provenance": {
-    "source": "V1 portfolio (99c5560)",
-    "datesNeedReview": true
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/soundcloud-mockup/commit/5b4b445530b2b24c5dfb5ed533f1c83803f16f35",
+    "datesNeedReview": false
   }
 }

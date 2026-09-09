@@ -6,9 +6,9 @@
   "title": "Jeopardy",
   "summary": "An interactive Jeopardy board built with jQuery.",
   "date": {
-    "label": null,
-    "value": null,
-    "precision": null
+    "value": "2021-04-19",
+    "label": "Apr 2021 · First commit",
+    "precision": "day"
   },
   "featured": false,
   "collection": "archive",
@@ -41,7 +41,7 @@
   "order": 27,
   "role": "Software project",
   "provenance": {
-    "source": "V1 portfolio (99c5560)",
-    "datesNeedReview": true
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/jeopardy/commit/6cc0a798ec4ba3f1cc96d0d823239f4bc0a86586",
+    "datesNeedReview": false
   }
 }

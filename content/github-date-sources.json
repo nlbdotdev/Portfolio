@@ -1,0 +1,93 @@
+{
+  "method": "Oldest commit returned from each linked repository default branch; earliest across frontend/backend repositories. These establish repository history, not release dates.",
+  "commits": [
+    {
+      "item": "project-react-ticket-tracker",
+      "repo": "nlbdotdev/react-ticket-frontend",
+      "sha": "a9e1ad92fd0713015475b07fae1bbd0061e50e68",
+      "date": "2022-04-20T16:38:42Z",
+      "committed": "2022-04-20T16:38:42Z",
+      "url": "https://github.com/nlbdotdev/react-ticket-frontend/commit/a9e1ad92fd0713015475b07fae1bbd0061e50e68"
+    },
+    {
+      "item": "project-react-ticket-tracker",
+      "repo": "nlbdotdev/react-ticket-backend",
+      "sha": "8e2df814a2f52525b72b70b29b29dafa3e7cd3f4",
+      "date": "2022-04-26T14:43:50Z",
+      "committed": "2022-04-26T14:43:50Z",
+      "url": "https://github.com/nlbdotdev/react-ticket-backend/commit/8e2df814a2f52525b72b70b29b29dafa3e7cd3f4"
+    },
+    {
+      "item": "project-jeopardy",
+      "repo": "nlbdotdev/jeopardy",
+      "sha": "6cc0a798ec4ba3f1cc96d0d823239f4bc0a86586",
+      "date": "2021-04-19T05:38:11Z",
+      "committed": "2021-04-19T05:38:11Z",
+      "url": "https://github.com/nlbdotdev/jeopardy/commit/6cc0a798ec4ba3f1cc96d0d823239f4bc0a86586"
+    },
+    {
+      "item": "project-construct-snippets",
+      "repo": "nlbdotdev/construct-snippets-frontend",
+      "sha": "17fdedecef6bb2dd034c683fa8e9d40ef6597d08",
+      "date": "2022-06-26T21:03:50Z",
+      "committed": "2022-06-26T21:03:50Z",
+      "url": "https://github.com/nlbdotdev/construct-snippets-frontend/commit/17fdedecef6bb2dd034c683fa8e9d40ef6597d08"
+    },
+    {
+      "item": "project-construct-snippets",
+      "repo": "nlbdotdev/construct-snippets-backend",
+      "sha": "8d2a07629cbdf186d1eb4cccbcd3227d02fa79b8",
+      "date": "2022-06-22T14:48:37Z",
+      "committed": "2022-06-22T14:48:37Z",
+      "url": "https://github.com/nlbdotdev/construct-snippets-backend/commit/8d2a07629cbdf186d1eb4cccbcd3227d02fa79b8"
+    },
+    {
+      "item": "project-soundcloud-mockup",
+      "repo": "nlbdotdev/soundcloud-mockup",
+      "sha": "5b4b445530b2b24c5dfb5ed533f1c83803f16f35",
+      "date": "2019-11-05T17:16:33Z",
+      "committed": "2019-11-05T17:16:33Z",
+      "url": "https://github.com/nlbdotdev/soundcloud-mockup/commit/5b4b445530b2b24c5dfb5ed533f1c83803f16f35"
+    },
+    {
+      "item": "project-hacker-news-api",
+      "repo": "nlbdotdev/hackernews-api",
+      "sha": "fda2497840df053265b4b33ec80ba26c544cb764",
+      "date": "2021-04-12T04:49:02Z",
+      "committed": "2021-04-12T04:49:02Z",
+      "url": "https://github.com/nlbdotdev/hackernews-api/commit/fda2497840df053265b4b33ec80ba26c544cb764"
+    },
+    {
+      "item": "project-pexels-search",
+      "repo": "nlbdotdev/pexels-search",
+      "sha": "eb909969be5973bb630aaf9a53c69245c184ec04",
+      "date": "2022-09-29T15:33:13Z",
+      "committed": "2022-09-29T15:33:13Z",
+      "url": "https://github.com/nlbdotdev/pexels-search/commit/eb909969be5973bb630aaf9a53c69245c184ec04"
+    },
+    {
+      "item": "project-map-builder",
+      "repo": "nlbdotdev/Map-Builder",
+      "sha": "166c32f362db7a453d10b53e60d5e3255bedae59",
+      "date": "2021-12-10T17:28:38Z",
+      "committed": "2021-12-10T17:28:38Z",
+      "url": "https://github.com/nlbdotdev/map-builder/commit/166c32f362db7a453d10b53e60d5e3255bedae59"
+    },
+    {
+      "item": "project-portfolio",
+      "repo": "nlbdotdev/Portfolio",
+      "sha": "06ed2fbbf47c8c70526934d0073056e418d9c1ca",
+      "date": "2022-04-08T19:31:39Z",
+      "committed": "2022-04-08T19:31:39Z",
+      "url": "https://github.com/nlbdotdev/Portfolio/commit/06ed2fbbf47c8c70526934d0073056e418d9c1ca"
+    },
+    {
+      "item": "project-post-comment-backend",
+      "repo": "nlbdotdev/post-comment-backend",
+      "sha": "2455778cc8311fc8a13281de41f01da11a9446fd",
+      "date": "2022-03-01T14:08:08Z",
+      "committed": "2022-03-01T14:08:08Z",
+      "url": "https://github.com/nlbdotdev/post-comment-backend/commit/2455778cc8311fc8a13281de41f01da11a9446fd"
+    }
+  ]
+}

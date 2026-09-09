@@ -6,9 +6,9 @@
   "title": "Portfolio",
   "summary": "After going through various websites over the years, I wanted a single location to put all my content. This site was built with Svelte and served as a personal capstone project in front-end development.",
   "date": {
-    "label": null,
-    "value": null,
-    "precision": null
+    "value": "2022-04-08",
+    "label": "Apr 2022 · First commit",
+    "precision": "day"
   },
   "featured": false,
   "collection": "projects",
@@ -76,7 +76,7 @@
   "order": 23,
   "role": "Software project",
   "provenance": {
-    "source": "V1 portfolio (99c5560)",
-    "datesNeedReview": true
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/Portfolio/commit/06ed2fbbf47c8c70526934d0073056e418d9c1ca",
+    "datesNeedReview": false
   }
 }

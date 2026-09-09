@@ -6,9 +6,9 @@
   "title": "Hacker News API",
   "summary": "Loads and displays the top 100 stories from the Hacker News API w/ jQuery.",
   "date": {
-    "label": null,
-    "value": null,
-    "precision": null
+    "value": "2021-04-12",
+    "label": "Apr 2021 · First commit",
+    "precision": "day"
   },
   "featured": false,
   "collection": "archive",
@@ -41,7 +41,7 @@
   "order": 29,
   "role": "Software project",
   "provenance": {
-    "source": "V1 portfolio (99c5560)",
-    "datesNeedReview": true
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/hackernews-api/commit/fda2497840df053265b4b33ec80ba26c544cb764",
+    "datesNeedReview": false
   }
 }

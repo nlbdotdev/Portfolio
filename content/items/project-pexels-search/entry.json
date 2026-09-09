@@ -6,9 +6,9 @@
   "title": "Pexels Search",
   "summary": "A React web page that interfaces with the Pexels API. Supports curated photos, search, pagination, and session storage.",
   "date": {
-    "label": null,
-    "value": null,
-    "precision": null
+    "value": "2022-09-29",
+    "label": "Sep 2022 · First commit",
+    "precision": "day"
   },
   "featured": false,
   "collection": "archive",
@@ -41,7 +41,7 @@
   "order": 25,
   "role": "Software project",
   "provenance": {
-    "source": "V1 portfolio (99c5560)",
-    "datesNeedReview": true
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/pexels-search/commit/eb909969be5973bb630aaf9a53c69245c184ec04",
+    "datesNeedReview": false
   }
 }

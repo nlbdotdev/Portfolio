@@ -6,9 +6,9 @@
   "title": "React Ticket Tracker",
   "summary": "React Ticket Tracker is a fullstack task tracker built with React and state management via Redux. Can be used for bugs, tickets, and project management. Supports posting and updating tasks, timestamps, tasks IDs, descriptions, severity, and status.",
   "date": {
-    "label": null,
-    "value": null,
-    "precision": null
+    "value": "2022-04-20",
+    "label": "Apr 2022 · First commit",
+    "precision": "day"
   },
   "featured": false,
   "collection": "projects",
@@ -96,7 +96,7 @@
   "order": 24,
   "role": "Software project",
   "provenance": {
-    "source": "V1 portfolio (99c5560)",
-    "datesNeedReview": true
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/react-ticket-frontend/commit/a9e1ad92fd0713015475b07fae1bbd0061e50e68",
+    "datesNeedReview": false
   }
 }
