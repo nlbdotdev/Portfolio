@@ -8,7 +8,7 @@
   "summary": "A 900-hour web development immersive focused on the MERN stack and AWS.",
   "body": "A 900-hour web development immersive focused on the MERN stack and AWS.\n",
   "date": {
-    "label": "Aug 2021 \u2014 Aug 2022",
+    "label": "Aug 2021 — Aug 2022",
     "value": "2021-08",
     "precision": "month",
     "end": "2022-08",
@@ -43,5 +43,6 @@
   "provenance": {
     "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
     "datesNeedReview": true
-  }
+  },
+  "showInEverything": true
 }

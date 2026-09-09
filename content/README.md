@@ -38,3 +38,5 @@ Do not change a file's format just to unify an extension. References are relativ
 Run `npm run content:check`, `npm test`, and `npm run check`. The migration ID fixture protects original entries while allowing additions. The asset audit writes its generated inventory to `.reports/assets.json`. Lossless optimization validates decoded output before replacing an image.
 
 Edit `items/*/entry.json`; each item owns its Markdown and media. Previous aggregate files and loose descriptions have been removed.
+
+Set `showInEverything: true` to keep an older entry in the initial Everything list without changing its featured status or its placement in other filters.

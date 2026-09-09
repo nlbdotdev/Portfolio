@@ -57,6 +57,7 @@ export const entrySchema = z
     body: z.string().trim().min(1),
     date: dateSchema,
     featured: z.boolean(),
+    showInEverything: z.boolean().default(false),
     draft: z.boolean().default(false),
     collection: z.enum(['games', 'projects', 'archive', 'timeline']),
     tags: z.array(z.string().min(1)),

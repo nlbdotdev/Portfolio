@@ -8,7 +8,7 @@
   "summary": "Supported AAA launches through QA across hardware, platforms, and teams. Worked on franchises including Skyrim, Fallout, Dishonored, and Wolfenstein.",
   "body": "Supported AAA launches through QA across hardware, platforms, and teams. Worked on franchises including Skyrim, Fallout, Dishonored, and Wolfenstein.\n",
   "date": {
-    "label": "Jun 2017 \u2014 Feb 2019",
+    "label": "Jun 2017 — Feb 2019",
     "value": "2017-06",
     "precision": "month",
     "end": "2019-02",
@@ -43,5 +43,6 @@
   "provenance": {
     "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
     "datesNeedReview": true
-  }
+  },
+  "showInEverything": true
 }

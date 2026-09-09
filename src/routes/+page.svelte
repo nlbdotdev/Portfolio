@@ -67,9 +67,19 @@
     ),
   );
   const visible = $derived(
-    matching.filter((entry) => active === 'featured' || query.trim() || !isArchive(entry)),
+    matching.filter(
+      (entry) =>
+        active === 'featured' ||
+        query.trim() ||
+        !isArchive(entry) ||
+        (!active && entry.showInEverything),
+    ),
   );
-  const history = $derived(active === 'featured' || query.trim() ? [] : matching.filter(isArchive));
+  const history = $derived(
+    active === 'featured' || query.trim()
+      ? []
+      : matching.filter((entry) => isArchive(entry) && !(!active && entry.showInEverything)),
+  );
   const historyVisible = $derived(showArchive ? history : history.slice(0, 3));
   function closeArchive() {
     showArchive = false;
