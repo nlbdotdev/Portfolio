@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { slide } from 'svelte/transition';
+  import { cubicInOut } from 'svelte/easing';
   import GameplayAnimation from './GameplayAnimation.svelte';
   import type { Entry } from '../../../content/schema.ts';
   import { assetUrl, descriptions, hasDetails } from '$lib/content';
@@ -12,6 +14,12 @@
     splitProjects?: boolean;
     expanded?: boolean;
   } = $props();
+  function revealDetails(node: HTMLElement) {
+    return slide(node, {
+      duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 320,
+      easing: cubicInOut,
+    });
+  }
   const rail = $derived(railOf(entry, splitProjects));
   const color = $derived(rail.color);
   const label = $derived(
@@ -82,48 +90,61 @@
     </div>
   </div>
   {#if hasDetails(entry)}
-    <details class="item-details" bind:open={expanded}>
-      <summary>Notes & media <span aria-hidden="true">+</span></summary>
+    <div class="item-details">
+      <button
+        class="details-trigger"
+        aria-expanded={expanded}
+        aria-controls={`${entry.id}-details`}
+        onclick={() => (expanded = !expanded)}
+        >Notes & media <span aria-hidden="true">+</span></button
+      >
       {#if expanded}
-        <div class="prose">{@html descriptions.get(entry.id) ?? ''}</div>
-        {#if entry.technologies.length}<p class="mt-5 text-sm">
-            <strong>Built with:</strong>
-            {entry.technologies.map((tech) => tech.label).join(', ')}
-          </p>{/if}
-        {#if gallery.length || entry.media.animation}<div class="screenshot-grid">
-            {#if entry.media.animation}
-              <GameplayAnimation
-                src={assetUrl(entry, entry.media.animation)}
-                poster={cover ? assetUrl(entry, cover) : undefined}
-                title={entry.title}
-              />
-            {/if}
-            {#each gallery as image}
-              {#if image.src.endsWith('.gif')}
+        <div
+          id={`${entry.id}-details`}
+          class="details-content"
+          inert={!expanded}
+          transition:revealDetails
+        >
+          <div class="prose">{@html descriptions.get(entry.id) ?? ''}</div>
+          {#if entry.technologies.length}<p class="mt-5 text-sm">
+              <strong>Built with:</strong>
+              {entry.technologies.map((tech) => tech.label).join(', ')}
+            </p>{/if}
+          {#if gallery.length || entry.media.animation}<div class="screenshot-grid">
+              {#if entry.media.animation}
                 <GameplayAnimation
-                  src={assetUrl(entry, image.src)}
+                  src={assetUrl(entry, entry.media.animation)}
                   poster={cover ? assetUrl(entry, cover) : undefined}
-                  title={image.alt}
+                  title={entry.title}
                 />
-              {:else}<a href={assetUrl(entry, image.src)} target="_blank" rel="noreferrer"
-                  ><img
+              {/if}
+              {#each gallery as image}
+                {#if image.src.endsWith('.gif')}
+                  <GameplayAnimation
                     src={assetUrl(entry, image.src)}
-                    alt={image.alt}
-                    loading="lazy"
-                    decoding="async"
-                  /></a
-                >{/if}{/each}
-          </div>{/if}
-        {#if entry.media.videos.length}<div class="entry-links">
-            {#each entry.media.videos as video}<a href={video.src}>{video.label} ↗</a>{/each}
-          </div>{/if}
-        {#if entry.preview.url && (entry.preview.desktop || entry.preview.mobile)}<a
-            class="entry-link"
-            href={entry.preview.url}
-            target="_blank"
-            rel="noreferrer">Open playable preview ↗</a
-          >{/if}
+                    poster={cover ? assetUrl(entry, cover) : undefined}
+                    title={image.alt}
+                  />
+                {:else}<a href={assetUrl(entry, image.src)} target="_blank" rel="noreferrer"
+                    ><img
+                      src={assetUrl(entry, image.src)}
+                      alt={image.alt}
+                      loading="lazy"
+                      decoding="async"
+                    /></a
+                  >{/if}{/each}
+            </div>{/if}
+          {#if entry.media.videos.length}<div class="entry-links">
+              {#each entry.media.videos as video}<a href={video.src}>{video.label} ↗</a>{/each}
+            </div>{/if}
+          {#if entry.preview.url && (entry.preview.desktop || entry.preview.mobile)}<a
+              class="entry-link"
+              href={entry.preview.url}
+              target="_blank"
+              rel="noreferrer">Open playable preview ↗</a
+            >{/if}
+        </div>
       {/if}
-    </details>
+    </div>
   {/if}
 </article>

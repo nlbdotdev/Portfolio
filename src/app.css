@@ -436,7 +436,7 @@ h1 {
 .item-details {
   margin-top: 16px;
 }
-.item-details > summary {
+.item-details > .details-trigger {
   display: flex;
   width: fit-content;
   margin-left: auto;
@@ -446,10 +446,7 @@ h1 {
   color: var(--muted);
   list-style: none;
 }
-.item-details > summary::-webkit-details-marker {
-  display: none;
-}
-.item-details[open] > summary > span {
+.details-trigger[aria-expanded='true'] > span {
   transform: rotate(45deg);
 }
 .prose {
@@ -1471,4 +1468,24 @@ html {
   aspect-ratio: 16 / 9;
   object-fit: contain;
   background: #101010;
+}
+
+.details-trigger > span {
+  display: inline-block;
+  transition: transform 240ms ease;
+}
+.details-trigger {
+  transition: color 160ms ease;
+}
+.details-trigger:hover {
+  color: var(--rust);
+}
+.details-content {
+  display: flow-root;
+}
+@media (prefers-reduced-motion: reduce) {
+  .details-trigger,
+  .details-trigger > span {
+    transition: none;
+  }
 }
