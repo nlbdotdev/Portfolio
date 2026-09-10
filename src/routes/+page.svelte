@@ -108,45 +108,62 @@
   function revealOnScroll(node: HTMLElement) {
     let previousY = window.scrollY;
     let promptSeenAt: number | null = null;
-    let promptSeenY = 0;
+    let touchY = 0;
+    function attempt(down: boolean, intentional = false) {
+      const now = performance.now();
+      const rect = node.getBoundingClientRect();
+      const visible = rect.top < window.innerHeight * 0.85 && rect.bottom > 0;
+      if (!visible) {
+        promptSeenAt = null;
+        return;
+      }
+      if (promptSeenAt === null) promptSeenAt = now;
+      if (now < archiveRevealAfter) return;
+      if (intentional) archiveArmed = true;
+      // Scroll intent still works at the bottom, where scrollY cannot increase.
+      if (down && archiveArmed && now - promptSeenAt >= 180) showArchive = true;
+    }
+    const onScroll = () => {
+      const y = window.scrollY;
+      attempt(y > previousY);
+      previousY = y;
+    };
+    const onWheel = (event: WheelEvent) => attempt(event.deltaY > 0, true);
+    const onTouchStart = (event: TouchEvent) => {
+      touchY = event.touches[0]?.clientY ?? 0;
+    };
+    const onTouchMove = (event: TouchEvent) => {
+      const y = event.touches[0]?.clientY ?? touchY;
+      attempt(touchY - y > 3, true);
+      touchY = y;
+    };
+    const onKey = (event: KeyboardEvent) => {
+      if (
+        event.target instanceof Element &&
+        event.target.closest('input, textarea, select, button, a, [contenteditable]')
+      )
+        return;
+      if (['ArrowDown', 'PageDown', 'End', ' '].includes(event.key) && !event.shiftKey)
+        attempt(true, true);
+    };
     const arm = () => {
       if (performance.now() >= archiveRevealAfter) archiveArmed = true;
     };
-    window.addEventListener('wheel', arm, { passive: true });
-    window.addEventListener('touchmove', arm, { passive: true });
-    window.addEventListener('pointerdown', arm, { passive: true });
-    window.addEventListener('keydown', arm);
-    const onScroll = () => {
-      const y = window.scrollY;
-      const down = y > previousY;
-      previousY = y;
-      const rect = node.getBoundingClientRect();
-      const clearlyVisible = rect.top < window.innerHeight * 0.65 && rect.bottom > 0;
-      if (!clearlyVisible) promptSeenAt = null;
-      else if (promptSeenAt === null) {
-        promptSeenAt = performance.now();
-        promptSeenY = y;
-      }
-      if (
-        promptSeenAt !== null &&
-        performance.now() - promptSeenAt > 600 &&
-        y - promptSeenY > 120 &&
-        archiveArmed &&
-        performance.now() >= archiveRevealAfter &&
-        down &&
-        clearlyVisible &&
-        rect.bottom > 0
-      )
-        showArchive = true;
-    };
     window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('wheel', onWheel, { passive: true });
+    window.addEventListener('touchstart', onTouchStart, { passive: true });
+    window.addEventListener('touchmove', onTouchMove, { passive: true });
+    window.addEventListener('pointerdown', arm, { passive: true });
+    window.addEventListener('keydown', onKey);
+    attempt(false);
     return {
-      destroy: () => {
+      destroy() {
         window.removeEventListener('scroll', onScroll);
-        window.removeEventListener('wheel', arm);
-        window.removeEventListener('touchmove', arm);
+        window.removeEventListener('wheel', onWheel);
+        window.removeEventListener('touchstart', onTouchStart);
+        window.removeEventListener('touchmove', onTouchMove);
         window.removeEventListener('pointerdown', arm);
-        window.removeEventListener('keydown', arm);
+        window.removeEventListener('keydown', onKey);
       },
     };
   }
