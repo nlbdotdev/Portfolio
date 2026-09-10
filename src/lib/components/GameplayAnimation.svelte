@@ -1,6 +1,11 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  let { src, poster, title }: { src: string; poster?: string; title: string } = $props();
+  let {
+    src,
+    poster,
+    title,
+    onopen,
+  }: { src: string; poster?: string; title: string; onopen?: () => void } = $props();
   let container: HTMLElement;
   let inView = $state(false);
   let paused = $state(false);
@@ -42,10 +47,18 @@
 <button
   class="gameplay-media"
   bind:this={container}
-  onclick={toggle}
-  aria-label={`${failed ? 'Retry' : paused ? 'Play' : 'Pause'} ${title} gameplay`}
+  onclick={onopen ?? toggle}
+  aria-label={onopen
+    ? `Open ${title} media`
+    : `${failed ? 'Retry' : paused ? 'Play' : 'Pause'} ${title} gameplay`}
   aria-pressed={paused}
-  title={failed ? 'Click to retry' : paused ? 'Click to play' : 'Click to pause'}
+  title={onopen
+    ? 'Open media viewer'
+    : failed
+      ? 'Click to retry'
+      : paused
+        ? 'Click to play'
+        : 'Click to pause'}
 >
   <span class="gameplay-frame">
     {#if poster}<img

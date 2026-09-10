@@ -1,4 +1,5 @@
 <script lang="ts">
+  import MediaViewer, { type GalleryMedia } from './MediaViewer.svelte';
   import { slide } from 'svelte/transition';
   import { cubicInOut } from 'svelte/easing';
   import GameplayAnimation from './GameplayAnimation.svelte';
@@ -47,6 +48,38 @@
       })),
     ].filter((image, i, all) => all.findIndex((x) => x.src === image.src) === i),
   );
+  let mediaIndex = $state<number | null>(null);
+  const galleryMedia = $derived<GalleryMedia[]>([
+    ...(entry.media.animation
+      ? [
+          {
+            src: assetUrl(entry, entry.media.animation),
+            alt: `${entry.title} gameplay`,
+            type: 'animation' as const,
+            poster: cover ? assetUrl(entry, cover) : undefined,
+          },
+        ]
+      : []),
+    ...gallery.map((image) => ({
+      src: assetUrl(entry, image.src),
+      alt: image.alt,
+      type: image.src.endsWith('.gif') ? ('animation' as const) : ('image' as const),
+    })),
+    ...entry.media.videos.map((video) => ({
+      src: video.src,
+      alt: video.label,
+      type: 'video' as const,
+    })),
+  ]);
+  const viewerMedia = $derived<GalleryMedia[]>([
+    ...(cover && !galleryMedia.some((item) => item.src === assetUrl(entry, cover))
+      ? [{ src: assetUrl(entry, cover), alt: `${entry.title} cover`, type: 'image' as const }]
+      : []),
+    ...galleryMedia,
+  ]);
+  function openMedia(src: string) {
+    mediaIndex = viewerMedia.findIndex((item) => item.src === src);
+  }
 </script>
 
 <article
@@ -63,8 +96,13 @@
           entry.id,
         )}
         class:white-logo={['company-fablevision', 'education-praxis'].includes(entry.id)}
-        href={modal ? assetUrl(entry, cover) : `?project=${entry.id}`}
+        href={modal ? assetUrl(entry, cover) : `?item=${entry.slug}`}
         onclick={(event) => {
+          if (modal) {
+            event.preventDefault();
+            openMedia(assetUrl(entry, cover!));
+            return;
+          }
           if (
             !modal &&
             onopen &&
@@ -102,7 +140,7 @@
           {#each entry.tags as tag}<li>{tag}</li>{/each}
         </ul>{/if}
       {#if entry.links.length}<div class="entry-links">
-          {#each entry.links as link}<a href={link.link}
+          {#each entry.links as link}<a href={link.link} target="_blank" rel="noopener noreferrer"
               >{link.label} <span aria-hidden="true">↗</span></a
             >{/each}
         </div>{/if}
@@ -129,32 +167,33 @@
               <strong>Built with:</strong>
               {entry.technologies.map((tech) => tech.label).join(', ')}
             </p>{/if}
-          {#if gallery.length || entry.media.animation}<div class="screenshot-grid">
-              {#if entry.media.animation}
-                <GameplayAnimation
-                  src={assetUrl(entry, entry.media.animation)}
-                  poster={cover ? assetUrl(entry, cover) : undefined}
-                  title={entry.title}
-                />
-              {/if}
-              {#each gallery as image}
-                {#if image.src.endsWith('.gif')}
+          {#if galleryMedia.length}<div
+              class="screenshot-grid adaptive-gallery"
+              class:odd-gallery={galleryMedia.length % 2 === 1}
+              class:single-gallery={galleryMedia.length === 1}
+            >
+              {#each galleryMedia as item}
+                {#if item.type === 'animation'}
                   <GameplayAnimation
-                    src={assetUrl(entry, image.src)}
-                    poster={cover ? assetUrl(entry, cover) : undefined}
-                    title={image.alt}
+                    src={item.src}
+                    poster={item.poster}
+                    title={item.alt}
+                    onopen={() => openMedia(item.src)}
                   />
-                {:else}<a href={assetUrl(entry, image.src)} target="_blank" rel="noreferrer"
-                    ><img
-                      src={assetUrl(entry, image.src)}
-                      alt={image.alt}
-                      loading="lazy"
-                      decoding="async"
-                    /></a
-                  >{/if}{/each}
-            </div>{/if}
-          {#if entry.media.videos.length}<div class="entry-links">
-              {#each entry.media.videos as video}<a href={video.src}>{video.label} ↗</a>{/each}
+                {:else}<button
+                    class="gallery-preview"
+                    onclick={() => openMedia(item.src)}
+                    aria-label={`Open ${item.alt} media`}
+                  >
+                    {#if item.type === 'video'}<span class="video-preview">▶ {item.alt}</span>
+                    {:else}<img
+                        src={item.src}
+                        alt={item.alt}
+                        loading="lazy"
+                        decoding="async"
+                      />{/if}
+                  </button>{/if}
+              {/each}
             </div>{/if}
           {#if entry.preview.url && (entry.preview.desktop || entry.preview.mobile)}<a
               class="entry-link"
@@ -167,3 +206,12 @@
     </div>
   {/if}
 </article>
+
+{#if mediaIndex !== null}
+  <MediaViewer
+    media={viewerMedia}
+    initial={mediaIndex}
+    title={entry.title}
+    onclose={() => (mediaIndex = null)}
+  />
+{/if}

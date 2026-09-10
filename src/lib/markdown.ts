@@ -11,7 +11,7 @@ export function renderMarkdown(body: string, asset: (path: string) => string): s
   renderer.link = function ({ href, tokens }) {
     const text = this.parser.parseInline(tokens);
     if (!/^(https?:\/\/|mailto:|#)/i.test(href)) return text;
-    return `<a href="${escapeHtml(href)}" rel="noreferrer">${text}</a>`;
+    return `<a href="${escapeHtml(href)}" ${/^https?:/i.test(href) ? 'target="_blank" rel="noopener noreferrer"' : ''}>${text}</a>`;
   };
   renderer.image = ({ href, text }) =>
     href.startsWith('assets/')

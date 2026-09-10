@@ -24,13 +24,15 @@
   const selectedProject = $derived(entries.find((entry) => entry.id === selectedId));
   function openProject(id: string) {
     const url = new URL(page.url);
-    url.searchParams.set('project', id);
+    url.searchParams.delete('project');
+    url.searchParams.set('item', entries.find((entry) => entry.id === id)!.slug);
     pushState(url, {});
     selectedId = id;
   }
   function closeProject() {
     const url = new URL(page.url);
     url.searchParams.delete('project');
+    url.searchParams.delete('item');
     selectedId = null;
     replaceState(url, {});
   }
@@ -70,7 +72,10 @@
   onMount(() => {
     today = new Date();
     const syncProject = () => {
-      selectedId = new URL(location.href).searchParams.get('project');
+      const url = new URL(location.href);
+      selectedId =
+        entries.find((entry) => entry.slug === url.searchParams.get('item'))?.id ??
+        url.searchParams.get('project');
     };
     syncProject();
     window.addEventListener('popstate', syncProject);
@@ -150,7 +155,9 @@
     <div class="studio-feature">
       <aside class="now">
         <span class="eyebrow">Now</span>
-        <a href="https://deadtraveler.com">Dead Traveler ↗</a>
+        <a href="https://deadtraveler.com" target="_blank" rel="noopener noreferrer"
+          >Dead Traveler ↗</a
+        >
         <p>Independent games / In progress</p>
       </aside>
       <button

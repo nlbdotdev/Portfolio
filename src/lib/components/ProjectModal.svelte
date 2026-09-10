@@ -11,6 +11,7 @@
     const overflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     dialog.showModal();
+    dialog.focus();
     return () => {
       document.body.style.overflow = overflow;
       previous?.focus({ preventScroll: true });
@@ -18,7 +19,10 @@
   });
   async function copyLink() {
     try {
-      await navigator.clipboard.writeText(location.href);
+      const url = new URL(location.href);
+      url.searchParams.delete('project');
+      url.searchParams.set('item', entry.slug);
+      await navigator.clipboard.writeText(url.href);
       copied = true;
     } catch {
       copyFailed = true;
@@ -29,6 +33,7 @@
 <dialog
   bind:this={dialog}
   class="project-modal"
+  tabindex="-1"
   aria-label={entry.title}
   oncancel={(event) => {
     event.preventDefault();
