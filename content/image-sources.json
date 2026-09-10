@@ -240,5 +240,23 @@
     "item": "company-codetrust",
     "path": "assets/stareworthy.webp",
     "source": "https://www.stareworthy.com/"
+  },
+  {
+    "item": "company-stage3",
+    "path": "assets/cover.png",
+    "source": "https://stage3.io/",
+    "assetUrl": "https://stage3.io/"
+  },
+  {
+    "item": "company-stage3",
+    "path": "assets/systems.png",
+    "source": "https://stage3.io/",
+    "assetUrl": "https://stage3.io/"
+  },
+  {
+    "item": "company-stage3",
+    "path": "assets/logo.svg",
+    "source": "https://stage3.io/",
+    "assetUrl": "https://stage3.io/icon.svg"
   }
 ]

@@ -1,0 +1,52 @@
+{
+  "id": "company-stage3",
+  "kind": "company",
+  "slug": "stage3",
+  "legacyPath": null,
+  "title": "Stage.3",
+  "role": "Game publishing",
+  "summary": "A publishing platform and launch system helping ambitious games find their audience and build momentum beyond launch.",
+  "body": "### Publishing beyond launch\n\nStage.3 brings together audience discovery, game positioning, and launch systems to help game teams reach players and sustain momentum.\n\nIts approach is built around three connected stages:\n\n- **Ignition:** Clarify the message and identify the right audience.\n- **Thrust:** Build a recognizable world around the game that players can discover and share.\n- **Escape:** Establish launch systems that continue supporting the game after release.\n",
+  "date": {
+    "label": "Sep 2026 — Present",
+    "value": "2026-09",
+    "precision": "month",
+    "end": null,
+    "ongoing": true
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": ["Game publishing", "Audience development", "Launch strategy"],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://stage3.io/"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": null,
+    "icon": "assets/logo.svg",
+    "images": [
+      {
+        "src": "assets/systems.png",
+        "alt": "Stage.3 — Ignition, Thrust, and Escape publishing systems"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 46,
+  "provenance": {
+    "source": "https://stage3.io/; September 2026 start supplied by Nathan. Description summarizes the public platform; no personal job title assumed.",
+    "datesNeedReview": false
+  }
+}
