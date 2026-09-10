@@ -1,0 +1,33 @@
+{
+  "sourceThread": "01a07f15-57e2-7a93-af7f-f3cacbbe2dd2",
+  "images": [
+    {
+      "file": "01-initial-directions.png",
+      "description": "Initial three-direction comparison",
+      "originalFilename": "exec-79291ba5-49df-432b-be3b-f8047fcf1511.png",
+      "sha256": "5f80b1d65eacf9a5a1da222d6a6a1cc7e030fe24828b53d5aa08a4b118f00041",
+      "bytes": 2010161
+    },
+    {
+      "file": "02-refined-directions.png",
+      "description": "Refined three-direction comparison",
+      "originalFilename": "exec-0bb6ff69-dea5-49d8-9ee8-6cb691e1ca04.png",
+      "sha256": "6d3cad2f5365ea4e3eadbbccd707f8f3db5555fb73702ad94b73dd7c77083d4a",
+      "bytes": 1764723
+    },
+    {
+      "file": "03-editorial-portfolio.png",
+      "description": "Single editorial portfolio concept",
+      "originalFilename": "exec-5b978c45-80f2-4c4d-9c65-5576be8bd5e8.png",
+      "sha256": "a343fd382d422a77828c36b77622a77f55d80dfd645dc771a804ce2aee61992b",
+      "bytes": 1172024
+    },
+    {
+      "file": "04-unified-timeline.png",
+      "description": "Revised single full-width timeline concept",
+      "originalFilename": "exec-fadd146f-657d-4222-a6e4-2f8a315a0301.png",
+      "sha256": "506a3f71aa56b12da5bd0c9af8fc45a7e1aa6f2ff79f73feb76b939699f53eb1",
+      "bytes": 1480022
+    }
+  ]
+}
