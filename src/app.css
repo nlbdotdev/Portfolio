@@ -1740,3 +1740,81 @@ html {
     transition: none;
   }
 }
+
+.in-between {
+  color: var(--header-accent);
+  font-style: italic;
+}
+.year-guide-segment .year-guide-notch {
+  left: -9px;
+  width: 9px;
+}
+.project-modal {
+  width: min(1100px, calc(100vw - 32px));
+  max-height: calc(100dvh - 40px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  overscroll-behavior: contain;
+}
+.project-modal::backdrop {
+  background: rgb(0 0 0 / 65%);
+  backdrop-filter: blur(5px);
+}
+.project-modal[open] {
+  animation: project-appear 220ms ease-out;
+}
+.project-modal-inner {
+  padding: clamp(18px, 4vw, 48px);
+}
+.project-modal-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.project-modal-controls button {
+  color: var(--rust);
+  cursor: pointer;
+}
+.project-modal .entry {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.project-modal .connection {
+  display: none;
+}
+.project-modal .item-details {
+  margin-top: 24px;
+}
+.project-modal .screenshot-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.project-modal .screenshot-grid img {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+@keyframes project-appear {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 650px) {
+  .project-modal .screenshot-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-modal[open] {
+    animation: none;
+  }
+}

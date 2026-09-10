@@ -56,6 +56,7 @@ export const entrySchema = z
     summary: z.string().trim().min(1),
     body: z.string().trim().min(1),
     date: dateSchema,
+    timelineAfter: z.string().nullable().default(null),
     featured: z.boolean(),
     showInEverything: z.boolean().default(false),
     draft: z.boolean().default(false),

@@ -4,19 +4,23 @@
   import GameplayAnimation from './GameplayAnimation.svelte';
   import type { Entry } from '../../../content/schema.ts';
   import { assetUrl, descriptions, hasDetails } from '$lib/content';
-  import { railOf } from '$lib/timeline';
+  import { formatTimelineDate, railOf } from '$lib/timeline';
   let {
     entry,
     splitProjects = false,
+    modal = false,
+    onopen,
     expanded = $bindable(false),
   }: {
     entry: Entry;
     splitProjects?: boolean;
+    modal?: boolean;
+    onopen?: (id: string) => void;
     expanded?: boolean;
   } = $props();
   function revealDetails(node: HTMLElement) {
     return slide(node, {
-      duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 320,
+      duration: modal || matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 320,
       easing: cubicInOut,
     });
   }
@@ -45,7 +49,11 @@
   );
 </script>
 
-<article id={entry.id} class="entry" style={`--track:${color};--station:${rail.station}`}>
+<article
+  id={modal ? `modal-${entry.id}` : entry.id}
+  class="entry"
+  style={`--track:${color};--station:${rail.station}`}
+>
   <div class="connection" aria-hidden="true"><span></span></div>
   <div class="entry-layout" class:has-cover={cover}>
     {#if cover}<a
@@ -55,10 +63,21 @@
           entry.id,
         )}
         class:white-logo={['company-fablevision', 'education-praxis'].includes(entry.id)}
-        href={assetUrl(entry, cover)}
-        target="_blank"
-        rel="noreferrer"
-        aria-label={`Open ${entry.title} cover`}
+        href={modal ? assetUrl(entry, cover) : `?project=${entry.id}`}
+        onclick={(event) => {
+          if (
+            !modal &&
+            onopen &&
+            !event.metaKey &&
+            !event.ctrlKey &&
+            !event.shiftKey &&
+            !event.altKey
+          ) {
+            event.preventDefault();
+            onopen(entry.id);
+          }
+        }}
+        aria-label={`Open ${entry.title} details`}
         ><img
           src={assetUrl(entry, cover)}
           alt={`${entry.title} ${cover === entry.media.icon ? 'logo' : 'cover'}`}
@@ -74,7 +93,7 @@
     <div class="entry-main">
       <div class="entry-meta">
         <span>{label} / {entry.role}</span><time datetime={entry.date.value ?? undefined}
-          >{entry.date.label ?? 'Date to be added'}</time
+          >{formatTimelineDate(entry)}</time
         >
       </div>
       <h3>{entry.title}</h3>
@@ -89,20 +108,20 @@
         </div>{/if}
     </div>
   </div>
-  {#if hasDetails(entry)}
+  {#if modal || hasDetails(entry)}
     <div class="item-details">
-      <button
-        class="details-trigger"
-        aria-expanded={expanded}
-        aria-controls={`${entry.id}-details`}
-        onclick={() => (expanded = !expanded)}
-        >Notes & media <span aria-hidden="true">+</span></button
-      >
-      {#if expanded}
+      {#if !modal}<button
+          class="details-trigger"
+          aria-expanded={expanded}
+          aria-controls={`${entry.id}-details`}
+          onclick={() => (expanded = !expanded)}
+          >Notes & media <span aria-hidden="true">+</span></button
+        >{/if}
+      {#if modal || expanded}
         <div
-          id={`${entry.id}-details`}
+          id={`${modal ? 'modal-' : ''}${entry.id}-details`}
           class="details-content"
-          inert={!expanded}
+          inert={!modal && !expanded}
           transition:revealDetails
         >
           <div class="prose">{@html descriptions.get(entry.id) ?? ''}</div>

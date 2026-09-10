@@ -32,9 +32,18 @@ export function timelineDate(entry: Entry): string | null {
   return entry.date.end ?? entry.date.value;
 }
 export function sortTimeline(entries: Entry[]): Entry[] {
-  return [...entries].sort(
+  const sorted = [...entries].sort(
     (a, b) => (timelineDate(b) ?? '').localeCompare(timelineDate(a) ?? '') || a.order - b.order,
   );
+  // Editorial placement changes presentation only, never employment dates.
+  for (const entry of entries) {
+    if (!entry.timelineAfter) continue;
+    const anchor = sorted.find((candidate) => candidate.id === entry.timelineAfter);
+    if (!anchor || yearOf(anchor) !== yearOf(entry)) continue;
+    sorted.splice(sorted.indexOf(entry), 1);
+    sorted.splice(sorted.indexOf(anchor) + 1, 0, entry);
+  }
+  return sorted;
 }
 export function yearOf(entry: Entry): string {
   return timelineDate(entry)?.slice(0, 4) ?? 'Undated';
@@ -78,4 +87,22 @@ export function splitTimeline(entries: Entry[], includeHighlights = false) {
     if (!isArchive(entry) || (includeHighlights && entry.showInEverything)) boundary = index + 1;
   });
   return { visible: entries.slice(0, boundary), history: entries.slice(boundary) };
+}
+
+/** Display month precision without discarding exact source dates used for sorting. */
+export function formatTimelineDate(entry: Entry): string {
+  const format = (value: string) =>
+    value.length === 4
+      ? value
+      : new Intl.DateTimeFormat('en-US', {
+          month: 'short',
+          year: 'numeric',
+          timeZone: 'UTC',
+        }).format(new Date(`${value.slice(0, 7)}-01T00:00:00Z`));
+  if (!entry.date.value) return 'Date to be added';
+  const start = format(entry.date.value);
+  const suffix = entry.date.label?.includes(' · ')
+    ? ` · ${entry.date.label.split(' · ').slice(1).join(' · ')}`
+    : '';
+  return `${start}${entry.date.ongoing ? ' — Present' : entry.date.end ? ` — ${format(entry.date.end)}` : ''}${suffix}`;
 }

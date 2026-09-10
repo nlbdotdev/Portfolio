@@ -5,6 +5,7 @@ import { readCatalog } from './library';
 import { catalogSchema, entrySchema } from '../../content/schema.ts';
 import {
   sortTimeline,
+  formatTimelineDate,
   matchesSearch,
   trackOf,
   yearOf,
@@ -95,4 +96,17 @@ test('archive remains a chronological tail when Everything promotes older entrie
     const sections = splitTimeline(subset);
     assert.deepEqual([...sections.visible, ...sections.history], subset);
   }
+});
+
+test('editorial order preserves real dates and display omits days', () => {
+  const psi = entries.find((entry) => entry.id === 'company-psiquantum')!;
+  const studio = entries.find((entry) => entry.id === 'company-dead-traveler')!;
+  const zombie = entries.find((entry) => entry.id === 'game-zombiehood')!;
+  assert.deepEqual(
+    sortTimeline([psi, studio, zombie]).map((e) => e.id),
+    [zombie.id, studio.id, psi.id],
+  );
+  assert.equal(psi.date.end, '2026-05');
+  assert.equal(formatTimelineDate(psi), 'Apr 2025 — May 2026');
+  assert.equal(formatTimelineDate(example), 'Oct 2023 · Steam release');
 });
