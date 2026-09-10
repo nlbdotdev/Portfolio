@@ -8,8 +8,8 @@
   "summary": "An independent venture studio, building deliberately and partnering early. Selected ventures include Dead Traveler and Stage 3.",
   "body": "An independent venture studio, building deliberately and partnering early. Selected ventures include Dead Traveler and Stage 3.\n",
   "date": {
-    "label": "Sep 2026 — Present",
-    "value": "2026-09",
+    "label": "Aug 2026 — Present",
+    "value": "2026-08",
     "precision": "month",
     "end": null,
     "ongoing": true
@@ -41,7 +41,7 @@
   "legacyPresentation": {},
   "order": 45,
   "provenance": {
-    "source": "https://syntropy.sh/; start date supplied by Nathan (September 2026)",
+    "source": "https://syntropy.sh/; start date corrected by Nathan to August 2026",
     "datesNeedReview": false
   }
 }
