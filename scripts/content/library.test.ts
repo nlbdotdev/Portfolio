@@ -5,6 +5,7 @@ import { readCatalog } from './library';
 import { catalogSchema, entrySchema } from '../../content/schema.ts';
 import {
   sortTimeline,
+  formatTimelineDate,
   matchesSearch,
   trackOf,
   yearOf,
@@ -81,18 +82,32 @@ test('timeline groups and orders completed work by its end date', () => {
     [pilot.id, codeTrust.id],
   );
   const spanning = { ...codeTrust, date: { ...codeTrust.date, value: '2018-01', end: '2021-01' } };
-  assert.equal(isArchive(spanning), false);
+  assert.equal(isArchive(spanning, new Date('2023-01-01')), false);
+  assert.equal(isArchive(spanning, new Date('2026-09-10')), true);
 });
 
-test('archive remains a chronological tail when Everything promotes older entries', () => {
+test('archive remains a chronological tail across collection filters', () => {
   const sorted = sortTimeline(entries.filter((entry) => !entry.draft));
-  const { visible, history } = splitTimeline(sorted, true);
+  const { visible, history } = splitTimeline(sorted);
   assert.deepEqual([...visible, ...history], sorted);
-  assert(visible.some((entry) => entry.id === 'project-pexels-search'));
-  assert(visible.some((entry) => entry.id === 'education-jmu'));
+  assert(history.some((entry) => entry.id === 'project-pexels-search'));
+  assert(history.some((entry) => entry.id === 'education-jmu'));
   for (const track of ['company', 'education', 'project'] as const) {
     const subset = sorted.filter((entry) => trackOf(entry) === track);
     const sections = splitTimeline(subset);
     assert.deepEqual([...sections.visible, ...sections.history], subset);
   }
+});
+
+test('editorial order preserves real dates and display omits days', () => {
+  const psi = entries.find((entry) => entry.id === 'company-psiquantum')!;
+  const studio = entries.find((entry) => entry.id === 'company-dead-traveler')!;
+  const zombie = entries.find((entry) => entry.id === 'game-zombiehood')!;
+  assert.deepEqual(
+    sortTimeline([psi, studio, zombie]).map((e) => e.id),
+    [zombie.id, studio.id, psi.id],
+  );
+  assert.equal(psi.date.end, '2026-05');
+  assert.equal(formatTimelineDate(psi), 'Apr 2025 — May 2026');
+  assert.equal(formatTimelineDate(example), 'Oct 2023 · Steam release');
 });

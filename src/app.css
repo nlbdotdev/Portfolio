@@ -1740,3 +1740,284 @@ html {
     transition: none;
   }
 }
+
+.in-between {
+  color: var(--header-accent);
+  font-style: italic;
+}
+.year-guide-segment .year-guide-notch {
+  left: -9px;
+  width: 9px;
+}
+.project-modal {
+  width: min(1100px, calc(100vw - 32px));
+  max-height: calc(100dvh - 40px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  overscroll-behavior: contain;
+}
+.project-modal::backdrop {
+  background: rgb(0 0 0 / 65%);
+  backdrop-filter: blur(5px);
+}
+.project-modal[open] {
+  animation: project-appear 220ms ease-out;
+}
+.project-modal-inner {
+  padding: clamp(18px, 4vw, 48px);
+}
+.project-modal-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.project-modal-controls button {
+  color: var(--rust);
+  cursor: pointer;
+}
+.project-modal .entry {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.project-modal .connection {
+  display: none;
+}
+.project-modal .item-details {
+  margin-top: 24px;
+}
+.project-modal .screenshot-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.project-modal .screenshot-grid img {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+@keyframes project-appear {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 650px) {
+  .project-modal .screenshot-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-modal[open] {
+    animation: none;
+  }
+}
+
+.project-modal::backdrop,
+.media-viewer::backdrop {
+  background: rgb(30 35 34 / 20%);
+  backdrop-filter: blur(18px) saturate(0.75);
+}
+.project-modal,
+.media-viewer {
+  outline: none;
+}
+.adaptive-gallery,
+.project-modal .adaptive-gallery {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.adaptive-gallery > * {
+  grid-column: span 3;
+}
+.adaptive-gallery.odd-gallery > :nth-child(-n + 3) {
+  grid-column: span 2;
+}
+.adaptive-gallery.single-gallery > * {
+  grid-column: 1 / -1;
+}
+.gallery-preview {
+  cursor: zoom-in;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+.gallery-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.video-preview {
+  display: grid;
+  place-items: center;
+  min-height: 160px;
+  background: var(--surface);
+  color: var(--rust);
+}
+.media-viewer {
+  margin: auto;
+  width: min(1300px, calc(100vw - 24px));
+  max-height: calc(100dvh - 24px);
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  overscroll-behavior: contain;
+}
+.media-viewer-inner {
+  padding: clamp(12px, 2vw, 28px);
+}
+.media-viewer header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.media-viewer button {
+  cursor: pointer;
+}
+.media-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: min(65dvh, 750px);
+}
+.media-stage > img,
+.media-stage > .gameplay-media {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+.media-stage .gameplay-frame {
+  height: 100%;
+  aspect-ratio: auto;
+}
+.media-stage .gameplay-frame img {
+  object-fit: contain;
+}
+.media-stage iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.media-prev,
+.media-next {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  color: var(--rust);
+}
+.media-prev {
+  left: 4px;
+}
+.media-next {
+  right: 4px;
+}
+.media-caption {
+  text-align: center;
+  font-size: 13px;
+  margin: 12px 0;
+  color: var(--muted);
+}
+.media-thumbnails {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 8px;
+  padding: 4px;
+}
+.media-thumbnails button {
+  flex: 0 0 80px;
+  height: 56px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 11px;
+}
+.media-thumbnails button.chosen {
+  border-color: var(--rust);
+}
+.media-thumbnails img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+  .adaptive-gallery,
+  .project-modal .adaptive-gallery {
+    gap: 6px;
+  }
+  .media-stage {
+    height: 55dvh;
+  }
+}
+.media-stage > .gameplay-media {
+  width: 100%;
+  border: 0;
+}
+.media-stage .gameplay-frame {
+  background: transparent;
+}
+.media-stage .gameplay-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.media-thumbnails {
+  justify-content: safe center;
+}
+/* Still images stay three across; motion leads with a pair, then triples. */
+.adaptive-gallery > *,
+.adaptive-gallery.odd-gallery > :nth-child(-n + 3) {
+  grid-column: span 2;
+}
+.adaptive-gallery.motion-gallery > :nth-child(-n + 2) {
+  grid-column: span 3;
+}
+.adaptive-gallery.bethesda-gallery > :nth-child(n + 4) {
+  grid-column: span 3;
+}
+.adaptive-gallery.single-gallery > * {
+  grid-column: 1 / -1;
+}
+.embedded-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.embedded-video button {
+  font-size: 12px;
+  color: var(--rust);
+  margin-top: 6px;
+  cursor: pointer;
+}
+.entry-cover {
+  position: relative;
+}
+.entry-cover .hover-preview {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--paper);
+  border: 0;
+  pointer-events: none;
+  z-index: 2;
+}

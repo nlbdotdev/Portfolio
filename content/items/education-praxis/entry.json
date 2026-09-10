@@ -8,10 +8,10 @@
   "summary": "Career development and project management.",
   "body": "Career development and project management.\n",
   "date": {
-    "label": "2017",
-    "value": "2017",
-    "precision": "year",
-    "end": null,
+    "label": null,
+    "value": "2017-01",
+    "precision": "month",
+    "end": "2017-03",
     "ongoing": false
   },
   "featured": true,
@@ -41,8 +41,8 @@
   "legacyPresentation": {},
   "order": 41,
   "provenance": {
-    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
-    "datesNeedReview": true
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2); Jan–Mar 2017 confirmed by user",
+    "datesNeedReview": false
   },
   "showInEverything": true
 }

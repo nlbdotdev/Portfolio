@@ -8,10 +8,10 @@
   "summary": "The early years.",
   "body": "The early years.\n",
   "date": {
-    "label": "2010 \u2014 2014",
-    "value": "2010",
-    "precision": "year",
-    "end": "2014",
+    "label": null,
+    "value": "2010-09",
+    "precision": "month",
+    "end": "2014-06",
     "ongoing": false
   },
   "featured": false,
@@ -41,7 +41,7 @@
   "legacyPresentation": {},
   "order": 43,
   "provenance": {
-    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2); Months estimated from typical academic year at user request",
     "datesNeedReview": true
   }
 }

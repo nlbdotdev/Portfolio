@@ -8,10 +8,10 @@
   "summary": "Studied computer science and mathematics before taking a different path.",
   "body": "Studied computer science and mathematics before taking a different path.\n",
   "date": {
-    "label": "2014 — 2016",
-    "value": "2014",
-    "precision": "year",
-    "end": "2016",
+    "label": null,
+    "value": "2014-08",
+    "precision": "month",
+    "end": "2016-05",
     "ongoing": false
   },
   "featured": true,
@@ -41,7 +41,7 @@
   "legacyPresentation": {},
   "order": 42,
   "provenance": {
-    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2); Months estimated from typical academic year at user request",
     "datesNeedReview": true
   },
   "showInEverything": true

@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { page } from '$app/state';
+  import { pushState, replaceState } from '$app/navigation';
+  import ProjectModal from '$lib/components/ProjectModal.svelte';
   import { yearGuide } from '$lib/year-guide';
   import { tick, onMount } from 'svelte';
   import { archivePreview } from '$lib/archive-preview';
@@ -17,16 +20,36 @@
     type Track,
     type ProjectFilter,
   } from '$lib/timeline';
+  let selectedId = $state<string | null>(null);
+  const selectedProject = $derived(entries.find((entry) => entry.id === selectedId));
+  function openProject(id: string) {
+    const url = new URL(page.url);
+    url.searchParams.delete('project');
+    url.searchParams.set('item', entries.find((entry) => entry.id === id)!.slug);
+    pushState(url, {});
+    selectedId = id;
+  }
+  function closeProject() {
+    const url = new URL(page.url);
+    url.searchParams.delete('project');
+    url.searchParams.delete('item');
+    selectedId = null;
+    replaceState(url, {});
+  }
+  let archiveReset = $state(0);
   let active = $state<Track | 'featured' | null>('featured');
   let projectFilter = $state<ProjectFilter>('all');
   let query = $state('');
   let showGuides = $state(false);
   let showArchive = $state(false);
   let archiveRevealAfter = 0;
+  let archiveArmed = true;
   async function changeTrack(track: Track | 'featured' | null) {
     if (track !== active) projectFilter = 'all';
     active = track;
     showArchive = false;
+    archiveReset += 1;
+    archiveArmed = false;
     // Don't mistake the view-reset scroll for a request to reveal history.
     archiveRevealAfter = performance.now() + 800;
     await tick();
@@ -48,6 +71,15 @@
   let today = $state(new Date());
   onMount(() => {
     today = new Date();
+    const syncProject = () => {
+      const url = new URL(location.href);
+      selectedId =
+        entries.find((entry) => entry.slug === url.searchParams.get('item'))?.id ??
+        url.searchParams.get('project');
+    };
+    syncProject();
+    window.addEventListener('popstate', syncProject);
+    return () => window.removeEventListener('popstate', syncProject);
   });
   const heroFeatured = ['game-zombiehood', 'company-syntropy', 'company-psiquantum'].map((id) =>
     entries.find((entry) => entry.id === id)!,
@@ -64,7 +96,7 @@
     ),
   );
   const timelineSections = $derived(
-    query.trim() ? { visible: matching, history: [] } : splitTimeline(matching, active === null),
+    query.trim() ? { visible: matching, history: [] } : splitTimeline(matching),
   );
   const visible = $derived(timelineSections.visible);
   const history = $derived(timelineSections.history);
@@ -75,29 +107,48 @@
   }
   function revealOnScroll(node: HTMLElement) {
     let previousY = window.scrollY;
+    let promptSeenAt: number | null = null;
+    let promptSeenY = 0;
+    const arm = () => {
+      if (performance.now() >= archiveRevealAfter) archiveArmed = true;
+    };
+    window.addEventListener('wheel', arm, { passive: true });
+    window.addEventListener('touchmove', arm, { passive: true });
+    window.addEventListener('pointerdown', arm, { passive: true });
+    window.addEventListener('keydown', arm);
     const onScroll = () => {
       const y = window.scrollY;
       const down = y > previousY;
       previousY = y;
       const rect = node.getBoundingClientRect();
+      const clearlyVisible = rect.top < window.innerHeight * 0.65 && rect.bottom > 0;
+      if (!clearlyVisible) promptSeenAt = null;
+      else if (promptSeenAt === null) {
+        promptSeenAt = performance.now();
+        promptSeenY = y;
+      }
       if (
+        promptSeenAt !== null &&
+        performance.now() - promptSeenAt > 600 &&
+        y - promptSeenY > 120 &&
+        archiveArmed &&
         performance.now() >= archiveRevealAfter &&
         down &&
-        rect.top < window.innerHeight * 0.8 &&
+        clearlyVisible &&
         rect.bottom > 0
       )
         showArchive = true;
     };
     window.addEventListener('scroll', onScroll, { passive: true });
-    return { destroy: () => window.removeEventListener('scroll', onScroll) };
-  }
-  function follow(id: string) {
-    showArchive = true;
-    active = null;
-    query = '';
-    requestAnimationFrame(() =>
-      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'center' }),
-    );
+    return {
+      destroy: () => {
+        window.removeEventListener('scroll', onScroll);
+        window.removeEventListener('wheel', arm);
+        window.removeEventListener('touchmove', arm);
+        window.removeEventListener('pointerdown', arm);
+        window.removeEventListener('keydown', arm);
+      },
+    };
   }
 </script>
 
@@ -110,17 +161,19 @@
 <main id="top">
   <section class="intro" id="about">
     <div class="intro-copy">
-      <h1>Games, software,<br />and things<br />in between.</h1>
+      <h1>Games, software,<br />and things<br /><em class="in-between">in between.</em></h1>
     </div>
     <div class="studio-feature">
       <aside class="now">
         <span class="eyebrow">Now</span>
-        <a href="https://deadtraveler.com">Dead Traveler ↗</a>
+        <a href="https://deadtraveler.com" target="_blank" rel="noopener noreferrer"
+          >Dead Traveler ↗</a
+        >
         <p>Independent games / In progress</p>
       </aside>
       <button
         class="studio-art"
-        onclick={() => follow(studio.id)}
+        onclick={() => openProject(studio.id)}
         aria-label="Explore Dead Traveler"
       >
         <img
@@ -137,7 +190,7 @@
     <div class="feature-grid">
       {#each heroFeatured as entry}
         {@const activity = lastActive(entry, today)}
-        <button class="feature" onclick={() => follow(entry.id)}>
+        <button class="feature" onclick={() => openProject(entry.id)}>
           <img
             class="feature-art"
             class:feature-logo={entry.kind === 'company' && !entry.media.cover}
@@ -263,6 +316,7 @@
             </div>{/if}
           <PortfolioItem
             {entry}
+            onopen={openProject}
             splitProjects={active === 'project'}
             bind:expanded={expandedEntries[entry.id]}
           />
@@ -275,54 +329,63 @@
               >{/if}{:else}No recent entries in this track. Explore the earlier chapters below.{/if}
         </p>{/each}
       {#if history.length}
-        <section id="archive" class="archive-section" aria-label="Earlier chapters">
-          <p class="eyebrow archive-heading">Earlier chapters</p>
-          <div class="archive-frame" class:preview={!showArchive} use:archivePreview={showArchive}>
-            <div class="archive-rows" inert={!showArchive} aria-hidden={!showArchive}>
-              {#each historyVisible as entry, i (entry.id)}
-                <div
-                  class="timeline-row"
-                  data-guide-year={yearOf(entry)}
-                  data-entry-number={String(visible.length + i + 1).padStart(2, '0')}
-                  transition:collectionTransition
+        {#key archiveReset}<section
+            id="archive"
+            class="archive-section"
+            aria-label="Earlier chapters"
+          >
+            <p class="eyebrow archive-heading">Earlier chapters</p>
+            <div
+              class="archive-frame"
+              class:preview={!showArchive}
+              use:archivePreview={showArchive}
+            >
+              <div class="archive-rows" inert={!showArchive} aria-hidden={!showArchive}>
+                {#each historyVisible as entry, i (entry.id)}
+                  <div
+                    class="timeline-row"
+                    data-guide-year={yearOf(entry)}
+                    data-entry-number={String(visible.length + i + 1).padStart(2, '0')}
+                    transition:collectionTransition
+                  >
+                    {#if i === 0 || yearOf(entry) !== yearOf(historyVisible[i - 1])}
+                      <div
+                        class="year"
+                        data-guide-year={yearOf(entry)}
+                        transition:collectionTransition
+                      >
+                        <span>{yearOf(entry)}</span>
+                      </div>
+                    {/if}
+                    <PortfolioItem
+                      {entry}
+                      onopen={openProject}
+                      splitProjects={active === 'project'}
+                      bind:expanded={expandedEntries[entry.id]}
+                    />
+                  </div>
+                {/each}
+              </div>
+            </div>
+            {#if !showArchive}
+              <div class="archive-prompt" use:revealOnScroll>
+                <button
+                  onclick={() => (showArchive = true)}
+                  aria-controls="archive"
+                  aria-expanded="false"
                 >
-                  {#if i === 0 || yearOf(entry) !== yearOf(historyVisible[i - 1])}
-                    <div
-                      class="year"
-                      data-guide-year={yearOf(entry)}
-                      transition:collectionTransition
-                    >
-                      <span>{yearOf(entry)}</span>
-                    </div>
-                  {/if}
-                  <PortfolioItem
-                    {entry}
-                    splitProjects={active === 'project'}
-                    bind:expanded={expandedEntries[entry.id]}
-                  />
-                </div>
-              {/each}
-            </div>
-          </div>
-          {#if !showArchive}
-            <div class="archive-prompt" use:revealOnScroll>
-              <button
-                onclick={() => (showArchive = true)}
-                aria-controls="archive"
-                aria-expanded="false"
-              >
-                Keep scrolling to explore <span aria-hidden="true">↓</span>
-              </button>
-              <p>{history.length} earlier chapters</p>
-            </div>
-          {:else}
-            <div class="archive-control">
-              <button onclick={closeArchive} aria-controls="archive" aria-expanded="true"
-                >Close archive ↑</button
-              >
-            </div>
-          {/if}
-        </section>
+                  Keep scrolling to explore <span aria-hidden="true">↓</span>
+                </button>
+                <p>{history.length} earlier chapters</p>
+              </div>
+            {:else}
+              <div class="archive-control">
+                <button onclick={closeArchive} aria-controls="archive" aria-expanded="true"
+                  >Close archive ↑</button
+                >
+              </div>
+            {/if}
+          </section>{/key}
       {/if}
       <div class="timeline-end">
         <span aria-hidden="true">↓</span>
@@ -331,3 +394,7 @@
     </div>
   </section>
 </main>
+
+{#if selectedProject}
+  {#key selectedProject.id}<ProjectModal entry={selectedProject} onclose={closeProject} />{/key}
+{/if}

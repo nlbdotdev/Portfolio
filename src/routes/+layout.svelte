@@ -41,7 +41,9 @@
       </nav>
     </div>
     <nav class="contact-nav" aria-label="Contact links">
-      {#each profile.links as link}<a href={link.url}>{link.label} ↗</a>{/each}
+      {#each profile.links as link}<a href={link.url} target="_blank" rel="noopener noreferrer"
+          >{link.label} ↗</a
+        >{/each}
     </nav>
     <ThemeSelect />
   </header>

@@ -6,9 +6,9 @@
   "title": "Red Tie Runner",
   "summary": "Red Tie Runner is a simplistic, yet challenging, reflex-based, 2D platforming game. Play as a stickman with a red tie to dash and jump your way through obstacles. Features 30 intense levels, including 6 challenge levels, accompanied by spikes, trampolines, ziplines, wingsuits, lava, and more.",
   "date": {
-    "label": "2013",
-    "value": "2013",
-    "precision": "year"
+    "label": "Oct 2013",
+    "value": "2013-10",
+    "precision": "month"
   },
   "featured": false,
   "collection": "games",
@@ -92,7 +92,7 @@
   "order": 8,
   "role": "Independent game",
   "provenance": {
-    "source": "V1 portfolio (99c5560)",
+    "source": "V1 portfolio (99c5560); October 2013 iOS publication: https://toucharcade.com/games/red-tie-runner (Oct 2, 2013; month used as release estimate, original browser release may differ)",
     "datesNeedReview": true
   }
 }

@@ -49,6 +49,10 @@ export function yearGuide(layer: HTMLElement) {
         label.textContent = group.year;
         label.style.top = `${(group.branches[0] + group.branches.at(-1)!) / 2 - group.top}px`;
         segment.append(label);
+        const notch = document.createElement('i');
+        notch.className = 'year-guide-notch';
+        notch.style.top = label.style.top;
+        segment.append(notch);
       }
       for (const y of group.branches) {
         const branch = document.createElement('i');
