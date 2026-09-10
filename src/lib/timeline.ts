@@ -48,11 +48,14 @@ export function sortTimeline(entries: Entry[]): Entry[] {
 export function yearOf(entry: Entry): string {
   return timelineDate(entry)?.slice(0, 4) ?? 'Undated';
 }
-export const ARCHIVE_BEFORE_YEAR = 2020;
+export const RECENT_YEARS = 3;
 
-export function isArchive(entry: Entry): boolean {
+export function isArchive(entry: Entry, now = new Date()): boolean {
   const date = timelineDate(entry);
-  return entry.collection === 'archive' || !date || date < String(ARCHIVE_BEFORE_YEAR);
+  if (entry.date.ongoing) return false;
+  const cutoff = new Date(now);
+  cutoff.setUTCFullYear(cutoff.getUTCFullYear() - RECENT_YEARS);
+  return !date || date < cutoff.toISOString().slice(0, date.length);
 }
 export function matchesSearch(entry: Entry, query: string): boolean {
   return `${entry.title} ${entry.role} ${entry.summary} ${entry.tags.join(' ')}`
@@ -80,11 +83,11 @@ export function lastActive(
   };
 }
 
-/** Preserve chronological order across the archive boundary, including promoted older entries. */
-export function splitTimeline(entries: Entry[], includeHighlights = false) {
+/** Preserve chronological order across the archive boundary, using a rolling three-year window. */
+export function splitTimeline(entries: Entry[]) {
   let boundary = 0;
   entries.forEach((entry, index) => {
-    if (!isArchive(entry) || (includeHighlights && entry.showInEverything)) boundary = index + 1;
+    if (!isArchive(entry)) boundary = index + 1;
   });
   return { visible: entries.slice(0, boundary), history: entries.slice(boundary) };
 }

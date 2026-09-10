@@ -96,7 +96,7 @@
     ),
   );
   const timelineSections = $derived(
-    query.trim() ? { visible: matching, history: [] } : splitTimeline(matching, active === null),
+    query.trim() ? { visible: matching, history: [] } : splitTimeline(matching),
   );
   const visible = $derived(timelineSections.visible);
   const history = $derived(timelineSections.history);
@@ -107,6 +107,8 @@
   }
   function revealOnScroll(node: HTMLElement) {
     let previousY = window.scrollY;
+    let promptSeenAt: number | null = null;
+    let promptSeenY = 0;
     const arm = () => {
       if (performance.now() >= archiveRevealAfter) archiveArmed = true;
     };
@@ -119,11 +121,20 @@
       const down = y > previousY;
       previousY = y;
       const rect = node.getBoundingClientRect();
+      const clearlyVisible = rect.top < window.innerHeight * 0.65 && rect.bottom > 0;
+      if (!clearlyVisible) promptSeenAt = null;
+      else if (promptSeenAt === null) {
+        promptSeenAt = performance.now();
+        promptSeenY = y;
+      }
       if (
+        promptSeenAt !== null &&
+        performance.now() - promptSeenAt > 600 &&
+        y - promptSeenY > 120 &&
         archiveArmed &&
         performance.now() >= archiveRevealAfter &&
         down &&
-        rect.top < window.innerHeight * 0.8 &&
+        clearlyVisible &&
         rect.bottom > 0
       )
         showArchive = true;

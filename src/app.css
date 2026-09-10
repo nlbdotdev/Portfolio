@@ -1982,3 +1982,42 @@ html {
 .media-thumbnails {
   justify-content: safe center;
 }
+/* Still images stay three across; motion leads with a pair, then triples. */
+.adaptive-gallery > *,
+.adaptive-gallery.odd-gallery > :nth-child(-n + 3) {
+  grid-column: span 2;
+}
+.adaptive-gallery.motion-gallery > :nth-child(-n + 2) {
+  grid-column: span 3;
+}
+.adaptive-gallery.bethesda-gallery > :nth-child(n + 4) {
+  grid-column: span 3;
+}
+.adaptive-gallery.single-gallery > * {
+  grid-column: 1 / -1;
+}
+.embedded-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.embedded-video button {
+  font-size: 12px;
+  color: var(--rust);
+  margin-top: 6px;
+  cursor: pointer;
+}
+.entry-cover {
+  position: relative;
+}
+.entry-cover .hover-preview {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--paper);
+  border: 0;
+  pointer-events: none;
+  z-index: 2;
+}

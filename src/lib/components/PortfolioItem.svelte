@@ -77,6 +77,12 @@
       : []),
     ...galleryMedia,
   ]);
+  let hovering = $state(false);
+  const motionMedia = $derived(galleryMedia.find((item) => item.type !== 'image'));
+  const playable = $derived(entry.preview.url && (entry.preview.desktop || entry.preview.mobile));
+  function hoverPreview() {
+    hovering = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
   function openMedia(src: string) {
     mediaIndex = viewerMedia.findIndex((item) => item.src === src);
   }
@@ -91,6 +97,10 @@
   <div class="entry-layout" class:has-cover={cover}>
     {#if cover}<a
         class="entry-cover"
+        onmouseenter={hoverPreview}
+        onmouseleave={() => (hovering = false)}
+        onfocus={hoverPreview}
+        onblur={() => (hovering = false)}
         class:company-logo={cover === entry.media.icon}
         class:reflextions-logo={['company-contract-games', 'company-reflextions'].includes(
           entry.id,
@@ -126,7 +136,21 @@
             src={assetUrl(entry, entry.media.icon)}
             alt="Dead Traveler"
             loading="lazy"
-          />{/if}</a
+          />{/if}
+        {#if hovering && motionMedia}
+          {#if motionMedia.type === 'animation'}<img
+              class="hover-preview"
+              src={motionMedia.src}
+              alt=""
+            />
+          {:else}<iframe
+              class="hover-preview"
+              src={`${motionMedia.src}${motionMedia.src.includes('?') ? '&' : '?'}autoplay=1&mute=1&controls=0`}
+              title={`${entry.title} preview`}
+              allow="autoplay; encrypted-media"
+              tabindex="-1"
+            ></iframe>{/if}
+        {/if}</a
       >{/if}
     <div class="entry-main">
       <div class="entry-meta">
@@ -139,7 +163,10 @@
       {#if entry.tags.length}<ul class="tags" aria-label="Tools and disciplines">
           {#each entry.tags as tag}<li>{tag}</li>{/each}
         </ul>{/if}
-      {#if entry.links.length}<div class="entry-links">
+      {#if entry.links.length || playable}<div class="entry-links">
+          {#if playable}<a href={entry.preview.url!} target="_blank" rel="noopener noreferrer"
+              >Play preview ↗</a
+            >{/if}
           {#each entry.links as link}<a href={link.link} target="_blank" rel="noopener noreferrer"
               >{link.label} <span aria-hidden="true">↗</span></a
             >{/each}
@@ -169,7 +196,8 @@
             </p>{/if}
           {#if galleryMedia.length}<div
               class="screenshot-grid adaptive-gallery"
-              class:odd-gallery={galleryMedia.length % 2 === 1}
+              class:bethesda-gallery={entry.id === 'company-bethesda'}
+              class:motion-gallery={Boolean(motionMedia) && entry.id !== 'company-bethesda'}
               class:single-gallery={galleryMedia.length === 1}
             >
               {#each galleryMedia as item}
@@ -180,27 +208,28 @@
                     title={item.alt}
                     onopen={() => openMedia(item.src)}
                   />
+                {:else if item.type === 'video'}<div class="embedded-video">
+                    <iframe
+                      src={item.src}
+                      title={`${entry.title} ${item.alt}`}
+                      loading="lazy"
+                      allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                    <button
+                      onclick={() => openMedia(item.src)}
+                      aria-label={`Open ${item.alt} media`}>View {item.alt} in gallery ↗</button
+                    >
+                  </div>
                 {:else}<button
                     class="gallery-preview"
                     onclick={() => openMedia(item.src)}
                     aria-label={`Open ${item.alt} media`}
                   >
-                    {#if item.type === 'video'}<span class="video-preview">▶ {item.alt}</span>
-                    {:else}<img
-                        src={item.src}
-                        alt={item.alt}
-                        loading="lazy"
-                        decoding="async"
-                      />{/if}
+                    <img src={item.src} alt={item.alt} loading="lazy" decoding="async" />
                   </button>{/if}
               {/each}
             </div>{/if}
-          {#if entry.preview.url && (entry.preview.desktop || entry.preview.mobile)}<a
-              class="entry-link"
-              href={entry.preview.url}
-              target="_blank"
-              rel="noreferrer">Open playable preview ↗</a
-            >{/if}
         </div>
       {/if}
     </div>

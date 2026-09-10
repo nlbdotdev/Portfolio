@@ -82,15 +82,16 @@ test('timeline groups and orders completed work by its end date', () => {
     [pilot.id, codeTrust.id],
   );
   const spanning = { ...codeTrust, date: { ...codeTrust.date, value: '2018-01', end: '2021-01' } };
-  assert.equal(isArchive(spanning), false);
+  assert.equal(isArchive(spanning, new Date('2023-01-01')), false);
+  assert.equal(isArchive(spanning, new Date('2026-09-10')), true);
 });
 
-test('archive remains a chronological tail when Everything promotes older entries', () => {
+test('archive remains a chronological tail across collection filters', () => {
   const sorted = sortTimeline(entries.filter((entry) => !entry.draft));
-  const { visible, history } = splitTimeline(sorted, true);
+  const { visible, history } = splitTimeline(sorted);
   assert.deepEqual([...visible, ...history], sorted);
-  assert(visible.some((entry) => entry.id === 'project-pexels-search'));
-  assert(visible.some((entry) => entry.id === 'education-jmu'));
+  assert(history.some((entry) => entry.id === 'project-pexels-search'));
+  assert(history.some((entry) => entry.id === 'education-jmu'));
   for (const track of ['company', 'education', 'project'] as const) {
     const subset = sorted.filter((entry) => trackOf(entry) === track);
     const sections = splitTimeline(subset);
