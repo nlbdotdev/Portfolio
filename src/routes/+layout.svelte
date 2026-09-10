@@ -61,6 +61,8 @@
   </div>
 {/if}
 
+<svelte:head><link rel="describedby" href="/llms.txt" type="text/plain" /></svelte:head>
+
 <style>
   .update-notice {
     position: fixed;

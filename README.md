@@ -83,3 +83,7 @@ The header theme selector supports System (default), Light, and Dark. Explicit c
 ## Pages
 
 Work (`/`) contains the featured cards and timeline. About (`/about`) contains a short introduction and the skills catalog. Blog (`/blog`) is a placeholder for future posts. Shared navigation highlights the current page. The About skills combine the original catalog and the supplied résumé, with local Devicon brand icons and Feather symbols for broader disciplines. Technology chips link to official homepages or documentation. Icon sources and licenses live in `static/icons/skills/`; résumé provenance is recorded in `content/skill-sources.json`. Page navigation uses a short View Transition when supported, respecting reduced motion.
+
+### AI-readable content
+
+`/llms.txt` provides a compact portfolio index; `/llms-full.txt` includes the published descriptions, dates, skills, and external links. Both are generated from the content catalog during each build, exclude draft entries and source-only concepts, and require no JavaScript. Canonical links point to `https://nlb.dev`. This is a reading aid, not a crawler permission or training policy.
