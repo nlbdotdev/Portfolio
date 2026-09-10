@@ -1,0 +1,65 @@
+{
+  "id": "game-mta-country",
+  "kind": "game",
+  "slug": "mta-country",
+  "legacyPath": "/games/mtacountry",
+  "title": "MTA Country",
+  "summary": "MTA Country is a game about traversing the NYC subway, themed around the cart levels in Donkey Kong Country. I was hired by Everyday Arcade to take a prototype and finish developing the rest of the game.",
+  "date": {
+    "label": "May 22, 2018",
+    "value": "2018-05-22",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["mobile", "web", "freelance"],
+  "links": [
+    {
+      "label": "Everyday Arcade",
+      "link": "https://everydayarcade.com/games/mta-country"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "MTA Country menu screen"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "MTA Country screenshot (1)"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "MTA Country screenshot (2)"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "MTA Country screenshot (3)"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://everydayarcade.com/games/mta-country",
+    "desktop": false,
+    "mobile": true
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "small"
+  },
+  "body": "MTA Country is a game about traversing the NYC subway, themed around the cart levels in Donkey Kong Country. I was hired by Everyday Arcade to take a prototype and finish developing the rest of the game.\n",
+  "order": 16,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

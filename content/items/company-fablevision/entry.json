@@ -1,0 +1,73 @@
+{
+  "id": "company-fablevision",
+  "kind": "company",
+  "slug": "fablevision",
+  "legacyPath": null,
+  "title": "FableVision",
+  "role": "Software Developer · Contract",
+  "summary": "Shipped two educational games focused on financial literacy for students.",
+  "body": "### Financial literacy games\n\nBuilt two games for FableVision as part of Thinking Money for Kids:\n\n- [Play Currency Catcher](https://tm4k.ala.org/currency-catcher) — explore coins, bills, and their values.\n- [Play Making Moo-lah](https://tm4k.ala.org/making-moolah) — manage a farm budget and make purchasing decisions.\n\nGameplay screenshots lead the gallery, followed by each game's opening and introduction screens.\n",
+  "date": {
+    "label": "Feb — Jun 2024",
+    "value": "2024-02",
+    "precision": "month",
+    "end": "2024-06",
+    "ongoing": false
+  },
+  "featured": true,
+  "collection": "timeline",
+  "tags": ["React", "Educational games"],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://www.fablevisionstudios.com"
+    }
+  ],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": "assets/logo.webp",
+    "images": [
+      {
+        "src": "assets/currency-action.webp",
+        "alt": "Currency Catcher — collecting pennies in round one"
+      },
+      {
+        "src": "assets/moolah-action.webp",
+        "alt": "Making Moo-lah — farm, calendar, and live budget"
+      },
+      {
+        "src": "assets/currency-home.webp",
+        "alt": "Currency Catcher — title screen"
+      },
+      {
+        "src": "assets/moolah-home.webp",
+        "alt": "Making Moo-lah — title screen"
+      },
+      {
+        "src": "assets/currency-learn.webp",
+        "alt": "Currency Catcher — learning coin and bill values"
+      },
+      {
+        "src": "assets/moolah-game.webp",
+        "alt": "Making Moo-lah — farm budget introduction"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 34,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  },
+  "showInEverything": true
+}

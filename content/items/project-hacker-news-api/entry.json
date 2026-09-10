@@ -1,0 +1,47 @@
+{
+  "id": "project-hacker-news-api",
+  "kind": "project",
+  "slug": "hacker-news-api",
+  "legacyPath": null,
+  "title": "Hacker News API",
+  "summary": "Loads and displays the top 100 stories from the Hacker News API w/ jQuery.",
+  "date": {
+    "value": "2021-04-12",
+    "label": "Apr 2021 · First commit",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "archive",
+  "tags": [],
+  "links": [
+    {
+      "label": "Project",
+      "link": "https://github.com/nlbdotdev/hackernews-api"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "link": "https://github.com/nlbdotdev/hackernews-api"
+  },
+  "body": "Loads and displays the top 100 stories from the Hacker News API w/ jQuery.\n",
+  "order": 29,
+  "role": "Software project",
+  "provenance": {
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/hackernews-api/commit/fda2497840df053265b4b33ec80ba26c544cb764",
+    "datesNeedReview": false
+  }
+}

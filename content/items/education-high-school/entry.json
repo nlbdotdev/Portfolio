@@ -1,0 +1,47 @@
+{
+  "id": "education-high-school",
+  "kind": "education",
+  "slug": "high-school",
+  "legacyPath": null,
+  "title": "Colonial Forge High School",
+  "role": "Advanced Studies Diploma",
+  "summary": "The early years.",
+  "body": "The early years.\n",
+  "date": {
+    "label": "2010 \u2014 2014",
+    "value": "2010",
+    "precision": "year",
+    "end": "2014",
+    "ongoing": false
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://cfhs.staffordschools.net/"
+    }
+  ],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": "assets/logo.png",
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 43,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  }
+}

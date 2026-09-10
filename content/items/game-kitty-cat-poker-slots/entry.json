@@ -1,0 +1,78 @@
+{
+  "id": "game-kitty-cat-poker-slots",
+  "kind": "game",
+  "slug": "kitty-cat-poker-slots",
+  "legacyPath": "/games/kittycatpokerslots",
+  "title": "Kitty Cat Poker Slots",
+  "summary": "Kitty Kat Poker Slots Casino is a full scale android app I was commissioned to develop. It's a slot machine game based on matching poker hands with a cute cat theme.",
+  "date": {
+    "label": "2019",
+    "value": "2019",
+    "precision": "year"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["mobile", "freelance"],
+  "links": [
+    {
+      "label": "Google Play",
+      "link": "https://play.google.com/store/apps/details?id=com.Go2No1.KittyCat"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "Kitty Cat Poker Slots menu screen"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "Kitty Cat Poker Slots screenshot (1)"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "Kitty Cat Poker Slots screenshot (2)"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "Kitty Cat Poker Slots screenshot (3)"
+      },
+      {
+        "src": "assets/screenshots/05.png",
+        "alt": "Kitty Cat Poker Slots screenshot (4)"
+      },
+      {
+        "src": "assets/screenshots/06.png",
+        "alt": "Kitty Cat Poker Slots screenshot (5)"
+      }
+    ],
+    "videos": [
+      {
+        "label": "Trailer",
+        "src": "https://www.youtube.com/embed/_na6hF010b0"
+      }
+    ],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://play.google.com/store/apps/details?id=com.Go2No1.KittyCat",
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "big"
+  },
+  "body": "Kitty Kat Poker Slots Casino is a full scale android app I was commissioned to develop. It's a slot machine game based on matching poker hands with a cute cat theme.\n\nWe started with a bare bones prototype with hand drawing and a comprehensive debug mode. We then moved to final art and audio assets. From there we added platform specific items and Google Play API which included:\n\n- An account system via Firebase, which supports Google Play, Facebook, or email login.\n\n- A daily login reward, also using the account system.\n\n- Google Play achievements\n\n- In App Purchases\n",
+  "order": 3,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "game-gridlock-dash",
+  "kind": "game",
+  "slug": "gridlock-dash",
+  "legacyPath": "/games/gridlockdash",
+  "title": "Gridlock Dash",
+  "summary": "Gridlock Dash is a frantic puzzle game where the player must keep cars from colliding. Make your way through 7 levels, and test your skills in 3 endless modes in the struggle to keep the streets safe. I made Gridlock Dash in 2014 to test out iPad development, but I never ended up publishing it to the App Store.",
+  "date": {
+    "label": "2014",
+    "value": "2014",
+    "precision": "year"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["web", "mobile", "sale"],
+  "links": [
+    {
+      "label": "Itch.io",
+      "link": "https://reflextions.itch.io/gridlock-dash"
+    },
+    {
+      "label": "Chrome Web Store",
+      "link": "https://chrome.google.com/webstore/detail/gridlock-dash/npanhggcndhhgnpefpeiihmihnecijbd?"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "gridlock screenshot"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "gridlock screenshot"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "gridlock screenshot"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "gridlock screenshot"
+      },
+      {
+        "src": "assets/screenshots/05.png",
+        "alt": "gridlock screenshot"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://itch.io/embed-upload/1796902?color=333333",
+    "desktop": true,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "small"
+  },
+  "body": "Gridlock Dash is a frantic puzzle game where the player must keep cars from colliding. Make your way through 7 levels, and test your skills in 3 endless modes in the struggle to keep the streets safe. I made Gridlock Dash in 2014 to test out iPad development, but I never ended up publishing it to the App Store.\n",
+  "order": 10,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

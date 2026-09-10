@@ -1,0 +1,109 @@
+{
+  "id": "project-construct-snippets",
+  "kind": "project",
+  "slug": "construct-snippets",
+  "legacyPath": "/projects/constructsnippets",
+  "title": "Construct Snippets",
+  "summary": "Construct Snippets (WIP) is an open source library of useful functions and other code snippets for the HTML5 game engine Construct 3. Built with comprehensive user validation and session security with HttpOnly cookies. Supports creation and viewing of snippets. ",
+  "date": {
+    "value": "2022-06-22",
+    "label": "Jun 2022 · First commit",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "projects",
+  "tags": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://constructsnippets.com/"
+    },
+    {
+      "label": "Frontend Repo",
+      "link": "https://github.com/nlbdotdev/construct-snippets-frontend"
+    },
+    {
+      "label": "Backend Repo",
+      "link": "https://github.com/nlbdotdev/construct-snippets-backend"
+    }
+  ],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {
+      "desktop": "assets/screenshots/01.png",
+      "mobile": "assets/screenshots/02.png"
+    }
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [
+    {
+      "label": "React",
+      "link": "https://reactjs.org/"
+    },
+    {
+      "label": "Mantine",
+      "link": "https://mantine.dev/"
+    },
+    {
+      "label": "Express",
+      "link": "https://expressjs.com/"
+    },
+    {
+      "label": "MongoDB",
+      "link": "https://www.mongodb.com/"
+    },
+    {
+      "label": "AWS EC2",
+      "link": "https://aws.amazon.com/ec2/"
+    }
+  ],
+  "dependencies": [
+    {
+      "label": "Axios",
+      "link": "https://axios-http.com/docs/intro"
+    },
+    {
+      "label": "Tabler Icons",
+      "link": "https://tabler-icons-react.vercel.app/"
+    },
+    {
+      "label": "React Router",
+      "link": "https://v5.reactrouter.com/web/guides/quick-start"
+    },
+    {
+      "label": "bcryptjs",
+      "link": "https://www.npmjs.com/package/bcryptjs"
+    },
+    {
+      "label": "jsonwebtoken",
+      "link": "https://www.npmjs.com/package/jsonwebtoken"
+    },
+    {
+      "label": "validator",
+      "link": "https://www.npmjs.com/package/validator"
+    },
+    {
+      "label": "date-fns",
+      "link": "https://date-fns.org/"
+    }
+  ],
+  "legacyPresentation": {
+    "stack": ["React", "Mantine", "Express", "MongoDB", "EC2"],
+    "link": "https://constructsnippets.com/"
+  },
+  "body": "### About\n\nPending\n\n### Deployment\n\nThe backend is deployed on an Amazon EC2 instance, using nginx for redirects and PM2 for managing node instances. Domain hosted on Amazon Route 53.\n",
+  "order": 22,
+  "role": "Software project",
+  "provenance": {
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/construct-snippets-backend/commit/8d2a07629cbdf186d1eb4cccbcd3227d02fa79b8",
+    "datesNeedReview": false
+  }
+}

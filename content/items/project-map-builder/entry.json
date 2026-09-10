@@ -1,0 +1,47 @@
+{
+  "id": "project-map-builder",
+  "kind": "project",
+  "slug": "map-builder",
+  "legacyPath": null,
+  "title": "Map Builder",
+  "summary": "Create a fantasy style map with jQeury drag and drop.",
+  "date": {
+    "value": "2021-12-10",
+    "label": "Dec 2021 · First commit",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "archive",
+  "tags": [],
+  "links": [
+    {
+      "label": "Project",
+      "link": "https://github.com/nlbdotdev/Map-Builder"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "link": "https://github.com/nlbdotdev/Map-Builder"
+  },
+  "body": "Create a fantasy style map with jQeury drag and drop.\n",
+  "order": 28,
+  "role": "Software project",
+  "provenance": {
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/map-builder/commit/166c32f362db7a453d10b53e60d5e3255bedae59",
+    "datesNeedReview": false
+  }
+}

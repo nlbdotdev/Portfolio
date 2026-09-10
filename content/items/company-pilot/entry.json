@@ -1,0 +1,48 @@
+{
+  "id": "company-pilot",
+  "kind": "company",
+  "slug": "pilot",
+  "legacyPath": null,
+  "title": "Pilot Flying J",
+  "role": "Senior Full Stack Engineer · Contract",
+  "summary": "Built a Svelte 5 finance tool, collaborated on ERP strategy, and helped improve development operations and onboarding for a site redesign.",
+  "body": "### Internal tools & engineering\n\nBuilt a Svelte 5 finance tool and collaborated on ERP strategy. I also helped improve development operations and onboarding for a site redesign.\n\nThis work centered on internal systems and projects without a public showcase, so the focus here is on the engineering contributions.\n",
+  "date": {
+    "label": "Jun 2024 — Apr 2025",
+    "value": "2024-06",
+    "precision": "month",
+    "end": "2025-04",
+    "ongoing": false
+  },
+  "featured": true,
+  "collection": "timeline",
+  "tags": ["Svelte 5", "Finance", "ERP"],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://pilotcompany.com"
+    }
+  ],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": "assets/logo.svg",
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 33,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  },
+  "showInEverything": true
+}

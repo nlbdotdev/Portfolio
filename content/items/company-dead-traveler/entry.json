@@ -1,0 +1,60 @@
+{
+  "id": "company-dead-traveler",
+  "kind": "company",
+  "slug": "dead-traveler",
+  "legacyPath": null,
+  "title": "Dead Traveler",
+  "role": "Founder & Director",
+  "summary": "My independent game studio, building original games with strong systems, gameplay, and personality. Released Zombiehood on Steam in April 2026.",
+  "body": "### Dead Traveler\n\nMy independent game studio and full-time focus: building original games with strong systems, gameplay, and personality.\n\n### Zombiehood — released April 2026\n\nWe released [Zombiehood on Steam](https://store.steampowered.com/app/3003120/Zombiehood/) on April 30, 2026. Our first commercial release is a run-and-gun roguelite built around scavenging weapons, discovering upgrades, and fighting through procedurally generated biomes.\n\n[Visit Dead Traveler](https://deadtraveler.com) · [Play Zombiehood on Steam](https://store.steampowered.com/app/3003120/Zombiehood/)\n",
+  "date": {
+    "label": "Apr 2026 — Present",
+    "value": "2026-04",
+    "precision": "month",
+    "end": null,
+    "ongoing": true
+  },
+  "featured": true,
+  "collection": "timeline",
+  "tags": ["Independent games", "Studio"],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://deadtraveler.com"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": null,
+    "icon": "assets/logo.png",
+    "images": [
+      {
+        "src": "assets/zombiehood-gameplay-1.webp",
+        "alt": "Zombiehood — Steam gameplay screenshot 1"
+      },
+      {
+        "src": "assets/zombiehood-gameplay-2.webp",
+        "alt": "Zombiehood — Steam gameplay screenshot 2"
+      },
+      {
+        "src": "assets/zombiehood-gameplay-3.webp",
+        "alt": "Zombiehood — Steam gameplay screenshot 3"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 44,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2); April 2026 date and relative ordering supplied by Nathan",
+    "datesNeedReview": false
+  }
+}

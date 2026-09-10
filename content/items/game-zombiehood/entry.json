@@ -1,0 +1,47 @@
+{
+  "id": "game-zombiehood",
+  "kind": "game",
+  "slug": "zombiehood",
+  "legacyPath": null,
+  "title": "Zombiehood",
+  "role": "Commercial game",
+  "summary": "The first commercial release from Dead Traveler. Built, shipped, and out in the world.",
+  "body": "The first commercial release from Dead Traveler. Built, shipped, and out in the world.\n",
+  "date": {
+    "label": "Apr 2026 — Present",
+    "value": "2026-04",
+    "precision": "month",
+    "end": null,
+    "ongoing": true
+  },
+  "featured": false,
+  "collection": "timeline",
+  "tags": ["Steam", "Independent game"],
+  "links": [
+    {
+      "label": "Steam",
+      "link": "https://store.steampowered.com/app/3003120/Zombiehood/"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.jpg",
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 31,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2); April 2026 date and relative ordering supplied by Nathan",
+    "datesNeedReview": false
+  }
+}

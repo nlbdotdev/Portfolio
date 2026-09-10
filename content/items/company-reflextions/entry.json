@@ -1,0 +1,56 @@
+{
+  "id": "company-reflextions",
+  "kind": "company",
+  "slug": "reflextions",
+  "legacyPath": null,
+  "title": "Reflextions LLC",
+  "role": "Web Game Developer & Product Owner",
+  "summary": "Built a portfolio of more than 20 browser games, reaching 10 million+ plays across titles. Led development, product, and licensing across original and client IP, working with distributed freelance teams.",
+  "body": "### 10 million+ plays across games\n\nBuilt and published a portfolio of more than 20 browser games, managing development, product direction, and licensing across original and client IP while collaborating with distributed freelance teams.\n\n### Featured games\n\n- [Red Tie Runner](https://nlbdotdev.itch.io/red-tie-runner) — a reflex-based platformer with 30 levels of obstacles, ziplines, and wingsuits.\n- [Don't Fall!](https://nlbdotdev.itch.io/dont-fall) — competitive two-player ragdoll battles, plus a single-player survival challenge.\n- [ProtoShift](https://nlbdotdev.itch.io/protoshift) — a fast-paced, mouse-controlled arcade game inspired by Super Hexagon.\n",
+  "date": {
+    "label": "Feb 2019 — Sep 2022",
+    "value": "2019-02",
+    "precision": "month",
+    "end": "2022-09",
+    "ongoing": false
+  },
+  "featured": true,
+  "collection": "timeline",
+  "tags": ["Browser games", "Product", "Licensing"],
+  "links": [],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": "assets/logo.png",
+    "images": [
+      {
+        "src": "assets/red-tie-runner.webp",
+        "alt": "Red Tie Runner — original game artwork"
+      },
+      {
+        "src": "assets/dont-fall.webp",
+        "alt": "Don't Fall! — original game artwork"
+      },
+      {
+        "src": "assets/protoshift.webp",
+        "alt": "ProtoShift — original game artwork"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 36,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2); 10 million+ total plays and featured titles supplied by Nathan, 2026-09-09",
+    "datesNeedReview": true
+  },
+  "showInEverything": true
+}

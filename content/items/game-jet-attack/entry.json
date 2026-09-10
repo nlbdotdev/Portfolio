@@ -1,0 +1,77 @@
+{
+  "id": "game-jet-attack",
+  "kind": "game",
+  "slug": "jet-attack",
+  "legacyPath": "/games/jetattack!",
+  "title": "Jet Attack!",
+  "summary": "Use yer jets to knock the enemy down! First to 9 wins! Jet Attack is a competitive rag-doll physics game with exploding limbs!",
+  "date": {
+    "label": "2013",
+    "value": "2013",
+    "precision": "year"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["web", "sale"],
+  "links": [
+    {
+      "label": "Scirra Arcade",
+      "link": "https://www.construct.net/en/free-online-games/jet-attack-1477/play"
+    },
+    {
+      "label": "Itch.io",
+      "link": "https://reflextions.itch.io/jet-attack"
+    },
+    {
+      "label": "Y8",
+      "link": "https://www.y8.com/games/jet_attack"
+    },
+    {
+      "label": "Chrome Web Store",
+      "link": "https://chrome.google.com/webstore/detail/jet-attack/ajkmfllnckceklaikmcmppnlhekmafob?"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": null,
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "Jet Attack! screenshot"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "Jet Attack! screenshot"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "Jet Attack! screenshot"
+      },
+      {
+        "src": "assets/screenshots/04.png",
+        "alt": "Jet Attack! screenshot"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://itch.io/embed-upload/6243474?color=333333",
+    "desktop": true,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "laptop",
+    "size": "small"
+  },
+  "body": "Use yer jets to knock the enemy down! First to 9 wins! Jet Attack is a competitive rag-doll physics game with exploding limbs!\n\nThis was built as a spin off of \"Don't Fall!\". I also built a version with integrated leaderboards, achievements, and a single player mode for Y8.com.\n",
+  "order": 9,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

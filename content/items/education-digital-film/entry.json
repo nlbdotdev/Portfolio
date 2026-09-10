@@ -1,0 +1,61 @@
+{
+  "id": "education-digital-film",
+  "kind": "education",
+  "slug": "digital-film",
+  "legacyPath": null,
+  "title": "Code Immersives / Digital Film Academy",
+  "role": "Web Development Immersive with AWS",
+  "summary": "A 900-hour web development immersive focused on the MERN stack and AWS.",
+  "body": "### Full-stack development\n\nCompleted a 900-hour immersive focused on the MERN stack and AWS. Selected work from my web development portfolio brings together interactive frontends, APIs, databases, and deployment.\n\n- [Construct Snippets — frontend](https://github.com/nlbdotdev/construct-snippets-frontend) / [backend](https://github.com/nlbdotdev/construct-snippets-backend): a full-stack snippet library with authentication and session management.\n- [React Ticket Tracker — frontend](https://github.com/nlbdotdev/react-ticket-frontend) / [backend](https://github.com/nlbdotdev/react-ticket-backend): task and issue tracking with React, Redux, and a Node backend.\n- [Portfolio](https://nlb.dev) / [source](https://github.com/nlbdotdev/Portfolio): my personal Svelte portfolio, originally a frontend capstone and since evolved into this site.\n- [Code Immersives coursework](https://github.com/nlbdotdev/CodeImmersives): exercises and projects from the program.\n\nImages show the original project interfaces, including the earlier portfolio design.\n",
+  "date": {
+    "label": "Aug 2021 — Aug 2022",
+    "value": "2021-08",
+    "precision": "month",
+    "end": "2022-08",
+    "ongoing": false
+  },
+  "featured": true,
+  "collection": "timeline",
+  "tags": ["React", "Node.js", "AWS"],
+  "links": [
+    {
+      "label": "School profile",
+      "link": "https://www.linkedin.com/company/code-immersives"
+    }
+  ],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": "assets/logo.png",
+    "images": [
+      {
+        "src": "assets/construct-snippets.webp",
+        "alt": "Construct Snippets — original desktop interface"
+      },
+      {
+        "src": "assets/ticket-tracker.webp",
+        "alt": "React Ticket Tracker — original desktop interface"
+      },
+      {
+        "src": "assets/portfolio.webp",
+        "alt": "Portfolio — original desktop interface"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 40,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  },
+  "showInEverything": true
+}

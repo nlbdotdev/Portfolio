@@ -1,0 +1,8 @@
+node_modules/
+.svelte-kit/
+.vercel/
+.reports/
+static/
+content/items/**/assets/
+package-lock.json
+notes.md

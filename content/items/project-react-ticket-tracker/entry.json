@@ -1,0 +1,102 @@
+{
+  "id": "project-react-ticket-tracker",
+  "kind": "project",
+  "slug": "react-ticket-tracker",
+  "legacyPath": "/projects/reacttickettracker",
+  "title": "React Ticket Tracker",
+  "summary": "React Ticket Tracker is a fullstack task tracker built with React and state management via Redux. Can be used for bugs, tickets, and project management. Supports posting and updating tasks, timestamps, tasks IDs, descriptions, severity, and status.",
+  "date": {
+    "value": "2022-04-20",
+    "label": "Apr 2022 · First commit",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "projects",
+  "tags": [],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://react-ticket-frontend.vercel.app/"
+    },
+    {
+      "label": "Frontend Repo",
+      "link": "https://github.com/nlbdotdev/react-ticket-frontend"
+    },
+    {
+      "label": "Backend Repo",
+      "link": "https://github.com/nlbdotdev/react-ticket-backend"
+    }
+  ],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {
+      "desktop": "assets/screenshots/01.png",
+      "mobile": "assets/screenshots/01.png"
+    }
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [
+    {
+      "label": "React",
+      "link": "https://reactjs.org/"
+    },
+    {
+      "label": "Express",
+      "link": "https://expressjs.com/"
+    },
+    {
+      "label": "MongoDB",
+      "link": "https://www.mongodb.com/"
+    },
+    {
+      "label": "AWS EC2",
+      "link": "https://aws.amazon.com/ec2/"
+    }
+  ],
+  "dependencies": [
+    {
+      "label": "Redux",
+      "link": "https://react-redux.js.org/"
+    },
+    {
+      "label": "React Router",
+      "link": "https://v5.reactrouter.com/web/guides/quick-start"
+    },
+    {
+      "label": "React Select",
+      "link": "https://react-select.com/home"
+    },
+    {
+      "label": "bcryptjs",
+      "link": "https://www.npmjs.com/package/bcryptjs"
+    },
+    {
+      "label": "jsonwebtoken",
+      "link": "https://www.npmjs.com/package/jsonwebtoken"
+    },
+    {
+      "label": "validator",
+      "link": "https://www.npmjs.com/package/validator"
+    }
+  ],
+  "legacyPresentation": {
+    "splash": "laptop",
+    "stack": ["React", "Redux", "Express", "MongoDB", "EC2"],
+    "link": "https://react-ticket-frontend.vercel.app/"
+  },
+  "body": "### About\n\nPending\n\n### Deployment\n\nThe backend is hosted on an Amazon EC2 instance using nginx to route to a subdomain hosted on Route 53, and the frontend is hosted on Vercel.\n",
+  "order": 24,
+  "role": "Software project",
+  "provenance": {
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/react-ticket-frontend/commit/a9e1ad92fd0713015475b07fae1bbd0061e50e68",
+    "datesNeedReview": false
+  }
+}

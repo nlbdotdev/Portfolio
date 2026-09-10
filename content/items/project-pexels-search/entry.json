@@ -1,0 +1,47 @@
+{
+  "id": "project-pexels-search",
+  "kind": "project",
+  "slug": "pexels-search",
+  "legacyPath": null,
+  "title": "Pexels Search",
+  "summary": "A React web page that interfaces with the Pexels API. Supports curated photos, search, pagination, and session storage.",
+  "date": {
+    "value": "2022-09-29",
+    "label": "Sep 2022 · First commit",
+    "precision": "day"
+  },
+  "featured": false,
+  "collection": "archive",
+  "tags": [],
+  "links": [
+    {
+      "label": "Project",
+      "link": "https://github.com/nlbdotdev/pexels-search"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": null,
+    "icon": null,
+    "images": [],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "link": "https://github.com/nlbdotdev/pexels-search"
+  },
+  "body": "A React web page that interfaces with the Pexels API. Supports curated photos, search, pagination, and session storage.\n",
+  "order": 25,
+  "role": "Software project",
+  "provenance": {
+    "source": "V1 portfolio (99c5560); earliest linked GitHub repository commit: https://github.com/nlbdotdev/pexels-search/commit/eb909969be5973bb630aaf9a53c69245c184ec04",
+    "datesNeedReview": false
+  }
+}

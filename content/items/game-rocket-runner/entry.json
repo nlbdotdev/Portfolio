@@ -1,0 +1,61 @@
+{
+  "id": "game-rocket-runner",
+  "kind": "game",
+  "slug": "rocket-runner",
+  "legacyPath": "/games/rocketrunner",
+  "title": "Rocket Runner",
+  "summary": "Rocket Runner is an simple dodging game with unlockable skins and currency. It is part of a mobile web game suite I did in 2016.",
+  "date": {
+    "label": "2016",
+    "value": "2016",
+    "precision": "year"
+  },
+  "featured": false,
+  "collection": "games",
+  "tags": ["mobile", "web", "sale"],
+  "links": [
+    {
+      "label": "Itch.io",
+      "link": "https://reflextions.itch.io/rocket-runner"
+    }
+  ],
+  "media": {
+    "cover": "assets/cover.png",
+    "animation": "assets/animation.gif",
+    "icon": "assets/icon.png",
+    "images": [
+      {
+        "src": "assets/screenshots/01.png",
+        "alt": "Rocket Runner menu screen"
+      },
+      {
+        "src": "assets/screenshots/02.png",
+        "alt": "Rocket Runner screenshot (1)"
+      },
+      {
+        "src": "assets/screenshots/03.png",
+        "alt": "Rocket Runner screenshot (2)"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": "https://itch.io/embed-upload/6248631?color=333333",
+    "desktop": true,
+    "mobile": true
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {
+    "platform": "phone",
+    "size": "tall"
+  },
+  "body": "Rocket Runner is an simple dodging game with unlockable skins and currency. It is part of a mobile web game suite I did in 2016.\n",
+  "order": 14,
+  "role": "Independent game",
+  "provenance": {
+    "source": "V1 portfolio (99c5560)",
+    "datesNeedReview": true
+  }
+}

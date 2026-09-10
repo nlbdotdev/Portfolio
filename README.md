@@ -1,67 +1,85 @@
-# NLB.DEV
+# NLB.DEV — Work & life
 
-Nathan Bennett's web and game development portfolio. Includes project showcases, a filterable game archive, image galleries, resume, and contact form.
+Nathan Bennett's portfolio: selected work and one chronological timeline with Career, Education, and Project rails. Built with Svelte 5, SvelteKit, TypeScript, and Tailwind CSS 4.
 
-## Versions
+- [Current website](https://nlb.dev/)
+- [Historical V0](https://v0.nlb.dev/)
+- [Preserved V1](https://v1.nlb.dev/)
 
-- [Current portfolio](https://nlb.dev/)
-- [Version 0](https://v0.nlb.dev/)
-- [Version 1](https://v1.nlb.dev/)
+V1's Svelte 3 source remains at `99c5560` and on the `v1` branch. V2 includes 31 original portfolio items plus 14 chapters from the user-selected prototype (career, education, and Zombiehood). Dates and historical claims still need editorial confirmation.
 
-The version links are historical deployment addresses; availability depends on their hosting and DNS. Git also retains `origin/v0` and `origin/v1` for recovery.
+## Develop and verify
 
-## Local development
-
-Use Node.js 22.12+ and npm (the lockfile is `package-lock.json`). Do not mix npm and pnpm lockfiles.
+Use Node.js 22.12+ and npm with the committed lockfile. Vercel's runtime is explicitly Node 22.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open the URL printed by the local server, normally `http://localhost:8080`. The dev command watches source files, rebuilds with Rollup, and enables live reload.
-
-For a production build and local preview:
+Open the printed URL, normally `http://localhost:5173`.
 
 ```sh
-npm run build
-npm start -- --port 5173
+npm run check           # TypeScript and Svelte, including content scripts
+npm test                # Content preservation, schema, timeline and Markdown safety
+npm run content:check   # Item structure, local references and Markdown links
+npm run content:audit   # Asset sizes, duplicate hashes and unreferenced files
+npm run build           # Validate and prerender the production app
+npm run preview         # Serve that production build
+npm run format          # Consistent formatting across source and content
+npm run format:check    # Check formatting without edits
+npm run audit           # Dependency security audit
 ```
 
-Open `http://localhost:5173`. Deploy the contents of `public/` after building, with a fallback to `index.html` for client-side routes such as `/games` and `/projects/portfolio`. The preview server already provides this fallback.
+No database or API is required. SvelteKit imports the item files and asset URLs at build time. The homepage is prerendered; search, animated track filtering, archive disclosure, and media expansion run locally in the browser. Gameplay animations sit alongside screenshots in Notes & media and autoplay only while visible. Offscreen animations and hidden tabs stop rendering; reduced-motion visitors get a still image with a Play control.
 
-## Project layout
+## Self-contained items
 
-- `src/App.svelte`: application shell and Page.js routes.
-- `src/stores.js`: project/game content and theme settings.
-- `src/components/` and `src/pages/`: Svelte UI and page components.
-- `public/assets/`: images, game media, and resume.
-- `public/global.css`: shared styles.
-- `public/build/`: generated production bundles (ignored by Git).
-- `rollup.config.mjs`: development and production build configuration.
+```text
+content/items/game-project-adder/
+  entry.json             # Metadata + Markdown body in one record
+  assets/
+    cover.png
+    animation.gif
+    screenshots/01.jpg
+    screenshots/02.jpg
+    extras/01.png        # Preserved historical media, not in the public gallery
+```
 
-## Svelte 3 baseline
-
-This branch intentionally remains on **Svelte 3**, pinned to `3.59.2`. The original pre-migration state is commit `66c7a63`, tagged `svelte3-baseline-20260909`; commit `cb0b062` records the restoration checkpoint. The incomplete Svelte 5 work is preserved locally on `backup/dev-svelte5-20260909`.
-
-The remote `dev` branch still contains that migration until an explicit remote-history update is made. Do not merge or pull `origin/dev` into this restored branch inadvertently.
-
-## Dependency checks
+The common schema is `content/schema.ts`. `src/lib/content.ts` validates and imports the records. `PortfolioItem.svelte` is the reusable presentation component; Company and Education use the same item model without requiring media. Vite imports generate fingerprinted asset URLs, so moving an item folder and its record does not require hand-maintaining public URLs.
 
 ```sh
-npm ci
-npm run build
-npm run audit
+npm run item:new -- --kind project --slug my-project --title "My project"
 ```
 
-Build tooling uses Rollup 4 and the maintained `@rollup/plugin-terser`. A scoped npm override updates Page.js's `path-to-regexp` dependency to `1.9.0` to address its vulnerable historical dependency.
+This creates a draft with a screenshots folder. Edit its JSON, add media, and set `draft` to false when ready. Drafts validate but do not appear in the app. See [content editing rules](content/README.md).
 
-The September 2026 cleanup reduced the audit from 12 high findings to **3 moderate findings**: Svelte and two packages that depend on it (`svelte-lightbox` and `svelte-simple-modal`). Fully resolving these requires leaving Svelte 3. This site renders in the browser, but that does not dismiss all remaining advisories. Avoid `npm audit fix --force`, which can cross the intended framework boundary.
+`content/profile.json` contains biography, skills, contact links, and the resume reference. `content/asset-migrations.json` maps historical asset URLs to item folders. Existing deep-link paths remain metadata until a future routing pass. The old contact form is not part of this MVP.
 
-The build still reports legacy accessibility, unused-property, and unused-CSS warnings. There is no automated test suite; before releasing, check home/games navigation, filtering, project/game dialogs, direct showcase URLs, and mobile layout. Contact submission and third-party embedded games require their external services.
+## Lossless asset optimization
 
-## Recovering historical versions
+```sh
+brew install optipng gifsicle jpeg-turbo
+# Python 3 with Pillow is required for independent decoded-image verification.
+npm run assets:optimize
+```
 
-Prefer the saved Git branches when they contain the desired version. They can be checked out into separate worktrees and built without altering this branch.
+The TypeScript command runs OptiPNG, Gifsicle and jpegtran. It accepts only smaller outputs with identical decoded RGBA pixels, frame durations, loop count, ICC profile, and EXIF. It never uses JPEG re-encoding or lossy GIF options. Failures keep the original. Detailed results are written to `.reports/lossless-optimization.json`.
 
-Web Archive can also recover captured HTML, CSS, JavaScript, and images for local hosting, but cannot recreate missing assets or backend services. Its availability API returned no snapshots for `v0.nlb.dev` or `v1.nlb.dev` during this cleanup; older captures of `nlb.dev` may still be useful. A restored archive needs its asset URLs and internal links rewritten and checked locally.
+## Preservation and remaining review
+
+- The catalog's Markdown renders through an explicit renderer: raw HTML is escaped, unsafe link schemes are rejected, and images resolve only to local item assets.
+- Unknown dates remain unknown; year-only and month-only dates keep their precision. Imported reference dates carry provenance and `datesNeedReview`.
+- “Earlier chapters” previews one and a half older entries with a fading edge. Continuing to scroll past its prompt reveals the full archive; the prompt also supports keyboard activation. Close archive returns to the preview. Search includes all history directly.
+- The scoped `cookie` override patches SvelteKit's transitive dependency; revisit it on framework upgrades.
+- Superseded aggregate content, loose descriptions, duplicate item assets, and Paint.NET source files have been removed. Historical source remains available in Git and on `v1`.
+
+## Appearance and company imagery
+
+The header theme selector supports System (default), Light, and Dark. Explicit choices persist locally; System tracks OS appearance changes. Company logos and studio artwork are stored within their owning items; source URLs are recorded in `content/image-sources.json`. Logo artwork retains its original colors on a suitable light or dark surface. The hero uses Dead Traveler’s official studio background. Oswald is self-hosted with its SIL Open Font License in `static/fonts/`.
+
+`npm run assets:modernize` uses `gif2webp` (Homebrew `webp`) and Python/Pillow to generate lossless animated WebP variants. A variant is selected only when smaller and every decoded frame, duration, loop count, ICC profile and EXIF match. Original GIFs remain in their item folders; `content/animation-optimization.json` records verification and hashes.
+
+## Pages
+
+Work (`/`) contains the featured cards and timeline. About (`/about`) contains a short introduction and the skills catalog. Blog (`/blog`) is a placeholder for future posts. Shared navigation highlights the current page. The About skills combine the original catalog and the supplied résumé, with local Devicon brand icons and Feather symbols for broader disciplines. Technology chips link to official homepages or documentation. Icon sources and licenses live in `static/icons/skills/`; résumé provenance is recorded in `content/skill-sources.json`. Page navigation uses a short View Transition when supported, respecting reduced motion.

@@ -1,0 +1,61 @@
+{
+  "id": "company-psiquantum",
+  "kind": "company",
+  "slug": "psiquantum",
+  "legacyPath": null,
+  "title": "PsiQuantum",
+  "role": "Senior Full Stack Engineer",
+  "summary": "Part of the software team powering the quest to build a fault-tolerant quantum computer. Worked on Construct, the platform for designing and optimizing quantum algorithms.",
+  "body": "### Construct\n\nWorked on [Construct](https://construct.psiquantum.com/), PsiQuantum's platform for designing and optimizing fault-tolerant quantum algorithms.\n\n### Further reading\n\n- [Inside Construct](https://www.psiquantum.com/news-import/inside-construct) — an introduction to Circuit Designer, Workbench, and Resource Analyzer.\n- [Construct available to all developers](https://www.psiquantum.com/news-import/psiquantum-makes-construct-ftqc-software-available-to-all-developers) — the open-access release.\n- [Launching Construct](https://www.psiquantum.com/news-import/psiquantum-launches-construct) — the original software-suite announcement.\n\nScreenshots below show the public homepage, the Ripple Carry Adder sample in Circuit Designer, and PsiQuantum's introductory article.\n",
+  "date": {
+    "label": "Apr 2025 — May 2026",
+    "value": "2025-04",
+    "precision": "month",
+    "end": "2026-05",
+    "ongoing": false
+  },
+  "featured": true,
+  "collection": "timeline",
+  "tags": ["Full-stack development", "Quantum computing"],
+  "links": [
+    {
+      "label": "Website",
+      "link": "https://www.psiquantum.com/press-materials"
+    }
+  ],
+  "media": {
+    "cover": null,
+    "animation": null,
+    "icon": "assets/logo.png",
+    "images": [
+      {
+        "src": "assets/construct-home.webp",
+        "alt": "Construct — public software platform homepage"
+      },
+      {
+        "src": "assets/construct-circuit.webp",
+        "alt": "Construct Circuit Designer — public Ripple Carry Adder sample"
+      },
+      {
+        "src": "assets/construct-article.webp",
+        "alt": "Inside Construct — PsiQuantum article overview"
+      }
+    ],
+    "videos": [],
+    "screenshots": {}
+  },
+  "preview": {
+    "url": null,
+    "desktop": false,
+    "mobile": false
+  },
+  "technologies": [],
+  "dependencies": [],
+  "legacyPresentation": {},
+  "order": 32,
+  "provenance": {
+    "source": "User-selected portfolio prototype (01a07f15-57e2-7a93-af7f-f3cacbbe2dd2)",
+    "datesNeedReview": true
+  },
+  "showInEverything": true
+}
