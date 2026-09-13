@@ -1,3 +1,4 @@
+import post from '../../content/blog/whats-done-is-done.json';
 import type { Entry } from '../../content/schema';
 import { formatTimelineDate } from './timeline';
 
@@ -35,10 +36,22 @@ export function renderLlms(
     '',
     `- [Work](${origin}/): Interactive portfolio and timeline; item links open individual details.`,
     `- [About](${origin}/about): Background and skills.`,
-    `- [Blog](${origin}/blog): Placeholder; no published articles yet.`,
+    `- [Blog](${origin}/blog): Notes on games, software, and work.`,
     `- [Full portfolio text](${origin}/llms-full.txt): All published entry descriptions, dates, skills, and external links without JavaScript.`,
     '',
   ];
+  result.push(
+    '## Writing',
+    '',
+    `- [${post.title}](${origin}/blog/${post.slug}): ${post.description}`,
+    '',
+  );
+  if (full)
+    result.push(
+      `Published ${post.date}. By ${profile.name}.`,
+      '',
+      ...post.paragraphs.flatMap((paragraph) => [paragraph, '']),
+    );
   for (const [heading, kind] of groups) {
     result.push(`## ${heading}`, '');
     for (const entry of published.filter((entry) => entry.kind === kind)) {

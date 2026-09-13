@@ -33,7 +33,8 @@
           {#if i}<span aria-hidden="true">·</span>{/if}
           <a
             href={link.href}
-            aria-current={page.url.pathname.replace(/\/$/, '') === link.href.replace(/\/$/, '')
+            aria-current={page.url.pathname.replace(/\/$/, '') === link.href.replace(/\/$/, '') ||
+            (link.href !== '/' && page.url.pathname.startsWith(`${link.href}/`))
               ? 'page'
               : undefined}>{link.label}</a
           >

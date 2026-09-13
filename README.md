@@ -82,7 +82,7 @@ The header theme selector supports System (default), Light, and Dark. Explicit c
 
 ## Pages
 
-Work (`/`) contains the featured cards and timeline. About (`/about`) contains a short introduction and the skills catalog. Blog (`/blog`) is a placeholder for future posts. Shared navigation highlights the current page. The About skills combine the original catalog and the supplied résumé, with local Devicon brand icons and Feather symbols for broader disciplines. Technology chips link to official homepages or documentation. Icon sources and licenses live in `static/icons/skills/`; résumé provenance is recorded in `content/skill-sources.json`. Page navigation uses a short View Transition when supported, respecting reduced motion.
+Work (`/`) contains the featured cards and timeline. About (`/about`) contains a short introduction and the skills catalog. Blog (`/blog`) lists published posts, with individual prerendered pages. The first post is “What’s done is done”; its copy lives in `content/blog/whats-done-is-done.json` and is included in the AI-readable text. Shared navigation highlights the current page. The About skills combine the original catalog and the supplied résumé, with local Devicon brand icons and Feather symbols for broader disciplines. Technology chips link to official homepages or documentation. Icon sources and licenses live in `static/icons/skills/`; résumé provenance is recorded in `content/skill-sources.json`. Page navigation uses a short View Transition when supported, respecting reduced motion.
 
 ### AI-readable content
 
