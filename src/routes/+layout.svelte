@@ -29,7 +29,7 @@
     <div class="header-brand">
       <Wordmark />
       <nav class="section-nav" aria-label="Main navigation">
-        {#each [{ href: '/', label: 'Work' }, { href: '/about', label: 'About' }, { href: '/blog', label: 'Blog' }] as link, i}
+        {#each [{ href: '/', label: 'Work' }, { href: '/about', label: 'About' }] as link, i}
           {#if i}<span aria-hidden="true">·</span>{/if}
           <a
             href={link.href}
