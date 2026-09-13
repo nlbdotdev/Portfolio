@@ -81,7 +81,7 @@
     window.addEventListener('popstate', syncProject);
     return () => window.removeEventListener('popstate', syncProject);
   });
-  const heroFeatured = ['game-zombiehood', 'company-psiquantum'].map((id) =>
+  const heroFeatured = ['game-zombiehood', 'company-psiquantum', 'company-pilot'].map((id) =>
     entries.find((entry) => entry.id === id)!,
   );
   const studio = entries.find((entry) => entry.id === 'company-dead-traveler')!;
