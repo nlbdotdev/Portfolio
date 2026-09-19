@@ -82,4 +82,18 @@ The header theme selector supports System (default), Light, and Dark. Explicit c
 
 ## Pages
 
-Work (`/`) contains the featured cards and timeline. About (`/about`) contains a short introduction and the skills catalog. Blog is temporarily disabled; `/blog` redirects to Work while its placeholder source is retained. Shared navigation highlights the current page. The About skills combine the original catalog and the supplied résumé, with local Devicon brand icons and Feather symbols for broader disciplines. Technology chips link to official homepages or documentation. Icon sources and licenses live in `static/icons/skills/`; résumé provenance is recorded in `content/skill-sources.json`. Page navigation uses a short View Transition when supported, respecting reduced motion.
+Work (`/`) contains the featured cards and timeline. About (`/about`) contains a short introduction and the skills catalog. Blog (`/blog`) lists published posts, with individual prerendered pages. The first post is “What’s done is done”; its copy lives in `content/blog/whats-done-is-done.json` and is included in the AI-readable text. Shared navigation highlights the current page. The About skills combine the original catalog and the supplied résumé, with local Devicon brand icons and Feather symbols for broader disciplines. Technology chips link to official homepages or documentation. Icon sources and licenses live in `static/icons/skills/`; résumé provenance is recorded in `content/skill-sources.json`. Page navigation uses a short View Transition when supported, respecting reduced motion.
+
+### AI-readable content
+
+`/llms.txt` provides a compact portfolio index; `/llms-full.txt` includes the published descriptions, dates, skills, and external links. Both are generated from the content catalog during each build, exclude draft entries and source-only concepts, and require no JavaScript. Canonical links point to `https://nlb.dev`. This is a reading aid, not a crawler permission or training policy.
+
+### Blog publishing and drafts
+
+Posts live in `content/blog/*.json` and use one shared `/blog/[slug]` page. Set `draft: true` to show a post only on the `dev` deployment (or a local dev server); set it to `false` to publish it everywhere. The server-only catalog filters the index, direct routes, prerender entries, and AI-readable endpoints together. Draft pages use `noindex, nofollow`; this is a public preview, not confidential storage.
+
+`VERCEL_GIT_COMMIT_REF` is authoritative on Vercel. Unknown production builds exclude drafts. To reproduce a deployment locally, use `BLOG_BUILD_BRANCH=main npm run build` or `BLOG_BUILD_BRANCH=dev npm run build`. A local dev server shows drafts unless a branch variable explicitly excludes them. Draft content is never imported into client modules; production does not emit a draft HTML page or route data. AI-readable links use the matching main/dev hostname.
+
+`/looking-for` is the shareable partnership page, with copy in `content/looking-for.json`. Migration draft statistics and count methodology are recorded in `content/research/zombiehood-migration.json`; they describe named commits, not live progress.
+
+Zombiehood’s wider cover is copied from the existing trailer asset `Marketing/Trailers/images/wide-logo_16x9_1440x810.png` in the Dead Traveler Drive folder. The previous cover remains in the item’s assets for reference.

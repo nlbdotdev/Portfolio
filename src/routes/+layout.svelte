@@ -29,11 +29,12 @@
     <div class="header-brand">
       <Wordmark />
       <nav class="section-nav" aria-label="Main navigation">
-        {#each [{ href: '/', label: 'Work' }, { href: '/about', label: 'About' }] as link, i}
+        {#each [{ href: '/', label: 'Work' }, { href: '/about', label: 'About' }, { href: '/blog', label: 'Blog' }] as link, i}
           {#if i}<span aria-hidden="true">·</span>{/if}
           <a
             href={link.href}
-            aria-current={page.url.pathname.replace(/\/$/, '') === link.href.replace(/\/$/, '')
+            aria-current={page.url.pathname.replace(/\/$/, '') === link.href.replace(/\/$/, '') ||
+            (link.href !== '/' && page.url.pathname.startsWith(`${link.href}/`))
               ? 'page'
               : undefined}>{link.label}</a
           >
@@ -50,7 +51,9 @@
   <div id="main-content" tabindex="-1">{@render children()}</div>
   <footer>
     <p>{profile.name} <span>© {new Date().getFullYear()}</span></p>
-    <a href="mailto:nate@nlb.dev">Say hello ↗</a><a href="#main-content">Back to top ↑</a>
+    <a href="/looking-for">Looking for partners →</a><a href="mailto:nate@nlb.dev">Say hello ↗</a><a
+      href="#main-content">Back to top ↑</a
+    >
   </footer>
 </div>
 
@@ -60,6 +63,8 @@
     <button onclick={() => window.location.reload()}>Refresh</button>
   </div>
 {/if}
+
+<svelte:head><link rel="describedby" href="/llms.txt" type="text/plain" /></svelte:head>
 
 <style>
   .update-notice {

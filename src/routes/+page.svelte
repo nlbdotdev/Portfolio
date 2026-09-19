@@ -37,14 +37,14 @@
     replaceState(url, {});
   }
   let archiveReset = $state(0);
-  let active = $state<Track | 'featured' | null>('featured');
+  let active = $state<Track | 'featured' | 'selected' | null>('featured');
   let projectFilter = $state<ProjectFilter>('all');
   let query = $state('');
   let showGuides = $state(false);
   let showArchive = $state(false);
   let archiveRevealAfter = 0;
   let archiveArmed = true;
-  async function changeTrack(track: Track | 'featured' | null) {
+  async function changeTrack(track: Track | 'featured' | 'selected' | null) {
     if (track !== active) projectFilter = 'all';
     active = track;
     showArchive = false;
@@ -88,7 +88,9 @@
   const matching = $derived(
     entries.filter(
       (entry) =>
-        (!active || (active === 'featured' ? entry.featured : trackOf(entry) === active)) &&
+        (!active ||
+          active === 'selected' ||
+          (active === 'featured' ? entry.featured : trackOf(entry) === active)) &&
         (active !== 'project' ||
           projectFilter === 'all' ||
           entry.kind === (projectFilter === 'game' ? 'game' : 'project')) &&
@@ -253,6 +255,11 @@
           onclick={() => changeTrack('featured')}>Featured</button
         >
         <button
+          class:chosen={active === 'selected'}
+          aria-pressed={active === 'selected'}
+          onclick={() => changeTrack('selected')}>Selected</button
+        >
+        <button
           class:chosen={active === null}
           aria-pressed={active === null}
           onclick={() => changeTrack(null)}>Everything</button
@@ -297,7 +304,7 @@
     {/if}
     <p class="sr-only" aria-live="polite">
       {visible.length + (showArchive ? history.length : 0)} entries shown{active
-        ? `; ${active === 'featured' ? 'Featured' : tracks.find((track) => track.id === active)?.label} filter active${active === 'project' ? `; ${projectFilters.find((filter) => filter.id === projectFilter)?.label}` : ''}`
+        ? `; ${active === 'featured' ? 'Featured' : active === 'selected' ? 'Selected' : tracks.find((track) => track.id === active)?.label} filter active${active === 'project' ? `; ${projectFilters.find((filter) => filter.id === projectFilter)?.label}` : ''}`
         : ''}
     </p>
     <div class="timeline" id="collection-items" class:show-guides={showGuides}>
@@ -311,7 +318,7 @@
       <div class="rails" aria-hidden="true">
         {#each rails as rail}<i
             class:quiet={(rail.id === 'website' && active !== 'project') ||
-              (active && active !== 'featured' && active !== rail.track) ||
+              (active && active !== 'featured' && active !== 'selected' && active !== rail.track) ||
               (active === 'project' && projectFilter !== 'all' && rail.id !== projectFilter)}
             style={`--track:${rail.color};--station:${rail.id === 'website' && active !== 'project' ? 2 : rail.station}`}
           ></i>{/each}
@@ -341,8 +348,9 @@
       {:else}<p class="empty-state">
           {#if query.trim()}No entries match “{query}” in this track.
             <button onclick={() => (query = '')}>Clear search</button>
-            {#if active !== null}<button class="search-everything" onclick={() => changeTrack(null)}
-                >Search Everything</button
+            {#if active !== null && active !== 'selected'}<button
+                class="search-everything"
+                onclick={() => changeTrack(null)}>Search Everything</button
               >{/if}{:else}No recent entries in this track. Explore the earlier chapters below.{/if}
         </p>{/each}
       {#if history.length}
