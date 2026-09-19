@@ -51,7 +51,9 @@
   <div id="main-content" tabindex="-1">{@render children()}</div>
   <footer>
     <p>{profile.name} <span>© {new Date().getFullYear()}</span></p>
-    <a href="mailto:nate@nlb.dev">Say hello ↗</a><a href="#main-content">Back to top ↑</a>
+    <a href="/looking-for">Looking for partners →</a><a href="mailto:nate@nlb.dev">Say hello ↗</a><a
+      href="#main-content">Back to top ↑</a
+    >
   </footer>
 </div>
 

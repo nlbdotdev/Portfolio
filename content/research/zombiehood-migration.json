@@ -1,0 +1,79 @@
+{
+  "captured": "2026-09-19",
+  "repository": "DeadTraveler/Zombiehood2",
+  "method": "Build/Tools/migration-metrics.mjs --ref <commit>",
+  "snapshots": [
+    {
+      "schemaVersion": 1,
+      "source": {
+        "mode": "git-ref",
+        "ref": "640f111b0fc48cbea313e4038c44c4204d3b6955",
+        "commit": "640f111b0fc48cbea313e4038c44c4204d3b6955",
+        "commitDate": "2026-09-12T18:55:20-04:00",
+        "dirty": false
+      },
+      "methodology": {
+        "trackedSheets": "Zombiehood/eventSheets/**/*.json (including root-level sheets)",
+        "trackedSource": "Working tree uses index paths, including staged additions, excluding untracked files; git refs use their own tree.",
+        "countedEventTypes": ["block", "function-block", "custom-ace-block"],
+        "includeDisabled": true,
+        "expandIncludes": false,
+        "explicitlyDisabled": "Only disabled=true on counted nodes, not inherited group disablement; all count toward total.",
+        "conditionsAndActions": "All entries of every conditions/actions array encountered recursively, including comment and script entries; no filtering by enabled state.",
+        "authoredTypeScript": "Tracked Zombiehood/scripts/**/*.ts, including local .d.ts; excludes Zombiehood/scripts/ts-defs/ entirely.",
+        "physicalLines": "Blank and comment lines count. LF, CRLF and CR delimit lines; count a final unterminated line once, no phantom line after a final terminator; empty file = 0.",
+        "dirty": "Working tree: any repository staged/unstaged change or nonignored untracked file; ref snapshots: false. Untracked files never contribute metrics."
+      },
+      "sheetCount": 46,
+      "total": 4493,
+      "byType": {
+        "block": 3960,
+        "function-block": 508,
+        "custom-ace-block": 25
+      },
+      "conditions": 5824,
+      "actions": 7950,
+      "customAceBlocks": 25,
+      "authoredTypeScript": {
+        "fileCount": 101,
+        "physicalLines": 5717
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": {
+        "mode": "git-ref",
+        "ref": "HEAD",
+        "commit": "8a994146d8af624c5552c2f64e7dd8571bcd2df5",
+        "commitDate": "2026-09-19T15:16:16-04:00",
+        "dirty": false
+      },
+      "methodology": {
+        "trackedSheets": "Zombiehood/eventSheets/**/*.json (including root-level sheets)",
+        "trackedSource": "Working tree uses index paths, including staged additions, excluding untracked files; git refs use their own tree.",
+        "countedEventTypes": ["block", "function-block", "custom-ace-block"],
+        "includeDisabled": true,
+        "expandIncludes": false,
+        "explicitlyDisabled": "Only disabled=true on counted nodes, not inherited group disablement; all count toward total.",
+        "conditionsAndActions": "All entries of every conditions/actions array encountered recursively, including comment and script entries; no filtering by enabled state.",
+        "authoredTypeScript": "Tracked Zombiehood/scripts/**/*.ts, including local .d.ts; excludes Zombiehood/scripts/ts-defs/ entirely.",
+        "physicalLines": "Blank and comment lines count. LF, CRLF and CR delimit lines; count a final unterminated line once, no phantom line after a final terminator; empty file = 0.",
+        "dirty": "Working tree: any repository staged/unstaged change or nonignored untracked file; ref snapshots: false. Untracked files never contribute metrics."
+      },
+      "sheetCount": 46,
+      "total": 3474,
+      "byType": {
+        "block": 2931,
+        "function-block": 518,
+        "custom-ace-block": 25
+      },
+      "conditions": 4387,
+      "actions": 5928,
+      "customAceBlocks": 25,
+      "authoredTypeScript": {
+        "fileCount": 145,
+        "physicalLines": 9777
+      }
+    }
+  ]
+}

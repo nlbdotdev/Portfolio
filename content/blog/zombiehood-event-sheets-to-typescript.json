@@ -1,0 +1,49 @@
+{
+  "title": "Moving Zombiehood out of event sheets",
+  "slug": "zombiehood-event-sheets-to-typescript",
+  "date": "2026-09-19",
+  "draft": true,
+  "description": "A working outline of the migration to JavaScript and TypeScript: behavior ownership, runtime parity, and a reproducible progress snapshot.",
+  "paragraphs": [
+    "This is a draft of a technical write-up, not a finished migration report. Zombiehood’s move from Construct event sheets toward a JavaScript/TypeScript codebase is still in progress. These notes capture the structure of the work and a measured snapshot; the detailed case studies will follow.",
+    "The goal is to move behavior into code while preserving how the game actually plays. Deleting an event block is easy to count. Preserving instance selection, tick ordering, cooldowns, save compatibility, and the boundaries between systems is the harder part."
+  ],
+  "sections": [
+    {
+      "heading": "The measured snapshot",
+      "paragraphs": [
+        "Between the September 12 baseline (640f111b) and the September 19 checkpoint (8a994146), counted event blocks fell from 4,493 to 3,474: 1,019 fewer, a 22.7% reduction over this interval. All 46 event-sheet files still exist. This baseline already contains TypeScript work; it is not the start of the entire migration.",
+        "Condition-array entries fell from 5,824 to 4,387; action-array entries from 7,950 to 5,928. Authored TypeScript grew from 101 files / 5,717 physical lines to 145 files / 9,777 lines. These are structural measurements, not a completion percentage, performance benchmark, or estimate of remaining effort.",
+        "The repository’s migration-metrics tool reads immutable Git snapshots. It counts block, function-block, and custom-ace-block nodes recursively, including disabled nodes, without expanding includes. TypeScript line counts include comments and blank lines and exclude the generated ts-defs directory. Conditions and actions count all array entries. Keeping those definitions fixed makes the before/after comparison reproducible."
+      ]
+    },
+    {
+      "heading": "The unit of migration is a behavior",
+      "paragraphs": [
+        "The approach is incremental: identify a bounded behavior, capture the native result, transfer its ownership to TypeScript, and compare the result before removing the event implementation. A file can contain both migrated behavior and native boundaries that still need attention.",
+        "The latest recorded slice covers equipment inventory lifecycle: pickup replacement, catalog selection, readiness and HUD sequencing, dropped-item pricing, and remaining-cooldown transfer. Native Object UID selection and drop creation/animation still remain. That separation matters: moving the decision logic does not automatically move every engine-side effect."
+      ]
+    },
+    {
+      "heading": "What has to stay equivalent",
+      "paragraphs": [
+        "The detailed article will walk through selected instances, synchronous versus deferred callbacks, event phases, and lifecycle re-entry. I want to show one small native-to-typed example, then a larger stateful slice where ordering matters.",
+        "Cooldown transfer is a useful candidate: the replacement item must inherit the intended remaining time without changing save names or timer tags. The write-up should show the invariant, the relevant code, the failure it prevents, and the comparison used to check it. Source excerpts and diagrams still need to be selected and reviewed."
+      ]
+    },
+    {
+      "heading": "Evidence and its limits",
+      "paragraphs": [
+        "The September 19 ledger records strict TypeScript checks, 178 unit tests, build and JSON/reference checks, and a passing focused runtime regression for that checkpoint. Those are historical results reported by the migration ledger, not tests rerun for this blog draft.",
+        "Focused runtime checks still suppress some HUD and object-creation paths. Normal replacement and popup playtesting, historical-save compatibility, and broader gameplay checks remain separate work. Passing a controlled fixture does not establish parity for every full-game interaction."
+      ]
+    },
+    {
+      "heading": "Still to add before publishing",
+      "paragraphs": [
+        "A diagram of the current event-sheet/TypeScript boundary; one reviewed before/after code example; a per-system progress breakdown; a worked explanation of the runtime harness; and the failure cases that changed the migration plan.",
+        "The final article should refresh the metrics against a named commit, distinguish structural progress from tested behavior, and explicitly list what remains in Construct. Until then this stays a draft."
+      ]
+    }
+  ]
+}

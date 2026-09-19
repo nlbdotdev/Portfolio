@@ -10,8 +10,19 @@
     "Some of that work is easy to show. A game has a page you can visit, a screenshot, something you can play. Other work happened inside a company, or on a project that never made it into public view. That’s harder to put in a portfolio. I’m still figuring out how to describe it without making every entry sound bigger or tidier than it was.",
     "Even the dates have been an exercise. When does a project belong on a timeline: when I started it, when it shipped, or when I stopped working on it? Work overlaps. One thing becomes part of another. A chronological list helps, but it can’t quite explain every transition.",
     "Right now my focus is on games. Dead Traveler and the April release of Zombiehood are a big part of that. I don’t know whether games will be the focus forever. I don’t feel like I need to decide that in order to acknowledge what I’ve already done.",
-    "I sent a friend the site and realized that, so far, the person it’s helping most is me. I can point to something and say: I worked on that. I made that. That happened. There’s a little breathing room in being able to see it instead of keeping all of it in my head.",
     "The site will keep changing. There are still details to fill in and better ways to show some of the work. But it already feels good to have a place where these different threads can sit together.",
     "What’s done is done. I’m glad I’m giving it somewhere to live."
+  ],
+  "draft": false,
+  "sections": [
+    {
+      "heading": "How the timeline works",
+      "paragraphs": [
+        "Each entry lives in an item-owned JSON file alongside its images. A Zod schema validates the catalog before the site builds. SvelteKit imports the records and local assets at build time; the timeline filters the resulting collection in the browser without a separate fetch endpoint.",
+        "The default sort uses the end date when one exists, otherwise the recorded start or release date. Dates stay independent of presentation: a timelineAfter reference can position an entry after another entry within the same year without changing the employment dates. Featured uses an explicit flag; Selected currently mirrors Everything. Career, Education, and Project narrow the same collection, with Games and Websites available inside Project.",
+        "Earlier Chapters uses a rolling three-year cutoff, with ongoing entries kept in the recent section. The split is a continuous tail of the sorted list, rather than two independently sorted buckets. That avoids jumping forward in time when the archive opens. The collapsed archive shows about one and a half entries, then reveals the rest after continued scroll intent. Changing views resets that state so the automatic scroll back to the divider does not immediately reopen it.",
+        "Keyed Svelte rows handle entry transitions, while the outer year guide follows the rendered layout. Project details reuse the timeline content in a dialog, with an item slug in the URL for sharing and browser history. Images and gameplay media have their own gallery controls. Reduced-motion preferences are respected, and the year and entry guides stay off narrower screens."
+      ]
+    }
   ]
 }

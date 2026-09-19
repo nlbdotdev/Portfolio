@@ -1,8 +1,8 @@
-import post from '../../content/blog/whats-done-is-done.json';
+import type { Post } from './blog';
 import type { Entry } from '../../content/schema';
 import { formatTimelineDate } from './timeline';
 
-const origin = 'https://nlb.dev';
+import looking from '../../content/looking-for.json';
 const groups = [
   ['Career', 'company'],
   ['Education', 'education'],
@@ -21,6 +21,8 @@ export function renderLlms(
     skills: { label: string; url: string | null }[];
   },
   full = false,
+  posts: Post[] = [],
+  origin = 'https://nlb.dev',
 ) {
   const published = entries.filter((entry) => !entry.draft);
   const result = [
@@ -35,23 +37,42 @@ export function renderLlms(
     '## Site',
     '',
     `- [Work](${origin}/): Interactive portfolio and timeline; item links open individual details.`,
+    `- [Looking for](${origin}/looking-for): ${looking.description}`,
     `- [About](${origin}/about): Background and skills.`,
     `- [Blog](${origin}/blog): Notes on games, software, and work.`,
     `- [Full portfolio text](${origin}/llms-full.txt): All published entry descriptions, dates, skills, and external links without JavaScript.`,
     '',
   ];
-  result.push(
-    '## Writing',
-    '',
-    `- [${post.title}](${origin}/blog/${post.slug}): ${post.description}`,
-    '',
-  );
   if (full)
     result.push(
-      `Published ${post.date}. By ${profile.name}.`,
+      '## Looking for',
       '',
-      ...post.paragraphs.flatMap((paragraph) => [paragraph, '']),
+      looking.intro,
+      '',
+      ...looking.sections.flatMap((section) => [
+        `### ${section.heading}`,
+        '',
+        ...section.paragraphs.flatMap((paragraph) => [paragraph, '']),
+      ]),
     );
+  result.push('## Writing', '');
+  for (const post of posts) {
+    result.push(
+      `- [${post.title}](${origin}/blog/${post.slug}): ${post.draft ? 'Draft. ' : ''}${post.description}`,
+      '',
+    );
+    if (full)
+      result.push(
+        `${post.draft ? 'Draft dated' : 'Published'} ${post.date}. By ${profile.name}.`,
+        '',
+        ...post.paragraphs.flatMap((paragraph) => [paragraph, '']),
+        ...post.sections.flatMap((section) => [
+          `### ${section.heading}`,
+          '',
+          ...section.paragraphs.flatMap((paragraph) => [paragraph, '']),
+        ]),
+      );
+  }
   for (const [heading, kind] of groups) {
     result.push(`## ${heading}`, '');
     for (const entry of published.filter((entry) => entry.kind === kind)) {

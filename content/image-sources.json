@@ -258,5 +258,12 @@
     "path": "assets/logo.svg",
     "source": "https://stage3.io/",
     "assetUrl": "https://stage3.io/icon.svg"
+  },
+  {
+    "item": "game-zombiehood",
+    "path": "assets/cover-wide.png",
+    "source": "Nathan’s Dead Traveler Drive marketing assets",
+    "assetUrl": "Marketing/Trailers/images/wide-logo_16x9_1440x810.png",
+    "notes": "Copied unchanged on 2026-09-19; wider composition keeps the title inside the timeline crop."
   }
 ]

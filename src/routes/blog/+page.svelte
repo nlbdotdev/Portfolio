@@ -1,5 +1,6 @@
 <script lang="ts">
-  import post from '../../../content/blog/whats-done-is-done.json';
+  import { postDate } from '$lib/blog';
+  let { data } = $props();
 </script>
 
 <svelte:head>
@@ -13,12 +14,15 @@
   <p class="eyebrow">Blog</p>
   <h1>Notes from in between.</h1>
   <p class="page-intro">On making games, writing software, and finding the thread.</p>
-  <article class="post-preview">
-    <time datetime={post.date}>September 13, 2026</time>
-    <h2><a href={`/blog/${post.slug}`}>{post.title} <span aria-hidden="true">↗</span></a></h2>
-    <p>{post.description}</p>
-    <a class="post-read" href={`/blog/${post.slug}`}>Read the post →</a>
-  </article>
+  {#each data.posts as post}
+    <article class="post-preview">
+      <time datetime={post.date}>{postDate(post.date)}</time>
+      {#if post.draft}<p class="eyebrow">Draft · Work in progress</p>{/if}
+      <h2><a href={`/blog/${post.slug}`}>{post.title} <span aria-hidden="true">↗</span></a></h2>
+      <p>{post.description}</p>
+      <a class="post-read" href={`/blog/${post.slug}`}>Read the post →</a>
+    </article>
+  {/each}
 </main>
 
 <style>
