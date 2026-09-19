@@ -3,47 +3,101 @@
   "slug": "zombiehood-event-sheets-to-typescript",
   "date": "2026-09-19",
   "draft": true,
-  "description": "A working outline of the migration to JavaScript and TypeScript: behavior ownership, runtime parity, and a reproducible progress snapshot.",
+  "description": "How I’m moving a shipped Construct game into JavaScript and TypeScript without changing how it plays.",
   "paragraphs": [
-    "This is a draft of a technical write-up, not a finished migration report. Zombiehood’s move from Construct event sheets toward a JavaScript/TypeScript codebase is still in progress. These notes capture the structure of the work and a measured snapshot; the detailed case studies will follow.",
-    "The goal is to move behavior into code while preserving how the game actually plays. Deleting an event block is easy to count. Preserving instance selection, tick ordering, cooldowns, save compatibility, and the boundaries between systems is the harder part."
+    "Zombiehood was built in Construct, where a lot of the game’s logic lived in visual event sheets. That was a good way to get the game made and shipped. Over time, though, thousands of interconnected conditions and actions made some systems harder to understand, test, and change with confidence.",
+    "I’m now moving that logic into a JavaScript and TypeScript codebase. This is not a rewrite where the old game gets thrown away and rebuilt behind closed doors. It is a progressive migration: move one behavior, prove that the game still behaves the same way, then remove the event logic it replaces."
+  ],
+  "stats": [
+    {
+      "value": "4,493 → 3,474",
+      "label": "counted event blocks",
+      "note": "September 12 baseline to September 19 checkpoint"
+    },
+    {
+      "value": "−1,019",
+      "label": "event blocks",
+      "note": "22.7% fewer during this measured interval"
+    },
+    {
+      "value": "101 → 145",
+      "label": "authored TypeScript files"
+    },
+    {
+      "value": "5,717 → 9,777",
+      "label": "physical TypeScript lines",
+      "note": "Includes comments and blank lines; excludes generated definitions"
+    }
   ],
   "sections": [
     {
-      "heading": "The measured snapshot",
+      "heading": "Why migrate a game that already shipped?",
       "paragraphs": [
-        "Between the September 12 baseline (640f111b) and the September 19 checkpoint (8a994146), counted event blocks fell from 4,493 to 3,474: 1,019 fewer, a 22.7% reduction over this interval. All 46 event-sheet files still exist. This baseline already contains TypeScript work; it is not the start of the entire migration.",
-        "Condition-array entries fell from 5,824 to 4,387; action-array entries from 7,950 to 5,928. Authored TypeScript grew from 101 files / 5,717 physical lines to 145 files / 9,777 lines. These are structural measurements, not a completion percentage, performance benchmark, or estimate of remaining effort.",
-        "The repository’s migration-metrics tool reads immutable Git snapshots. It counts block, function-block, and custom-ace-block nodes recursively, including disabled nodes, without expanding includes. TypeScript line counts include comments and blank lines and exclude the generated ts-defs directory. Conditions and actions count all array entries. Keeping those definitions fixed makes the before/after comparison reproducible."
+        "Event sheets are fast and expressive, especially when a project is young. Zombiehood did not stay young. Inventory, equipment, enemies, menus, saves, procedural systems, and platform behavior accumulated across 46 event-sheet files. A change in one place could depend on instance selection or event ordering somewhere else.",
+        "Typed code gives those systems names and boundaries. It gives me smaller files, searchable call sites, explicit inputs, reusable helpers, and tests that can run without clicking through the editor. The goal is not to replace Construct as the engine. The goal is to make the game logic easier to own."
+      ],
+      "codeSnippets": []
+    },
+    {
+      "heading": "The process",
+      "paragraphs": [
+        "I work in slices that are small enough to review but complete enough to mean something. First I inventory the native behavior: what gets selected, which values change, what happens immediately, and what waits until another tick. Then I write a typed equivalent and run it against the same cases.",
+        "Construct still owns the parts that genuinely belong to the engine or have not moved yet. A thin event facade can select an object or create an instance, then hand control to TypeScript. Once the new owner is proven, I remove the replaced conditions and actions from the event sheet and record the before-and-after counts.",
+        "That boundary moves a little at a time. It lets the shipped game remain the reference instead of asking a new implementation to reproduce years of behavior from memory."
+      ],
+      "codeSnippets": []
+    },
+    {
+      "heading": "A deeper dive: preserving equipment cooldowns",
+      "paragraphs": [
+        "A recent slice moved the equipment inventory lifecycle: picking up an item, replacing the current slot, loading its catalog data, updating the HUD, dropping the old item, and carrying its remaining cooldown into the world.",
+        "The cooldown is a small detail with a large gameplay consequence. If a player can drop and pick up equipment to reset a timer, the migration has changed the rules. The typed implementation keeps the existing timer tags and transfers the remaining time in either direction."
+      ],
+      "codeSnippets": []
+    },
+    {
+      "heading": "Inside the code",
+      "paragraphs": [
+        "The first helper turns Construct’s timer state into one number. That value follows the item through the pickup and drop paths instead of being recreated from a default duration. These excerpts are from the migrated equipment module."
+      ],
+      "codeSnippets": [
+        {
+          "language": "ts",
+          "caption": "Read the remaining time without changing the native timer contract",
+          "source": "Zombiehood/scripts/core/player-equipment.ts",
+          "code": "function remaining(\n  timer: ITimerBehaviorInstance<IInstance>,\n  tag: string,\n): number {\n  return timer.isTimerRunning(tag)\n    ? timer.getDuration(tag) - timer.getTotalTime(tag)\n    : 0;\n}"
+        },
+        {
+          "language": "ts",
+          "caption": "Carry that time from the world item into the equipped slot",
+          "source": "Zombiehood/scripts/core/player-equipment.ts",
+          "code": "const cooldown = remaining(object.behaviors.Timer, \"Cooldown\");\n\ncallEventFunction(\n  runtime,\n  \"PLR_EquipmentLoad\",\n  object.instVars.ItemName,\n  cooldown,\n  true,\n);"
+        }
       ]
     },
     {
-      "heading": "The unit of migration is a behavior",
+      "heading": "How I measure progress",
       "paragraphs": [
-        "The approach is incremental: identify a bounded behavior, capture the native result, transfer its ownership to TypeScript, and compare the result before removing the event implementation. A file can contain both migrated behavior and native boundaries that still need attention.",
-        "The latest recorded slice covers equipment inventory lifecycle: pickup replacement, catalog selection, readiness and HUD sequencing, dropped-item pricing, and remaining-cooldown transfer. Native Object UID selection and drop creation/animation still remain. That separation matters: moving the decision logic does not automatically move every engine-side effect."
-      ]
+        "The numbers above come from a repository tool that reads named Git commits, not from a hand-maintained checklist. It counts the same event node types in every snapshot and separately measures authored TypeScript. That makes the comparison repeatable as the migration continues.",
+        "The numbers are useful, but they are not a percent-complete bar. One event block can hide a lot of behavior, while a larger group may be straightforward. More TypeScript lines do not automatically mean better code. The useful claim is narrower: between these two commits, the project contains 1,019 fewer counted event blocks and the migrated behaviors have explicit code and test coverage."
+      ],
+      "codeSnippets": []
     },
     {
-      "heading": "What has to stay equivalent",
+      "heading": "Testing the handoff",
       "paragraphs": [
-        "The detailed article will walk through selected instances, synchronous versus deferred callbacks, event phases, and lifecycle re-entry. I want to show one small native-to-typed example, then a larger stateful slice where ordering matters.",
-        "Cooldown transfer is a useful candidate: the replacement item must inherit the intended remaining time without changing save names or timer tags. The write-up should show the invariant, the relevant code, the failure it prevents, and the comparison used to check it. Source excerpts and diagrams still need to be selected and reviewed."
-      ]
+        "Each slice gets pure tests where the logic allows it, project and JSON validation, and focused runtime checks in an instrumented Construct preview. The equipment checkpoint also ran the broader migration regression before it was recorded.",
+        "Those checks do not make every risk disappear. Historical saves, normal unsuppressed gameplay, physical devices, and interactions outside a focused fixture still need deliberate playtesting. The migration ledger records those limits so a green test is not mistaken for proof of the entire game."
+      ],
+      "codeSnippets": []
     },
     {
-      "heading": "Evidence and its limits",
+      "heading": "Where it stands",
       "paragraphs": [
-        "The September 19 ledger records strict TypeScript checks, 178 unit tests, build and JSON/reference checks, and a passing focused runtime regression for that checkpoint. Those are historical results reported by the migration ledger, not tests rerun for this blog draft.",
-        "Focused runtime checks still suppress some HUD and object-creation paths. Normal replacement and popup playtesting, historical-save compatibility, and broader gameplay checks remain separate work. Passing a controlled fixture does not establish parity for every full-game interaction."
-      ]
-    },
-    {
-      "heading": "Still to add before publishing",
-      "paragraphs": [
-        "A diagram of the current event-sheet/TypeScript boundary; one reviewed before/after code example; a per-system progress breakdown; a worked explanation of the runtime harness; and the failure cases that changed the migration plan.",
-        "The final article should refresh the metrics against a named commit, distinguish structural progress from tested behavior, and explicitly list what remains in Construct. Until then this stays a draft."
-      ]
+        "This is still active work. The latest snapshot in this draft has 3,474 counted event blocks across the same 46 sheets. Some sheets are mixed: TypeScript owns a complete behavior while Construct still handles an engine boundary or another system nearby.",
+        "Before publishing the final version, I want to add one visual before-and-after from an event sheet, a diagram of the Construct-to-TypeScript boundary, and refreshed numbers from a stable checkpoint. The important story is already clear: Zombiehood is becoming easier to reason about without asking players to absorb the cost of a wholesale rewrite."
+      ],
+      "codeSnippets": []
     }
   ]
 }

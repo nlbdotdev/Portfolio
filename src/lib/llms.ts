@@ -70,6 +70,14 @@ export function renderLlms(
           `### ${section.heading}`,
           '',
           ...section.paragraphs.flatMap((paragraph) => [paragraph, '']),
+          ...section.codeSnippets.flatMap((snippet) => [
+            `${snippet.caption}${snippet.source ? ` (${snippet.source})` : ''}`,
+            '',
+            `\`\`\`${snippet.language}`,
+            snippet.code,
+            '\`\`\`',
+            '',
+          ]),
         ]),
       );
   }

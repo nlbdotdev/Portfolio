@@ -265,5 +265,20 @@
     "source": "Nathan’s Dead Traveler Drive marketing assets",
     "assetUrl": "Marketing/Trailers/images/wide-logo_16x9_1440x810.png",
     "notes": "Copied unchanged on 2026-09-19; wider composition keeps the title inside the timeline crop."
+  },
+  {
+    "item": "game-zombiehood",
+    "path": "assets/zombiehood-gameplay-1.webp",
+    "source": "Copied from company-dead-traveler; original source recorded with that item"
+  },
+  {
+    "item": "game-zombiehood",
+    "path": "assets/zombiehood-gameplay-2.webp",
+    "source": "Copied from company-dead-traveler; original source recorded with that item"
+  },
+  {
+    "item": "game-zombiehood",
+    "path": "assets/zombiehood-gameplay-3.webp",
+    "source": "Copied from company-dead-traveler; original source recorded with that item"
   }
 ]

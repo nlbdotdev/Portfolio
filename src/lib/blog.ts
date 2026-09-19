@@ -8,8 +8,26 @@ export const postSchema = z
     description: z.string().min(1),
     draft: z.boolean().default(false),
     paragraphs: z.array(z.string()),
+    stats: z
+      .array(z.object({ value: z.string(), label: z.string(), note: z.string().optional() }))
+      .default([]),
     sections: z
-      .array(z.object({ heading: z.string(), paragraphs: z.array(z.string()) }))
+      .array(
+        z.object({
+          heading: z.string(),
+          paragraphs: z.array(z.string()),
+          codeSnippets: z
+            .array(
+              z.object({
+                language: z.string(),
+                caption: z.string(),
+                source: z.string().optional(),
+                code: z.string(),
+              }),
+            )
+            .default([]),
+        }),
+      )
       .default([]),
   })
   .strict();

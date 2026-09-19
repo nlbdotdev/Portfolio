@@ -27,7 +27,20 @@
     "cover": "assets/cover-wide.png",
     "animation": null,
     "icon": null,
-    "images": [],
+    "images": [
+      {
+        "src": "assets/zombiehood-gameplay-1.webp",
+        "alt": "Zombiehood gameplay — exploring a suburban street"
+      },
+      {
+        "src": "assets/zombiehood-gameplay-2.webp",
+        "alt": "Zombiehood gameplay — fighting through a combat encounter"
+      },
+      {
+        "src": "assets/zombiehood-gameplay-3.webp",
+        "alt": "Zombiehood gameplay — weapons, enemies, and the game HUD"
+      }
+    ],
     "videos": [],
     "screenshots": {}
   },

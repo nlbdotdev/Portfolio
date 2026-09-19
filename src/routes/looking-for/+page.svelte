@@ -1,5 +1,7 @@
 <script lang="ts">
   import content from '../../../content/looking-for.json';
+  import profile from '../../../content/profile.json';
+  const linkedin = profile.links.find((link) => link.label === 'LinkedIn')!;
 </script>
 
 <svelte:head>
@@ -13,9 +15,12 @@
     <p class="eyebrow">Let’s build something that lasts</p>
     <h1>{content.title}<span>.</span></h1>
     <p class="page-intro">{content.intro}</p>
-    <a class="contact" href="mailto:nate@nlb.dev?subject=Building%20with%20Dead%20Traveler"
-      >Start a conversation ↗</a
-    >
+    <div class="contact-options">
+      <a class="contact" href="mailto:nate@nlb.dev?subject=Building%20with%20Dead%20Traveler"
+        >Start a conversation ↗</a
+      >
+      <a href={linkedin.url} target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+    </div>
   </header>
   {#each content.sections as section, i}
     <section class:priority={i === 0}>
@@ -89,7 +94,15 @@
   }
   .contact {
     display: inline-block;
+  }
+  .contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
     margin-top: 24px;
+  }
+  .contact-options a:last-child {
+    color: var(--muted);
   }
   .related {
     display: flex;
