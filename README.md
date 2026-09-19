@@ -87,3 +87,4 @@ Work (`/`) contains the featured cards and timeline. About (`/about`) contains a
 ### AI-readable content
 
 `/llms.txt` provides a compact portfolio index; `/llms-full.txt` includes the published descriptions, dates, skills, and external links. Both are generated from the content catalog during each build, exclude draft entries and source-only concepts, and require no JavaScript. Canonical links point to `https://nlb.dev`. This is a reading aid, not a crawler permission or training policy.
+

@@ -15,6 +15,7 @@
     "ongoing": true
   },
   "featured": false,
+  "draft": true,
   "collection": "timeline",
   "tags": ["Venture studio", "Building ventures"],
   "links": [
